@@ -1,0 +1,550 @@
+<!--
+
+Common MythArchive window definitions
+
+-->
+<mythuitheme>
+
+  <window name="selectdestination">
+
+        <!--  we use one large background image to draw all widgets on top	  -->
+        <imagetype name="background" from="basebackground" />
+        
+        <imagetype name="archivebackground">
+            <position>0,0</position>
+            <filename>archive/widebackground.png</filename>
+        </imagetype>
+        
+        <!--  Clock and Date on the right	  -->
+        <clock name="clock" from="baseclock" />
+
+    <textarea name="title1" from="basepagetitle">
+    <value>Select Destination</value>
+    </textarea>
+
+    <textarea name="destination_label" from="basetextarea">
+    <area>50,200,600,40</area>
+    <align>right</align>
+    <value>Select Destination</value>
+    </textarea>
+
+        <!--  What type of media to export to  -->
+        <spinbox name="destination_selector" from="basespinbox">
+            <position>700,200</position>
+        </spinbox>
+
+        <textarea name="destination_text" from="basetextarea">
+            <area>700,250,500,90</area>
+            <value>description goes here.</value>
+            <multiline>yes</multiline>
+        </textarea>
+        
+        <!--  if you select "File" you will get these options  -->
+	<textedit name="filename_edit" from="basetexteditwide">
+            <position>700,300</position>
+        </textedit>
+        <button name="find_button" from="basewidebutton">
+            <position>700,350</position>
+            <value>Find</value>
+        </button>
+
+        <!--  Will show how much space is available on the media you selected  -->
+        <textarea name="freespace_label" from="destination_label">
+	    <position>50,400</position>
+            <value>Free Space:</value>
+        </textarea>
+        <textarea name="freespace_text" from="basetextarea">
+            <area>700,400,200,30</area>
+            <value>0.00Gb</value>
+        </textarea>
+
+        <textarea name="title" from="destination_label">
+	    <position>50,450</position>
+            <value>Make ISO Image</value>
+        </textarea>
+
+        <checkbox name="makeisoimage_check" from="basecheckbox">
+            <position>700,450</position>
+        </checkbox>
+
+        <textarea name="burntodvdr_text" from="destination_label">
+	    <position>50,500</position>
+            <value>Burn to DVD</value>
+        </textarea>
+
+        <checkbox name="burntodvdr_check" from="basecheckbox">
+            <position>700,500</position>
+        </checkbox>
+
+        <textarea name="erasedvdrw_text" from="destination_label">
+	    <position>50,550</position>	    
+            <value>Force Overwrite of DVD-RW Media</value>
+        </textarea>
+
+        <checkbox name="erasedvdrw_check" from="basecheckbox">
+            <position>700,550</position>
+        </checkbox>
+
+
+    <button name="next_button" from="basepopupbuttonok">
+    <position>50,905</position>
+    <value>Next</value>
+    </button>
+    <button name="prev_button" from="basepopupbutton">
+    <position>50,970</position>
+    <value>Previous</value>
+    </button>
+    <button name="cancel_button" from="basepopupbuttoncancel">
+    <position>795,970</position>
+    <value>Cancel</value>
+    </button>
+
+    </window>
+
+  <!-- 
+      Recording Selector
+  -->
+  
+  <window name="recording_selector">
+
+        <!--  we use one large background image to draw all widgets on top	  -->
+        <imagetype name="background" from="basebackground" />
+        
+        <imagetype name="archivebackground">
+            <position>0,0</position>
+            <filename>archive/widebackground.png</filename>
+        </imagetype>
+        
+        <!--  Clock and Date on the right	  -->
+        <clock name="clock" from="baseclock" />
+
+    <textarea name="title" from="basepagetitle">
+            <value>Select Recordings</value>
+    </textarea>
+
+        <buttonlist name="category_selector" from="baseselector">
+            <position>80,75</position>
+        </buttonlist>
+
+    <buttonlist name="recordinglist" from="basebuttonlist3">
+    <area>50,150,1361,565</area>
+    <buttonarea>0,0,100%,100%</buttonarea>
+    <statetype name="buttonitem">
+	<area>0,0,100%,30</area>
+                <state name="active">
+                <statetype name="buttoncheck">
+                    <position>1300,1</position>
+                    <state type="off">
+                        <imagetype name="checkoff">
+			    <filename>icons/no.png</filename>
+			    <alpha>100</alpha>
+                        </imagetype>
+                    </state>
+                    <state type="half">
+                        <imagetype name="checkhalf">
+                            <filename>icons/yesno.png</filename>
+			    <alpha>100</alpha>
+			    </imagetype>
+                    </state>
+                    <state type="full">
+                        <imagetype name="checkoff">
+			    <filename>icons/no.png</filename>
+			    <alpha>100</alpha>
+                        </imagetype>
+                        <imagetype name="checkfull">
+			    <alpha>100</alpha>
+			    <filename>icons/yes.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype>    
+                </state>
+                <state name="selectedactive">
+                <statetype name="buttoncheck">
+                    <position>1300,1</position>
+                    <state type="off">
+                        <imagetype name="checkoff">
+			    <filename>icons/no.png</filename>
+			    <alpha>255</alpha>
+                        </imagetype>
+                    </state>
+                    <state type="half">
+                        <imagetype name="checkhalf">
+                            <filename>icons/yesno.png</filename>
+			    <alpha>255</alpha>
+			    </imagetype>
+                    </state>
+                    <state type="full">
+                        <imagetype name="checkoff">
+			    <filename>icons/no.png</filename>
+			    <alpha>255</alpha>
+                        </imagetype>
+                        <imagetype name="checkfull">
+			    <alpha>255</alpha>
+			    <filename>icons/yes.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype>  
+                </state>
+                <state name="selectedinactive">
+                    <statetype name="buttoncheck">
+                    <position>1300,1</position>
+                    <state type="off">
+                        <imagetype name="checkoff">
+			    <filename>icons/no.png</filename>
+			    <alpha>255</alpha>
+                        </imagetype>
+                    </state>
+                    <state type="half">
+                        <imagetype name="checkhalf">
+                            <filename>icons/yesno.png</filename>
+			    <alpha>255</alpha>
+			    </imagetype>
+                    </state>
+                    <state type="full">
+                        <imagetype name="checkoff">
+			    <filename>icons/no.png</filename>
+			    <alpha>255</alpha>
+                        </imagetype>
+                        <imagetype name="checkfull">
+			    <alpha>255</alpha>
+			    <filename>icons/yes.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype> 
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="progtitle" from="basetextarea">
+            <area>50,740,1300,40</area>
+            <font>basetitle</font>
+        </textarea>
+
+        <textarea name="progdatetime" from="basetextarea">
+            <area>50,785,1300,40</area>
+        </textarea>
+
+        <textarea name="progdescription" from="basetextarea">
+            <area>50,820,1300,90</area>
+            <value></value>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <imagetype name="cutlist_image">
+    <position>1150,995</position>
+		<filename>icons/editcut.png</filename>
+        </imagetype>
+        
+        <textarea name="filesize" from="basetextarea">
+            <area>50,785,1300,40</area>
+            <align>right</align>
+            <value></value>
+        </textarea>
+
+        <imagetype name="preview_image">
+            <area>0,0,200,170</area>
+            <filename>blank.png</filename>
+        </imagetype>
+
+
+    <button name="ok_button" from="basepopupbuttonok">
+    <position>50,930</position>
+    <value>OK</value>
+    </button>
+    <button name="cancel_button" from="basepopupbuttoncancel">
+    <position>795,930</position>
+    <value>Cancel</value>
+    </button>
+
+    </window>
+
+  <!--
+      File Selector
+  -->
+
+  <window name="file_selector">
+        <font name="title" from="baselarge">
+            <color>#ffff00</color>
+            <dropcolor>#000000</dropcolor>
+            <size>24</size>
+            <shadow>3,3</shadow>
+            <bold>yes</bold>
+        </font>
+
+        <textarea name="title_text" from="basetextarea">
+            <area>0,5,1280,45</area>
+            <font>title</font>
+            <align>allcenter</align>
+            <value>File Finder</value>
+        </textarea>
+
+        <textedit name="location_edit" from="basetextedit">
+            <position>200,65</position>
+        </textedit>
+
+        <button name="back_button" from="basebutton">
+            <position>625,70</position>
+            <value>Back</value>
+        </button>
+
+        <button name="home_button" from="basebutton">
+            <position>785,70</position>
+            <value>Home</value>
+        </button>
+
+        <buttonlist name="filelist" from="basebuttonlist">
+            <area>40,130,1200,505</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <imagetype name="buttonimage">
+                        <area>2,2,28,28</area>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>35,0,1020,35</area>
+                    </textarea>
+                    <textarea name="size" from="buttontext">
+                        <area>1025,0,125,35</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>1170,5</position>
+                    </statetype>
+                </state>
+                <state name="selectedactive" from="active">
+                    <imagetype name="buttonbackground">
+                        <gradient start="#52CA38" end="#349838" alpha="255" />
+                    </imagetype>
+                </state>
+                <state name="selectedinactive" from="active">
+                    <imagetype name="buttonbackground">
+                        <gradient start="#52CA38" end="#349838" alpha="100" />
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <font>basesmallpurple</font>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <button name="cancel_button" from="basebutton">
+            <position>55,650</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="ok_button" from="basebutton">
+            <position>1060,650</position>
+            <value>OK</value>
+        </button>
+
+    </window>
+
+  <!--
+      Video Selector
+  -->
+  <window name="video_selector">
+
+<!--  we use one large background image to draw all widgets on top	  
+    <imagetype name="background" from="basebackground" />-->
+
+<!--  we use one large background image to draw all widgets on top	  -->
+    <imagetype name="backgroundlogo" from="basebackgroundlogo" />
+
+<!--  Clock and Date on the right	  -->
+    <clock name="clock" from="baseclock" />
+    <clock name="date" from="basedate" />
+
+    <textarea name="title" from="basepagetitle">
+            <value>Select Recordings</value>
+    </textarea>
+
+        <buttonlist name="category_selector" from="baseselector">
+            <position>80,75</position>
+        </buttonlist>
+        
+        
+    <buttonlist name="videolist" from="basebuttonlist3">
+    <area>50,150,1361,565</area>
+    <buttonarea>0,0,100%,100%</buttonarea>
+    <statetype name="buttonitem">
+	<area>0,0,100%,30</area>
+                <state name="active">
+                <statetype name="buttoncheck">
+                    <position>1300,1</position>
+                    <state type="off">
+                        <imagetype name="checkoff">
+			    <filename>icons/no.png</filename>
+			    <alpha>100</alpha>
+                        </imagetype>
+                    </state>
+                    <state type="half">
+                        <imagetype name="checkhalf">
+                            <filename>icons/yes.png</filename>
+			    <alpha>50</alpha>
+			    </imagetype>
+                    </state>
+                    <state type="full">
+                        <imagetype name="checkoff">
+			    <filename>icons/no.png</filename>
+			    <alpha>100</alpha>
+                        </imagetype>
+                        <imagetype name="checkfull">
+			    <alpha>100</alpha>
+			    <filename>icons/yes.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype>    
+                </state>
+                <state name="selectedactive">
+                <statetype name="buttoncheck">
+                    <position>1300,1</position>
+                    <state type="off">
+                        <imagetype name="checkoff">
+			    <filename>icons/no.png</filename>
+			    <alpha>255</alpha>
+                        </imagetype>
+                    </state>
+                    <state type="half">
+                        <imagetype name="checkhalf">
+                            <filename>icons/yes.png</filename>
+			    <alpha>180</alpha>
+			    </imagetype>
+                    </state>
+                    <state type="full">
+                        <imagetype name="checkoff">
+			    <filename>icons/no.png</filename>
+			    <alpha>255</alpha>
+                        </imagetype>
+                        <imagetype name="checkfull">
+			    <alpha>255</alpha>
+			    <filename>icons/yes.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype>  
+                </state>
+                <state name="selectedinactive">
+                    <statetype name="buttoncheck">
+                    <position>1300,1</position>
+                    <state type="off">
+                        <imagetype name="checkoff">
+			    <filename>icons/no.png</filename>
+			    <alpha>255</alpha>
+                        </imagetype>
+                    </state>
+                    <state type="half">
+                        <imagetype name="checkhalf">
+                            <filename>icons/yes.png</filename>
+			    <alpha>180</alpha>
+			    </imagetype>
+                    </state>
+                    <state type="full">
+                        <imagetype name="checkoff">
+			    <filename>icons/no.png</filename>
+			    <alpha>255</alpha>
+                        </imagetype>
+                        <imagetype name="checkfull">
+			    <alpha>255</alpha>
+			    <filename>icons/yes.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype> 
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="videotitle" from="basetextarea">
+            <area>50,740,1300,40</area>
+            <font>basetitle</font>
+        </textarea>
+
+        <textarea name="parentallevel_text" from="basetextarea">
+            <area>50,785,1300,40</area>
+                        <value>1</value>
+        </textarea>
+
+        <textarea name="videoplot" from="basetextarea">
+            <area>50,820,1300,90</area>
+            <value></value>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <textarea name="filesize" from="basetextarea">
+            <area>50,785,1300,40</area>
+            <align>right</align>
+            <value></value>
+        </textarea>
+
+	<!--  show the coverart on the right / resize and ad a mirror effect -->
+    <imagetype name="cover_image">
+    <area>1400,180,280,416</area>
+	<reflection axis="vertical" shear="0" scale="95" length="100" />
+    </imagetype>
+
+        <textarea name="warning_text" from="basetextarea">
+            <area>50,200,1350,40</area>
+            <align>allcenter</align>
+            <value>No videos available</value>
+        </textarea>
+
+    <button name="ok_button" from="basepopupbuttonok">
+    <position>50,930</position>
+    <value>OK</value>
+    </button>
+    <button name="cancel_button" from="basepopupbuttoncancel">
+    <position>795,930</position>
+    <value>Cancel</value>
+    </button>
+
+    </window>
+
+  <window name="logviewer">
+
+
+<!--  we use one large background image to draw all widgets on top	  -->
+    <imagetype name="backgroundlogo" from="basebackgroundlogo" />
+
+<!--  Clock and Date on the right	  -->
+    <clock name="clock" from="baseclock" />
+    <clock name="date" from="basedate" />
+
+    <textarea name="title" from="basepagetitle">
+            <value>Log Viewer</value>
+    </textarea>
+
+        <buttonlist name="loglist" from="basebuttonlist">
+            <area>50,80,1361,565</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="buttontext">
+                        <area>5,0,1140,30</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                </state>
+                <state name="selectedinactive">
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="logitem_text" from="basetextarea">
+            <area>50,680,1350,150</area>
+            <value></value>
+            <multiline>yes</multiline>
+        </textarea>
+
+        
+    <button name="update_button" from="basepopupbutton">
+    <position>50,830</position>
+    <value>Update</value>
+    </button>
+    <button name="exit_button" from="basepopupbuttonback">
+    <position>50,930</position>
+    <value>Exit</value>
+    </button>
+    <button name="cancel_button" from="basepopupbuttoncancel">
+    <position>795,930</position>
+    <value>Cancel</value>
+    </button>
+
+    </window>
+
+</mythuitheme>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mythuitheme>
+    
+    <window name="gallery">
+	
+	<!--  we use one large background image to draw all widgets on top	  -->
+	<imagetype name="background" from="basebackground" />
+	
+	<imagetype name="gallerybackground">
+	    <position>0,0</position>
+	    <filename>gallery-background.png</filename>
+	</imagetype>
+	
+	<!--  Clock and Date on the right	  -->
+	<clock name="clock" from="baseclock" />
+	
+
+	<textarea name="pagetitle" from="basepagetitle">
+	    <value>Images</value>
+	</textarea>
+	
+	<textarea name="breadcrumbs" from="basetextarea">
+	    <area>10,100,1658,40</area>
+	    <font>basesmall</font>
+	    <align>vcenter</align>
+	</textarea>
+	
+	<textarea name="position" from="basetextarea">
+	    <area>10,100,1658,40</area>
+	    <font>basemedium</font>
+	    <align>vcenter,right</align>
+	</textarea>
+
+	<buttonlist name="images">
+	    <area>45,180,1615,840</area>
+	    <layout>grid</layout>
+	    <spacing>20</spacing>
+           <wrapstyle>flowing</wrapstyle>
+
+	    <buttonarea>0,0,100%,100%</buttonarea>
+	    <statetype name="buttonitem">
+		<state name="active">
+		    <area>0,0,300,260</area>
+		    <imagetype name="buttonbackground">
+			<filename>gallery-300x260-bar.png</filename>
+		    </imagetype>
+		    <imagetype name="buttonimage">
+			<area>0,0,300,225</area>
+			<filename>gallery-unknown.png</filename>
+			<preserveaspect>true</preserveaspect>
+		    </imagetype>
+		    <textarea name="buttontext" from="basetextarea">
+			<area>5,225,295,35</area>
+		    </textarea>
+		    <statetype name="nodetype">
+			<position>250,205</position>
+			<state name="subfolder">
+			    <imagetype name="icon">
+			    			<area>0,0,50,58</area>
+			    <filename>video/browser/folder.png</filename>
+			    </imagetype>
+			</state>
+			<state name="upfolder">
+			    <imagetype name="icon">
+			    			<area>0,0,50,58</area>
+			    <filename>video/browser/folderback.png</filename>
+			    </imagetype>
+			</state>
+		    </statetype>
+		    <statetype name="buttoncheck">
+			<position>0,0</position>
+			<showempty>yes</showempty>
+			<state type="full">
+			    <imagetype name="marked">
+				<filename>gallery-300x260-selected.png</filename>
+			    </imagetype>
+			</state>
+		    </statetype>
+
+		    <textarea name="childcount" from="basetextarea">
+			<area>250,210,50,45</area>
+			<font>basestate</font>
+			<align>bottom,hcenter</align>
+		    </textarea>
+		</state>
+		<state name="selectedactive" from="active">
+		    <imagetype name="buttonbackground">
+			<filename>gallery-300x260.png</filename>
+		    </imagetype>
+				<textarea name="buttontext">
+                            <font>basebuttontitle</font>
+		    </textarea>       
+
+		</state>
+	    </statetype>
+	<statetype name="upscrollarrow" from="baseupscrollarrow">
+	<position>10,-35</position>
+		</statetype>
+	
+	<statetype name="downscrollarrow" from="basedownscrollarrow">
+		<position>10,820</position>
+		</statetype>
+	</buttonlist>
+	
+    <!-- optional - shows a message when no images are available
+	    in the current directory -->
+	<textarea name="noimages" from="basetextarea">
+	    <area>5,200,1670,850</area>
+	    <align>allcenter</align>
+	    <font>basebuttontitle</font>
+	</textarea>
+	
+    </window>
+    
+</mythuitheme>

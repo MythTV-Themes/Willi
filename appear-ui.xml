@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+    <window name="appearance">
+
+   <imagetype name="background" from="basebackground" />
+   
+   <imagetype name="backimg">
+       <area>540,125,600,800</area>
+       <filename>MythPopupBox-background.png</filename>
+   </imagetype>
+
+        <imagetype name="topleft">
+            <position>0,0</position>
+            <filename>topleft.png</filename>
+        </imagetype>
+
+        <imagetype name="bottomright">
+            <filename>bottomright.png</filename>
+            <position>800,600</position>
+        </imagetype>
+
+        <textarea name="part1" from="basemessagearea">
+
+            <area>545,130,590,300</area>
+            <value>Move the selected arrow to the corner of the TV screen.  Press SELECT to edit the other arrow.  Press MENU for options and ESC to quit.</value>
+
+        </textarea>
+
+	<textarea name="size" from="basemessagearea">
+	<area>545,470,590,50</area>
+        </textarea>
+
+   <textarea name="offsets" from="basemessagearea">
+       <area>545,520,590,50</area>
+        </textarea>
+
+   <textarea name="changeamount" from="basemessagearea">
+       <area>545,570,590,50</area>
+        </textarea>
+
+    </window>
+</mythuitheme>
