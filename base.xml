@@ -1781,57 +1781,247 @@
 
     <!-- Base definition of a ratingsystem -->
    <statetype name="baserating">
-        <area>0,0,188,90</area>
+        <area>0,0,160,64</area>
         <state name="0">
         </state>
         <state name="1">
-            <imagetype name="stars">
-		<filename>states/stars/1.png</filename>
+            <imagetype name="stars1">
+	      <area>0,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
             </imagetype>
         </state>
         <state name="2">
-            <imagetype name="stars">
-                <filename>states/stars/2.png</filename>
+            <imagetype name="stars1">
+	      <area>0,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars2">
+	      <area>32,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
             </imagetype>
         </state>
         <state name="3">
-            <imagetype name="stars">
-                <filename>states/stars/3.png</filename>
+            <imagetype name="stars1">
+	      <area>0,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars2">
+	      <area>32,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars3">
+	      <area>64,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
             </imagetype>
         </state>
         <state name="4">
-            <imagetype name="stars">
-                <filename>states/stars/4.png</filename>
+            <imagetype name="stars1">
+	      <area>0,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars2">
+	      <area>32,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars3">
+	      <area>64,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars4">
+	      <area>96,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
             </imagetype>
         </state>
         <state name="5">
-            <imagetype name="stars">
-                <filename>states/stars/5.png</filename>
+            <imagetype name="stars1">
+	      <area>0,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
             </imagetype>
-        </state>
+	    <imagetype name="stars2">
+	      <area>32,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars3">
+	      <area>64,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars4">
+	      <area>96,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars5">
+	      <area>128,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	</state>
         <state name="6">
-            <imagetype name="stars">
-                <filename>states/stars/6.png</filename>
+            <imagetype name="stars1">
+	      <area>0,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars2">
+	      <area>32,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars3">
+	      <area>64,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars4">
+	      <area>96,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars5">
+	      <area>128,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars6">
+	      <area>0,32,32,32</area>
+		<filename>icons/bookmarks.png</filename>
             </imagetype>
         </state>
         <state name="7">
-            <imagetype name="stars">
-                <filename>states/stars/7.png</filename>
+            <imagetype name="stars1">
+	      <area>0,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars2">
+	      <area>32,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars3">
+	      <area>64,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars4">
+	      <area>96,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars5">
+	      <area>128,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars6">
+	      <area>0,32,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars7">
+	      <area>32,32,32,32</area>
+		<filename>icons/bookmarks.png</filename>
             </imagetype>
         </state>
         <state name="8">
-            <imagetype name="stars">
-                <filename>states/stars/8.png</filename>
+            <imagetype name="stars1">
+	      <area>0,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars2">
+	      <area>32,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars3">
+	      <area>64,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars4">
+	      <area>96,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars5">
+	      <area>128,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars6">
+	      <area>0,32,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars7">
+	      <area>32,32,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars8">
+	      <area>64,32,32,32</area>
+		<filename>icons/bookmarks.png</filename>
             </imagetype>
         </state>
         <state name="9">
-            <imagetype name="stars">
-                <filename>states/stars/9.png</filename>
+            <imagetype name="stars1">
+	      <area>0,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars2">
+	      <area>32,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars3">
+	      <area>64,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars4">
+	      <area>96,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars5">
+	      <area>128,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars6">
+	      <area>0,32,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars7">
+	      <area>32,32,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars8">
+	      <area>64,32,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars9">
+	      <area>96,32,32,32</area>
+		<filename>icons/bookmarks.png</filename>
             </imagetype>
         </state>
         <state name="10">
-            <imagetype name="stars">
-                <filename>states/stars/10.png</filename>
+            <imagetype name="stars1">
+	      <area>0,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars2">
+	      <area>32,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars3">
+	      <area>64,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars4">
+	      <area>96,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars5">
+	      <area>128,0,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars6">
+	      <area>0,32,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars7">
+	      <area>32,32,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars8">
+	      <area>64,32,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars9">
+	      <area>96,32,32,32</area>
+		<filename>icons/bookmarks.png</filename>
+            </imagetype>
+	    <imagetype name="stars10">
+	      <area>128,32,32,32</area>
+		<filename>icons/bookmarks.png</filename>
             </imagetype>
         </state>
     </statetype>

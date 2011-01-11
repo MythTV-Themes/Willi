@@ -32,66 +32,68 @@
 	</textarea>
 
 	<buttonlist name="images">
-	    <area>45,180,1615,840</area>
-	    <layout>grid</layout>
-	    <spacing>20</spacing>
-           <wrapstyle>flowing</wrapstyle>
-
-	    <buttonarea>0,0,100%,100%</buttonarea>
-	    <statetype name="buttonitem">
-		<state name="active">
-		    <area>0,0,300,260</area>
-		    <imagetype name="buttonbackground">
-			<filename>gallery-300x260-bar.png</filename>
-		    </imagetype>
-		    <imagetype name="buttonimage">
-			<area>0,0,300,225</area>
-			<filename>gallery-unknown.png</filename>
-			<preserveaspect>true</preserveaspect>
-		    </imagetype>
-		    <textarea name="buttontext" from="basetextarea">
-			<area>5,225,295,35</area>
-		    </textarea>
-		    <statetype name="nodetype">
-			<position>250,205</position>
-			<state name="subfolder">
-			    <imagetype name="icon">
-			    			<area>0,0,50,58</area>
-			    <filename>video/browser/folder.png</filename>
-			    </imagetype>
-			</state>
-			<state name="upfolder">
-			    <imagetype name="icon">
-			    			<area>0,0,50,58</area>
-			    <filename>video/browser/folderback.png</filename>
-			    </imagetype>
-			</state>
-		    </statetype>
-		    <statetype name="buttoncheck">
-			<position>0,0</position>
-			<showempty>yes</showempty>
-			<state type="full">
-			    <imagetype name="marked">
-				<filename>gallery-300x260-selected.png</filename>
-			    </imagetype>
-			</state>
-		    </statetype>
-
-		    <textarea name="childcount" from="basetextarea">
-			<area>250,210,50,45</area>
-			<font>basestate</font>
-			<align>bottom,hcenter</align>
-		    </textarea>
-		</state>
-		<state name="selectedactive" from="active">
-		    <imagetype name="buttonbackground">
-			<filename>gallery-300x260.png</filename>
-		    </imagetype>
-				<textarea name="buttontext">
-                            <font>basebuttontitle</font>
-		    </textarea>       
-
-		</state>
+      <area>20,165,1670,860</area>
+      <layout>grid</layout>
+      <spacing>10</spacing>
+      <wrapstyle>flowing</wrapstyle>
+      
+      <buttonarea>0,0,100%,100%</buttonarea>
+      <statetype name="buttonitem">
+	<state name="active">
+	  <area>0,0,320,280</area>
+	  <imagetype name="buttonbackground">
+	    <filename>gallery-320x280-bar.png</filename>
+	  </imagetype>
+	  <imagetype name="buttonimage">
+	    <area>0,0,320,245</area>
+	    <filename>gallery-unknown.png</filename>
+	    <preserveaspect>true</preserveaspect>
+	  </imagetype>
+	  <textarea name="buttontext" from="basetextarea">
+	    <area>5,245,315,35</area>
+	  </textarea>
+	  <statetype name="nodetype">
+	    <position>220,165</position>
+	    <state name="subfolder">
+	      <imagetype name="icon">
+		<area>0,0,100,115</area>
+		<filename>video/browser/folder.png</filename>
+		<alpha>180</alpha>
+	      </imagetype>
+	    </state>
+	    <state name="upfolder">
+	      <imagetype name="icon">
+		<area>0,0,100,115</area>
+		<filename>video/browser/folderback.png</filename>
+		<alpha>180</alpha>
+	      </imagetype>
+	    </state>
+	  </statetype>
+	  <statetype name="buttoncheck">
+	    <position>0,0</position>
+	    <showempty>yes</showempty>
+	    <state type="full">
+	      <imagetype name="marked">
+		<filename>gallery-320x280-selected.png</filename>
+	      </imagetype>
+	    </state>
+	  </statetype>
+	  
+	  <textarea name="childcount" from="basetextarea">
+	    <area>5,0,305,275</area>
+	    <font>basebigstate</font>
+	    <align>bottom,right</align>
+	  </textarea>
+	</state>
+	<state name="selectedactive" from="active">
+	  <imagetype name="buttonbackground">
+	    <filename>gallery-320x280.png</filename>
+	  </imagetype>
+	  <textarea name="buttontext">
+	    <font>basebuttontitle</font>
+	  </textarea>       
+	  
+	</state>
 	    </statetype>
 	<statetype name="upscrollarrow" from="baseupscrollarrow">
 	<position>10,-35</position>
