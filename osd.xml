@@ -30,7 +30,7 @@
     <area>902,140,758,140</area>
     <preserveaspect>true</preserveaspect>
     </imagetype>
-	
+
     <textarea name="title" from="basepagetitle" />
 
     <textarea name="subtitle" from="basetextarea">
