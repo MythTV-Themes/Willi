@@ -38,7 +38,7 @@
 	<!--  draws the recording groups on top of the tabs	 -->
 	<buttonlist name="recgroups">
 	    <area>10,107,1658,40</area>
-	    <spacing>5</spacing>
+	      <spacing>5</spacing>
 	    <arrange>spread</arrange>
 	    <scrollstyle>center</scrollstyle>
 	    <wrapstyle>items</wrapstyle>
@@ -73,6 +73,7 @@
 	<buttonlist name="groups" from="basegroups">
 	    <area>5,180,490,660</area>
 	    <buttonarea>0,0,100%,100%</buttonarea>
+	           <loadondemand>true</loadondemand>   
 	    <statetype name="buttonitem">
 		<state name="active">
 		    <area>0,0,490,55</area>
@@ -119,6 +120,7 @@
 
 	<!--  This is the right side of the selections. It shows the recordings that are available to the user.	  -->
 	<buttonlist name="recordings" from="basebuttonlist2">
+	         <loadondemand>true</loadondemand>   
 	    <area>503,180,1170,660</area>
 	    <buttonarea>0,0,100%,100%</buttonarea>
 	    <statetype name="buttonitem">
@@ -725,6 +727,7 @@
 	<textarea name="label" from="basemessagearea" />
 	
 	<buttonlist name="groups">
+	         <loadondemand>true</loadondemand>   
 	    <layout>vertical</layout>
 	    <spacing>5</spacing>
 	    <arrange>stack</arrange>

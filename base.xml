@@ -20,311 +20,204 @@
    </fontdef>
    
    <fontdef name="menufont" face="Orbitron">
-     
      <pixelsize>55</pixelsize>
-     
      <color>#666666</color>
-     
    </fontdef>
    
    <!-- Base Font Definitions -->
    
    <fontdef name="base" face="DejaVu Sans">
-     
      <pixelsize>30</pixelsize>
-     
      <color>#FFFFFF</color>
-     
    </fontdef>
    
    <fontdef name="basesmall" from="base">
-     
      <pixelsize>25</pixelsize>
-     
    </fontdef>
    
    <fontdef name="basesmallblack" from="base">
-     
      <pixelsize>25</pixelsize>
      <color>#000000</color>
-     
    </fontdef>
    
    <fontdef name="basebutton" from="base">
-     
      <pixelsize>25</pixelsize>
-     
      <gradient direction="diagonal" alpha="255">
        <stop position="0" color="#aa0000" />
        <stop position="40" color="#800000"/>
        <stop position="55" color="#D40000"/>	    
        <stop position="70" color="#800000" />
      </gradient>
-     
    </fontdef>
    
    <fontdef name="basetitle" face="Orbitron">
-     
      <pixelsize>55</pixelsize>
-     
      <gradient direction="horizontal" alpha="255">
        <stop position="0" color="#FFFFFF" />
        <stop position="45" color="#FFFFFF" alpha="200" />
        <stop position="60" color="#FFFFFF" alpha="170" />	    
        <stop position="80" color="#FFFFFF" />
      </gradient>
-     
    </fontdef>
    
    <fontdef name="basetitleblack" from="basetitle">
-     
      <color>#000000</color>
-     
    </fontdef>
    
    <fontdef name="basebuttontitle" face="Orbitron">
-     
      <pixelsize>35</pixelsize>
-     
      <gradient direction="diagonal" alpha="255">
        <stop position="0" color="#aa0000" />
        <stop position="40" color="#800000"/>
        <stop position="55" color="#D40000"/>	    
        <stop position="70" color="#800000" />
      </gradient>
-     
    </fontdef>
  
       <fontdef name="basebuttontitlewhite" face="Orbitron">
-     
      <pixelsize>35</pixelsize>
           <color>#FFFFFF</color>
-     
    </fontdef>
    
    
    <fontdef name="basestate" face="Orbitron">
-     
      <pixelsize>20</pixelsize>
-     
      <color>#FFFFFF</color>
-     
    </fontdef>
    
    <fontdef name="basebigstate" face="Orbitron">
-     
      <pixelsize>25</pixelsize>
-     
      <color>#FFFFFF</color>
-     
    </fontdef>
    
    <fontdef name="basebigstateoutline" face="Orbitron">
-     
      <pixelsize>25</pixelsize>
-     
      <color>#FFFFFF</color>
-     
      <outlinecolor>#000000</outlinecolor>
-     
      <outlinesize>2</outlinesize>
-     
      <outlinealpha>100</outlinealpha>
-     
    </fontdef>
    
    <fontdef name="baseverybigstate" face="Orbitron">
-     
      <pixelsize>30</pixelsize>
-     
      <color>#FFFFFF</color>
-     
    </fontdef>
    
    <fontdef name="basebuttonsubtitle" from="basebutton">
-     
      <pixelsize>30</pixelsize>
-     
      <color>#000000</color>
-     
    </fontdef>
    
    <fontdef name="basebuttontitlesubtitlewatched" from="basebutton">
-     
      <pixelsize>25</pixelsize>
-     
      <color>#FFFFFF</color>
-     
    </fontdef>
    
    <fontdef name="basebuttontitlesubtitle" from="basebutton">
-     
      <pixelsize>23</pixelsize>
-     
      <color>#FFFFFF</color>
-     
    </fontdef>
    
    <fontdef name="basebuttondescription" from="basebutton">
-     
      <pixelsize>20</pixelsize>
-     
      <color>#000000</color>
-     
    </fontdef>
    
    <fontdef name="baseclock" from="basetitle">
-     
      <size>70</size>
-     
    </fontdef>
    
    <!-- Base clock, used everywhere -->
    
    <clock name="baseclock">
-     
      <area>1300,10,365,100</area>
-     
      <font>baseclock</font>
-     
      <format>%TIME%</format>
-     
      <align>right,bottom</align>
-     
      <alpha>255</alpha>
-     
    </clock>
    
    <!-- Base Background -->
    
    <imagetype name="basebackground">
-     
      <area>0,0,1680,1050</area>
-     
      <filename>background.png</filename>
-     
    </imagetype>
    
    <!-- Base definition of a Coverart image   -->
    
    <imagetype name="basecoverart">
-     
      <area>5,150,490,720</area>
-     
      <mask>wr-covermask.png</mask>
-     
    </imagetype>
    
    <!-- Title on all pages   -->
    
    <textarea name="basepagetitle">
-     
      <area>10,0,1400,100</area>
-     
      <font>basetitle</font>
-     
      <align>bottom,vcenter</align>
-     
    </textarea>
    
    <!-- Statusbar for OSD -->
    
    <imagetype name="basestatusbar">
-     
      <area>0,0,1680,105</area>
-     
      <position>0,0</position>
-     
      <filename>OSD/statusbar.png</filename>
-     
    </imagetype>
    
    <!-- A generic small textarea for states   -->
    
    <textarea name="basesmallstatetext">
-     
      <font>basestate</font>
-     
      <area>0,0,1060,27</area>
-     
      <multiline>no</multiline>
-     
      <cutdown>yes</cutdown>
-     
      <align>right,vcenter</align>
-     
      <alpha>150</alpha>
-     
    </textarea>
    
    <!-- A generic big textarea for states   -->
    
    <textarea name="basebigstatetext" from="basesmallstatetext">
-     
      <area>0,0,920,27</area>
-     
      <font>basebigstate</font>
-     
      <align>right,vcenter</align>
-     
    </textarea>
    
    <!-- Base definition of a the arrows to upscroll and downscroll   -->
    
    <statetype name="baseupscrollarrow">
-     
      <area>0,0,35,35</area>
-     
      <position>10,-30</position>
-     
      <state type="off">
-       
        <imagetype name="up">
-	 
 	 <filename>icons/draw-triangle3.png</filename>
-	 
 	 <alpha>0</alpha>
-	 
        </imagetype>
-       
      </state>
      
      <state type="full" from="off">
-       
        <imagetype name="up">
-	 
 	 <alpha>200</alpha>
-	 
        </imagetype>
-       
      </state>
-     
    </statetype>
    
    <statetype name="basedownscrollarrow">
-     
      <area>0,0,35,35</area>
-     
      <position>10,657</position>
-     
      <state type="off">
-       
        <imagetype name="down">
-	 
 	 <filename>icons/draw-triangle4.png</filename>
-	 
 	 <alpha>0</alpha>
-	 
        </imagetype>
-       
      </state>
      
      <state type="full" from="off">
-       
        <imagetype name="down">
-	 
 	 <alpha>200</alpha>
-	 
        </imagetype>
        
      </state>
@@ -2627,6 +2520,11 @@
        <value>Playback starting ...</value>
        
      </textarea>
+
+    <progressbar name="progressbar" from="baseprogressbar">
+      <position>359,500</position>
+    </progressbar>
+
      
    </window>
    
@@ -2883,8 +2781,6 @@
        <position>10,145</position>
      </button>
 
- 
-     
      <!-- <statetype name="searchstate">
      <area>210,120,200,30</area>
      <state name="found">

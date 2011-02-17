@@ -15,7 +15,7 @@
         </imagetype>
 
         <buttonlist name="menu">
-            
+                   <loadondemand>true</loadondemand>   
             <area>0,0,1680,1050</area>
             
             <layout>vertical</layout>
