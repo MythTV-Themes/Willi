@@ -73,10 +73,10 @@
        <stop position="70" color="#800000" />
      </gradient>
    </fontdef>
- 
-      <fontdef name="basebuttontitlewhite" face="Orbitron">
+   
+   <fontdef name="basebuttontitlewhite" face="Orbitron">
      <pixelsize>35</pixelsize>
-          <color>#FFFFFF</color>
+     <color>#FFFFFF</color>
    </fontdef>
    
    
@@ -84,6 +84,12 @@
      <pixelsize>20</pixelsize>
      <color>#FFFFFF</color>
    </fontdef>
+   
+   <fontdef name="basemenustate" from="basestate">
+     <pixelsize>20</pixelsize>
+     <color>#800000</color>
+   </fontdef>
+   
    
    <fontdef name="basebigstate" face="Orbitron">
      <pixelsize>25</pixelsize>
@@ -193,14 +199,14 @@
      <position>10,-30</position>
      <state type="off">
        <imagetype name="up">
-	 <filename>icons/draw-triangle3.png</filename>
-	 <alpha>0</alpha>
+         <filename>icons/draw-triangle3.png</filename>
+         <alpha>0</alpha>
        </imagetype>
      </state>
      
      <state type="full" from="off">
        <imagetype name="up">
-	 <alpha>200</alpha>
+         <alpha>200</alpha>
        </imagetype>
      </state>
    </statetype>
@@ -210,14 +216,14 @@
      <position>10,657</position>
      <state type="off">
        <imagetype name="down">
-	 <filename>icons/draw-triangle4.png</filename>
-	 <alpha>0</alpha>
+         <filename>icons/draw-triangle4.png</filename>
+         <alpha>0</alpha>
        </imagetype>
      </state>
      
      <state type="full" from="off">
        <imagetype name="down">
-	 <alpha>200</alpha>
+         <alpha>200</alpha>
        </imagetype>
        
      </state>
@@ -227,29 +233,18 @@
    <statetype name="baseleftscrollarrow">
      
      <area>0,0,35,35</area>
-     
      <position>0,0</position>
-     
      <state type="off">
-       
        <imagetype name="left">
-	 
-	 <filename>icons/draw-triangle1.png</filename>
-	 
-	 <alpha>30</alpha>
-	 
+         <filename>icons/draw-triangle1.png</filename>
+         <alpha>30</alpha>
        </imagetype>
-       
      </state>
      
      <state type="full" from="off">
-       
        <imagetype name="left">
-	 
-	 <alpha>200</alpha>
-	 
+         <alpha>200</alpha>
        </imagetype>
-       
      </state>
      
    </statetype>
@@ -257,31 +252,19 @@
    <statetype name="baserightscrollarrow">
      
      <area>0,0,35,35</area>
-     
      <position>0,50</position>
-     
      <state type="off">
-       
        <imagetype name="right">
-	 
-	 <area>0,0,35,35</area>
-	 
-	 <filename>icons/draw-triangle2.png</filename>
-	 
-	 <alpha>30</alpha>
-	 
+         <area>0,0,35,35</area>
+         <filename>icons/draw-triangle2.png</filename>
+         <alpha>30</alpha>
        </imagetype>
-       
      </state>
      
      <state type="full" from="off">
-       
        <imagetype name="right">
-	 
-	 <alpha>200</alpha>
-	 
+         <alpha>200</alpha>
        </imagetype>
-       
      </state>
      
    </statetype>
@@ -289,80 +272,49 @@
    <!-- Base definition of a buttonlist that fills the full width -->
    
    <buttonlist name="basebuttonlist3">
-     
      <area>5,180,1670,660</area>
-     
      <layout>vertical</layout>
-     
      <arrange>stack</arrange>
-     
      <spacing>10</spacing>
-     
      <scrollstyle>center</scrollstyle>
-     
      <wrapstyle>items</wrapstyle>
-     
      <align>center</align>
-     
      <buttonarea>0,0,100%,100%</buttonarea>
-     
      <statetype name="buttonitem">
-       
        <loadondemand>true</loadondemand>     
        <state name="active">
-	 
-	 <imagetype name="1670x55">
-	   
-	   <area>0,0,1670,55</area>
-	   
-	   <filename>wr-1670x55-recordings.png</filename>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <font>basebutton</font>
-	   
-	   <cutdown>yes</cutdown>
-	   
-	 </textarea>
-	 
+         <imagetype name="1670x55">
+           <area>0,0,1670,55</area>
+           <filename>wr-1670x55-recordings.png</filename>
+         </imagetype>
+         
+         <textarea name="buttontext">
+           <font>basebutton</font>
+           <cutdown>yes</cutdown>
+         </textarea>
        </state>
        
        <state name="selectedactive">
-	 
-	 <imagetype name="1670x140">
-	   
-	   <area>0,0,1670,140</area>
-	   
-	   <filename>wr-1670x140.png</filename>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <font>basebutton</font>
-	   
-	 </textarea>
-	 
+         <imagetype name="1670x140">
+           <area>0,0,1670,140</area>
+           <filename>wr-1670x140.png</filename>
+         </imagetype>
+         
+         <textarea name="buttontext">
+           <font>basebutton</font>
+         </textarea>
        </state>
        
        <state name="selectedinactive">
-	 
-	 <textarea name="buttontext">
-	   
-	   <font>basebutton</font>
-	   
-	 </textarea>
-	 
+         <textarea name="buttontext">
+           <font>basebutton</font>
+         </textarea>
        </state>
-       
      </statetype>
      
      <statetype name="upscrollarrow" from="baseupscrollarrow" />
      
      <statetype name="downscrollarrow" from="basedownscrollarrow" />
-     
    </buttonlist>
    
    <!-- Base definition of a buttonlist in normal configuration   -->
@@ -370,156 +322,98 @@
    <buttonlist name="basebuttonlist2">
      
      <area>503,180,1170,660</area>
-     
-     
      <layout>vertical</layout>
-     
      <arrange>stack</arrange>
-     
      <spacing>10</spacing>
-     
      <scrollstyle>center</scrollstyle>
-     
      <wrapstyle>items</wrapstyle>
-     
      <align>center</align>
-     
      <buttonarea>0,0,100%,100%</buttonarea>
      
      <statetype name="buttonitem">
-       
        <loadondemand>true</loadondemand>
-       
        <state name="active">
-	 
-	 <imagetype name="1170x55">
-	   
-	   <area>0,0,1170,55</area>
-	   
-	   <filename>wr-1170x55.png</filename>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <font>basebuttontitlesubtitle</font>
-	   
-	   <area>5,0,1170,55</area>
-	   
-	   <align>vcenter</align>
-	   
-	   <cutdown>yes</cutdown>
-	   
-	   <multiline>yes</multiline>
-	   
-	 </textarea>
-	 
+         <imagetype name="1170x55">
+           <area>0,0,1170,55</area>
+           <filename>wr-1170x55.png</filename>
+         </imagetype>
+         
+         <textarea name="buttontext">
+           <font>basebuttontitlesubtitle</font>
+           <area>5,0,1170,55</area>
+           <align>vcenter</align>
+           <cutdown>yes</cutdown>
+           <multiline>yes</multiline>
+         </textarea>
+         
        </state>
        
        <state name="selectedactive">
-	 
-	 <imagetype name="1170x140">
-	   
-	   <area>0,0,1170,140</area>
-	   
-	   <filename>wr-1170x140.png</filename>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <font>basebuttontitle</font>
-	   
-	   <area>5,0,1170,140</area>
-	   
-	   <align>vcenter</align>
-	   
-	   <cutdown>yes</cutdown>
-	   
-	 </textarea>
-	 
-	 <!-- show to the user that he can jump to the right -->
-	 
-	 <imagetype name="direction">
-	   
-	   <area>0,0,35,35</area>
-	   
-	   <position>-40,59</position>
-	   
-	   <filename>icons/draw-triangle1.png</filename>
-	   
-	   <alpha>200</alpha>
-	   
-	 </imagetype>
-	 
-	 <!-- show to the user that he can jump to the right -->
-	 
-	 <imagetype name="directionright">
-	   
-	   <area>0,0,35,35</area>
-	   
-	   <position>1135,59</position>
-	   
-	   <filename>icons/draw-triangle2.png</filename>
-	   
-	   <alpha>200</alpha>
-	   
-	 </imagetype>
-	 
+         <imagetype name="1170x140">
+           <area>0,0,1170,140</area>
+           <filename>wr-1170x140.png</filename>
+         </imagetype>
+         
+         <textarea name="buttontext">
+           <font>basebuttontitle</font>
+           <area>5,0,1170,140</area>
+           <align>vcenter</align>
+           <cutdown>yes</cutdown>
+         </textarea>
+         
+         <!-- show to the user that he can jump to the right -->
+         
+         <imagetype name="direction">
+           <area>0,0,35,35</area>
+           <position>-40,59</position>
+           <filename>icons/draw-triangle1.png</filename>
+           <alpha>200</alpha>
+         </imagetype>
+         
+         <!-- show to the user that he can jump to the right -->
+         
+         <imagetype name="directionright">
+           <area>0,0,35,35</area>
+           <position>1135,59</position>
+           <filename>icons/draw-triangle2.png</filename>
+           <alpha>200</alpha>
+         </imagetype>
+         
        </state>
        
        <state name="selectedinactive"  from="selectedactive">
-	 
-	 <textarea name="buttontext">
-	   
-	   <alpha>30</alpha>
-	   
-	 </textarea>
-	 
-	 <!-- show to the user that he can jump to the right -->
-	 
-	 <imagetype name="direction">
-	   
-	   <alpha>0</alpha>
-	   
-	 </imagetype>
-	 
-	 <!-- show to the user that he can jump to the right -->
-	 
-	 <imagetype name="directionright">
-	   
-	   <alpha>0</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <textarea name="buttontext">
+           <alpha>30</alpha>
+         </textarea>
+         
+         <!-- show to the user that he can jump to the right -->
+         <imagetype name="direction">
+           <alpha>0</alpha>
+         </imagetype>
+         
+         <!-- show to the user that he can jump to the right -->
+         <imagetype name="directionright">
+           <alpha>0</alpha>
+         </imagetype>
+         
        </state>
        
        <state name="inactive" from="active">
-	 
-	 <textarea name="buttontext">
-	   
-	   <font>basebutton</font>
-	   
-	   <alpha>30</alpha>
-	   
-	 </textarea>
-	 
-	 <imagetype name="direction">
-	   
-	   <alpha>0</alpha>
-	   
-	 </imagetype>
-	 
-	 <!-- show to the user that he can jump to the right -->
-	 
-	 <imagetype name="directionright">
-	   
-	   <alpha>0</alpha>
-	   
-	 </imagetype>
-	 
+         <textarea name="buttontext">
+           <font>basebutton</font>
+           <alpha>30</alpha>
+         </textarea>
+         
+         <imagetype name="direction">
+           <alpha>0</alpha>
+         </imagetype>
+         
+         <!-- show to the user that he can jump to the right -->
+         <imagetype name="directionright">
+           <alpha>0</alpha>
+         </imagetype>
        </state>
-       
      </statetype>
      
      <statetype name="upscrollarrow" from="baseupscrollarrow" />
@@ -533,128 +427,78 @@
    <buttonlist name="basegroups">
      
      <area>0,0,490,660</area>
-     
-     
      <layout>vertical</layout>
-     
      <arrange>stack</arrange>
-     
      <spacing>10</spacing>
-     
      <scrollstyle>center</scrollstyle>
-     
      <wrapstyle>items</wrapstyle>
-     
      <align>center</align>
-     
      <buttonarea>0,0,100%,100%</buttonarea>
      
      <statetype name="buttonitem">
        <loadondemand>true</loadondemand>     
        <state name="active">
-	 
-	 <area>0,0,490,55</area>
-	 
-	 <imagetype name="490x55">
-	   
-	   <area>0,0,490,55</area>
-	   
-	   <filename>wr-490x55.png</filename>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <area>5,0,480,55</area>
-	   
-	   <align>vcenter</align>
-	   
-	   <cutdown>yes</cutdown>
-	   
-	   <font>basebuttontitlesubtitle</font>
-	   
-	   <align>vcenter</align>
-	   
-	 </textarea>
-	 
+         <area>0,0,490,55</area>
+         <imagetype name="490x55">
+           <area>0,0,490,55</area>
+           <filename>wr-490x55.png</filename>
+         </imagetype>
+         
+         <textarea name="buttontext">
+           <area>5,0,480,55</area>
+           <align>vcenter</align>
+           <cutdown>yes</cutdown>
+           <font>basebuttontitlesubtitle</font>
+           <align>vcenter</align>
+         </textarea>
+         
        </state>
        
        <state name="selectedactive">
-	 
-	 <area>0,0,490,140</area>
-	 
-	 <imagetype name="490x140">
-	   
-	   <area>0,0,490,140</area>
-	   
-	   <filename>wr-490x140.png</filename>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <font>basebuttontitle</font>
-	   
-	   <area>5,0,480,140</area>
-	   
-	   <cutdown>yes</cutdown>
-	   
-	   <multiline>yes</multiline>
-	   
-	   <align>vcenter</align>
-	   
-	 </textarea>
-	 
-	 <!-- show to the user that he can jump to the right -->
-	 
-	 <imagetype name="direction">
-	   
-	   <area>0,0,35,35</area>
-	   
-	   <position>455,59</position>
-	   
-	   <filename>icons/draw-triangle2.png</filename>
-	   
-	   <alpha>200</alpha>
-	   
-	 </imagetype>
-	 
+         <area>0,0,490,140</area>
+         <imagetype name="490x140">
+           <area>0,0,490,140</area>
+           <filename>wr-490x140.png</filename>
+         </imagetype>
+         
+         <textarea name="buttontext">
+           <font>basebuttontitle</font>
+           <area>5,0,480,140</area>
+           <cutdown>yes</cutdown>
+           <multiline>yes</multiline>
+           <align>vcenter</align>
+         </textarea>
+         
+         <!-- show to the user that he can jump to the right -->
+         <imagetype name="direction">
+           <area>0,0,35,35</area>
+           <position>455,59</position>
+           <filename>icons/draw-triangle2.png</filename>
+           <alpha>200</alpha>
+         </imagetype>
+         
        </state>
        
        <state name="selectedinactive" from="selectedactive">
-	 
-	 <textarea name="buttontext">
-	   
-	   <alpha>30</alpha>
-	   
-	 </textarea>
-	 
-	 <!-- show to the user that he can jump to the right -->
-	 
-	 <imagetype name="direction">
-	   
-	   <alpha>0</alpha>
-	   
-	 </imagetype>
-	 
+         <textarea name="buttontext">
+           <alpha>30</alpha>
+         </textarea>
+         
+         <!-- show to the user that he can jump to the right -->
+         <imagetype name="direction">
+           <alpha>0</alpha>
+         </imagetype>
        </state>
        
        <state name="inactive" from="active">
-	 
-	 <textarea name="buttontext">
-	   
-	   <alpha>30</alpha>
-	   
-	 </textarea>
-	 
-	 <imagetype name="direction">
-	   
-	   <alpha>0</alpha>
-	   
-	 </imagetype>
-	 
+         <textarea name="buttontext">
+           <alpha>30</alpha>
+         </textarea>
+         
+         <imagetype name="direction">
+           <alpha>0</alpha>
+         </imagetype>
        </state>
-       
      </statetype>
      
      <statetype name="upscrollarrow" from="baseupscrollarrow" />
@@ -673,178 +517,141 @@
      <statetype name="buttonstate">
        <loadondemand>true</loadondemand>     
        <state name="active">
-	 
-	 <imagetype name="background">
-	   
-	   <area>0,0,200,30</area>
-	   
-	   <filename>buttonbackground-200x30.png</filename>
-	   
-	 </imagetype>
-	 
-	 <textarea name="text">
-	   
-	   <area>0,0,200,30</area>
-	   
-	   <align>allcenter</align>
-	   
-	   <font>basemedium</font>
-	   
-	   <font state="selected">basemedium</font>
-	   
-	   <font state="disabled">basemediumgrey</font>
-	   
-	 </textarea>
-	 
+         <imagetype name="background">
+           <area>0,0,200,30</area>
+           <filename>buttonbackground-200x30.png</filename>
+         </imagetype>
+         
+         <textarea name="text">
+           <area>0,0,200,30</area>
+           <align>allcenter</align>
+           <font>basemedium</font>
+           <font state="selected">basemedium</font>
+           <font state="disabled">basemediumgrey</font>
+         </textarea>
+         
        </state>
        
        <state name="selected" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <area>0,0,200,30</area>
-	   
-	   <filename>buttonbackground-selected-200x30.png</filename>
-	   
-	 </imagetype>
-	 
-	 <textarea name="text">
-	   
-	   <align>center,vcenter</align>
-	   
-	   <cutdown>yes</cutdown>
-	   
-	   <case>upper</case>
-	   
-	   <font>basemediumgrey</font>
-	   
-	 </textarea>
-	 
+         <imagetype name="background">
+           <area>0,0,200,30</area>
+           <filename>buttonbackground-selected-200x30.png</filename>
+         </imagetype>
+         
+         <textarea name="text">
+           <align>center,vcenter</align>
+           <cutdown>yes</cutdown>
+           <case>upper</case>
+           <font>basemediumgrey</font>
+         </textarea>
+         
        </state>
        
        <state name="disabled" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <filename>buttonbackground-200x30.png</filename>
-	   
-	   <alpha>180</alpha>
-	   
-	 </imagetype>
-	 
+         <imagetype name="background">
+           <filename>buttonbackground-200x30.png</filename>
+           <alpha>180</alpha>
+         </imagetype>
        </state>
        
        <state name="pushed" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <filename>buttonbackground-pushed-200x30.png</filename>
-	   
-	   <alpha>255</alpha>
-	   
-	 </imagetype>
-	 
+         <imagetype name="background">
+           <filename>buttonbackground-pushed-200x30.png</filename>
+           <alpha>255</alpha>
+         </imagetype>
        </state>
-       
      </statetype>
-     
    </button>
    
    <!-- Base definition of a wider button -->
    
    <button name="basewidebutton">
-     
      <area>0,0,380,30</area>
-     
-     
      <position>0,0</position>
-     
      <statetype name="buttonstate">
-       
        <loadondemand>true</loadondemand>
-       
        <state name="active">
-	 
-	 <imagetype name="background">
-	   
-	   <area>0,0,380,30</area>
-	   
-	   <filename>buttonbackground-380x30.png</filename>
-	   
-	   <alpha>150</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="text">
-	   
-	   <area>0,0,380,30</area>
-	   
-	   <align>allcenter</align>
-	   
-	   <font>basemedium</font>
-	   
-	   <cutdown>yes</cutdown>
-	   
-	 </textarea>
-	 
+         
+         <imagetype name="background">
+           
+           <area>0,0,380,30</area>
+           
+           <filename>buttonbackground-380x30.png</filename>
+           
+           <alpha>150</alpha>
+           
+         </imagetype>
+         
+         <textarea name="text">
+           
+           <area>0,0,380,30</area>
+           
+           <align>allcenter</align>
+           
+           <font>basemedium</font>
+           
+           <cutdown>yes</cutdown>
+           
+         </textarea>
+         
        </state>
        
        <state name="selected" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <alpha>255</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="text">
-	   
-	   <case>upper</case>
-	   
-	 </textarea>
-	 
+         
+         <imagetype name="background">
+           
+           <alpha>255</alpha>
+           
+         </imagetype>
+         
+         <textarea name="text">
+           
+           <case>upper</case>
+           
+         </textarea>
+         
        </state>
        
        <state name="inactive" from="active">
-	 
-	 <imagetype name="buttonbackground">
-	   
-	   <alpha>127</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="text">
-	   
-	   <alpha>127</alpha>
-	   
-	 </textarea>
-	 
+         
+         <imagetype name="buttonbackground">
+           
+           <alpha>127</alpha>
+           
+         </imagetype>
+         
+         <textarea name="text">
+           
+           <alpha>127</alpha>
+           
+         </textarea>
+         
        </state>
        
        <state name="disabled" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <alpha>30</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="text">
-	   
-	   <alpha>30</alpha>
-	   
-	 </textarea>
-	 
+         
+         <imagetype name="background">
+           
+           <alpha>30</alpha>
+           
+         </imagetype>
+         
+         <textarea name="text">
+           
+           <alpha>30</alpha>
+           
+         </textarea>
+         
        </state>
        
        <state name="pushed" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <alpha>255</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="background">
+           
+           <alpha>255</alpha>
+           
+         </imagetype>
+         
        </state>
        
      </statetype>
@@ -860,79 +667,79 @@
      <statetype name="buttonstate">
        <loadondemand>true</loadondemand>     
        <state name="active">
-	 
-	 <imagetype name="background">
-	   
-	   <area>0,0,60,30</area>
-	   
-	   <filename>buttonbackground-60x30.png</filename>
-	   
-	 </imagetype>
-	 
-	 <textarea name="text">
-	   
-	   <area>0,0,60,30</area>
-	   
-	   <align>allcenter</align>
-	   
-	   <font>basemedium</font>
-	   
-	   <font state="selected">basemedium</font>
-	   
-	   <font state="disabled">basemediumgrey</font>
-	   
-	   <value>???</value>
-	   
-	 </textarea>
-	 
+         
+         <imagetype name="background">
+           
+           <area>0,0,60,30</area>
+           
+           <filename>buttonbackground-60x30.png</filename>
+           
+         </imagetype>
+         
+         <textarea name="text">
+           
+           <area>0,0,60,30</area>
+           
+           <align>allcenter</align>
+           
+           <font>basemedium</font>
+           
+           <font state="selected">basemedium</font>
+           
+           <font state="disabled">basemediumgrey</font>
+           
+           <value>???</value>
+           
+         </textarea>
+         
        </state>
        
        <state name="selected" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <filename>buttonbackground-selected-60x30.png</filename>
-	   
-	 </imagetype>
-	 
-	 <textarea name="text">
-	   
-	   <align>center,vcenter</align>
-	   
-	   <cutdown>yes</cutdown>
-	   
-	   <case>upper</case>
-	   
-	   <font>basemediumgrey</font>
-	   
-	   <value>???</value>
-	   
-	 </textarea>
-	 
+         
+         <imagetype name="background">
+           
+           <filename>buttonbackground-selected-60x30.png</filename>
+           
+         </imagetype>
+         
+         <textarea name="text">
+           
+           <align>center,vcenter</align>
+           
+           <cutdown>yes</cutdown>
+           
+           <case>upper</case>
+           
+           <font>basemediumgrey</font>
+           
+           <value>???</value>
+           
+         </textarea>
+         
        </state>
        
        <state name="disabled" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <filename>buttonbackground-60x30.png</filename>
-	   
-	   <alpha>180</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="background">
+           
+           <filename>buttonbackground-60x30.png</filename>
+           
+           <alpha>180</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="pushed" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <filename>buttonbackground-pushed-60x30.png</filename>
-	   
-	   <alpha>255</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="background">
+           
+           <filename>buttonbackground-pushed-60x30.png</filename>
+           
+           <alpha>255</alpha>
+           
+         </imagetype>
+         
        </state>
        
      </statetype>
@@ -951,79 +758,79 @@
      <statetype name="buttonstate">
        <loadondemand>true</loadondemand>     
        <state name="active">
-	 
-	 <area>0,0,580,55</area>
-	 
-	 <imagetype name="buttonbackground">
-	   
-	   <area>0,0,580,55</area>
-	   
-	   <filename>580x55.png</filename>
-	   
-	   <alpha>150</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="text">
-	   
-	   <area>0,0,100%,55</area>
-	   
-	   <font>basesmall</font>
-	   
-	   <align>allcenter</align>
-	   
-	   <cutdown>yes</cutdown>
-	   
-	 </textarea>
-	 
+         
+         <area>0,0,580,55</area>
+         
+         <imagetype name="buttonbackground">
+           
+           <area>0,0,580,55</area>
+           
+           <filename>580x55.png</filename>
+           
+           <alpha>150</alpha>
+           
+         </imagetype>
+         
+         <textarea name="text">
+           
+           <area>0,0,100%,55</area>
+           
+           <font>basesmall</font>
+           
+           <align>allcenter</align>
+           
+           <cutdown>yes</cutdown>
+           
+         </textarea>
+         
        </state>
        
        <state name="selected" from="active">
-	 
-	 <imagetype name="buttonbackground">
-	   
-	   <alpha>255</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="text">
-	   
-	   <area>0,0,100%,55</area>
-	   
-	   <font>basebuttontitle</font>
-	   
-	 </textarea>
-	 
+         
+         <imagetype name="buttonbackground">
+           
+           <alpha>255</alpha>
+           
+         </imagetype>
+         
+         <textarea name="text">
+           
+           <area>0,0,100%,55</area>
+           
+           <font>basebuttontitle</font>
+           
+         </textarea>
+         
        </state>
        
        <state name="pushed" from="selected">
-	 
-	 <imagetype name="buttonbackground">
-
-	   <filename>580x55-pushed.png</filename>
-	   
-	 </imagetype>
-
-	 <textarea name="text">
-	   	   <font>basebuttontitlewhite</font>
-	 </textarea>
-	 
+         
+         <imagetype name="buttonbackground">
+           
+           <filename>580x55-pushed.png</filename>
+           
+         </imagetype>
+         
+         <textarea name="text">
+           <font>basebuttontitlewhite</font>
+         </textarea>
+         
        </state>
        
        <state name="inactive" from="active">
-	 
-	 <imagetype name="buttonbackground">
-	   
-	   <alpha>100</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="text">
-	   
-	   <alpha>100</alpha>
-	   
-	 </textarea>
-	 
+         
+         <imagetype name="buttonbackground">
+           
+           <alpha>100</alpha>
+           
+         </imagetype>
+         
+         <textarea name="text">
+           
+           <alpha>100</alpha>
+           
+         </textarea>
+         
        </state>
        
      </statetype>
@@ -1037,43 +844,43 @@
      <statetype name="buttonstate">
        <loadondemand>true</loadondemand>     
        <state name="active">
-	 
-	 <imagetype name="back">
-	   
-	   <area>0,0,32,32</area>
-	   
-	   <position>15,10</position>
-	   
-	   <filename>icons/edit-undo.png</filename>
-	   
-	   <alpha>100</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="back">
+           
+           <area>0,0,32,32</area>
+           
+           <position>15,10</position>
+           
+           <filename>icons/edit-undo.png</filename>
+           
+           <alpha>100</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="inactive">
-	 
-	 <imagetype name="back">
-	   
-	   <alpha>50</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="back">
+           
+           <alpha>50</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="selected">
-	 
-	 <imagetype name="back">
-	   
-	   <position>15,10</position>
-	   
-	   <filename>icons/edit-undo.png</filename>
-	   
-	   <alpha>255</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="back">
+           
+           <position>15,10</position>
+           
+           <filename>icons/edit-undo.png</filename>
+           
+           <alpha>255</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="pushed">
@@ -1090,42 +897,42 @@
      <statetype name="buttonstate">
        
        <state name="active">
-	 
-	 <imagetype name="save">
-	   
-	   <area>0,0,32,32</area>
-	   
-	   <position>15,10</position>
-	   
-	   <filename>icons/file-saveas.png</filename>
-	   
-	   <alpha>100</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="save">
+           
+           <area>0,0,32,32</area>
+           
+           <position>15,10</position>
+           
+           <filename>icons/file-saveas.png</filename>
+           
+           <alpha>100</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="inactive">
-	 
-	 <imagetype name="save">
-	   
-	   <alpha>50</alpha>
-	   
-	 </imagetype>
+         
+         <imagetype name="save">
+           
+           <alpha>50</alpha>
+           
+         </imagetype>
        </state>
        
        <state name="selected">
-	 
-	 <imagetype name="save">
-	   
-	   <position>15,10</position>
-	   
-	   <filename>icons/file-saveas.png</filename>
-	   
-	   <alpha>255</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="save">
+           
+           <position>15,10</position>
+           
+           <filename>icons/file-saveas.png</filename>
+           
+           <alpha>255</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="pushed">
@@ -1142,44 +949,44 @@
      <statetype name="buttonstate">
        
        <state name="active">
-	 
-	 <imagetype name="cancel">
-	   
-	   <area>0,0,32,32</area>
-	   
-	   <position>15,10</position>
-	   
-	   <filename>icons/gtk-cancel.png</filename>
-	   
-	   <alpha>100</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="cancel">
+           
+           <area>0,0,32,32</area>
+           
+           <position>15,10</position>
+           
+           <filename>icons/gtk-cancel.png</filename>
+           
+           <alpha>100</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="inactive">
-	 
-	 <imagetype name="cancel">
-	   
-	   <alpha>50</alpha>
-	   
-	 </imagetype>
+         
+         <imagetype name="cancel">
+           
+           <alpha>50</alpha>
+           
+         </imagetype>
        </state>
        
        <state name="selected">
-	 
-	 <imagetype name="cancel">
-	   
-	   <area>0,0,32,32</area>
-	   
-	   <position>15,10</position>
-	   
-	   <filename>icons/gtk-cancel.png</filename>
-	   
-	   <alpha>255</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="cancel">
+           
+           <area>0,0,32,32</area>
+           
+           <position>15,10</position>
+           
+           <filename>icons/gtk-cancel.png</filename>
+           
+           <alpha>255</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="pushed">
@@ -1196,44 +1003,44 @@
      <statetype name="buttonstate">
        
        <state name="active">
-	 
-	 <imagetype name="yes">
-	   
-	   <area>0,0,32,32</area>
-	   
-	   <position>15,10</position>
-	   
-	   <filename>icons/yes.png</filename>
-	   
-	   <alpha>100</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="yes">
+           
+           <area>0,0,32,32</area>
+           
+           <position>15,10</position>
+           
+           <filename>icons/yes.png</filename>
+           
+           <alpha>100</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="inactive">
-	 
-	 <imagetype name="yes">
-	   
-	   <alpha>50</alpha>
-	   
-	 </imagetype>
+         
+         <imagetype name="yes">
+           
+           <alpha>50</alpha>
+           
+         </imagetype>
        </state>
        
        <state name="selected">
-	 
-	 <imagetype name="yes">
-	   
-	   <area>0,0,32,32</area>
-	   
-	   <position>15,10</position>
-	   
-	   <filename>icons/yes.png</filename>
-	   
-	   <alpha>255</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="yes">
+           
+           <area>0,0,32,32</area>
+           
+           <position>15,10</position>
+           
+           <filename>icons/yes.png</filename>
+           
+           <alpha>255</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="pushed">
@@ -1252,37 +1059,37 @@
      <statetype name="background">
        <loadondemand>true</loadondemand>     
        <state name="active">
-	 
-	 <imagetype name="background">
-	   
-	   <area>0,0,36,36</area>
-	   
-	   <filename>checkbox-36x36.png</filename>
-	   
-	   <alpha>150</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="background">
+           
+           <area>0,0,36,36</area>
+           
+           <filename>checkbox-36x36.png</filename>
+           
+           <alpha>150</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="selected" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <alpha>255</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="background">
+           
+           <alpha>255</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="inactive">
-	 
-	 <imagetype name="background">
-	   
-	   <alpha>50</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="background">
+           
+           <alpha>50</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="disabled" />
@@ -1296,29 +1103,29 @@
        <state type="off" />
        
        <state type="half">
-	 
-	 <imagetype name="yesno">
-	   
-	   <area>0,0,36,36</area>
-	   
-	   <filename>icons/yes.png</filename>
-	   
-	   <alpha>100</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="yesno">
+           
+           <area>0,0,36,36</area>
+           
+           <filename>icons/yes.png</filename>
+           
+           <alpha>100</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state type="full">
-	 
-	 <imagetype name="mark">
-	   
-	   <area>0,0,36,36</area>
-	   
-	   <filename>icons/yes.png</filename>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="mark">
+           
+           <area>0,0,36,36</area>
+           
+           <filename>icons/yes.png</filename>
+           
+         </imagetype>
+         
        </state>
        
      </statetype>
@@ -1334,41 +1141,41 @@
      <statetype name="buttonstate">
        <loadondemand>true</loadondemand>     
        <state name="active">
-	 
-	 <imagetype name="background">
-	   
-	   <area>0,0,36,36</area>
-	   
-	   <filename>checkbox-36x36.png</filename>
-	   
-	   <alpha>200</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="background">
+           
+           <area>0,0,36,36</area>
+           
+           <filename>checkbox-36x36.png</filename>
+           
+           <alpha>200</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="selected" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <alpha>255</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="background">
+           
+           <alpha>255</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="disabled" />
        
        <state type="pushed">
-	 
-	 <imagetype name="mark">
-	   
-	   <area>0,0,36,36</area>
-	   
-	   <filename>icons/yes.png</filename>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="mark">
+           
+           <area>0,0,36,36</area>
+           
+           <filename>icons/yes.png</filename>
+           
+         </imagetype>
+         
        </state>
        
      </statetype>
@@ -1386,77 +1193,77 @@
      <statetype name="buttonitem">
        <loadondemand>true</loadondemand>     
        <state name="active">
-	 
-	 <imagetype name="background">
-	   
-	   <area>30,0,520,40</area>
-	   
-	   <filename>spinbox-520x40.png</filename>
-	   
-	   <alpha>150</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <area>30,0,520,40</area>
-	   
-	   <align>allcenter</align>
-	   
-	   <font>basesmall</font>
-	   
-	   <cutdown>yes</cutdown>
-	   
-	 </textarea>
-	 
+         
+         <imagetype name="background">
+           
+           <area>30,0,520,40</area>
+           
+           <filename>spinbox-520x40.png</filename>
+           
+           <alpha>150</alpha>
+           
+         </imagetype>
+         
+         <textarea name="buttontext">
+           
+           <area>30,0,520,40</area>
+           
+           <align>allcenter</align>
+           
+           <font>basesmall</font>
+           
+           <cutdown>yes</cutdown>
+           
+         </textarea>
+         
        </state>
        
        <state name="selectedactive" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <alpha>200</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <font>basebuttontitle</font>
-	   
-	 </textarea>
-	 
+         
+         <imagetype name="background">
+           
+           <alpha>200</alpha>
+           
+         </imagetype>
+         
+         <textarea name="buttontext">
+           
+           <font>basebuttontitle</font>
+           
+         </textarea>
+         
        </state>
        
        <state name="selectedinactive" from="active">
-	 
-	 <imagetype name="buttonbackground">
-	   
-	   <alpha>127</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <alpha>127</alpha>
-	   
-	 </textarea>
-	 
+         
+         <imagetype name="buttonbackground">
+           
+           <alpha>127</alpha>
+           
+         </imagetype>
+         
+         <textarea name="buttontext">
+           
+           <alpha>127</alpha>
+           
+         </textarea>
+         
        </state>
        
        <state name="disabled" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <alpha>30</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <alpha>30</alpha>
-	   
-	 </textarea>
-	 
+         
+         <imagetype name="background">
+           
+           <alpha>30</alpha>
+           
+         </imagetype>
+         
+         <textarea name="buttontext">
+           
+           <alpha>30</alpha>
+           
+         </textarea>
+         
        </state>
        
      </statetype>
@@ -1490,77 +1297,77 @@
      <statetype name="buttonitem">
        <loadondemand>true</loadondemand>     
        <state name="active">
-	 
-	 <imagetype name="background">
-	   
-	   <area>30,0,980,40</area>
-	   
-	   <filename>spinbox-980x40.png</filename>
-	   
-	   <alpha>150</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <area>30,0,980,40</area>
-	   
-	   <align>allcenter</align>
-	   
-	   <font>basesmall</font>
-	   
-	   <cutdown>yes</cutdown>
-	   
-	 </textarea>
-	 
+         
+         <imagetype name="background">
+           
+           <area>30,0,980,40</area>
+           
+           <filename>spinbox-980x40.png</filename>
+           
+           <alpha>150</alpha>
+           
+         </imagetype>
+         
+         <textarea name="buttontext">
+           
+           <area>30,0,980,40</area>
+           
+           <align>allcenter</align>
+           
+           <font>basesmall</font>
+           
+           <cutdown>yes</cutdown>
+           
+         </textarea>
+         
        </state>
        
        <state name="selectedactive" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <alpha>200</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <font>basebuttontitle</font>
-	   
-	 </textarea>
-	 
+         
+         <imagetype name="background">
+           
+           <alpha>200</alpha>
+           
+         </imagetype>
+         
+         <textarea name="buttontext">
+           
+           <font>basebuttontitle</font>
+           
+         </textarea>
+         
        </state>
        
        <state name="selectedinactive" from="active">
-	 
-	 <imagetype name="buttonbackground">
-	   
-	   <alpha>127</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <alpha>127</alpha>
-	   
-	 </textarea>
-	 
+         
+         <imagetype name="buttonbackground">
+           
+           <alpha>127</alpha>
+           
+         </imagetype>
+         
+         <textarea name="buttontext">
+           
+           <alpha>127</alpha>
+           
+         </textarea>
+         
        </state>
        
        <state name="disabled" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <alpha>30</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <alpha>30</alpha>
-	   
-	 </textarea>
-	 
+         
+         <imagetype name="background">
+           
+           <alpha>30</alpha>
+           
+         </imagetype>
+         
+         <textarea name="buttontext">
+           
+           <alpha>30</alpha>
+           
+         </textarea>
+         
        </state>
        
      </statetype>
@@ -1592,77 +1399,77 @@
      <statetype name="buttonitem">
        <loadondemand>true</loadondemand>     
        <state name="active">
-	 
-	 <imagetype name="background">
-	   
-	   <area>0,0,1280,40</area>
-	   
-	   <filename>spinbox-1280x40.png</filename>
-	   
-	   <alpha>150</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <area>0,0,1280,40</area>
-	   
-	   <align>allcenter</align>
-	   
-	   <font>basemedium</font>
-	   
-	   <cutdown>yes</cutdown>
-	   
-	 </textarea>
-	 
+         
+         <imagetype name="background">
+           
+           <area>0,0,1280,40</area>
+           
+           <filename>spinbox-1280x40.png</filename>
+           
+           <alpha>150</alpha>
+           
+         </imagetype>
+         
+         <textarea name="buttontext">
+           
+           <area>0,0,1280,40</area>
+           
+           <align>allcenter</align>
+           
+           <font>basemedium</font>
+           
+           <cutdown>yes</cutdown>
+           
+         </textarea>
+         
        </state>
        
        <state name="selectedactive" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <alpha>255</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <case>upper</case>
-	   
-	 </textarea>
-	 
+         
+         <imagetype name="background">
+           
+           <alpha>255</alpha>
+           
+         </imagetype>
+         
+         <textarea name="buttontext">
+           
+           <case>upper</case>
+           
+         </textarea>
+         
        </state>
        
        <state name="selectedinactive" from="active">
-	 
-	 <imagetype name="buttonbackground">
-	   
-	   <alpha>127</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <alpha>127</alpha>
-	   
-	 </textarea>
-	 
+         
+         <imagetype name="buttonbackground">
+           
+           <alpha>127</alpha>
+           
+         </imagetype>
+         
+         <textarea name="buttontext">
+           
+           <alpha>127</alpha>
+           
+         </textarea>
+         
        </state>
        
        <state name="disabled" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <alpha>30</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <alpha>30</alpha>
-	   
-	 </textarea>
-	 
+         
+         <imagetype name="background">
+           
+           <alpha>30</alpha>
+           
+         </imagetype>
+         
+         <textarea name="buttontext">
+           
+           <alpha>30</alpha>
+           
+         </textarea>
+         
        </state>
        
      </statetype>
@@ -1686,142 +1493,142 @@
      </state>
      <state name="1">
        <imagetype name="stars1">
-	 <area>0,0,32,32</area>
-	 <filename>icons/star-half.png</filename>
+         <area>0,0,32,32</area>
+         <filename>icons/star-half.png</filename>
        </imagetype>
      </state>
      <state name="2">
        <imagetype name="stars1">
-	 <area>0,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>0,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
      </state>
      <state name="3">
        <imagetype name="stars1">
-	 <area>0,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>0,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
        <imagetype name="stars2">
-	 <area>32,0,32,32</area>
-	 <filename>icons/star-half.png</filename>
+         <area>32,0,32,32</area>
+         <filename>icons/star-half.png</filename>
        </imagetype>
      </state>
      <state name="4">
        <imagetype name="stars1">
-	 <area>0,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>0,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
        <imagetype name="stars2">
-	 <area>32,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>32,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
      </state>
      <state name="5">
        <imagetype name="stars1">
-	 <area>0,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>0,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
        <imagetype name="stars2">
-	 <area>32,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>32,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
        <imagetype name="stars3">
-	 <area>64,0,32,32</area>
-	 <filename>icons/star-half.png</filename>
+         <area>64,0,32,32</area>
+         <filename>icons/star-half.png</filename>
        </imagetype>
      </state>
      <state name="6">
        <imagetype name="stars1">
-	 <area>0,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>0,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
        <imagetype name="stars2">
-	 <area>32,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>32,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
        <imagetype name="stars3">
-	 <area>64,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>64,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
      </state>
      <state name="7">
        <imagetype name="stars1">
-	 <area>0,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>0,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
        <imagetype name="stars2">
-	 <area>32,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>32,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
        <imagetype name="stars3">
-	 <area>64,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>64,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
        <imagetype name="stars4">
-	 <area>96,0,32,32</area>
-	 <filename>icons/star-half.png</filename>
+         <area>96,0,32,32</area>
+         <filename>icons/star-half.png</filename>
        </imagetype>
      </state>
      <state name="8">
        <imagetype name="stars1">
-	 <area>0,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>0,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
        <imagetype name="stars2">
-	 <area>32,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>32,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
        <imagetype name="stars3">
-	 <area>64,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>64,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
        <imagetype name="stars4">
-	 <area>96,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>96,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
      </state>
      <state name="9">
        <imagetype name="stars1">
-	 <area>0,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>0,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
        <imagetype name="stars2">
-	 <area>32,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>32,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
        <imagetype name="stars3">
-	 <area>64,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>64,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
        <imagetype name="stars4">
-	 <area>96,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>96,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
        <imagetype name="stars5">
-	 <area>128,0,32,32</area>
-	 <filename>icons/star-half.png</filename>
+         <area>128,0,32,32</area>
+         <filename>icons/star-half.png</filename>
        </imagetype>
      </state>
      <state name="10">
        <imagetype name="stars1">
-	 <area>0,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>0,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
        <imagetype name="stars2">
-	 <area>32,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>32,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
        <imagetype name="stars3">
-	 <area>64,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>64,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
        <imagetype name="stars4">
-	 <area>96,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>96,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
        <imagetype name="stars5">
-	 <area>128,0,32,32</area>
-	 <filename>icons/star-full.png</filename>
+         <area>128,0,32,32</area>
+         <filename>icons/star-full.png</filename>
        </imagetype>
      </state>
    </statetype>
@@ -1853,37 +1660,37 @@
      <statetype name="background">
        <loadondemand>true</loadondemand>     
        <state name="active">
-	 
-	 <imagetype name="background">
-	   
-	   <area>0,0,350,36</area>
-	   
-	   <filename>textedit-350x36.png</filename>
-	   
-	   <alpha>150</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="background">
+           
+           <area>0,0,350,36</area>
+           
+           <filename>textedit-350x36.png</filename>
+           
+           <alpha>150</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="selected" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <alpha>255</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="background">
+           
+           <alpha>255</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="inactive" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <alpha>150</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="background">
+           
+           <alpha>150</alpha>
+           
+         </imagetype>
+         
        </state>
        
      </statetype>
@@ -1911,37 +1718,37 @@
      <statetype name="background">
        
        <state name="active">
-	 
-	 <imagetype name="background">
-	   
-	   <area>0,0,560,36</area>
-	   
-	   <filename>textedit-560x36.png</filename>
-	   
-	   <alpha>150</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="background">
+           
+           <area>0,0,560,36</area>
+           
+           <filename>textedit-560x36.png</filename>
+           
+           <alpha>150</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="selected" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <alpha>255</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="background">
+           
+           <alpha>255</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="inactive" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <alpha>150</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="background">
+           
+           <alpha>150</alpha>
+           
+         </imagetype>
+         
        </state>
        
      </statetype>
@@ -1961,37 +1768,37 @@
      <statetype name="background">
        
        <state name="active">
-	 
-	 <imagetype name="background">
-	   
-	   <area>0,0,980,66</area>
-	   
-	   <filename>textedit-980x66.png</filename>
-	   
-	   <alpha>150</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="background">
+           
+           <area>0,0,980,66</area>
+           
+           <filename>textedit-980x66.png</filename>
+           
+           <alpha>150</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="selected" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <alpha>255</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="background">
+           
+           <alpha>255</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="inactive" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <alpha>150</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="background">
+           
+           <alpha>150</alpha>
+           
+         </imagetype>
+         
        </state>
        
      </statetype>
@@ -2013,37 +1820,37 @@
      <statetype name="background">
        
        <state name="active">
-	 
-	 <imagetype name="background">
-	   
-	   <area>0,0,980,156</area>
-	   
-	   <filename>textedit-980x156.png</filename>
-	   
-	   <alpha>150</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="background">
+           
+           <area>0,0,980,156</area>
+           
+           <filename>textedit-980x156.png</filename>
+           
+           <alpha>150</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="selected" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <alpha>255</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="background">
+           
+           <alpha>255</alpha>
+           
+         </imagetype>
+         
        </state>
        
        <state name="inactive" from="active">
-	 
-	 <imagetype name="background">
-	   
-	   <alpha>150</alpha>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="background">
+           
+           <alpha>150</alpha>
+           
+         </imagetype>
+         
        </state>
        
      </statetype>
@@ -2061,213 +1868,135 @@
    <!-- Wide definition of a progressbar -->
    
    <progressbar name="basewideprogressbar">
-     
      <area>0,0,1640,58</area>
-     
      <layout>horizontal</layout>
-     
      <style>reveal</style>
-     
      <imagetype name="background">
-       
        <area>0,0,1640,58</area>
-       
        <filename>OSD/fillbar-empty.png</filename>
-       
      </imagetype>
-     
      <imagetype name="progressimage">
-       
        <area>0,0,1640,58</area>
-       
        <filename>OSD/fillbar-full.png</filename>
-       
      </imagetype>
-     
    </progressbar>
    
    <progressbar name="baseprogressbar">
-     
      <area>0,0,890,58</area>
-     
      <layout>horizontal</layout>
-     
      <style>reveal</style>
-     
      <imagetype name="background">
-       
        <area>0,0,890,58</area>
-       
        <filename>wr-fillbar-empty.png</filename>
-       
      </imagetype>
-     
      <imagetype name="progressimage">
-       
        <area>0,0,890,58</area>
-       
        <filename>wr-fillbar-full.png</filename>
-       
      </imagetype>
-     
    </progressbar>
    
    <!-- Base definition of a the arrows to upscroll and downscroll   -->
    
    <statetype name="upscrollarrowpopup" from="baseupscrollarrow">
-     
      <position>15,190</position>
-     
    </statetype>
    
    <statetype name="downscrollarrowpopup" from="basedownscrollarrow">
-     
      <position>552,190</position>
-     
    </statetype>
    
    <textarea name="basemessagearea">
-     
      <font>base</font>
-     
      <area>5,5,590,200</area>
-     
      <multiline>yes</multiline>
-     
      <align>allcenter</align>
-     
    </textarea>
    
    <buttonlist name="basepopupboxlist">
-     
      <area>0,0,600,800</area>
-     
      <layout>vertical</layout>
-     
      <spacing>5</spacing>
-     
      <arrange>stack</arrange>
-     
      <align>bottom,hcenter</align>
-     
      <buttonarea>0,205,600,580</buttonarea>
-     
      <statetype name="buttonitem">
        <loadondemand>true</loadondemand>     
        <state name="active">
-	 
-	 <area>0,0,580,55</area>
-	 
-	 <imagetype name="buttonbackground">
-	   
-	   <area>0,0,580,55</area>
-	   
-	   <filename>580x55.png</filename>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <area>0,0,580,55</area>
-	   
-	   <align>allcenter</align>
-	   
-	   <font>basesmall</font>
-	   
-	 </textarea>
-	 
-	 <imagetype name="buttonarrow">
-	   
-	   <position>540,10</position>
-	   
-	   <filename>icons/draw-triangle2.png</filename>
-	   
-	   <alpha>100</alpha>
-	   
-	   <grayscale>true</grayscale>
-	   
-	 </imagetype>
-	 
+         <area>0,0,580,55</area>
+         <imagetype name="buttonbackground">
+           <area>0,0,580,55</area>
+           <filename>580x55.png</filename>
+         </imagetype>
+         
+         <textarea name="buttontext">
+           <area>0,0,580,55</area>
+           <align>allcenter</align>
+           <font>basesmall</font>
+         </textarea>
+         
+         <imagetype name="buttonarrow">
+           <position>540,10</position>
+           <filename>icons/draw-triangle2.png</filename>
+           <alpha>100</alpha>
+           <grayscale>true</grayscale>
+         </imagetype>
        </state>
        
        <state name="selectedactive">
-	 
-	 <area>0,0,580,140</area>
-	 
-	 <imagetype name="buttonbackground2">
-	   
-	   <area>0,0,580,140</area>
-	   <alphapulse min="150" max="255" change="1" />
-	   <filename>580x140.png</filename>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <area>0,0,580,140</area>
-	   <font>basebuttontitle</font>
-	   <align>allcenter</align>      
-	   <multiline>yes</multiline>
-	   
-	 </textarea>
-	 
-	 <imagetype name="buttonarrow">
-	   
-	   <area>0,0,35,35</area>	
-	   <position>540,50</position>
-	   <filename>icons/draw-triangle2.png</filename>
-	   <alpha>200</alpha>
-	   
-	 </imagetype>
-	 
+         <area>0,0,580,140</area>
+         <imagetype name="buttonbackground2">
+           <area>0,0,580,140</area>
+           <alphapulse min="150" max="255" change="1" />
+           <filename>580x140.png</filename>
+         </imagetype>
+         
+         <textarea name="buttontext">
+           <area>0,0,580,140</area>
+           <font>basebuttontitle</font>
+           <align>allcenter</align>      
+           <multiline>yes</multiline>
+         </textarea>
+         
+         <imagetype name="buttonarrow">
+           <area>0,0,35,35</area>	
+           <position>540,50</position>
+           <filename>icons/draw-triangle2.png</filename>
+           <alpha>200</alpha>
+         </imagetype>
+         
        </state>
        
        <state name="inactive" from="active">
-	 
-	 <imagetype name="buttonbackground">
-	   
-	   <alpha>100</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <alpha>100</alpha>
-	   
-	 </textarea>
-	 
-	 <imagetype name="buttonarrow">
-	   
-	   <alpha>30</alpha>
-	   
-	   <grayscale>true</grayscale>
-	   
-	 </imagetype>
-	 
+         <imagetype name="buttonbackground">
+           <alpha>100</alpha>
+         </imagetype>
+         
+         <textarea name="buttontext">
+           <alpha>100</alpha>
+         </textarea>
+         
+         <imagetype name="buttonarrow">
+           <alpha>30</alpha>
+           <grayscale>true</grayscale>
+         </imagetype>
+         
        </state>
        
        <state name="selectedinactive" from="selectedactive">
-	 
-	 <imagetype name="buttonbackground2">
-	   
-	   <alpha>100</alpha>
-	   
-	 </imagetype>
-	 
-	 <textarea name="buttontext">
-	   
-	   <alpha>100</alpha>
-	   
-	 </textarea>
-	 
-	 <imagetype name="buttonarrow">
-	   
-	   <alpha>30</alpha>
-	   
-	   <grayscale>true</grayscale>
-	   
-	 </imagetype>
-	 
+         
+         <imagetype name="buttonbackground2">
+           <alpha>100</alpha>
+         </imagetype>
+         
+         <textarea name="buttontext">
+           <alpha>100</alpha>
+         </textarea>
+         
+         <imagetype name="buttonarrow">
+           <alpha>30</alpha>
+           <grayscale>true</grayscale>
+         </imagetype>
+         
        </state>
        
      </statetype>
@@ -2281,19 +2010,13 @@
    <!-- Popup Dialogue Box -->
    
    <window name="MythPopupBox">
-     
      <area>-1,-1,600,800</area>
-     
      <imagetype name="backimg">
-       
        <filename>MythPopupBox-background.png</filename>
-       
      </imagetype>
      
      <textarea name="messagearea" from="basemessagearea" />
-     
      <buttonlist name="list" from="basepopupboxlist" />
-     
    </window>
    
    <!-- Fullscreen Dialogue Box -->
@@ -2301,27 +2024,17 @@
    <window name="MythDialogBox" from="MythPopupBox">
      
      <textarea name="title" from="basetextarea">
-       
        <font>basetitle</font>
-       
        <area>5,5,590,30</area>
-       
        <font>basetitle</font>
-       
        <align>allcenter</align>
-       
      </textarea>
      
      <textarea name="messagearea" from="basetextarea">
-       
        <area>5,30,590,160</area>
-       
        <multiline>yes</multiline>
-       
        <font>basemedium</font>
-       
        <align>allcenter</align>
-       
      </textarea>
      
      <buttonlist name="list" />
@@ -2333,25 +2046,16 @@
    <window name="MythBusyDialog">
      
      <area>-1,-1,1680,1050</area>
-     
      <imagetype name="animation">
-       
        <position>477,152</position>
-       
        <filepattern low="1" high="23">progressbar/progressbar%1.png</filepattern>
-       
        <delay>60</delay>
-       
      </imagetype>
      
      <textarea name="message" from="basetextarea">
-       
        <font>basetitle</font>
-       
        <area>477,152,725,725</area>
-       
        <align>allcenter</align>
-       
      </textarea>
      
    </window>
@@ -2361,37 +2065,24 @@
    <window name="MythProgressDialog">
      
      <area>-1,-1,1680,1050</area>
-     
      <imagetype name="backimg">
-       
        <filename>890x140.png</filename>
-       
        <position>359,418</position>
-       
      </imagetype>
      
      <textarea name="message" from="basetextarea">
-       
        <font>basetitle</font>
-       
        <area>359,418,890,82</area>
-       
        <align>allcenter</align>
-       
      </textarea>
      
      <progressbar name="progressbar" from="baseprogressbar">
-       
        <position>359,500</position>
-       
      </progressbar>
      
      <textarea name="progresstext" from="basetextarea">
-       
        <area>359,500,890,59</area>
-       
        <align>allcenter</align>
-       
      </textarea>
      
    </window>
@@ -2405,19 +2096,13 @@
      <!-- TODO: make OK big, cancel small -->
      
      <button name="cancel" from="basepopupbuttoncancel">
-       
        <position>5,675</position>
-       
        <value>Cancel</value>
-       
      </button>
      
      <button name="ok" from="basepopupbuttonok">
-       
        <position>5,735</position>
-       
        <value>OK</value>
-       
      </button>
      
    </window>
@@ -2427,25 +2112,17 @@
      <textarea name="message" from="basemessagearea" />
      
      <textedit name="input" from="basetexteditwide">
-       
        <position>20,210</position>
-       
      </textedit>
      
      <button name="cancel" from="basepopupbuttoncancel">
-       
        <position>5,675</position>
-       
        <value>Cancel</value>
-       
      </button>
      
      <button name="ok" from="basepopupbuttonok">
-       
        <position>5,735</position>
-       
        <value>OK</value>
-       
      </button>
      
    </window>
@@ -2455,76 +2132,51 @@
    <window name="MythSearchDialog">
      
      <area>-1,-1,600,800</area>
-     
      <imagetype name="backimg">
-       
        <filename>MythPopupBox-background.png</filename>
-       
      </imagetype>
      
      <textarea name="title" from="basemessagearea" />
      
      <buttonlist name="itemlist" from="basepopupboxlist">
-       
        <buttonarea>0,205,600,415</buttonarea>
-       
      </buttonlist>
      
-     
-     
      <textedit name="input" from="basetexteditwide">
-       
        <position>20,630</position>
-       
      </textedit>
      
      <button name="cancel" from="basepopupbuttonsave">
-       
        <position>10,675</position>
-       
        <value>Cancel</value>
-       
      </button>
      
      <button name="ok" from="basepopupbuttonok">
-       
        <position>10,735</position>
-       
        <value>OK</value>
-       
      </button>
      
    </window>
    
-   
    <window name="videowindow">
      
      <area>0,0,1680,1050</area>
-     
      <imagetype name="backimg">
-       
        <filename>890x140.png</filename>
-       
        <position>359,418</position>
-       
      </imagetype>
      
      <textarea name="title" from="basetextarea">
-       
        <font>basetitle</font>
-       
        <area>359,418,890,82</area>
-       
        <align>allcenter</align>
-       
        <value>Playback starting ...</value>
-       
      </textarea>
-
-    <progressbar name="progressbar" from="baseprogressbar">
-      <position>359,500</position>
-    </progressbar>
-
+     
+     <progressbar name="progressbar" from="baseprogressbar">
+       <position>359,500</position>
+     </progressbar>
+     
      
    </window>
    
@@ -2532,228 +2184,172 @@
    <window name="MythFileBrowser" from="MythPopupBox">
      
      <textedit name="location" from="basetexteditwide">
-       
        <position>20,20</position>
-       
      </textedit>
      
      <buttonlist name="filelist">
-       
        <area>0,60,590,450</area>
-       
        <layout>grid</layout>
-       
        <align>allcenter</align>
-       
        <buttonarea>5,20,590,450</buttonarea>
        
        <statetype name="buttonitem">
-	 
-	 <state name="active">
-	   
-	   <area>0,0,295,220</area>
-	   
-	   <shape name="buttonbackground">
-	     
-	     <area>0,0,295,220</area>
-	     
-	     <fill color="#ffffff" alpha="0" />
-	     
-	   </shape>
-	   
-	   <statetype name="nodetype">
-	     <loadondemand>true</loadondemand>   
-	     <state name="folder">
-	       
-	       <imagetype name="icon">
-		 
-		 <area>0,0,290,215</area>
-		 
-		 <filename>video/browser/folder.png</filename>
-		 
-		 <preserveaspect>yes</preserveaspect>
-		 
-	       </imagetype>
-	       
-	     </state>
-	     
-	     <state name="upfolder" from="folder">
-	       
-	       <imagetype name="icon">
-		 
-		 <filename>video/browser/folderback.png</filename>
-		 
-	       </imagetype>
-	       
-	     </state>
-	     
-	     <state name="executable" from="folder">
-	       
-	       <imagetype name="icon">
-		 
-		 <filename>shared/executable.png</filename>
-		 
-	       </imagetype>
-	       
-	     </state>
-	     
-	     <state name="file" from="folder">
-	       
-	       <imagetype name="icon">
-		 
-		 <filename>shared/file.png</filename>
-		 
-	       </imagetype>
-	       
-	     </state>
-	     
-	   </statetype>
-	   
-	   <imagetype name="buttonimage">
-	     
-	     <area>0,0,290,215</area>
-	     
-	     <preserveaspect>true</preserveaspect>
-	     
-	   </imagetype>
-	   
-	   <textarea name="buttontext" from="basetextarea">
-	     
-	     <area>0,190,290,25</area>
-	     
-	     <align>allcenter</align>
-	     
-	   </textarea>
-	   
-	 </state>
-	 
-	 <state name="selectedinactive" from="active">
-	   
-	   <shape name="buttonbackground">
-	     
-	     <fill color="#ffffff" alpha="50" />
-	     
-	   </shape>
-	   
-	 </state>
-	 
-	 <state name="selectedactive" from="active">
-	   
-	   <shape name="buttonbackground">
-	     
-	     <fill color="#ffffff" alpha="100" />
-	     
-	   </shape>
-	   
-	 </state>
-	 
+         <state name="active">
+           <area>0,0,295,220</area>
+           <shape name="buttonbackground">
+             <area>0,0,295,220</area>
+             <fill color="#ffffff" alpha="0" />
+           </shape>
+           
+           <statetype name="nodetype">
+             <loadondemand>true</loadondemand>   
+             <state name="folder">
+               <imagetype name="icon">
+                 <area>0,0,290,215</area>
+                 <filename>video/browser/folder.png</filename>
+                 <preserveaspect>yes</preserveaspect>
+               </imagetype>
+             </state>
+             
+             <state name="upfolder" from="folder">
+               <imagetype name="icon">
+                 <filename>video/browser/folderback.png</filename>
+               </imagetype>
+             </state>
+             
+             <state name="executable" from="folder">
+               <imagetype name="icon">
+                 <filename>shared/executable.png</filename>
+               </imagetype>
+             </state>
+             
+             <state name="file" from="folder">
+               <imagetype name="icon">
+                 <filename>shared/file.png</filename>
+               </imagetype>
+             </state>
+           </statetype>
+           
+           <imagetype name="buttonimage">
+             <area>0,0,290,215</area>
+             <preserveaspect>true</preserveaspect>
+           </imagetype>
+           
+           <textarea name="buttontext" from="basetextarea">
+             <area>0,190,290,25</area>
+             <align>allcenter</align>
+           </textarea>
+         </state>
+         
+         <state name="selectedinactive" from="active">
+           <shape name="buttonbackground">
+             <fill color="#ffffff" alpha="50" />
+           </shape>
+         </state>
+         
+         <state name="selectedactive" from="active">
+           <shape name="buttonbackground">
+             <fill color="#ffffff" alpha="100" />
+           </shape>
+         </state>
+         
        </statetype>
        
      </buttonlist>
      
      <button name="back" from="basepopupbutton">
-       
        <position>10,550</position>
-       
        <value>Up Level</value>
-       
      </button>
      
      <button name="home" from="basepopupbutton">
-       
        <position>10,610</position>
-       
        <value>Home</value>
-       
      </button>
      
      <button name="cancel" from="basepopupbuttoncancel">
-       
        <position>10,675</position>
-       
        <value>Cancel</value>
-       
      </button>
      
      <button name="ok" from="basepopupbuttonok">
-       
        <position>10,735</position>
        <value>OK</value>
      </button>
      
    </window>
    
-
+   
    <button name="basepopupbuttonleft" from="basepopupbutton">
      <statetype name="buttonstate">
        <state name="active">
-	 <imagetype name="yes">
-	   <area>15,10,35,35</area>
-	   <filename>icons/draw-triangle1.png</filename>
-	   <alpha>100</alpha>
-	 </imagetype>
+         <imagetype name="yes">
+           <area>15,10,35,35</area>
+           <filename>icons/draw-triangle1.png</filename>
+           <alpha>100</alpha>
+         </imagetype>
        </state>
        
        <state name="inactive">
-	 <imagetype name="yes">
-	   <alpha>50</alpha>
-	 </imagetype>
+         <imagetype name="yes">
+           <alpha>50</alpha>
+         </imagetype>
        </state>
        
        <state name="selected">
-	 <imagetype name="yes">
-	   <area>15,10,35,35</area>
-	   <filename>icons/draw-triangle1.png</filename>
-	   <alpha>255</alpha>
-	 </imagetype>
+         <imagetype name="yes">
+           <area>15,10,35,35</area>
+           <filename>icons/draw-triangle1.png</filename>
+           <alpha>255</alpha>
+         </imagetype>
        </state>
-      
+       
        <state name="pushed">
-	 	 <imagetype name="yes">
-	   <area>15,10,35,35</area>
-	   <filename>icons/draw-triangle1.png</filename>
-	   <alpha>255</alpha>
-	 </imagetype>
+         <imagetype name="yes">
+           <area>15,10,35,35</area>
+           <filename>icons/draw-triangle1.png</filename>
+           <alpha>255</alpha>
+         </imagetype>
        </state>
      </statetype>
    </button>
-	 
-      <button name="basepopupbuttonright" from="basepopupbutton">
+   
+   <button name="basepopupbuttonright" from="basepopupbutton">
      <statetype name="buttonstate">
        <state name="active">
-	 <imagetype name="yes">
-	   <area>530,10,35,35</area>
-	   <filename>icons/draw-triangle2.png</filename>
-	   <alpha>100</alpha>
-	 </imagetype>
+         <imagetype name="yes">
+           <area>530,10,35,35</area>
+           <filename>icons/draw-triangle2.png</filename>
+           <alpha>100</alpha>
+         </imagetype>
        </state>
        
        <state name="inactive">
-	 <imagetype name="yes">
-	   <alpha>50</alpha>
-	 </imagetype>
+         <imagetype name="yes">
+           <alpha>50</alpha>
+         </imagetype>
        </state>
        
        <state name="selected">
-	 <imagetype name="yes">
-	   <area>530,10,35,35</area>
-	   <filename>icons/draw-triangle2.png</filename>
-	   <alpha>255</alpha>
-	 </imagetype>
+         <imagetype name="yes">
+           <area>530,10,35,35</area>
+           <filename>icons/draw-triangle2.png</filename>
+           <alpha>255</alpha>
+         </imagetype>
        </state>
-      
+       
        <state name="pushed">
-	 
-	 <imagetype name="yes">
-	   <area>530,10,35,35</area>
-	   <filename>icons/draw-triangle2.png</filename>
-	   <alpha>255</alpha>
-	 </imagetype>
-
+         
+         <imagetype name="yes">
+           <area>530,10,35,35</area>
+           <filename>icons/draw-triangle2.png</filename>
+           <alpha>255</alpha>
+         </imagetype>
+         
        </state>
      </statetype>
    </button>
-
+   
    <!-- Popup search dialog used to search button lists -->
    <window name="MythSearchListDialog">
      
@@ -2767,7 +2363,7 @@
        <area>5,5,590,40</area>
        <value>Search List</value>
      </textarea>
-
+     
      <textedit name="searchedit" from="basetexteditwide">
        <position>20,40</position>
      </textedit>
@@ -2775,34 +2371,35 @@
        <value>Next</value>
        <position>10,85</position>
      </button>
-
+     
      <button name="prevbutton" from="basepopupbuttonleft">
        <value>Previous</value>
        <position>10,145</position>
      </button>
-
+     
      <!-- <statetype name="searchstate">
      <area>210,120,200,30</area>
      <state name="found">
        <textarea name="statustext" from="basetextarea">
-	 <area>0,0,200,30</area>
-	 <align>allcenter</align>
-	 <font>basesmallgreen</font>
-	 <value>Found</value>
+         <area>0,0,200,30</area>
+         <align>allcenter</align>
+         <font>basesmallgreen</font>
+         <value>Found</value>
        </textarea>
      </state>
      <state name="notfound">
        <textarea name="statustext" from="basetextarea">
-	 <area>0,0,200,30</area>
-	 <align>allcenter</align>
-	 <font>basesmallred</font>
-	 <value>Not Found</value>
+         <area>0,0,200,30</area>
+         <align>allcenter</align>
+         <font>basesmallred</font>
+         <value>Not Found</value>
        </textarea>
      </state>
    </statetype>-->
-
-   </window>    
    
-   
+ </window>    
+ 
+ 
  </mythuitheme>
+ 
  

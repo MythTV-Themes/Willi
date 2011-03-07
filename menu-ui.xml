@@ -1,82 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
-    
-    <window name="mainmenu">
-
-        <imagetype name="background" from="basebackground"/>
-
-        <imagetype name="band">
-            
-            <area>0,445,1680,152</area>
-            
-            <filename>band.png</filename>
-            
-        </imagetype>
-
-        <buttonlist name="menu">
-                   <loadondemand>true</loadondemand>   
-            <area>0,0,1680,1050</area>
-            
-            <layout>vertical</layout>
-            
-            <!--<spacing>20</spacing>-->
-            
-            <arrange>stack</arrange>
-            
-            <scrollstyle>center</scrollstyle>
-            
-            <align>center</align>
-            
-            <buttonarea>0,0,1680,1050</buttonarea>
-            
-            <statetype name="buttonitem">
-                
-                <state name="active">
-                    
-                    <area>0,0,1680,60</area>
-                    
-                    <textarea name="buttontext">
-                        
-                        <area>0,0,1680,60</area>
-                        
-                        <font>menufont</font>
-                        
-                        <align>allcenter</align>
-                        
-                        <cutdown>yes</cutdown>
-
-                    </textarea>
-                    
-                </state>
-                
-                <state name="selectedactive"> 
-                    
-                    <area>0,0,1680,160</area>
-                    
-                    <textarea name="buttontext">
-                        
-                        <area>0,0,1680,160</area>
-                        
-                        <font>menuselectfont</font>
-                        
-                        <align>allcenter</align>
-                        
-                        <cutdown>yes</cutdown>
-			
-			<case>upper</case>
-			
-                    </textarea>
-                    
-                </state>
-                
-            </statetype>
-
-        </buttonlist>
-
-        <clock name="clock" from="baseclock" />
-
-    </window>
-    
+  <window name="mainmenu">
+    <imagetype name="background" from="basebackground"/>
+    <imagetype name="band">
+      <area>0,445,1680,152</area>
+      <filename>band.png</filename>
+    </imagetype>
+    <buttonlist name="menu">
+      <loadondemand>true</loadondemand> 
+      <area>0,0,1680,1050</area>
+      <layout>vertical</layout>
+      <arrange>stack</arrange>
+      <scrollstyle>center</scrollstyle>
+      <align>center</align>
+      <buttonarea>0,0,1680,1050</buttonarea>
+      <statetype name="buttonitem">
+        <state name="active">
+          <area>0,0,1680,60</area>
+          <textarea name="buttontext">
+            <area>0,0,1680,60</area>
+            <font>menufont</font>
+            <align>allcenter</align>
+            <cutdown>yes</cutdown>
+          </textarea>
+        </state>
+        <state name="selectedactive"> 
+          <area>0,0,1680,160</area>
+          <textarea name="buttontext">
+            <area>0,0,1680,160</area>
+            <font>menuselectfont</font>
+            <align>allcenter</align>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+          </textarea>
+          <textarea name="description">
+            <area>0,110,1680,30</area>
+            <font>basemenustate</font>
+            <align>bottom,hcenter</align>
+            <cutdown>yes</cutdown>
+            <alpha>180</alpha>
+          </textarea>
+        </state>
+      </statetype>
+    </buttonlist>
+    <clock name="clock" from="baseclock" />
+  </window>
 </mythuitheme>
-
