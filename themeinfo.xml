@@ -16,12 +16,12 @@
   <baseres>1680x1050</baseres>
   <version>
     <major>2</major>
-    <minor>0</minor>
+    <minor>1</minor>
   </version>
   <detail>
     <thumbnail name="preview">preview.jpg</thumbnail>
     <description>A UI and OSD theme with focus for fanart, banners and cover display.</description>
     <!-- What is not available -->
-    <errata>Supported: Recording/ Scheduling/ Video/ Gallery/ Net. Not yet suported: Music/ Games/ Weather</errata>
+    <errata>Supported: Recording/ Scheduling/ Video/ Gallery/ Net. Not yet suported: everything else.</errata>
   </detail>
 </themeinfo>
