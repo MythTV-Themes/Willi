@@ -136,7 +136,7 @@
    <!-- Base clock, used everywhere -->
    
    <clock name="baseclock">
-     <area>1300,10,365,100</area>
+     <area>1100,10,565,100</area>
      <font>baseclock</font>
      <format>%TIME%</format>
      <align>right,bottom</align>
