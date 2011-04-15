@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+  <!--This XML file defines the Window that enables the user to watch a recorded program.-->
+  <window name="miniplayer">
+    
+    <area>0,0,1680,1050</area>
+
+ <imagetype name="coverart">
+   <area>5,5,500,500</area>
+   <preserveaspect>yes</preserveaspect>
+   <reflection axis="vertical" shear="20" scale="65" length="100" />
+ </imagetype>
+
+    
+    <imagetype name="1640x140">
+      <area>20,890,1640,140</area>
+      <filename>OSD/1640x140.png</filename>
+    </imagetype>   
+    
+    <textarea name="title" from="basetextarea">
+      <font>basebuttontitle</font>
+      <area>30,898,1410,40</area>
+      <cutdown>yes</cutdown>
+      <template>%TRACKNUM| %%TITLE% by %ARTIST% of %ALBUM%</template>
+    </textarea>
+    
+    <textarea name="year" from="basebigstatetext">
+      <area>1300,900,350,30</area>
+    </textarea>
+    
+    <progressbar name="progress" from="basewideprogressbar">
+      <position>20,972</position>
+    </progressbar>
+    
+    <statetype name="ratingstate" from="baserating">
+      <position>800,972</position>
+      <alpha>180</alpha>
+    </statetype>
+    
+    <textarea name="info" from="basepagetitle">
+      <area>30,978,1630,58</area>
+      <align>left,vcenter</align>
+    </textarea>
+    
+    <textarea name="time" from="info">
+      <area>20,978,1640,58</area>
+      <align>allcenter</align>
+    </textarea>
+    
+    <textarea name="volume" from="info">
+      <area>20,978,1630,58</area>
+      <align>right,vcenter</align>
+    </textarea>
+    
+
+    
+  </window>
+</mythuitheme>
