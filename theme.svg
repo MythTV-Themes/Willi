@@ -15,7 +15,7 @@
    height="1050"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.0 r9654"
+   inkscape:version="0.48.1 r9760"
    sodipodi:docname="theme.svg"
    style="display:inline"
    inkscape:export-filename="/usr/share/mythtv/themes/Willi/band.png"
@@ -29,15 +29,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.51854498"
-     inkscape:cx="653.64482"
-     inkscape:cy="588.3934"
+     inkscape:cx="1222.1613"
+     inkscape:cy="211.08356"
      inkscape:document-units="px"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer11"
      showgrid="false"
      inkscape:window-width="1680"
-     inkscape:window-height="995"
-     inkscape:window-x="-2"
-     inkscape:window-y="-3"
+     inkscape:window-height="996"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:snap-global="false"
@@ -2293,7 +2293,7 @@
        xlink:href="#linearGradient3138-3-6"
        id="linearGradient4691"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.4841403,0,0,0.17396747,-709.16176,862.82047)"
+       gradientTransform="matrix(1.4841403,0,0,0.17396747,-709.16176,806.82047)"
        x1="1257.2358"
        y1="463.57956"
        x2="1257.2358"
@@ -2303,7 +2303,7 @@
        xlink:href="#linearGradient4008-4-4"
        id="linearGradient4693"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.4841403,0,0,0.17396747,-709.16176,862.82047)"
+       gradientTransform="matrix(1.4841403,0,0,0.17396747,-709.16176,806.82047)"
        spreadMethod="reflect"
        x1="1333.3152"
        y1="406.67526"
@@ -32470,6 +32470,70 @@
        xlink:href="#linearGradient4008-4-8"
        inkscape:collect="always"
        spreadMethod="reflect" />
+    <linearGradient
+       y2="826.58478"
+       x2="1257.2358"
+       y1="463.57956"
+       x1="1257.2358"
+       gradientTransform="matrix(2.7362271,0,0,0.07133918,-2655.1634,929.20681)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient5193-8"
+       xlink:href="#linearGradient3138-3-4-7-2-2"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient3138-3-4-7-2-2">
+      <stop
+         id="stop3140-4-5-6-6-8"
+         offset="0"
+         style="stop-color:#000000;stop-opacity:1;" />
+      <stop
+         id="stop3142-4-51-8-9-8"
+         offset="1"
+         style="stop-color:#2f2f2f;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       y2="208.7668"
+       x2="1256.2614"
+       y1="406.67526"
+       x1="1333.3152"
+       spreadMethod="reflect"
+       gradientTransform="matrix(2.7362271,0,0,0.07133918,-2655.1634,929.20681)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient5195-7"
+       xlink:href="#linearGradient4008-4-1-6-3-0"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4008-4-1-6-3-0">
+      <stop
+         id="stop4010-6-1-4-5-1"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         id="stop4012-4-52-3-5-5"
+         offset="1"
+         style="stop-color:#000000;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       y2="826.58478"
+       x2="1257.2358"
+       y1="463.57956"
+       x1="1257.2358"
+       gradientTransform="matrix(2.7362271,0,0,0.07133918,-2672.7932,984.75966)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient15341"
+       xlink:href="#linearGradient3138-3-4-7-2-2"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="208.7668"
+       x2="1256.2614"
+       y1="406.67526"
+       x1="1333.3152"
+       spreadMethod="reflect"
+       gradientTransform="matrix(2.7362271,0,0,0.07133918,-2672.7932,984.75966)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient15343"
+       xlink:href="#linearGradient4008-4-1-6-3-0"
+       inkscape:collect="always" />
   </defs>
   <metadata
      id="metadata7">
@@ -33747,7 +33811,7 @@
        style="fill:#ffffff;stroke:none;display:inline" />
   </g>
   <g
-     style="display:inline"
+     style="display:none"
      inkscape:label="Layer"
      id="layer4"
      inkscape:groupmode="layer">
@@ -33820,7 +33884,7 @@
        height="54"
        width="579"
        id="rect2818-1-7-1-7-9-8-7"
-       style="opacity:0.90000000000000002;fill:url(#linearGradient4286);fill-opacity:1.0;stroke:url(#linearGradient4288);stroke-width:1;stroke-opacity:1;display:inline" />
+       style="opacity:0.9;fill:url(#linearGradient4286);fill-opacity:1;stroke:url(#linearGradient4288);stroke-width:1;stroke-opacity:1;display:inline" />
     <g
        style="display:inline"
        id="g10028-6-9"
@@ -34458,11 +34522,11 @@
          inkscape:connector-curvature="0" />
       <polygon
          id="polygon5330"
-         points="314.877,226.061 313.488,226.061 313.488,219.123 309.604,219.123 309.604,218.291 318.484,218.291 318.484,219.123 314.877,219.123 "
+         points="318.484,218.291 318.484,219.123 314.877,219.123 314.877,226.061 313.488,226.061 313.488,219.123 309.604,219.123 309.604,218.291 "
          style="fill:#ffffff" />
       <polygon
          id="polygon5332"
-         points="328.615,226.061 328.615,219.678 328.477,219.678 325.563,226.061 324.451,226.061 321.537,219.678 321.537,226.061 320.428,226.061 320.428,218.291 322.092,218.291 325.008,224.813 328.061,218.291 329.725,218.291 329.725,226.061 "
+         points="329.725,226.061 328.615,226.061 328.615,219.678 328.477,219.678 325.563,226.061 324.451,226.061 321.537,219.678 321.537,226.061 320.428,226.061 320.428,218.291 322.092,218.291 325.008,224.813 328.061,218.291 329.725,218.291 "
          style="fill:#ffffff" />
     </g>
     <rect
@@ -35025,7 +35089,7 @@
          inkscape:connector-curvature="0" />
       <polygon
          id="polygon6443"
-         points="432.803,187.771 432.803,4.579 350.37,4.579 350.37,187.771 "
+         points="432.803,4.579 350.37,4.579 350.37,187.771 432.803,187.771 "
          style="fill:#ffffff" />
       <path
          id="path6445"
@@ -35034,11 +35098,11 @@
          inkscape:connector-curvature="0" />
       <polygon
          id="polygon6447"
-         points="941.176,187.771 941.176,4.579 857.588,4.579 857.588,187.771 "
+         points="941.176,4.579 857.588,4.579 857.588,187.771 941.176,187.771 "
          style="fill:#ffffff" />
       <polygon
          id="polygon6449"
-         points="1074,42.3629 1074,187.771 1155.28,187.771 1155.28,42.3629 1241.16,42.3629 1241.16,4.579 988.119,4.579 988.119,42.3629 "
+         points="1241.16,4.579 988.119,4.579 988.119,42.3629 1074,42.3629 1074,187.771 1155.28,187.771 1155.28,42.3629 1241.16,42.3629 "
          style="fill:#ffffff" />
       <path
          id="path6451"
@@ -35047,7 +35111,7 @@
          inkscape:connector-curvature="0" />
       <polygon
          id="polygon6453"
-         points="1811.37,187.771 1811.37,149.99 1677.39,149.99 1677.39,4.579 1594.96,4.579 1594.96,187.771 "
+         points="1811.37,149.99 1677.39,149.99 1677.39,4.579 1594.96,4.579 1594.96,187.771 1811.37,187.771 "
          style="fill:#ffffff" />
       <path
          id="path6455"
@@ -35151,7 +35215,7 @@
          style="fill:#ffffff" />
       <polygon
          id="polygon247"
-         points="95.0708,73.7363 88.0317,73.7363 88.0317,69.9141 107.2544,69.9141 107.2544,73.7363 100.2817,73.7363 100.2817,73.7363 100.2817,93.3369 95.0708,93.3369 "
+         points="107.2544,73.7363 100.2817,73.7363 100.2817,73.7363 100.2817,93.3369 95.0708,93.3369 95.0708,73.7363 88.0317,73.7363 88.0317,69.9141 107.2544,69.9141 "
          style="fill:#ffffff" />
       <path
          id="path249"
@@ -35160,7 +35224,7 @@
          inkscape:connector-curvature="0" />
       <polygon
          id="polygon251"
-         points="133.1343,69.9063 138.353,69.9063 138.353,89.3408 149.1128,89.3408 149.1128,93.3369 133.1343,93.3369 133.1343,93.3369 "
+         points="133.1343,93.3369 133.1343,69.9063 138.353,69.9063 138.353,89.3408 149.1128,89.3408 149.1128,93.3369 133.1343,93.3369 "
          style="fill:#ffffff" />
       <path
          id="path253"
@@ -35169,7 +35233,7 @@
          inkscape:connector-curvature="0" />
       <polygon
          id="polygon255"
-         points="184.436,69.9063 189.6509,69.9063 189.6509,89.3408 200.4175,89.3408 200.4175,93.3369 184.436,93.3369 184.436,93.3369 "
+         points="184.436,93.3369 184.436,69.9063 189.6509,69.9063 189.6509,89.3408 200.4175,89.3408 200.4175,93.3369 184.436,93.3369 "
          style="fill:#ffffff" />
       <path
          id="path257"
@@ -35208,7 +35272,7 @@
          inkscape:connector-curvature="0" />
       <polygon
          id="polygon271"
-         points="170.0894,5.4741 170.0894,44.4932 195.1636,44.4932 195.1636,37.9971 178.8989,37.9971 178.8989,5.4741 178.8989,5.4741 "
+         points="178.8989,5.4741 170.0894,5.4741 170.0894,44.4932 195.1636,44.4932 195.1636,37.9971 178.8989,37.9971 178.8989,5.4741 "
          style="fill:#ffffff" />
       <path
          id="path273"
@@ -35264,7 +35328,7 @@
          style="fill:#ffffff" />
       <polygon
          id="polygon247-3"
-         points="195.9131,75.2725 188.7188,75.2725 188.7188,71.3545 208.3428,71.3545 208.3428,75.2725 201.2285,75.2725 201.2285,75.2725 201.2285,95.2822 195.9131,95.2822 "
+         points="208.3428,75.2725 201.2285,75.2725 201.2285,75.2725 201.2285,95.2822 195.9131,95.2822 195.9131,75.2725 188.7188,75.2725 188.7188,71.3545 208.3428,71.3545 "
          style="fill:#ffffff" />
       <path
          id="path249-8"
@@ -35273,7 +35337,7 @@
          inkscape:connector-curvature="0" />
       <polygon
          id="polygon251-9"
-         points="235.9004,71.3623 241.2158,71.3623 241.2158,91.2119 252.2168,91.2119 252.2168,95.2822 235.9004,95.2822 235.9004,95.2822 "
+         points="235.9004,95.2822 235.9004,71.3623 241.2158,71.3623 241.2158,91.2119 252.2168,91.2119 252.2168,95.2822 235.9004,95.2822 "
          style="fill:#ffffff" />
       <path
          id="path253-3"
@@ -35302,7 +35366,7 @@
          inkscape:connector-curvature="0" />
       <polygon
          id="polygon263"
-         points="173.6396,5.584 173.6396,45.4268 199.2373,45.4268 199.2373,38.7949 182.6328,38.7949 182.6328,5.584 182.6328,5.584 "
+         points="182.6328,5.584 173.6396,5.584 173.6396,45.4268 199.2373,45.4268 199.2373,38.7949 182.6328,38.7949 182.6328,5.584 "
          style="fill:#ffffff" />
       <path
          id="path265-0"
@@ -35346,7 +35410,7 @@
        height="299"
        x="-818.07379"
        y="1624.6957"
-       inkscape:export-filename="D:\Dokumente\Privat\Willi\icons\audiotypes\LPCM-Blu-ray.png"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/audiotypes/LPCM-Blu-ray.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
@@ -35355,7 +35419,7 @@
        x="-498.15973"
        y="1798.516"
        id="text5074-3-6-4"
-       inkscape:export-filename="D:\Dokumente\Privat\Willi\icons\audiotypes\LPCM-Blu-ray.png"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/audiotypes/LPCM-Blu-ray.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
@@ -35366,8 +35430,8 @@
     <g
        style="display:inline"
        id="g7013"
-       transform="translate(-949.57381,-2003.8042)"
-       inkscape:export-filename="D:\Dokumente\Privat\Willi\icons\audiotypes\LPCM-Blu-ray.png"
+       transform="translate(-949.57381,-2017.8042)"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/audiotypes/LPCM-Blu-ray.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <path
@@ -35438,7 +35502,7 @@
        height="299"
        x="-122.07378"
        y="1620.6957"
-       inkscape:export-filename="D:\Dokumente\Privat\Willi\icons\audiotypes\LPCM-DVD.png"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/audiotypes/LPCM-DVD.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
@@ -35447,7 +35511,7 @@
        x="197.84029"
        y="1794.516"
        id="text5074-3-6-4-7"
-       inkscape:export-filename="D:\Dokumente\Privat\Willi\icons\audiotypes\LPCM-DVD.png"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/audiotypes/LPCM-DVD.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
@@ -35458,8 +35522,8 @@
     <path
        id="path31168"
        style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline"
-       d="m 234.04459,1830.2305 c 0,0 -14.2252,16.8848 -16.8847,20.0699 -14.1943,17.1013 -16.73,21.678 -17.1321,22.8841 0.062,-1.2061 -0.4638,-5.8447 -6.5251,-23.1315 -1.608,-4.6077 -6.8033,-19.8225 -6.8033,-19.8225 l -96.762297,0 -3.4017,14.3489 25.419897,0.031 5.9684,0 c 16.3589,0 26.3166,6.5559 23.5643,18.2454 -3.0306,12.7099 -17.3177,18.2453 -32.5015,18.2453 l -5.6901,0 7.3909,-31.2027 -25.419797,0 -10.8235,45.5516 36.088697,0 c 27.0897,0 52.8807,-14.318 57.3956,-32.5942 0.835,-3.3708 0.7422,-11.7514 -1.3298,-16.7611 -0.03,-0.1855 -0.093,-0.3401 -0.2782,-0.7422 -0.093,-0.1546 -0.1546,-0.8967 0.2782,-1.0514 0.2475,-0.093 0.6804,0.3712 0.7422,0.4948 0.1856,0.5566 0.3712,0.9896 0.3712,0.9896 l 22.9458,64.7556 58.4161,-65.9307 24.7395,0 5.9684,0 c 16.3281,0 26.4094,6.5559 23.6262,18.2454 -3.0306,12.7099 -17.3794,18.2453 -32.5633,18.2453 l -5.721,0 7.4219,-31.2027 -25.4199,0 -10.8236,45.5516 36.0579,0 c 27.1206,0 53.0662,-14.2561 57.4265,-32.5942 4.3604,-18.3382 -14.6891,-32.6253 -41.9334,-32.6253 l -53.8084,0"
-       inkscape:export-filename="D:\Dokumente\Privat\Willi\icons\audiotypes\LPCM-DVD.png"
+       d="m 234.04459,1824.2305 c 0,0 -14.2252,16.8848 -16.8847,20.0699 -14.1943,17.1013 -16.73,21.678 -17.1321,22.8841 0.062,-1.2061 -0.4638,-5.8447 -6.5251,-23.1315 -1.608,-4.6077 -6.8033,-19.8225 -6.8033,-19.8225 l -96.762297,0 -3.4017,14.3489 25.419897,0.031 5.9684,0 c 16.3589,0 26.3166,6.5559 23.5643,18.2454 -3.0306,12.7099 -17.3177,18.2453 -32.5015,18.2453 l -5.6901,0 7.3909,-31.2027 -25.419797,0 -10.8235,45.5516 36.088697,0 c 27.0897,0 52.8807,-14.318 57.3956,-32.5942 0.835,-3.3708 0.7422,-11.7514 -1.3298,-16.7611 -0.03,-0.1855 -0.093,-0.3401 -0.2782,-0.7422 -0.093,-0.1546 -0.1546,-0.8967 0.2782,-1.0514 0.2475,-0.093 0.6804,0.3712 0.7422,0.4948 0.1856,0.5566 0.3712,0.9896 0.3712,0.9896 l 22.9458,64.7556 58.4161,-65.9307 24.7395,0 5.9684,0 c 16.3281,0 26.4094,6.5559 23.6262,18.2454 -3.0306,12.7099 -17.3794,18.2453 -32.5633,18.2453 l -5.721,0 7.4219,-31.2027 -25.4199,0 -10.8236,45.5516 36.0579,0 c 27.1206,0 53.0662,-14.2561 57.4265,-32.5942 4.3604,-18.3382 -14.6891,-32.6253 -41.9334,-32.6253 l -53.8084,0"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/audiotypes/LPCM-DVD.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"
        inkscape:connector-curvature="0" />
@@ -35849,13 +35913,13 @@
        id="rect5050-97-63-7-8-2-8-8-9-0-3"
        width="649"
        height="649"
-       x="633.92621"
-       y="1969.6957"
+       x="271.37329"
+       y="3034.2129"
        inkscape:export-filename="D:\Dokumente\Privat\Willi\icons\videotypes\sd480-576.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       d="m 694.50399,2263.1708 -37.7438,172.1378 539.97621,0 c 30.3895,0 54.8703,-24.4807 54.8703,-54.8703 l 0,-62.3972 c 0,-30.3895 -24.4808,-54.8703 -54.8703,-54.8703 l -502.23241,0 z"
+       d="m 331.95106,3327.6879 -37.7438,172.1378 539.97621,0 c 30.3895,0 54.8703,-24.4807 54.8703,-54.8703 l 0,-62.3972 c 0,-30.3895 -24.4808,-54.8703 -54.8703,-54.8703 l -502.23241,0 z"
        id="rect3663-7-3-2"
        style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline"
        inkscape:export-filename="D:\Dokumente\Privat\Willi\icons\videotypes\sd480-576.png"
@@ -35863,7 +35927,7 @@
        inkscape:export-ydpi="90"
        inkscape:connector-curvature="0" />
     <path
-       d="m 890.19649,2410.3279 -28.9356,0 24.5282,-99.3579 -41.1997,0 4.8865,-19.9367 110.6641,0 -4.8865,19.9367 -40.6247,0 -24.4323,99.3579 z m 129.06021,0 -30.85181,0 -17.7187,-119.2946 28.8398,0 10.34101,90.244 58.1585,-90.244 28.6481,0 -77.4169,119.2946 z"
+       d="m 527.64356,3474.845 -28.9356,0 24.5282,-99.3579 -41.1997,0 4.8865,-19.9367 110.6641,0 -4.8865,19.9367 -40.6247,0 -24.4323,99.3579 z m 129.06021,0 -30.85181,0 -17.7187,-119.2946 28.8398,0 10.34101,90.244 58.1585,-90.244 28.6481,0 -77.4169,119.2946 z"
        id="text3669-6-9-5"
        style="font-size:51.80436707px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#800000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial Bold Italic"
        inkscape:export-filename="D:\Dokumente\Privat\Willi\icons\videotypes\sd480-576.png"
@@ -35873,22 +35937,22 @@
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:bold;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold Oblique"
-       x="950.61371"
-       y="2576.9409"
+       x="588.06079"
+       y="3641.458"
        id="text5074-3-9-7-8-9-8-8-9-2-5-1-8"
        inkscape:export-filename="D:\Dokumente\Privat\Willi\icons\videotypes\sd480-576.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
-         x="950.61371"
-         y="2576.9409"
+         x="588.06079"
+         y="3641.458"
          style="font-size:160px;font-style:italic;font-weight:bold;text-align:center;text-anchor:middle;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial"
          id="tspan7399-5-6-1-7-1-0-5-7">480/576</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:88.68969727px;font-style:normal;font-weight:bold;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold Oblique"
-       x="1358.4012"
-       y="2390.291"
+       x="1239.5304"
+       y="3527.9717"
        id="text5074-3-9-7-8-9-8-9"
        inkscape:export-filename="D:\Dokumente\Privat\Willi\icons\videotypes\sd480-576.png"
        inkscape:export-xdpi="90"
@@ -35896,12 +35960,12 @@
        transform="matrix(1.0687294,0,-0.20701079,0.93569055,0,0)"><tspan
          sodipodi:role="line"
          id="tspan5076-8-5-1-2-0-2-4"
-         x="1358.4012"
-         y="2390.291"
+         x="1239.5304"
+         y="3527.9717"
          style="font-size:354.75878906px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;font-family:Arial Black;-inkscape-font-specification:Arial Black Heavy">SD</tspan><tspan
          sodipodi:role="line"
-         x="1358.4012"
-         y="2833.7395"
+         x="1239.5304"
+         y="3971.4202"
          style="font-size:354.75878906px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;font-family:Arial Black;-inkscape-font-specification:Arial Black Heavy"
          id="tspan7399-5-6-19" /></text>
     <rect
@@ -35965,7 +36029,7 @@
        height="299"
        x="2774.5771"
        y="2256.8672"
-       inkscape:export-filename="D:\Dokumente\Privat\Willi\icons\videotypes\Recording.png"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/videotypes/Recording.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
@@ -35974,7 +36038,7 @@
        x="2809.1475"
        y="2464.6873"
        id="text5074-2-6"
-       inkscape:export-filename="D:\Dokumente\Privat\Willi\icons\videotypes\Recording.png"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/videotypes/Recording.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
@@ -35987,7 +36051,7 @@
        d="m 3264.7983,2292.8752 -77.0616,89.5759 6.7544,6.671 70.3072,-96.2469 z"
        id="path14341-4-3"
        sodipodi:nodetypes="cccc"
-       inkscape:export-filename="D:\Dokumente\Privat\Willi\icons\videotypes\Recording.png"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/videotypes/Recording.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"
        inkscape:connector-curvature="0" />
@@ -35996,7 +36060,7 @@
        d="m 3264.1522,2292.3927 -68.7215,95.2954 9.8174,8.6679 58.9041,-103.9633 z"
        id="path18921-8-5"
        sodipodi:nodetypes="cccc"
-       inkscape:export-filename="D:\Dokumente\Privat\Willi\icons\videotypes\Recording.png"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/videotypes/Recording.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"
        inkscape:connector-curvature="0" />
@@ -36010,12 +36074,12 @@
        sodipodi:ry="14.910714"
        d="m 31.160714,16.910715 a 14.910714,14.910714 0 1 1 -29.8214281,0 14.910714,14.910714 0 1 1 29.8214281,0 z"
        transform="matrix(7.6817213,0,0,7.6817213,3168.1113,2276.4638)"
-       inkscape:export-filename="D:\Dokumente\Privat\Willi\icons\videotypes\Recording.png"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/videotypes/Recording.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
        sodipodi:type="arc"
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient8316-4-8-1);stroke-width:0.13257237;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline"
+       style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient8316-4-8-1);stroke-width:0.13257237;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline"
        id="path35549-3-6"
        sodipodi:cx="16.25"
        sodipodi:cy="16.910715"
@@ -36023,7 +36087,7 @@
        sodipodi:ry="14.910714"
        d="m 31.160714,16.910715 a 14.910714,14.910714 0 1 1 -29.8214281,0 14.910714,14.910714 0 1 1 29.8214281,0 z"
        transform="matrix(6.2452659,0,0,6.2452659,3190.9459,2300.2473)"
-       inkscape:export-filename="D:\Dokumente\Privat\Willi\icons\videotypes\Recording.png"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/videotypes/Recording.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
@@ -36036,7 +36100,7 @@
        id="path10651-8-1-8"
        style="fill:none;stroke:#ffffff;stroke-width:0.13726276;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline"
        sodipodi:type="arc"
-       inkscape:export-filename="D:\Dokumente\Privat\Willi\icons\videotypes\Recording.png"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/videotypes/Recording.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -36641,6 +36705,94 @@
        width="1639"
        id="rect2818-1-7-1-7-9-7-9"
        style="opacity:0.9;fill:url(#linearGradient6502);fill-opacity:1;stroke:url(#linearGradient6504);stroke-width:0.99999994;stroke-opacity:1;display:inline" />
+    <rect
+       style="fill:#800000;fill-opacity:1;stroke:#f9f9f9;stroke-width:0.99999994;stroke-miterlimit:4;stroke-opacity:0;stroke-dasharray:none;display:inline"
+       id="rect5050-97-63-7-8-2-8-8-9-0-3-5"
+       width="649"
+       height="649"
+       x="601.16705"
+       y="1990.5784"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/videotypes/sd.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       d="m 661.74479,2284.0533 -37.7438,172.1378 539.97621,0 c 30.3895,0 54.8703,-24.4807 54.8703,-54.8703 l 0,-62.3972 c 0,-30.3895 -24.4808,-54.8703 -54.8703,-54.8703 l -502.23241,0 z"
+       id="rect3663-7-3-2-6"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/videotypes/sd.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 857.43729,2431.2104 -28.9356,0 24.5282,-99.3579 -41.1997,0 4.8865,-19.9367 110.6641,0 -4.8865,19.9367 -40.6247,0 -24.4323,99.3579 z m 129.0602,0 -30.8518,0 -17.7187,-119.2946 28.8398,0 10.341,90.244 58.15851,-90.244 28.6481,0 -77.41691,119.2946 z"
+       id="text3669-6-9-5-9"
+       style="font-size:51.80436707px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#800000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial Bold Italic"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/videotypes/sd.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:88.68969727px;font-style:normal;font-weight:bold;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold Oblique"
+       x="1332.0717"
+       y="2412.6086"
+       id="text5074-3-9-7-8-9-8-9-2"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/videotypes/sd.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(1.0687294,0,-0.20701079,0.93569055,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan5076-8-5-1-2-0-2-4-8"
+         x="1332.0717"
+         y="2412.6086"
+         style="font-size:354.75878906px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;font-family:Arial Black;-inkscape-font-specification:Arial Black Heavy">SD</tspan><tspan
+         sodipodi:role="line"
+         x="1332.0717"
+         y="2856.0571"
+         style="font-size:354.75878906px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;font-family:Arial Black;-inkscape-font-specification:Arial Black Heavy"
+         id="tspan7399-5-6-19-2" /></text>
+    <rect
+       style="fill:#800000;fill-opacity:1;stroke:#f9f9f9;stroke-width:0.99999994;stroke-miterlimit:4;stroke-opacity:0;stroke-dasharray:none;display:inline"
+       id="rect5050-97-63-7-8-2-8-8-3"
+       width="649"
+       height="649"
+       x="-1759.2841"
+       y="2800.5371"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/videotypes/hd.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       d="m -1698.7061,3094.0121 -37.7438,172.1378 539.9762,0 c 30.3895,0 54.8703,-24.4807 54.8703,-54.8703 l 0,-62.3972 c 0,-30.3895 -24.4808,-54.8703 -54.8703,-54.8703 l -502.2324,0 z"
+       id="rect3663-3"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/videotypes/hd.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m -1503.0136,3241.1692 -28.9356,0 24.5282,-99.3579 -41.1997,0 4.8865,-19.9367 110.6641,0 -4.8865,19.9367 -40.6247,0 -24.4323,99.3579 z m 129.0602,0 -30.8518,0 -17.7187,-119.2946 28.8398,0 10.341,90.244 58.1585,-90.244 28.6481,0 -77.4169,119.2946 z"
+       id="text3669-8"
+       style="font-size:51.80436707px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#800000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial Bold Italic"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/videotypes/hd.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m -1639.1098,2830.7947 c -17.8149,76.8072 -35.5821,153.6242 -53.3395,230.4429 28.7244,0 57.4488,0 86.1733,0 7.2669,-31.3187 14.6404,-59.6112 21.8141,-90.9484 l 68.9752,0 c -7.0111,30.3171 -14.0625,60.6262 -21.0474,90.9484 28.7244,0 57.4489,0 86.1733,0 18.1571,-78.3587 36.2862,-156.723 54.2892,-235.1121 -28.6433,0 -57.2865,0 -85.9298,0 -6.2906,27.0536 -12.6866,54.0864 -19.0434,81.1268 l -68.9741,0 c 6.0277,-26.0372 12.0352,-55.0835 18.0321,-81.1268 -28.6838,0 -57.3677,0 -86.0516,0 l -0.693,3.0198 -0.3784,1.6494 z"
+       id="text3678-5"
+       style="font-size:94.34882355px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial Bold Italic"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/videotypes/hd.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m -1263.5111,2825.931 c -29.8533,0.4649 -59.8114,0.058 -89.7042,0.1945 -16.7347,78.4969 -33.4629,156.9955 -50.1568,235.5012 65.7756,-0.4208 140.3155,5.4304 199.0444,-19.7467 63.0639,-37.5737 83.2867,-121.6632 38.841,-181.5139 -22.8467,-26.1862 -62.6826,-36.2655 -98.0244,-34.4351 z m 3.8311,59.24 c 19.9537,-1.6309 38.6338,12.9512 37.0914,30.3496 4.955,33.2498 -8.8916,74.9922 -48.4755,85.1151 -12.5841,2.1718 -26.3365,1.8974 -39.6222,1.7509 8.2572,-38.8773 16.5142,-77.7546 24.7713,-116.6319 8.7856,0.013 17.5688,0.2362 26.235,-0.5837 z"
+       id="text3682-1"
+       style="font-size:94.34882355px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial Bold Italic"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/videotypes/hd.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:connector-curvature="0" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -36671,7 +36823,7 @@
        style="opacity:0.8;fill:#4d4d4d;fill-opacity:1;stroke:none;display:inline" />
   </g>
   <g
-     style="display:none"
+     style="display:inline"
      inkscape:label="Busy"
      id="layer11"
      inkscape:groupmode="layer">
@@ -36706,12 +36858,36 @@
        inkscape:export-filename="D:\Downloads\2010.04.08-Willi.tar\Willi\890x140.png"
        rx="20.000004"
        ry="20"
-       y="881.69598"
+       y="825.69598"
        x="740.84314"
        height="139"
        width="889"
        id="rect2818-1-7-1-7-9-1"
        style="opacity:0.9;fill:url(#linearGradient4691);fill-opacity:1;stroke:url(#linearGradient4693);stroke-width:1;stroke-opacity:1;display:inline" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/animations/wait/wait-10.png"
+       rx="20.000004"
+       ry="20"
+       y="992.5"
+       x="0.5"
+       height="57"
+       width="1639"
+       id="rect2818-1-7-1-7-9-7-3-8-0"
+       style="opacity:0;fill:url(#linearGradient15341);fill-opacity:1;stroke:url(#linearGradient15343);stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/animations/wait/wait-10.png"
+       rx="19.999998"
+       ry="20"
+       y="992.5"
+       x="738.5"
+       height="57"
+       width="163"
+       id="rect2818-1-7-4-4-2-6"
+       style="opacity:0.7;fill:#a02c2c;fill-opacity:1;stroke:#ffffff;stroke-width:0.99999994;stroke-opacity:0;display:inline" />
   </g>
   <g
      style="display:none"
@@ -36825,7 +37001,7 @@
          sodipodi:cy="638.46387"
          sodipodi:rx="386.08029"
          sodipodi:ry="386.08029"
-         d="m 1320.8755,638.46387 a 386.08029,386.08029 0 1 1 -772.16063,0 386.08029,386.08029 0 1 1 772.16063,0 z"
+         d="m 1320.8755,638.46387 c 0,213.22625 -172.8541,386.08033 -386.08033,386.08033 -213.22626,0 -386.0803,-172.85408 -386.0803,-386.08033 0,-213.22626 172.85404,-386.08029 386.0803,-386.08029 213.22623,0 386.08033,172.85403 386.08033,386.08029 z"
          transform="matrix(0.93633373,0,0,0.93633373,-229.94046,-73.630623)"
          inkscape:export-filename="/usr/share/mythtv/themes/Willi/progressbar/progressbar16.png"
          inkscape:export-xdpi="90"
@@ -36864,14 +37040,14 @@
          sodipodi:cy="454.42914"
          sodipodi:rx="73.080704"
          sodipodi:ry="73.080704"
-         d="m 422.53935,454.42914 a 73.080704,73.080704 0 1 1 -146.16141,0 73.080704,73.080704 0 1 1 146.16141,0 z"
+         d="m 422.53935,454.42914 c 0,40.36136 -32.71934,73.0807 -73.0807,73.0807 -40.36136,0 -73.08071,-32.71934 -73.08071,-73.0807 0,-40.36136 32.71935,-73.08071 73.08071,-73.08071 40.36136,0 73.0807,32.71935 73.0807,73.08071 z"
          transform="matrix(0.875744,0,0,0.136823,758.1908,475.7991)" />
       <g
          id="g2409"
          transform="matrix(0.922724,0,0,0.931801,989.1004,388.5031)">
         <path
            transform="matrix(0.159151,0,0,0.159151,32.28672,21.20532)"
-           d="m 725.34122,481.10901 a 402.13217,402.13217 0 1 1 -804.264346,0 402.13217,402.13217 0 1 1 804.264346,0 z"
+           d="m 725.34122,481.10901 c 0,222.09146 -180.04071,402.13217 -402.13217,402.13217 -222.09147,0 -402.132176,-180.04071 -402.132176,-402.13217 0,-222.09147 180.040706,-402.132173 402.132176,-402.132173 222.09146,0 402.13217,180.040703 402.13217,402.132173 z"
            sodipodi:ry="402.13217"
            sodipodi:rx="402.13217"
            sodipodi:cy="481.10901"
@@ -36881,7 +37057,7 @@
            sodipodi:type="arc" />
         <path
            transform="matrix(0.393975,0.166671,-0.113883,0.269194,21.05235,-115.9621)"
-           d="m 422.53935,454.42914 a 73.080704,73.080704 0 1 1 -146.16141,0 73.080704,73.080704 0 1 1 146.16141,0 z"
+           d="m 422.53935,454.42914 c 0,40.36136 -32.71934,73.0807 -73.0807,73.0807 -40.36136,0 -73.08071,-32.71934 -73.08071,-73.0807 0,-40.36136 32.71935,-73.08071 73.08071,-73.08071 40.36136,0 73.0807,32.71935 73.0807,73.08071 z"
            sodipodi:ry="73.080704"
            sodipodi:rx="73.080704"
            sodipodi:cy="454.42914"
@@ -37004,7 +37180,7 @@
              sodipodi:cy="478.34644"
              sodipodi:rx="220.57086"
              sodipodi:ry="220.57086"
-             d="m 546.11218,478.34644 a 220.57086,220.57086 0 1 1 -441.14172,0 220.57086,220.57086 0 1 1 441.14172,0 z"
+             d="m 546.11218,478.34644 c 0,121.81792 -98.75294,220.57086 -220.57086,220.57086 -121.81792,0 -220.57086,-98.75294 -220.57086,-220.57086 0,-121.81793 98.75294,-220.57087 220.57086,-220.57087 121.81792,0 220.57086,98.75294 220.57086,220.57087 z"
              transform="matrix(0.159151,0,0,0.159151,153.9327,11.4261)" />
           <path
              sodipodi:type="star"
@@ -37046,7 +37222,7 @@
              sodipodi:cy="470.37399"
              sodipodi:rx="81.053146"
              sodipodi:ry="81.053146"
-             d="m 398.62202,470.37399 a 81.053146,81.053146 0 1 1 -162.10629,0 81.053146,81.053146 0 1 1 162.10629,0 z"
+             d="m 398.62202,470.37399 c 0,44.76442 -36.28873,81.05315 -81.05314,81.05315 -44.76442,0 -81.05315,-36.28873 -81.05315,-81.05315 0,-44.76441 36.28873,-81.05314 81.05315,-81.05314 44.76441,0 81.05314,36.28873 81.05314,81.05314 z"
              transform="matrix(0.170761,0,0,0.170761,152.7593,6.717385)" />
           <path
              style="fill:url(#linearGradient14173);fill-opacity:1;stroke:none"
@@ -37064,7 +37240,7 @@
         </g>
         <path
            transform="matrix(0.245539,0.103875,-0.07097587,0.167771,56.3204,-46.62997)"
-           d="m 422.53935,454.42914 a 73.080704,73.080704 0 1 1 -146.16141,0 73.080704,73.080704 0 1 1 146.16141,0 z"
+           d="m 422.53935,454.42914 c 0,40.36136 -32.71934,73.0807 -73.0807,73.0807 -40.36136,0 -73.08071,-32.71934 -73.08071,-73.0807 0,-40.36136 32.71935,-73.08071 73.08071,-73.08071 40.36136,0 73.0807,32.71935 73.0807,73.08071 z"
            sodipodi:ry="73.080704"
            sodipodi:rx="73.080704"
            sodipodi:cy="454.42914"
@@ -37221,7 +37397,7 @@
          sodipodi:cy="23.843431"
          sodipodi:rx="0.98252523"
          sodipodi:ry="0.98252523"
-         d="m 24.190449,23.843431 a 0.98252523,0.98252523 0 1 1 -1.96505,0 0.98252523,0.98252523 0 1 1 1.96505,0 z"
+         d="m 24.190449,23.843431 c 0,0.542634 -0.439891,0.982526 -0.982525,0.982526 -0.542634,0 -0.982525,-0.439892 -0.982525,-0.982526 0,-0.542633 0.439891,-0.982525 0.982525,-0.982525 0.542634,0 0.982525,0.439892 0.982525,0.982525 z"
          transform="matrix(0.979893,0,0,1,315.0523,630.17239)" />
       <path
          id="path45138"
@@ -38374,7 +38550,7 @@
          inkscape:export-xdpi="90"
          inkscape:export-filename="/usr/share/mythtv/themes/Willi/animations/transcode/1.png"
          transform="matrix(0,2.4811136,-2.4811136,0,267.52447,439.75384)"
-         d="m 31.160714,16.910715 a 14.910714,14.910714 0 1 1 -29.8214281,0 14.910714,14.910714 0 1 1 29.8214281,0 z"
+         d="m 31.160714,16.910715 c 0,8.23496 -6.675754,14.910714 -14.910714,14.910714 -8.23496,0 -14.9107141,-6.675754 -14.9107141,-14.910714 0,-8.2349599 6.6757541,-14.910714 14.9107141,-14.910714 8.23496,0 14.910714,6.6757541 14.910714,14.910714 z"
          sodipodi:ry="14.910714"
          sodipodi:rx="14.910714"
          sodipodi:cy="16.910715"
@@ -38389,7 +38565,7 @@
          sodipodi:end="1.5707963"
          sodipodi:start="0.78539816"
          transform="matrix(0,2.4811136,-2.4811136,0,267.52447,439.75384)"
-         d="M 26.793467,27.454182 A 14.910714,14.910714 0 0 1 16.25,31.821429 l 0,-14.910714 z"
+         d="M 26.793467,27.454182 C 23.997166,30.250483 20.204568,31.821429 16.25,31.821429 l 0,-14.910714 z"
          sodipodi:ry="14.910714"
          sodipodi:rx="14.910714"
          sodipodi:cy="16.910715"
@@ -38404,7 +38580,7 @@
          sodipodi:end="3.1415927"
          sodipodi:start="2.3561945"
          transform="matrix(0,2.4811136,-2.4811136,0,267.52447,439.75384)"
-         d="M 5.7065328,27.454182 A 14.910714,14.910714 0 0 1 1.3392859,16.910714 l 14.9107141,1e-6 z"
+         d="M 5.7065328,27.454182 C 2.9102314,24.657881 1.3392857,20.865282 1.3392859,16.910714 l 14.9107141,1e-6 z"
          sodipodi:ry="14.910714"
          sodipodi:rx="14.910714"
          sodipodi:cy="16.910715"
@@ -38419,7 +38595,7 @@
          sodipodi:end="4.712389"
          sodipodi:start="3.9269908"
          transform="matrix(0,2.4811136,-2.4811136,0,267.52447,439.75384)"
-         d="M 5.7065327,6.3672482 A 14.910714,14.910714 0 0 1 16.25,2.000001 l 0,14.910714 z"
+         d="M 5.7065327,6.3672482 C 8.5028342,3.5709467 12.295433,2.0000009 16.25,2.000001 l 0,14.910714 z"
          sodipodi:ry="14.910714"
          sodipodi:rx="14.910714"
          sodipodi:cy="16.910715"
@@ -38434,7 +38610,7 @@
          sodipodi:end="6.2831853"
          sodipodi:start="5.4977871"
          transform="matrix(0,2.4811136,-2.4811136,0,267.52447,439.75384)"
-         d="m 26.793467,6.3672476 a 14.910714,14.910714 0 0 1 4.367247,10.5434674 l -14.910714,0 z"
+         d="m 26.793467,6.3672476 c 2.796301,2.7963013 4.367247,6.5889004 4.367247,10.5434674 l -14.910714,0 z"
          sodipodi:ry="14.910714"
          sodipodi:rx="14.910714"
          sodipodi:cy="16.910715"

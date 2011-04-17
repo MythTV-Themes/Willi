@@ -1918,6 +1918,17 @@
      <align>allcenter</align>
    </textarea>
    
+   <imagetype name="basewidefillbar">
+     <area>20,472,1640,58</area>
+     <filename>OSD/fillbar-empty.png</filename>
+   </imagetype>
+   
+   <imagetype name="basewaitanimation">
+     <position>20,472</position>
+     <filepattern low="1" high="38">animations/wait/wait-%1.png</filepattern>
+     <delay>30</delay>
+   </imagetype>
+   
    <buttonlist name="basepopupboxlist">
      <area>0,0,600,800</area>
      <layout>vertical</layout>
@@ -2051,20 +2062,19 @@
    
    <window name="MythBusyDialog">
      
-     <area>-1,-1,1680,1050</area>
-     <imagetype name="animation">
-       <position>477,152</position>
-       <filepattern low="1" high="23">progressbar/progressbar%1.png</filepattern>
-       <delay>60</delay>
-     </imagetype>
+     <area>0,0,1640,58</area>
      
-     <textarea name="message" from="basetextarea">
-       <font>basetitle</font>
-       <area>477,152,725,725</area>
+     <imagetype name="background" from="basewidefillbar" />     
+     <imagetype name="animation" from="basewaitanimation" />
+     
+     <textarea name="message" from="basepagetitle">
+       <area>20,473,1640,58</area>
        <align>allcenter</align>
      </textarea>
      
    </window>
+ 
+   
    
    <!-- Popup that shows how much still needs to be done -->
    
@@ -2163,26 +2173,20 @@
      </button>
      
    </window>
-   
+
+
    <window name="videowindow">
      
-     <area>0,0,1680,1050</area>
-     <imagetype name="backimg">
-       <filename>890x140.png</filename>
-       <position>359,418</position>
-     </imagetype>
+     <area>0,0,1640,58</area>
+
+     <imagetype name="background" from="basewidefillbar" />     
+     <imagetype name="animation" from="basewaitanimation" />
      
-     <textarea name="title" from="basetextarea">
-       <font>basetitle</font>
-       <area>359,418,890,82</area>
+     <textarea name="title" from="basepagetitle">
+       <area>20,473,1640,58</area>
        <align>allcenter</align>
        <value>Playback starting ...</value>
      </textarea>
-     
-     <progressbar name="progressbar" from="baseprogressbar">
-       <position>359,500</position>
-     </progressbar>
-     
      
    </window>
    

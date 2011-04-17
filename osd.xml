@@ -13,9 +13,7 @@
     <imagetype name="statusbar" from="basestatusbar" />
     <textarea name="osd_number_entry" from="basepagetitle" />
   </window>
- 
-   
-  
+
   <!--Shows the user the current elapsed time and a lot of information on the recording-->  
   <window name="program_info">
     <area>0,0,1680,1050</area>
@@ -127,7 +125,6 @@
       <font>videocodec</font>
       <align>bottom,center</align>
     </textarea>    
-    
     
     <!--shows where the current item came from, recording, DVD, video etc.-->
     <statetype name="tvstate">
