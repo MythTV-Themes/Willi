@@ -35,6 +35,12 @@
      <pixelsize>25</pixelsize>
    </fontdef>
    
+   <fontdef name="videocodec" face="Arial">
+     <pixelsize>25</pixelsize>
+     <italics>yes</italics>
+     <weight>bold</weight>
+   </fontdef>
+   
    <fontdef name="basesmallblack" from="base">
      <pixelsize>25</pixelsize>
      <color>#000000</color>
