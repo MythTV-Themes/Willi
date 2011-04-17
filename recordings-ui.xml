@@ -607,41 +607,8 @@
       <filename>MythPopupBox-background.png</filename>
     </imagetype>
     <textarea name="label" from="basemessagearea" />
-    <buttonlist name="groups">
-      <loadondemand>true</loadondemand> 
-      <layout>vertical</layout>
-      <spacing>5</spacing>
-      <arrange>stack</arrange>
-      <scrollstyle>groupcenter</scrollstyle>
-      <align>bottom,hcenter</align>
+    <buttonlist name="groups" from="basepopupboxlist">
       <buttonarea>0,205,600,580</buttonarea>
-      <statetype name="buttonitem">
-        <state name="active">
-          <area>0,0,580,55</area>
-          <imagetype name="buttonbackground">
-            <filename>580x55.png</filename>
-          </imagetype>
-          <textarea name="buttontext">
-            <area>0,0,580,55</area>
-            <align>allcenter</align>
-            <font>basesmall</font>
-          </textarea>
-        </state>
-        <state name="selectedactive">
-          <area>0,0,580,140</area>
-          <imagetype name="buttonbackground2">
-            <filename>580x140.png</filename>
-          </imagetype>
-          <textarea name="buttontext">
-            <area>0,0,580,140</area>
-            <font>basebuttontitle</font>
-            <align>allcenter</align>
-            <multiline>yes</multiline>
-          </textarea>
-        </state>
-      </statetype>
-      <statetype name="upscrollarrow" from="upscrollarrowpopup" />
-      <statetype name="downscrollarrow" from="downscrollarrowpopup"/>
     </buttonlist>
   </window>
   <window name="changeview">
