@@ -5,7 +5,9 @@
  <mythuitheme>
    
    <!-- Font Definitions for main menu -->
+   
    <fontdef name="menuselectfont" face="Orbitron">
+     
      <pixelsize>90</pixelsize>
      
      <gradient direction="diagonal" alpha="255">
@@ -138,6 +140,7 @@
    </fontdef>
    
    <!-- Base clock, used everywhere -->
+   
    <clock name="baseclock">
      <area>1100,10,565,100</area>
      <font>baseclock</font>
@@ -147,18 +150,21 @@
    </clock>
    
    <!-- Base Background -->
+   
    <imagetype name="basebackground">
      <area>0,0,1680,1050</area>
      <filename>background.png</filename>
    </imagetype>
    
    <!-- Base definition of a Coverart image   -->
+   
    <imagetype name="basecoverart">
      <area>5,150,490,720</area>
      <mask>wr-covermask.png</mask>
    </imagetype>
    
    <!-- Title on all pages   -->
+   
    <textarea name="basepagetitle">
      <area>10,0,1400,100</area>
      <font>basetitle</font>
@@ -166,6 +172,7 @@
    </textarea>
    
    <!-- Statusbar for OSD -->
+   
    <imagetype name="basestatusbar">
      <area>0,0,1680,105</area>
      <position>0,0</position>
@@ -173,6 +180,7 @@
    </imagetype>
    
    <!-- A generic small textarea for states   -->
+   
    <textarea name="basesmallstatetext">
      <font>basestate</font>
      <area>0,0,1060,27</area>
@@ -183,6 +191,7 @@
    </textarea>
    
    <!-- A generic big textarea for states   -->
+   
    <textarea name="basebigstatetext" from="basesmallstatetext">
      <area>0,0,920,27</area>
      <font>basebigstate</font>
@@ -190,6 +199,7 @@
    </textarea>
    
    <!-- Base definition of a the arrows to upscroll and downscroll   -->
+   
    <statetype name="baseupscrollarrow">
      <area>0,0,35,35</area>
      <position>10,-30</position>
@@ -1087,42 +1097,66 @@
        </state>
        
        <state name="selectedactive" from="active">
+         
          <imagetype name="background">
+           
            <alpha>255</alpha>
+           
          </imagetype>
          
          <textarea name="buttontext">
+           
            <case>upper</case>
+           
          </textarea>
+         
        </state>
        
        <state name="selectedinactive" from="active">
+         
          <imagetype name="buttonbackground">
+           
            <alpha>127</alpha>
+           
          </imagetype>
          
          <textarea name="buttontext">
+           
            <alpha>127</alpha>
+           
          </textarea>
+         
        </state>
        
        <state name="disabled" from="active">
+         
          <imagetype name="background">
+           
            <alpha>30</alpha>
+           
          </imagetype>
          
          <textarea name="buttontext">
+           
            <alpha>30</alpha>
+           
          </textarea>
+         
        </state>
+       
      </statetype>
      
      <statetype name="upscrollarrow" from="baseleftscrollarrow" />
      
      <statetype name="downscrollarrow" from="baserightscrollarrow">
+       
        <position>1280,8</position>
+       
      </statetype>
+     
    </spinbox>
+   
+   
    
    <!-- Base definition of a ratingsystem -->
    <statetype name="baserating">
@@ -1271,140 +1305,240 @@
      </state>
    </statetype>
    
+   
+   
+   
+   
    <!-- Base definition of a textarea -->
+   
    <textarea name="basetextarea">
+     
      <area>0,0,10,10</area>
+     
      <font>basesmall</font>
+     
      <multiline>no</multiline>
+     
      <align>left</align>
+     
    </textarea>
    
    <!-- TODO Base definition of a textedit -->
+   
    <textedit name="basetextedit">
+     
      <area>0,0,350,36</area>
+     
      <statetype name="background">
        <loadondemand>true</loadondemand>     
        <state name="active">
+         
          <imagetype name="background">
+           
            <area>0,0,350,36</area>
+           
            <filename>textedit-350x36.png</filename>
+           
            <alpha>150</alpha>
+           
          </imagetype>
+         
        </state>
        
        <state name="selected" from="active">
+         
          <imagetype name="background">
+           
            <alpha>255</alpha>
+           
          </imagetype>
+         
        </state>
        
        <state name="inactive" from="active">
+         
          <imagetype name="background">
+           
            <alpha>150</alpha>
+           
          </imagetype>
+         
        </state>
+       
      </statetype>
      
      <imagetype name="cursor">
+       
        <filename>cursor.png</filename>
+       
      </imagetype>
      
      <textarea name="text">
+       
        <area>5,3,338,30</area>
+       
        <font>basesmallblack</font>
+       
      </textarea>
+     
    </textedit>
    
    <textedit name="basetexteditwide" from="basetextedit">
+     
      <area>0,0,560,36</area>
+     
      <statetype name="background">
+       
        <state name="active">
+         
          <imagetype name="background">
+           
            <area>0,0,560,36</area>
+           
            <filename>textedit-560x36.png</filename>
+           
            <alpha>150</alpha>
+           
          </imagetype>
+         
        </state>
        
        <state name="selected" from="active">
+         
          <imagetype name="background">
+           
            <alpha>255</alpha>
+           
          </imagetype>
+         
        </state>
        
        <state name="inactive" from="active">
+         
          <imagetype name="background">
+           
            <alpha>150</alpha>
+           
          </imagetype>
+         
        </state>
+       
      </statetype>
      
      <textarea name="text">
+       
        <area>5,3,548,30</area>
+       
      </textarea>
+     
    </textedit>
    
    <textedit name="basetextedit980x66" from="basetextedit">
+     
      <area>0,0,980,66</area>
+     
      <statetype name="background">
+       
        <state name="active">
+         
          <imagetype name="background">
+           
            <area>0,0,980,66</area>
+           
            <filename>textedit-980x66.png</filename>
+           
            <alpha>150</alpha>
+           
          </imagetype>
+         
        </state>
        
        <state name="selected" from="active">
+         
          <imagetype name="background">
+           
            <alpha>255</alpha>
+           
          </imagetype>
+         
        </state>
        
        <state name="inactive" from="active">
+         
          <imagetype name="background">
+           
            <alpha>150</alpha>
+           
          </imagetype>
+         
        </state>
+       
      </statetype>
      
      <textarea name="text">
+       
        <area>5,3,970,60</area>
+       
        <multiline>yes</multiline>
+       
      </textarea>
+     
    </textedit>
    
    <textedit name="basetextedit980x156" from="basetextedit">
+     
      <area>0,0,980,156</area>
+     
      <statetype name="background">
+       
        <state name="active">
+         
          <imagetype name="background">
+           
            <area>0,0,980,156</area>
+           
            <filename>textedit-980x156.png</filename>
+           
            <alpha>150</alpha>
+           
          </imagetype>
+         
        </state>
        
        <state name="selected" from="active">
+         
          <imagetype name="background">
+           
            <alpha>255</alpha>
+           
          </imagetype>
+         
        </state>
        
        <state name="inactive" from="active">
+         
          <imagetype name="background">
+           
            <alpha>150</alpha>
+           
          </imagetype>
+         
        </state>
+       
      </statetype>
      
      <textarea name="text">
+       
        <area>5,3,970,150</area>
+       
        <multiline>yes</multiline>
+       
      </textarea>
+     
    </textedit>
    
    <!-- Wide definition of a progressbar -->
+   
    <progressbar name="basewideprogressbar">
      <area>0,0,1640,58</area>
      <layout>horizontal</layout>
@@ -1434,6 +1568,7 @@
    </progressbar>
    
    <!-- Base definition of a the arrows to upscroll and downscroll   -->
+   
    <statetype name="upscrollarrowpopup" from="baseupscrollarrow">
      <position>15,190</position>
    </statetype>
@@ -1552,6 +1687,7 @@
      <statetype name="upscrollarrow" from="upscrollarrowpopup" />
      
      <statetype name="downscrollarrow" from="downscrollarrowpopup"/>
+     
    </buttonlist>
    
    <!-- Popup Dialogue Box -->
@@ -1601,9 +1737,13 @@
        <area>20,473,1640,58</area>
        <align>allcenter</align>
      </textarea>
+     
    </window>
-
+ 
+   
+   
    <!-- Popup that shows how much still needs to be done -->
+   
    <window name="MythProgressDialog">
      
      <area>-1,-1,1680,1050</area>
@@ -1630,10 +1770,13 @@
    </window>
    
    <!-- Popup that if you want to do something -->
+   
    <window name="MythConfirmationDialog" from="MythPopupBox">
+     
      <textarea name="message" from="basemessagearea" />
      
      <!-- TODO: make OK big, cancel small -->
+     
      <button name="cancel" from="basepopupbuttoncancel">
        <position>5,675</position>
        <value>Cancel</value>
@@ -1643,6 +1786,7 @@
        <position>5,735</position>
        <value>OK</value>
      </button>
+     
    </window>
    
    <window name="MythTextInputDialog" from="MythPopupBox">
@@ -1662,6 +1806,7 @@
        <position>5,735</position>
        <value>OK</value>
      </button>
+     
    </window>
    
    <!--     A basic search dialog used everywhere -->
@@ -1695,7 +1840,9 @@
      
    </window>
 
+
    <window name="videowindow">
+     
      <area>0,0,1640,58</area>
 
      <imagetype name="background" from="basewidefillbar" />     
@@ -1706,10 +1853,12 @@
        <align>allcenter</align>
        <value>Playback starting ...</value>
      </textarea>
+     
    </window>
    
    
    <window name="MythFileBrowser" from="MythPopupBox">
+     
      <textedit name="location" from="basetexteditwide">
        <position>20,20</position>
      </textedit>
@@ -1779,7 +1928,9 @@
              <fill color="#ffffff" alpha="100" />
            </shape>
          </state>
+         
        </statetype>
+       
      </buttonlist>
      
      <button name="back" from="basepopupbutton">
@@ -1801,6 +1952,7 @@
        <position>10,735</position>
        <value>OK</value>
      </button>
+     
    </window>
    
    
@@ -1863,6 +2015,7 @@
        </state>
        
        <state name="pushed">
+         
          <imagetype name="yes">
            <area>530,10,35,35</area>
            <filename>icons/draw-triangle2.png</filename>
@@ -1875,8 +2028,9 @@
    
    <!-- Popup search dialog used to search button lists -->
    <window name="MythSearchListDialog">
+     
      <area>-1,-1,600,800</area>
-
+     
      <imagetype name="backimg">
        <filename>MythSearchListDialog-background.png</filename>
      </imagetype>
@@ -1898,5 +2052,30 @@
        <value>Previous</value>
        <position>10,145</position>
      </button>
-    </window>    
-  </mythuitheme>
+     
+     <!-- <statetype name="searchstate">
+     <area>210,120,200,30</area>
+     <state name="found">
+       <textarea name="statustext" from="basetextarea">
+         <area>0,0,200,30</area>
+         <align>allcenter</align>
+         <font>basesmallgreen</font>
+         <value>Found</value>
+       </textarea>
+     </state>
+     <state name="notfound">
+       <textarea name="statustext" from="basetextarea">
+         <area>0,0,200,30</area>
+         <align>allcenter</align>
+         <font>basesmallred</font>
+         <value>Not Found</value>
+       </textarea>
+     </state>
+   </statetype>-->
+   
+ </window>    
+ 
+ 
+ </mythuitheme>
+ 
+ 

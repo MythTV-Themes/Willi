@@ -446,7 +446,7 @@
     <type>roundbox</type>
     <fill color="#000000" alpha="180" />
   </shape>
-  <textarea name="title" from="basetextarea">
+  <textarea name="tit" from="basetextarea">
     <area>1260,234,674,60</area>
     <font>basegothicmedium</font>
     <align>left,vcenter</align>
