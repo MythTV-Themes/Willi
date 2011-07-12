@@ -1453,7 +1453,6 @@
         
         <button name="metadata" from="basepopupbutton">
           <position>600,180</position>
-          <value>Metadata Options</value>
           <helptext>
           </helptext>
         </button>

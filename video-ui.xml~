@@ -564,7 +564,60 @@
 	
       </button>
     </window>
-
+    
+    
+    
+    
+    <window name="moviesel">
+      <!-- A list of returned values from a grabber script, for user selection. -->
+      <area>-1,-1,600,800</area>
+      <imagetype name="backimg">
+	<filename>MythPopupBox-background.png</filename>
+      </imagetype>
+      <buttonlist name="results">
+	<layout>vertical</layout>
+	<spacing>5</spacing>
+	<arrange>stack</arrange>
+	<scrollstyle>center</scrollstyle>
+	<align>center</align>
+	<buttonarea>0,5,600,790</buttonarea>
+	<statetype name="buttonitem">
+	  <state name="active">
+	    <area>0,0,580,55</area>
+	    <imagetype name="buttonbackground">
+	      <filename>580x55.png</filename>
+	    </imagetype>
+	    <textarea name="buttontext">
+	      <area>0,0,580,55</area>
+	      <align>allcenter</align>
+	      <font>basesmall</font>
+	      <template>%TITLE% - %SUBTITLE%</template>
+	      <cutdown>yes</cutdown>
+	    </textarea>
+	  </state>
+	  <state name="selectedactive">
+	    <area>0,0,580,140</area>
+	    <imagetype name="buttonbackground2">
+	      <filename>580x140.png</filename>
+	    </imagetype>
+	    <textarea name="releasedate">
+	      <area>0,85,580,55</area>
+	      <align>allcenter</align>
+	      <font>basesmall</font>
+	      <template>%RELEASEDATE% %IMDB% %S##E##%</template>
+	    </textarea>
+	    <textarea name="buttontext">
+	      <area>0,0,580,100</area>
+	      <font>basebuttontitle</font>
+	      <align>allcenter</align>
+	      <multiline>yes</multiline>
+	      <template>%TITLE% - %SUBTITLE%</template>
+	      <cutdown>yes</cutdown>
+	    </textarea>
+	  </state>
+	</statetype>
+      </buttonlist>
+    </window>
     <window name="castpopup">
       <!-- A popup list of cast/actors from the selected item.  -->
       <area>-1,-1,600,800</area>

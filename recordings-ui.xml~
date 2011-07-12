@@ -769,21 +769,21 @@
     
     
     <textarea name="season_text" from="title_text">
-      <position>5,195</position>
+      <position>5,190</position>
       <value>Season:</value>
     </textarea>
     
     <spinbox name="season" from="basesmallspinbox">
-      <position>10,225</position>
+      <position>10,220</position>
     </spinbox>
     
     <textarea name="episode_text" from="title_text">
-      <position>5,265</position>
+      <position>5,260</position>
       <value>Episode:</value>
     </textarea>
     
     <spinbox name="episode" from="basesmallspinbox">
-      <position>10,295</position>
+      <position>10,290</position>
     </spinbox>
     
     <textarea name="description_text" from="title_text">

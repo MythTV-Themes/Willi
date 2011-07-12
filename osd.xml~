@@ -137,13 +137,6 @@
       <align>bottom,center</align>
     </textarea>    
     
-    
-    <imagetype name="banner">
-      <area>902,140,758,140</area>
-      <preserveaspect>true</preserveaspect>
-    </imagetype>   
-    
-    
     <!--shows where the current item came from, recording, DVD, video etc.-->
     <statetype name="tvstate">
       <loadondemand>true</loadondemand>

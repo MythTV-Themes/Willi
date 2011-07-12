@@ -22,6 +22,6 @@
     <thumbnail name="preview">preview.jpg</thumbnail>
     <description>A UI and OSD theme with focus for fanart, banners and cover display.</description>
     <!-- What is not available -->
-    <errata>Supported: Recording/ Scheduling/ Video/ Gallery. Not yet suported: everything else.</errata>
+    <errata>Supported: Recording/ Scheduling/ Video/ Gallery/ Net. Not yet suported: everything else.</errata>
   </detail>
 </themeinfo>
