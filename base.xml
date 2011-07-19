@@ -567,9 +567,7 @@
      <statetype name="buttonstate">
        <loadondemand>true</loadondemand>
        <state name="active">
-
          <imagetype name="background">
-
            <area>0,0,380,30</area>
            <filename>buttonbackground-380x30.png</filename>
            <alpha>150</alpha>
@@ -617,7 +615,68 @@
        </state>
      </statetype>
    </button>
-   
+
+
+ <button name="basemenubutton">
+   <area>0,0,580,40</area>
+   <layout>horizontal</layout>
+   <position>0,0</position>
+   <statetype name="buttonstate">
+     <loadondemand>true</loadondemand>
+     <state name="active">
+       <imagetype name="background">
+       <area>30,0,520,40</area>
+       <filename>spinbox-520x40.png</filename>
+       <alpha>150</alpha>
+     </imagetype>
+     
+     <textarea name="text">
+       <area>30,0,520,40</area>
+       <align>allcenter</align>
+       <font>basesmall</font>
+       <cutdown>yes</cutdown>
+     </textarea>
+     </state>
+     
+     <state name="selected" from="active">
+       <imagetype name="background">
+         <alpha>200</alpha>
+       </imagetype>
+       
+       <textarea name="text">
+         <font>basebuttontitle</font>
+       </textarea>
+     </state>
+     
+     <state name="inactive" from="active">
+       <imagetype name="buttonbackground">
+         <alpha>127</alpha>
+       </imagetype>
+       
+       <textarea name="text">
+         <alpha>127</alpha>
+       </textarea>
+     </state>
+     
+     <state name="disabled" from="active">
+       <imagetype name="background">
+         <alpha>30</alpha>
+       </imagetype>
+       
+       <textarea name="text">
+         <alpha>30</alpha>
+       </textarea>
+     </state>
+     <state name="pushed" from="active">
+       <imagetype name="background">
+         <alpha>255</alpha>
+       </imagetype>
+     </state>
+   </statetype>
+ </button>
+
+
+
    <!-- Base definition of a search button -->
    
    <button name="basesearchbutton">
@@ -1924,11 +1983,10 @@
               <area>5,0,55,55</area>
               <preserveaspect>true</preserveaspect>
             </imagetype>
-            <textarea name="buttontext">
+            <textarea name="resolution">
               <area>60,0,430,55</area>
               <align>allcenter</align>
               <font>basesmall</font>
-              <template>%RESOLUTION% %HEIGHT%x%WIDTH%</template>
               <cutdown>yes</cutdown>
             </textarea>
           </state>
@@ -1941,12 +1999,11 @@
               <area>5,0,140,140</area>
               <preserveaspect>true</preserveaspect>
             </imagetype>
-            <textarea name="buttontext">
+            <textarea name="resolution">
               <area>150,0,430,140</area>
               <font>basebuttontitle</font>
               <align>allcenter</align>
               <multiline>yes</multiline>
-              <template>%RESOLUTION% %HEIGHT%x%WIDTH%</template>
               <cutdown>yes</cutdown>
             </textarea>
           </state>

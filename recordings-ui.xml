@@ -702,35 +702,7 @@
       <value>OK</value>
     </button>
   </window> 
-<!--  <window name="editmetadata">
-    <area>-1,-1,600,800</area>
-    <imagetype name="backimg">
-      <filename>MythPopupBox-background.png</filename>
-    </imagetype>
-    <textarea name="label" from="basemessagearea">
-      <value>Edit Recording Metadata</value>
-    </textarea>
-    <textarea name="titlelabel" from="basetextarea">
-      <area>20,260,550,30</area>
-      <value>Title:</value>
-    </textarea>
-    <textedit name="title" from="basetexteditwide">
-      <position>20,300</position>
-    </textedit>
-    <textarea name="subtitlelabel" from="basetextarea">
-      <area>20,360,550,30</area>
-      <value>Subtitle:</value>
-    </textarea>
-    <textedit name="subtitle" from="basetexteditwide">
-      <position>20,400</position>
-    </textedit>
-    <button name="ok" from="basepopupbuttonok">
-      <position>5,705</position>
-      <value>OK</value>
-    </button>
-  </window>-->
-  
-  
+ 
   <window name="editmetadata">
     
     <area>-1,-1,600,800</area>
@@ -739,7 +711,7 @@
     </imagetype>
     
     <textarea name="header">
-      <value>Edit Video Information</value>
+      <value>Edit Metadata Information</value>
       <font>base</font>
       <area>5,5,590,100</area>
       <multiline>yes</multiline>
@@ -805,7 +777,7 @@
     </textedit>
     
     <button name="ok" from="basepopupbuttonok">
-      <position>10,730</position>
+      <position>10,735</position>
       <value>OK</value>
     </button>
     
