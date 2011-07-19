@@ -1960,6 +1960,9 @@
     </window> 
     
     
+    
+    
+    
     <window name="MythArtworkResults">
       <!-- A list of returned artwork items, for user selection.  -->
       <area>-1,-1,600,800</area>
@@ -1980,7 +1983,7 @@
               <filename>580x55.png</filename>
             </imagetype>
             <imagetype name="buttonimage">
-              <area>5,0,55,55</area>
+              <area>15,0,55,55</area>
               <preserveaspect>true</preserveaspect>
             </imagetype>
             <textarea name="resolution">
@@ -1991,20 +1994,18 @@
             </textarea>
           </state>
           <state name="selectedactive">
-            <area>0,0,580,140</area>
+            <area>0,0,580,260</area>
             <imagetype name="buttonbackground2">
-              <filename>580x140.png</filename>
+              <filename>580x260.png</filename>
             </imagetype>
             <imagetype name="buttonimage">
-              <area>5,0,140,140</area>
+              <area>15,5,550,250</area>
               <preserveaspect>true</preserveaspect>
             </imagetype>
             <textarea name="resolution">
-              <area>150,0,430,140</area>
+              <area>0,5,580,260</area>
               <font>basebuttontitle</font>
-              <align>allcenter</align>
-              <multiline>yes</multiline>
-              <cutdown>yes</cutdown>
+              <align>hcenter,bottom</align>
             </textarea>
           </state>
         </statetype>
