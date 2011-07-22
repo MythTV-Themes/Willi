@@ -44,7 +44,7 @@
     <textarea name="00x00" from="basetextarea">    
       <area>160,900,1200,140</area>
       <font>baseclock</font>
-      <format>%00x00%</format>
+      <template>%00x00%</template>
       <align>right,bottom</align>
       <alpha>100</alpha>
     </textarea>
@@ -579,9 +579,7 @@
 <!-- Popup Dialogue Box -->
 <window name="MythPopupBox">
   <area>-1,-1,600,800</area>
-  <imagetype name="backimg">
-    <filename>MythPopupBox-background.png</filename>
-  </imagetype>
+  <imagetype name="backimg" from="basepopupboxback" />
   <textarea name="messagearea">
     <font>base</font>
     <area>5,5,590,200</area>
@@ -616,7 +614,6 @@
       </state>
       <state name="selectedactive">
         <area>0,0,580,140</area>
-        <alphapulse min="150" max="255" change="1" />
         <imagetype name="buttonbackground2">
           <filename>580x140.png</filename>
         </imagetype>

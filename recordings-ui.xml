@@ -53,7 +53,7 @@
             <filename>wr-300x40.png</filename>
           </imagetype>
           <textarea name="buttontext">
-            <area>0,0,300,40</area>
+            <area>0,2,300,38</area>
             <align>allcenter</align>
             <font>basebuttontitle</font>
           </textarea>
@@ -115,21 +115,21 @@
       <statetype name="buttonitem">
         <state name="active">
           <area>0,0,1170,55</area>
-          <textarea name="shortdate" from="basesmallstatetext">
+          <textarea name="startdate" from="basesmallstatetext">
             <template>%SHORTTIMEDATE%</template>
-            <position>0,+29</position>
+            <position>0,+27</position>
           </textarea>
           <textarea name="title">
-            <font>basebuttontitlesubtitle</font>
-            <area>5,0,800,27</area>
+            <font>basebuttonsmalltitle</font>
+            <area>5,1,800,30</area>
             <align>vcenter</align>
             <cutdown>yes</cutdown>
             <multiline>yes</multiline>
           </textarea>
           <textarea name="subtitle">
             <font>basebuttontitlesubtitle</font>
-            <area>5,28,800,27</area>
-            <align>vcenter</align>
+            <area>5,25,800,30</area>
+            <align>bottom</align>
             <cutdown>yes</cutdown>
             <multiline>yes</multiline>
             <template>%00x00| %%SUBTITLE| %%|(LENMINS|)%</template>
@@ -210,6 +210,15 @@
             <state name="yes">
             </state>
           </statetype>
+                    
+          <textarea name="00x00" from="basetextarea">    
+            <area>0,0,920,140</area>
+            <font>baseclock</font>
+            <template>%00x00%</template>
+            <align>right,top</align>
+            <alpha>180</alpha>
+          </textarea>
+                    
           <textarea name="title" from="buttontext">
             <font>basebuttontitle</font>
             <area>5,0,800,45</area>
@@ -219,7 +228,8 @@
             <font>basebuttonsubtitle</font>
             <area>5,35,915,40</area>
             <cutdown>yes</cutdown>
-            <template>%00x00| %%subtitle%</template>
+            <alpha>200</alpha>
+<!--            <template>%00x00| %%subtitle%</template>-->
           </textarea>
           <!--The description field, that in this case fuses subtitle + rating + description into one -->
           <textarea name="description" from="buttontext">
@@ -303,6 +313,12 @@
           </imagetype>
         </state>
         <state name="selectedinactive" from="selectedactive">
+          <textarea name="startdate">
+            <alpha>30</alpha>
+          </textarea>
+          <textarea name="00x00">
+            <alpha>30</alpha>
+          </textarea>
           <textarea name="title">
             <alpha>30</alpha>
           </textarea>
@@ -364,7 +380,16 @@
           </imagetype>
         </state>
         <state name="inactive" from="active">
-          <textarea name="titlesubtitle">
+          <textarea name="startdate">
+            <alpha>30</alpha>
+            </textarea>
+          <textarea name="00x00">
+            <alpha>30</alpha>
+            </textarea>
+          <textarea name="title">
+            <alpha>30</alpha>
+          </textarea>
+          <textarea name="subtitle">
             <alpha>30</alpha>
           </textarea>
           <imagetype name="preview">
@@ -738,7 +763,6 @@
     <textedit name="subtitle" from="basetextedit">
       <position>230,150</position>
     </textedit>       
-    
     
     <textarea name="season_text" from="title_text">
       <position>5,195</position>

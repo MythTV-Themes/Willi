@@ -25,12 +25,12 @@
    <!-- Base Font Definitions -->
    
    <fontdef name="base" face="DejaVu Sans">
-     <pixelsize>30</pixelsize>
+     <pixelsize>35</pixelsize>
      <color>#FFFFFF</color>
    </fontdef>
    
    <fontdef name="basesmall" from="base">
-     <pixelsize>25</pixelsize>
+     <pixelsize>22</pixelsize>
    </fontdef>
    
    <fontdef name="videocodec" face="Arial">
@@ -45,7 +45,7 @@
    </fontdef>
    
    <fontdef name="basebutton" from="base">
-     <pixelsize>25</pixelsize>
+     <pixelsize>30</pixelsize>
      <gradient direction="diagonal" alpha="255">
        <stop position="0" color="#aa0000" />
        <stop position="40" color="#800000"/>
@@ -117,9 +117,14 @@
      <pixelsize>30</pixelsize>
      <color>#000000</color>
    </fontdef>
-   
+
+ <fontdef name="basebuttonsmalltitle" from="basebuttontitle">
+   <pixelsize>22</pixelsize>
+ </fontdef>
+
+
    <fontdef name="basebuttontitlesubtitlewatched" from="basebutton">
-     <pixelsize>25</pixelsize>
+     <pixelsize>22</pixelsize>
      <color>#FFFFFF</color>
    </fontdef>
    
@@ -175,11 +180,11 @@
    <!-- A generic small textarea for states   -->
    <textarea name="basesmallstatetext">
      <font>basestate</font>
-     <area>0,0,1060,27</area>
+     <area>0,0,1065,27</area>
      <multiline>no</multiline>
      <cutdown>yes</cutdown>
-     <align>right,vcenter</align>
-     <alpha>150</alpha>
+     <align>right,bottom</align>
+
    </textarea>
    
    <!-- A generic big textarea for states   -->
@@ -1613,13 +1618,18 @@
      <statetype name="downscrollarrow" from="downscrollarrowpopup"/>
    </buttonlist>
    
+   
+   <imagetype name="basepopupboxback">
+     <filename>MythPopupBox-background.png</filename>
+     <alpha>200</alpha>
+   </imagetype>
+   
+   
    <!-- Popup Dialogue Box -->
    
    <window name="MythPopupBox">
      <area>-1,-1,600,800</area>
-     <imagetype name="backimg">
-       <filename>MythPopupBox-background.png</filename>
-     </imagetype>
+     <imagetype name="backimg" from="basepopupboxback" />
      
      <textarea name="messagearea" from="basemessagearea" />
      <buttonlist name="list" from="basepopupboxlist" />
@@ -1728,9 +1738,7 @@
    <window name="MythSearchDialog">
      
      <area>-1,-1,600,800</area>
-     <imagetype name="backimg">
-       <filename>MythPopupBox-background.png</filename>
-     </imagetype>
+     <imagetype name="backimg" from="basepopupboxback" />
      
      <textarea name="title" from="basemessagearea" />
      
@@ -1936,10 +1944,7 @@
    <window name="MythSearchListDialog">
      <area>-1,-1,600,800</area>
 
-     <imagetype name="backimg">
-       <filename>MythSearchListDialog-background.png</filename>
-     </imagetype>
-     
+ <imagetype name="backimg" from="basepopupboxback" />     
      <textarea name="title" from="basemessagearea">
        <area>5,5,590,40</area>
        <value>Search List</value>
@@ -1966,9 +1971,7 @@
     <window name="MythArtworkResults">
       <!-- A list of returned artwork items, for user selection.  -->
       <area>-1,-1,600,800</area>
-      <imagetype name="backimg">
-        <filename>MythPopupBox-background.png</filename>
-      </imagetype>
+      <imagetype name="backimg" from="basepopupboxback" />
       <buttonlist name="results">
         <layout>vertical</layout>
         <spacing>5</spacing>
@@ -2015,9 +2018,7 @@
     <window name="MythMetadataResults">
       <!-- A list of returned values from a grabber script, for user selection. -->
       <area>-1,-1,600,800</area>
-      <imagetype name="backimg">
-        <filename>MythPopupBox-background.png</filename>
-      </imagetype>
+      <imagetype name="backimg" from="basepopupboxback" />
       <buttonlist name="results">
         <layout>vertical</layout>
         <spacing>5</spacing>
