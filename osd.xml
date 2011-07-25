@@ -34,9 +34,16 @@
     </imagetype>
     
     <imagetype name="banner">
-      <area>902,140,758,140</area>
+      <area>902,890,758,140</area>
       <preserveaspect>true</preserveaspect>
+      <mask>wr-bannermask.png</mask>
+      <alpha>100</alpha>
     </imagetype>
+    
+    <!--show the coverart over the groups, only if browsing the recordings 
+    <imagetype name="coverart" from="basecoverart">
+      <position>20,140</position>
+    </imagetype>-->
     
     <textarea name="title" from="basepagetitle" />
     
@@ -138,10 +145,7 @@
     </textarea>    
     
     
-    <imagetype name="banner">
-      <area>902,140,758,140</area>
-      <preserveaspect>true</preserveaspect>
-    </imagetype>   
+ 
     
     
     <!--shows where the current item came from, recording, DVD, video etc.-->
