@@ -47,20 +47,16 @@
     
     <textarea name="title" from="basepagetitle" />
     
-    
     <textarea name="00x00" from="basetextarea">    
-      <area>160,900,1200,140</area>
-      <font>baseclock</font>
+      <area>160,930,1200,45</area>
+      <font>basetitle</font>
       <template>%00x00%</template>
-      <align>right,bottom</align>
       <alpha>100</alpha>
     </textarea>
     
-    
-    
     <textarea name="subtitle" from="basetextarea">
       <font>basebuttontitle</font>
-      <area>160,898,1410,40</area>
+      <area>160,895,1410,40</area>
       <cutdown>yes</cutdown>
       <template>%SUBTITLE%</template>
     </textarea>
@@ -85,7 +81,7 @@
     </textarea>
     
     <textarea name="description" from="basetextarea">
-      <area>160,930,1210,90</area>
+      <area>160,940,1210,90</area>
       <multiline>yes</multiline>
       <align>bottom</align>
       <cutdown>yes</cutdown>

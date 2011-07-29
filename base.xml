@@ -1621,7 +1621,6 @@
    
    <imagetype name="basepopupboxback">
      <filename>MythPopupBox-background.png</filename>
-     <alpha>200</alpha>
    </imagetype>
    
    
