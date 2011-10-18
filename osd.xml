@@ -13,7 +13,7 @@
     <imagetype name="statusbar" from="basestatusbar" />
     <textarea name="osd_number_entry" from="basepagetitle" />
   </window>
-
+  
   <!--Shows the user the current elapsed time and a lot of information on the recording-->  
   <window name="program_info">
     <area>0,0,1680,1050</area>
@@ -34,29 +34,20 @@
     </imagetype>
     
     <imagetype name="banner">
-      <area>902,890,758,140</area>
+      <area>902,740,758,140</area>
       <preserveaspect>true</preserveaspect>
       <mask>wr-bannermask.png</mask>
-      <alpha>100</alpha>
     </imagetype>
-    
-    <!--show the coverart over the groups, only if browsing the recordings 
-    <imagetype name="coverart" from="basecoverart">
-      <position>20,140</position>
-    </imagetype>-->
+    <imagetype name="bannerframe">
+      <area>902,740,758,140</area>
+      <filename>wr-bannerframe.png</filename>
+    </imagetype>
     
     <textarea name="title" from="basepagetitle" />
     
-    <textarea name="00x00" from="basetextarea">    
-      <area>160,930,1200,45</area>
-      <font>basetitle</font>
-      <template>%00x00%</template>
-      <alpha>100</alpha>
-    </textarea>
-    
     <textarea name="subtitle" from="basetextarea">
       <font>basebuttontitle</font>
-      <area>160,895,1410,40</area>
+      <area>160,895,1110,80</area>
       <cutdown>yes</cutdown>
       <template>%SUBTITLE%</template>
     </textarea>
@@ -70,18 +61,19 @@
       <area>1300,932,350,30</area>
       <template>%STARTTIME% %STARTDATE%</template>
     </textarea>
+    
     <textarea name="endtime" from="basebigstatetext">
       <area>1300,964,350,30</area>
       <template>%ENDTIME% %ENDDATE%</template>
     </textarea>
     
-    <textarea name="videocodecdesc" from="basebigstatetext">
+    <textarea name="00x00" from="basebigstatetext">
       <area>1300,996,350,30</area>
-      <template>%VIDEOCODECDESC% / %AUDIOCODEC%</template>
+      <template>%00x00%</template>
     </textarea>
     
     <textarea name="description" from="basetextarea">
-      <area>160,940,1210,90</area>
+      <area>160,910,1110,120</area>
       <multiline>yes</multiline>
       <align>bottom</align>
       <cutdown>yes</cutdown>
@@ -90,291 +82,290 @@
     
     <!-- Shows the quality of the item  -->
     <statetype name="videodescrip">
+      <area>1510,150,150,520</area>
       <imagetype name="backdrop">
-        <area>1510,250,150,520</area>
-        <filename>OSD/150x520.png</filename>
-        <preserveaspect>true</preserveaspect>
-      </imagetype>    
+	<position>0,0</position>
+	<filename>OSD/150x520.png</filename>
+	<preserveaspect>true</preserveaspect>
+      </imagetype>
       <state name="default">
-        <imagetype name="image">
-          <area>1520,270,130,130</area>
-          <filename>icons/videotypes/sd.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>10,20,130,130</area>
+	  <filename>icons/videotypes/sd.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="SD">
-        <imagetype name="image">
-          <area>1520,270,130,130</area>
-          <filename>icons/videotypes/sd.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>10,20,130,130</area>
+	  <filename>icons/videotypes/sd.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="HD_720_P">
-        <imagetype name="image">
-          <area>1520,270,130,130</area>
-          <filename>icons/videotypes/hd.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>10,20,130,130</area>
+	  <filename>icons/videotypes/hd.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="HD_1080_I">
-        <imagetype name="image">
-          <area>1520,270,130,130</area>
-          <filename>icons/videotypes/hd.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>10,20,130,130</area>
+	  <filename>icons/videotypes/hd.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="HD_1080_P">
-        <imagetype name="image">
-          <area>1520,270,130,130</area>
-          <filename>icons/videotypes/hd.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>10,20,130,130</area>
+	  <filename>icons/videotypes/hd.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
     </statetype>
     
     <!--the hight of the recording will be shown below the SD or HD logo -->
     <textarea name="videoheight">
-      <area>1520,270,130,128</area>
+      <area>1520,170,130,128</area>
       <template>%VIDEOWIDTH%x%VIDEOHEIGHT%</template>
       <font>videocodec</font>
       <align>bottom,center</align>
     </textarea>    
     
-    
- 
-    
-    
     <!--shows where the current item came from, recording, DVD, video etc.-->
     <statetype name="tvstate">
       <loadondemand>true</loadondemand>
+      <area>1510,150,150,520</area>
       <state name="WatchingLiveTV">
-        <imagetype name="image">
-          <area>1520,410,130,60</area>
-          <filename>icons/videotypes/Live.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>10,160,130,60</area>
+	  <filename>icons/videotypes/Live.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="WatchingPreRecorded">
-        <imagetype name="image">
-          <area>1520,410,130,60</area>
-          <filename>icons/videotypes/Recorded.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>10,160,130,60</area>
+	  <filename>icons/videotypes/Recorded.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="WatchingVideo">
-        <imagetype name="image">
-          <area>1520,410,130,60</area>
-          <filename>icons/videotypes/Video.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>10,160,130,60</area>
+	  <filename>icons/videotypes/Video.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="WatchingDVD">
-        <imagetype name="image">
-          <area>1520,410,130,60</area>
-          <filename>icons/videotypes/DVD.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>10,160,130,60</area>
+	  <filename>icons/videotypes/DVD.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="WatchingBD">
-        <imagetype name="image">
-          <area>1520,410,130,60</area>
-          <filename>icons/videotypes/Blu-ray.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>10,160,130,60</area>
+	  <filename>icons/videotypes/Blu-ray.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
+      
       <state name="WatchingRecording">
-        <imagetype name="image">
-          <area>1520,410,130,60</area>
-          <filename>icons/videotypes/Recording.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,410,130,60</area>
+	  <filename>icons/videotypes/Recording.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
     </statetype>
     <!--shows what video codec is used in the item-->
     <statetype name="videocodec">
       <loadondemand>true</loadondemand>
       <state name="MPEG2">
-        <imagetype name="image">
-          <area>1520,480,130,60</area>
-          <filename>icons/videotypes/MPEG2.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,380,130,60</area>
+	  <filename>icons/videotypes/MPEG2.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="MPEG-2">
-        <imagetype name="image">
-          <area>1520,480,130,60</area>
-          <filename>icons/videotypes/MPEG2.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,380,130,60</area>
+	  <filename>icons/videotypes/MPEG2.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="VC-1">
-        <imagetype name="image">
-          <area>1520,480,130,60</area>
-          <filename>icons/videotypes/vc1.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,380,130,60</area>
+	  <filename>icons/videotypes/vc1.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="H.264">
-        <imagetype name="image">
-          <area>1520,480,130,60</area>
-          <filename>icons/videotypes/H264.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,380,130,60</area>
+	  <filename>icons/videotypes/H264.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="MPEG-4">
-        <imagetype name="image">
-          <area>1520,480,130,60</area>
-          <filename>icons/videotypes/ASP.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,380,130,60</area>
+	  <filename>icons/videotypes/ASP.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="RTjpeg">
-        <imagetype name="image">
-          <area>1520,480,130,60</area>
-          <filename>icons/videotypes/RTJPEG.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,380,130,60</area>
+	  <filename>icons/videotypes/RTJPEG.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="WMV3">
-        <imagetype name="image">
-          <area>1520,480,130,60</area>
-          <filename>icons/videotypes/WMV3.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,380,130,60</area>
+	  <filename>icons/videotypes/WMV3.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="H.263">
-        <imagetype name="image">
-          <area>1520,480,130,60</area>
-          <filename>icons/videotypes/H263.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,380,130,60</area>
+	  <filename>icons/videotypes/H263.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
     </statetype>
     <!--shows what audio codec is used in the item-->
     <statetype name="audiocodec">
       <loadondemand>true</loadondemand>
       <state name="PCM_DVD">
-        <imagetype name="image">
-          <area>1520,550,130,60</area>
-          <filename>icons/audiotypes/LPCM-DVD.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,450,130,60</area>
+	  <filename>icons/audiotypes/LPCM-DVD.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="PCM_BLURAY">
-        <imagetype name="image">
-          <area>1520,550,130,60</area>
-          <filename>icons/audiotypes/LPCM-Blu-ray.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,450,130,60</area>
+	  <filename>icons/audiotypes/LPCM-Blu-ray.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="AC3">
-        <imagetype name="image">
-          <area>1520,550,130,60</area>
-          <filename>icons/audiotypes/ac3.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,450,130,60</area>
+	  <filename>icons/audiotypes/ac3.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="E-AC3">
-        <imagetype name="image">
-          <area>1520,550,130,60</area>
-          <filename>icons/audiotypes/e-ac3.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,450,130,60</area>
+	  <filename>icons/audiotypes/e-ac3.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="TRUEHD">
-        <imagetype name="image">
-          <area>1520,550,130,60</area>
-          <filename>icons/audiotypes/truehd.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,450,130,60</area>
+	  <filename>icons/audiotypes/truehd.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="WMAPRO">
-        <imagetype name="image">
-          <area>1520,550,130,60</area>
-          <filename>icons/audiotypes/WMAPro.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,450,130,60</area>
+	  <filename>icons/audiotypes/WMAPro.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="DTS">
-        <imagetype name="image">
-          <area>1520,550,130,60</area>
-          <filename>icons/audiotypes/dts.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,450,130,60</area>
+	  <filename>icons/audiotypes/dts.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="AAC">
-        <imagetype name="image">
-          <area>1520,550,130,60</area>
-          <filename>icons/audiotypes/aac.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,450,130,60</area>
+	  <filename>icons/audiotypes/aac.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="MP2">
-        <imagetype name="image">
-          <area>1520,550,130,60</area>
-          <filename>icons/audiotypes/mp2.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,450,130,60</area>
+	  <filename>icons/audiotypes/mp2.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="MP3">
-        <imagetype name="image">
-          <area>1520,550,130,60</area>
-          <filename>icons/audiotypes/mp3.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,450,130,60</area>
+	  <filename>icons/audiotypes/mp3.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="VORBIS">
-        <imagetype name="image">
-          <area>1520,550,130,60</area>
-          <filename>icons/audiotypes/vorbis.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,450,130,60</area>
+	  <filename>icons/audiotypes/vorbis.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
     </statetype>
     <!--Audio channels in current item-->
     <statetype name="audiochannels">
       <loadondemand>true</loadondemand>
       <state name="1">
-        <imagetype name="image">
-          <area>1520,620,130,130</area>
-          <filename>icons/audiotypes/1chan.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,520,130,130</area>
+	  <filename>icons/audiotypes/1chan.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="2">
-        <imagetype name="image">
-          <area>1520,620,130,130</area>
-          <filename>icons/audiotypes/2chan.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,520,130,130</area>
+	  <filename>icons/audiotypes/2chan.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="5">
-        <imagetype name="image">
-          <area>1520,620,130,130</area>
-          <filename>icons/audiotypes/5chan.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,520,130,130</area>
+	  <filename>icons/audiotypes/5chan.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="6">
-        <imagetype name="image">
-          <area>1520,620,130,130</area>
-          <filename>icons/audiotypes/6chan.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,520,130,130</area>
+	  <filename>icons/audiotypes/6chan.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="7">
-        <imagetype name="image">
-          <area>1520,620,130,130</area>
-          <filename>icons/audiotypes/7chan.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,520,130,130</area>
+	  <filename>icons/audiotypes/7chan.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
       <state name="8">
-        <imagetype name="image">
-          <area>1520,620,130,130</area>
-          <filename>icons/audiotypes/8chan.png</filename>
-          <preserveaspect>true</preserveaspect>
-        </imagetype>
+	<imagetype name="image">
+	  <area>1520,520,130,130</area>
+	  <filename>icons/audiotypes/8chan.png</filename>
+	  <preserveaspect>true</preserveaspect>
+	</imagetype>
       </state>
     </statetype>
   </window>
@@ -404,6 +395,11 @@
     <imagetype name="banner">
       <area>902,140,758,140</area>
       <preserveaspect>true</preserveaspect>
+    </imagetype>
+    
+    <imagetype name="bannerframe">
+      <area>902,140,758,140</area>
+      <filename>wr-bannerframe.png</filename>
     </imagetype>
     
     <textarea name="title" from="basepagetitle" />
@@ -446,387 +442,323 @@
     <progressbar name="position" from="basewideprogressbar">
       <position>20,972</position>
     </progressbar>
-    <textarea name="description" from="basepagetitle">
-      <area>20,978,1640,58</area>
+    <textarea name="value" from="basepagetitle">
+      <area>30,978,1620,58</area>
       <align>allcenter</align>
-      <template>%DESCRIPTION% %VALUE%%UNITS%</template>
+      <template>%VALUE% %UNITS%</template>
     </textarea>
-</window>
-<window name="ChannelEditor">
-  <area>-1,-1,1920,1079</area>
-  <shape name="rightpanel_dark">
-    <area>1238,0,682,1080</area>
-    <fill color="#000000" alpha="150" />
-  </shape>
-  <shape name="infobox">
-    <area>1250,210,660,580</area>
-    <type>roundbox</type>
-    <fill color="#000000" alpha="180" />
-  </shape>
-  <textarea name="title" from="basetextarea">
-    <area>1260,234,674,60</area>
-    <font>basegothicmedium</font>
-    <align>left,vcenter</align>
-    <value>Channel Editor</value>
-  </textarea>
-  <textarea name="message" from="basetextarea">
-    <area>1260,285,674,57</area>
-    <multiline>yes</multiline>
-    <font>basesmalllightblue</font>
-    <align>left,vcenter</align>
-    <cutdown>yes</cutdown>
-    <value>Edit the details about this channel.</value>
-  </textarea>
-  <textarea name="callsign_label" from="basetextarea">
-    <area>1140,392,250,30</area>
-    <align>right,vcenter</align>
-    <font>basesmall</font>
-    <value>Callsign:</value>
-  </textarea>
-  <textedit name="callsign" from="basetextedit">
-    <position>1396,384</position>
-  </textedit>
-  <textarea name="channum_label" from="basetextarea">
-    <area>1140,452,250,30</area>
-    <align>right,vcenter</align>
-    <font>basesmall</font>
-    <value>Channel #:</value>
-  </textarea>
-  <textedit name="channum" from="basetextedit">
-    <position>1396,444</position>
-  </textedit>
-  <textarea name="channame_label" from="basetextarea">
-    <area>1140,512,250,30</area>
-    <align>right,vcenter</align>
-    <font>basesmall</font>
-    <value>Chan Name:</value>
-  </textarea>
-  <textedit name="channame" from="basetextedit">
-    <position>1396,504</position>
-  </textedit>
-  <textarea name="xmltv_label" from="basetextarea">
-    <area>1140,572,250,30</area>
-    <align>right,vcenter</align>
-    <font>basesmall</font>
-    <value>XMLTV #:</value>
-  </textarea>
-  <textedit name="XMLTV" from="basetextedit">
-    <position>1396,564</position>
-  </textedit>
-  <button name="probe" from="basebutton">
-    <position>1396,694</position>
-    <value>Probe</value>
-  </button>
-  <button name="ok" from="basebutton">
-    <position>1594,694</position>
-    <value>OK</value>
-  </button>
-</window>
-<window name="osd_program_editor">
-  <area>0,0,1680,1050</area>
-  <imagetype name="statusbar" from="basestatusbar" />
-  <clock name="clock" from="baseclock" />
-  <textarea name="title" from="basepagetitle" />
-  <imagetype name="1640x58">
-    <position>20,890</position>
-    <filename>OSD/fillbar-empty.png</filename>
-  </imagetype>
-  <textarea name="framedisplay" from="basebigstatetext">
-    <area>30,890,450,58</area>
-    <align>vcenter, left</align>
-    <template>Frame %1</template>
-  </textarea>
-  <textarea name="timedisplay" from="basebigstatetext">
-    <font>basebuttontitle</font>
-    <area>0,890,1640,58</area>
-    <align>allcenter</align>
-  </textarea>
-  <textarea name="seekamount" from="basebigstatetext">
-    <area>1200,890,440,58</area>
-  </textarea>
-  <editbar name="editbar">
-    <area>20,970,1640,58</area>
-    <imagetype name="cut">
-      <position>0,0</position>
+    <textarea name="playedtime" from="basepagetitle">
+      <area>30,978,1620,58</area>
+      <align>left,vcenter</align>
+      <template>%PLAYEDTIME%</template>
+    </textarea>
+    <textarea name="remainingtime" from="basepagetitle">
+      <area>30,978,1620,58</area>
+      <align>right,vcenter</align>
+      <template>%REMAININGTIME| %%BEHINDTIME| % of %TOTALTIME%</template>
+    </textarea>
+  </window>
+  
+  <window name="ChannelEditor">
+    
+    <area>-1,-1,1920,1079</area>
+    <shape name="rightpanel_dark">
+      <area>1238,0,682,1080</area>
+      <fill color="#000000" alpha="150" />
+    </shape>
+    <shape name="infobox">
+      <area>1250,210,660,580</area>
+      <type>roundbox</type>
+      <fill color="#000000" alpha="180" />
+    </shape>
+    <textarea name="title" from="basetextarea">
+      <area>1260,234,674,60</area>
+      <font>basegothicmedium</font>
+      <align>left,vcenter</align>
+      <value>Channel Editor</value>
+    </textarea>
+    <textarea name="message" from="basetextarea">
+      <area>1260,285,674,57</area>
+      <multiline>yes</multiline>
+      <font>basesmalllightblue</font>
+      <align>left,vcenter</align>
+      <cutdown>yes</cutdown>
+      <value>Edit the details about this channel.</value>
+    </textarea>
+    <textarea name="callsign_label" from="basetextarea">
+      <area>1140,392,250,30</area>
+      <align>right,vcenter</align>
+      <font>basesmall</font>
+      <value>Callsign:</value>
+    </textarea>
+    <textedit name="callsign" from="basetextedit">
+      <position>1396,384</position>
+    </textedit>
+    <textarea name="channum_label" from="basetextarea">
+      <area>1140,452,250,30</area>
+      <align>right,vcenter</align>
+      <font>basesmall</font>
+      <value>Channel #:</value>
+    </textarea>
+    <textedit name="channum" from="basetextedit">
+      <position>1396,444</position>
+    </textedit>
+    <textarea name="channame_label" from="basetextarea">
+      <area>1140,512,250,30</area>
+      <align>right,vcenter</align>
+      <font>basesmall</font>
+      <value>Chan Name:</value>
+    </textarea>
+    <textedit name="channame" from="basetextedit">
+      <position>1396,504</position>
+    </textedit>
+    <textarea name="xmltv_label" from="basetextarea">
+      <area>1140,572,250,30</area>
+      <align>right,vcenter</align>
+      <font>basesmall</font>
+      <value>XMLTV #:</value>
+    </textarea>
+    <textedit name="XMLTV" from="basetextedit">
+      <position>1396,564</position>
+    </textedit>
+    <button name="probe" from="basebutton">
+      <position>1396,694</position>
+      <value>Probe</value>
+    </button>
+    <button name="ok" from="basebutton">
+      <position>1594,694</position>
+      <value>OK</value>
+    </button>
+  </window>
+  <window name="osd_program_editor">
+    <area>0,0,1680,1050</area>
+    <imagetype name="statusbar" from="basestatusbar" />
+    <clock name="clock" from="baseclock" />
+    <textarea name="title" from="basepagetitle" />
+    <imagetype name="1640x58">
+      <position>20,890</position>
       <filename>OSD/fillbar-empty.png</filename>
     </imagetype>
-    <imagetype name="keep">
-      <position>0,0</position>
-      <filename>OSD/fillbar-full.png</filename>
-    </imagetype>
-    <shape name="cuttoright">
-      <area>0,0,4,100%</area>
-      <fill color="#0000FF" alpha="255" />
-    </shape>
-    <shape name="cuttoleft">
-      <area>0,0,4,100%</area>
-      <fill color="#0000FF" alpha="255" />
-    </shape>
-    <shape name="keeptoright">
-      <area>0,0,4,100%</area>
-      <fill color="#0099FF" alpha="255" />
-    </shape>
-    <shape name="keeptoleft">
-      <area>0,0,4,100%</area>
-      <fill color="#0099FF" alpha="255" />
-    </shape>
-    <shape name="position">
-      <area>0,0,4,100%</area>
-      <fill color="#FFFFFF" alpha="255" />
-    </shape>
-  </editbar>
-</window>
-<!-- Popup Dialogue Box -->
-<window name="MythPopupBox">
-  <area>-1,-1,600,800</area>
-  <imagetype name="backimg" from="basepopupboxback" />
-  <textarea name="messagearea">
-    <font>base</font>
-    <area>5,5,590,200</area>
-    <multiline>yes</multiline>
-    <align>allcenter</align>
-  </textarea>
-  <buttonlist name="list">
-    <layout>vertical</layout>
-    <spacing>5</spacing>
-    <arrange>stack</arrange>
-    <scrollstyle>groupcenter</scrollstyle>
-    <align>bottom,hcenter</align>
-    <buttonarea>0,205,600,580</buttonarea>
-    <statetype name="buttonitem">
-      <loadondemand>true</loadondemand>
-      <state name="active">
-        <area>0,0,580,55</area>
-        <imagetype name="buttonbackground">
-          <filename>580x55.png</filename>
-        </imagetype>
-        <textarea name="buttontext">
-          <area>0,0,580,55</area>
-          <align>allcenter</align>
-          <font>basesmall</font>
-        </textarea>
-        <imagetype name="buttonarrow">
-          <position>540,10</position>
-          <filename>icons/draw-triangle2.png</filename>
-          <alpha>100</alpha>
-          <grayscale>true</grayscale>
-        </imagetype>
-      </state>
-      <state name="selectedactive">
-        <area>0,0,580,140</area>
-        <imagetype name="buttonbackground2">
-          <filename>580x140.png</filename>
-        </imagetype>
-        <textarea name="buttontext">
-          <area>0,0,580,140</area>
-          <font>basebuttontitle</font>
-          <align>allcenter</align>
-          <multiline>yes</multiline>
-        </textarea>
-        <imagetype name="buttonarrow">
-          <position>540,50</position>
-          <filename>icons/draw-triangle2.png</filename>
-          <alpha>200</alpha>
-        </imagetype>
-      </state>
-      <state name="inactive" from="active">
-        <imagetype name="buttonbackground">
-          <alpha>100</alpha>
-        </imagetype>
-        <textarea name="buttontext">
-          <alpha>100</alpha>
-        </textarea>
-        <imagetype name="buttonarrow">
-          <alpha>30</alpha>
-          <grayscale>true</grayscale>
-        </imagetype>
-      </state>
-      <state name="selectedinactive" from="selectedactive">
-        <imagetype name="buttonbackground2">
-          <alpha>100</alpha>
-        </imagetype>
-        <textarea name="buttontext">
-          <alpha>100</alpha>
-        </textarea>
-        <imagetype name="buttonarrow">
-          <alpha>30</alpha>
-          <grayscale>true</grayscale>
-        </imagetype>
-      </state>
-    </statetype>
-    <statetype name="baseupscrollarrow">
-      <position>5,550</position>
-    </statetype>
-    <statetype name="basedownscrollarrow">
-      <position>40,550</position>
-    </statetype>
-  </buttonlist>
-</window>
-
- <window name="osd_debug">
-   <area>0,0,1680,1050</area>
-   
-   <imagetype name="statusbar" from="basestatusbar" />
-   
-   <clock name="clock" from="baseclock" />
-
-   <fontdef name="medium" face="DejaVu Sans">
-     <pixelsize>16</pixelsize>
-     <color>#FFFFFF</color>
-   </fontdef>
-   <fontdef name="file" from="medium">
-     <color>#CCCCFF</color>
-   </fontdef>
-   <textarea name="file">
-     <font>file</font>
-     <area>5,5,180,25</area>
-     <align>right,vcenter</align>
-     <value>Filename :</value>
-   </textarea>
-   <textarea name="filename">
-     <font>file</font>
-     <area>190,5,980,25</area>
-     <align>left,vcenter</align>
-   </textarea>
-   <textarea name="storage">
-     <font>medium</font>
-     <area>5,30,180,25</area>
-     <align>right,vcenter</align>
-     <value>Storage to Buffer :</value>
-   </textarea>
-   <textarea name="storagerate">
-     <font>medium</font>
-     <area>190,30,200,25</area>
-     <align>left,vcenter</align>
-   </textarea>
-   <textarea name="decoder">
-     <font>medium</font>
-     <area>5,55,180,25</area>
-     <align>right,vcenter</align>
-     <value>Buffer to Decoder :</value>
-   </textarea>
-   <textarea name="decoderrate">
-     <font>medium</font>
-     <area>190,55,605,25</area>
-     <align>left,vcenter</align>
-   </textarea>
-   <textarea name="buffer">
-     <font>medium</font>
-     <area>5,80,180,25</area>
-     <align>right,vcenter</align>
-     <value>Available Buffer :</value>
-   </textarea>
-   <textarea name="bufferavail">
-     <font>medium</font>
-     <area>190,80,605,25</area>
-     <align>left,vcenter</align>
-     <template>%BUFFERAVAIL% of %BUFFERSIZE%Mb</template>
-   </textarea>
-   
-   <textarea name="video">
-     <font>medium</font>
-     <area>260,30,150,25</area>
-     <align>right,vcenter</align>
-     <value>Video :</value>
-   </textarea>
-   <textarea name="videowidth">
-     <font>medium</font>
-     <area>415,30,250,25</area>
-     <align>left,vcenter</align>
-     <template>%VIDEOWIDTH%x%VIDEOHEIGHT%@%VIDEOFRAMERATE%fps</template>
-   </textarea>
-   <textarea name="vidcodec">
-     <font>medium</font>
-     <area>260,55,150,25</area>
-     <align>right,vcenter</align>
-     <value>Codec/Dec :</value>
-   </textarea>
-   <textarea name="videocodec">
-     <font>medium</font>
-     <area>415,55,150,25</area>
-     <align>left,vcenter</align>
-     <template>%VIDEOCODEC% %VIDEODECODER%</template>
-   </textarea>
-   <textarea name="cpuload">
-     <font>medium</font>
-     <area>260,80,150,25</area>
-     <align>right,vcenter</align>
-     <value>CPUs :</value>
-   </textarea>
-   <textarea name="load">
-     <font>medium</font>
-     <area>415,80,200,25</area>
-     <align>left,vcenter</align>
-   </textarea>
-   
-   <textarea name="fps">
-     <font>medium</font>
-     <area>600,30,200,25</area>
-     <align>right,vcenter</align>
-     <value>FPS :</value>
-   </textarea>
-   <textarea name="framerate">
-     <font>medium</font>
-     <area>805,30,250,25</area>
-     <align>left,vcenter</align>
-   </textarea>
-   <textarea name="sync">
-     <font>medium</font>
-     <area>650,55,150,25</area>
-     <align>right,vcenter</align>
-     <value>A/V Sync :</value>
-   </textarea>
-   <textarea name="avsync">
-     <font>medium</font>
-     <area>805,55,150,25</area>
-     <align>left,vcenter</align>
-   </textarea>
-   <textarea name="frames">
-     <font>medium</font>
-     <area>600,80,200,25</area>
-     <align>right,vcenter</align>
-     <value>Frames decoded/free :</value>
-   </textarea>
-   <textarea name="videoframes">
-     <font>medium</font>
-     <area>805,80,250,25</area>
-     <align>left,vcenter</align>
-   </textarea>
-   
-   <textarea name="audio">
-     <font>medium</font>
-     <area>865,30,150,25</area>
-     <align>right,vcenter</align>
-     <value>Audio :</value>
-   </textarea>
-   <textarea name="audiocodec">
-     <font>medium</font>
-     <area>1020,30,250,25</area>
-     <align>left,vcenter</align>
-   </textarea>
-   <textarea name="channels">
-     <font>medium</font>
-     <area>865,55,150,25</area>
-     <align>right,vcenter</align>
-     <value>Channels :</value>
-   </textarea>
-   <textarea name="audiochannels">
-     <font>medium</font>
-     <area>1020,55,150,25</area>
-     <align>left,vcenter</align>
-   </textarea>
-   <textarea name="audiorate">
-     <font>medium</font>
-     <area>865,80,150,25</area>
-     <align>right,vcenter</align>
-     <value>Sample rate :</value>
-   </textarea>
-   <textarea name="samplerate">
-     <font>medium</font>
-     <area>1020,80,150,25</area>
-     <align>left,vcenter</align>
-   </textarea>
-   
- </window>
-
+    <textarea name="framedisplay" from="basebigstatetext">
+      <area>30,890,450,58</area>
+      <align>vcenter, left</align>
+      <template>Frame %1</template>
+    </textarea>
+    <textarea name="timedisplay" from="basebigstatetext">
+      <font>basebuttontitle</font>
+      <area>0,890,1640,58</area>
+      <align>allcenter</align>
+    </textarea>
+    <textarea name="seekamount" from="basebigstatetext">
+      <area>1200,890,440,58</area>
+    </textarea>
+    <editbar name="editbar">
+      <area>20,970,1640,58</area>
+      <imagetype name="cut">
+	<position>0,0</position>
+	<filename>OSD/fillbar-empty.png</filename>
+      </imagetype>
+      <imagetype name="keep">
+	<position>0,0</position>
+	<filename>OSD/fillbar-full.png</filename>
+      </imagetype>
+      <shape name="cuttoright">
+	<area>0,0,4,100%</area>
+	<fill color="#0000FF" alpha="255" />
+      </shape>
+      <shape name="cuttoleft">
+	<area>0,0,4,100%</area>
+	<fill color="#0000FF" alpha="255" />
+      </shape>
+      <shape name="keeptoright">
+	<area>0,0,4,100%</area>
+	<fill color="#0099FF" alpha="255" />
+      </shape>
+      <shape name="keeptoleft">
+	<area>0,0,4,100%</area>
+	<fill color="#0099FF" alpha="255" />
+      </shape>
+      <shape name="position">
+	<area>0,0,4,100%</area>
+	<fill color="#FFFFFF" alpha="255" />
+      </shape>
+    </editbar>
+  </window>
+  
+  
+  <!-- Popup Dialogue Box -->
+  <window name="MythPopupBox">
+    <area>-1,-1,600,800</area>
+    <imagetype name="backimg" from="basepopupboxback" />
+    <textarea name="messagearea" from="basemessagearea" />
+    <buttonlist name="list" from="basepopupboxlist" />
+  </window>
+  
+  <!-- Shows a lot information about the current playing recoridng -->
+  <window name="osd_debug">
+    <area>0,0,1680,1050</area>
+    
+    <imagetype name="statusbar" from="basestatusbar" />
+    
+    <clock name="clock" from="baseclock" />
+    
+    <fontdef name="medium" face="DejaVu Sans">
+      <pixelsize>16</pixelsize>
+      <color>#FFFFFF</color>
+    </fontdef>
+    <fontdef name="file" from="medium">
+      <color>#CCCCFF</color>
+    </fontdef>
+    <textarea name="file">
+      <font>file</font>
+      <area>5,5,180,25</area>
+      <align>right,vcenter</align>
+      <value>Filename :</value>
+    </textarea>
+    <textarea name="filename">
+      <font>file</font>
+      <area>190,5,980,25</area>
+      <align>left,vcenter</align>
+    </textarea>
+    <textarea name="storage">
+      <font>medium</font>
+      <area>5,30,180,25</area>
+      <align>right,vcenter</align>
+      <value>Storage to Buffer :</value>
+    </textarea>
+    <textarea name="storagerate">
+      <font>medium</font>
+      <area>190,30,200,25</area>
+      <align>left,vcenter</align>
+    </textarea>
+    <textarea name="decoder">
+      <font>medium</font>
+      <area>5,55,180,25</area>
+      <align>right,vcenter</align>
+      <value>Buffer to Decoder :</value>
+    </textarea>
+    <textarea name="decoderrate">
+      <font>medium</font>
+      <area>190,55,605,25</area>
+      <align>left,vcenter</align>
+    </textarea>
+    <textarea name="buffer">
+      <font>medium</font>
+      <area>5,80,180,25</area>
+      <align>right,vcenter</align>
+      <value>Available Buffer :</value>
+    </textarea>
+    <textarea name="bufferavail">
+      <font>medium</font>
+      <area>190,80,605,25</area>
+      <align>left,vcenter</align>
+      <template>%BUFFERAVAIL% of %BUFFERSIZE%Mb</template>
+    </textarea>
+    
+    <textarea name="video">
+      <font>medium</font>
+      <area>260,30,150,25</area>
+      <align>right,vcenter</align>
+      <value>Video :</value>
+    </textarea>
+    <textarea name="videowidth">
+      <font>medium</font>
+      <area>415,30,250,25</area>
+      <align>left,vcenter</align>
+      <template>%VIDEOWIDTH%x%VIDEOHEIGHT%@%VIDEOFRAMERATE%fps</template>
+    </textarea>
+    <textarea name="vidcodec">
+      <font>medium</font>
+      <area>260,55,150,25</area>
+      <align>right,vcenter</align>
+      <value>Codec/Dec :</value>
+    </textarea>
+    <textarea name="videocodec">
+      <font>medium</font>
+      <area>415,55,150,25</area>
+      <align>left,vcenter</align>
+      <template>%VIDEOCODEC% %VIDEODECODER%</template>
+    </textarea>
+    <textarea name="cpuload">
+      <font>medium</font>
+      <area>260,80,150,25</area>
+      <align>right,vcenter</align>
+      <value>CPUs :</value>
+    </textarea>
+    <textarea name="load">
+      <font>medium</font>
+      <area>415,80,200,25</area>
+      <align>left,vcenter</align>
+    </textarea>
+    
+    <textarea name="fps">
+      <font>medium</font>
+      <area>600,30,200,25</area>
+      <align>right,vcenter</align>
+      <value>FPS :</value>
+    </textarea>
+    <textarea name="framerate">
+      <font>medium</font>
+      <area>805,30,250,25</area>
+      <align>left,vcenter</align>
+    </textarea>
+    <textarea name="sync">
+      <font>medium</font>
+      <area>650,55,150,25</area>
+      <align>right,vcenter</align>
+      <value>A/V Sync :</value>
+    </textarea>
+    <textarea name="avsync">
+      <font>medium</font>
+      <area>805,55,150,25</area>
+      <align>left,vcenter</align>
+    </textarea>
+    <textarea name="frames">
+      <font>medium</font>
+      <area>600,80,200,25</area>
+      <align>right,vcenter</align>
+      <value>Frames decoded/free :</value>
+    </textarea>
+    <textarea name="videoframes">
+      <font>medium</font>
+      <area>805,80,250,25</area>
+      <align>left,vcenter</align>
+    </textarea>
+    
+    <textarea name="audio">
+      <font>medium</font>
+      <area>865,30,150,25</area>
+      <align>right,vcenter</align>
+      <value>Audio :</value>
+    </textarea>
+    <textarea name="audiocodec">
+      <font>medium</font>
+      <area>1020,30,250,25</area>
+      <align>left,vcenter</align>
+    </textarea>
+    <textarea name="channels">
+      <font>medium</font>
+      <area>865,55,150,25</area>
+      <align>right,vcenter</align>
+      <value>Channels :</value>
+    </textarea>
+    <textarea name="audiochannels">
+      <font>medium</font>
+      <area>1020,55,150,25</area>
+      <align>left,vcenter</align>
+    </textarea>
+    <textarea name="audiorate">
+      <font>medium</font>
+      <area>865,80,150,25</area>
+      <align>right,vcenter</align>
+      <value>Sample rate :</value>
+    </textarea>
+    <textarea name="samplerate">
+      <font>medium</font>
+      <area>1020,80,150,25</area>
+      <align>left,vcenter</align>
+    </textarea>
+    
+  </window>
+  
 </mythuitheme>

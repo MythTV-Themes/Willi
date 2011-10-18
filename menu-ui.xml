@@ -3,6 +3,7 @@
 <mythuitheme>
   <window name="mainmenu">
     <imagetype name="background" from="basebackground"/>
+
     <imagetype name="band">
       <area>0,445,1680,152</area>
       <filename>band.png</filename>
@@ -44,6 +45,10 @@
         </state>
       </statetype>
     </buttonlist>
+    
+    
+    
+    
     <clock name="clock" from="baseclock" />
   </window>
 </mythuitheme>

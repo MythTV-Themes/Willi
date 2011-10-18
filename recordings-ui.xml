@@ -23,11 +23,17 @@
       <value>Watch Recordings</value>
     </textarea>
     <!-- The banner of the current show -->
+    <group name="banner">
     <imagetype name="banner">
       <area>915,905,758,140</area>
       <filename />
       <mask>wr-bannermask.png</mask>
     </imagetype>
+    <imagetype name="bannerframe">
+      <area>915,905,758,140</area>
+      <filename>wr-bannerframe.png</filename>
+    </imagetype>
+  </group>
     <!--draws the recording groups on top of the tabs	 -->
     <buttonlist name="recgroups">
       <area>10,107,1658,40</area>
@@ -53,13 +59,14 @@
             <filename>wr-300x40.png</filename>
           </imagetype>
           <textarea name="buttontext">
-            <area>0,2,300,38</area>
+            <area>0,5,300,35</area>
             <align>allcenter</align>
             <font>basebuttontitle</font>
           </textarea>
         </state>
       </statetype>
     </buttonlist>
+    
     <!--This is the left side of the selections. It shows the groups that are available to the user.	-->
     <buttonlist name="groups" from="basegroups">
       <area>5,180,490,660</area>
@@ -105,8 +112,10 @@
         </state>
       </statetype>
     </buttonlist>
+    
     <!--show the coverart over the groups, only if browsing the recordings -->
     <imagetype name="coverart" from="basecoverart"/>
+    
     <!--This is the right side of the selections. It shows the recordings that are available to the user.	-->
     <buttonlist name="recordings" from="basebuttonlist2">
       <loadondemand>true</loadondemand> 
@@ -119,21 +128,16 @@
             <template>%SHORTTIMEDATE%</template>
             <position>0,+27</position>
           </textarea>
-          <textarea name="title">
-            <font>basebuttonsmalltitle</font>
-            <area>5,1,800,30</area>
-            <align>vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-          </textarea>
           <textarea name="subtitle">
             <font>basebuttontitlesubtitle</font>
-            <area>5,25,800,30</area>
-            <align>bottom</align>
+            <area>5,0,800,55</area>
             <cutdown>yes</cutdown>
             <multiline>yes</multiline>
-            <template>%00x00| %%SUBTITLE| %%|(LENMINS|)%</template>
-          </textarea>          
+            <template>%00x00| %%TITLE| - %%SUBTITLE| %%|(LENMINS|)%</template>
+	    <alpha>200</alpha>
+            <align>vcenter</align>
+	    </textarea>
+        
           <!--The little screenshot/preview of the recording -->
           <imagetype name="preview">
             <area>1070,0,97,53</area>
@@ -170,17 +174,28 @@
               </imagetype>
             </state>
           </statetype>
-          <!--A statetype for an item that is being processed	
+          <!--A statetype for an item that is being processed	-->
           <statetype name="processing">
             <state name="yes">
               <imagetype name="animation">
                 <area>0,0,25,25</area>
                 <position>1005,5</position>
-                <filepattern low="1" high="23">progressbar/progressbar%1.png</filepattern>
-                <delay>160</delay>
+                <filepattern low="1" high="8">animations/process/%1.png</filepattern>
+                <delay>400</delay>
               </imagetype>
             </state>
-          </statetype>-->
+          </statetype>
+	  <!--A statetype for an item that is being processed	-->
+          <statetype name="inuse">
+            <state name="yes">
+              <imagetype name="animation">
+                <area>0,0,25,25</area>
+                <position>1005,5</position>
+                <filepattern low="1" high="8">animations/process/%1.png</filepattern>
+                <delay>400</delay>
+              </imagetype>
+            </state>
+          </statetype>
           <!--icon displaying the state of running jobs	-->
           <statetype name="jobstate">
             <position>1040,2</position>
@@ -211,13 +226,13 @@
             </state>
           </statetype>
                     
-          <textarea name="00x00" from="basetextarea">    
+          <!--<textarea name="00x00" from="basetextarea">    
             <area>0,0,920,140</area>
             <font>baseclock</font>
             <template>%00x00%</template>
             <align>right,top</align>
             <alpha>180</alpha>
-          </textarea>
+	  </textarea>-->
                     
           <textarea name="title" from="buttontext">
             <font>basebuttontitle</font>
@@ -226,10 +241,11 @@
           </textarea>
           <textarea name="subtitle" from="buttontext">
             <font>basebuttonsubtitle</font>
-            <area>5,35,915,40</area>
+            <area>5,35,915,45</area>
             <cutdown>yes</cutdown>
+	    <align>top</align>
             <alpha>200</alpha>
-<!--            <template>%00x00| %%subtitle%</template>-->
+            <template>%00x00| %%subtitle%</template>
           </textarea>
           <!--The description field, that in this case fuses subtitle + rating + description into one -->
           <textarea name="description" from="buttontext">
@@ -290,17 +306,28 @@
               </imagetype>
             </state>
           </statetype>
-          <!--A statetype for an item that is in use	
+          <!--A statetype for an item that is being processed	-->
           <statetype name="processing">
             <state name="yes">
               <imagetype name="animation">
-                <area>0,0,125,125</area>
+                <area>0,0,45,45</area>
                 <position>900,5</position>
-                <filepattern low="1" high="23">progressbar/progressbar%1.png</filepattern>
-                <delay>160</delay>
+                <filepattern low="1" high="8">animations/process/%1.png</filepattern>
+                <delay>400</delay>
               </imagetype>
             </state>
-          </statetype>-->
+          </statetype>
+	  <!--A statetype for an item that is being processed	-->
+          <statetype name="inuse">
+            <state name="yes">
+              <imagetype name="animation">
+                <area>0,0,45,45</area>
+                <position>900,5</position>
+                <filepattern low="1" high="8">animations/process/%1.png</filepattern>
+                <delay>400</delay>
+              </imagetype>
+            </state>
+          </statetype>
           <!-- show to the user that he can jump to the left -->
           <imagetype name="direction">
             <position>-40,59</position>

@@ -7,13 +7,7 @@
    <!-- Font Definitions for main menu -->
    <fontdef name="menuselectfont" face="Orbitron">
      <pixelsize>90</pixelsize>
-     
-     <gradient direction="diagonal" alpha="255">
-       <stop position="0" color="#aa0000" />
-       <stop position="40" color="#800000"/>
-       <stop position="55" color="#D40000"/>	    
-       <stop position="70" color="#800000" />
-     </gradient>
+     <color>#aa0000</color>
      
    </fontdef>
    
@@ -24,13 +18,13 @@
    
    <!-- Base Font Definitions -->
    
-   <fontdef name="base" face="DejaVu Sans">
-     <pixelsize>35</pixelsize>
+   <fontdef name="base" face="League Gothic">
+     <pixelsize>40</pixelsize>
      <color>#FFFFFF</color>
    </fontdef>
    
    <fontdef name="basesmall" from="base">
-     <pixelsize>22</pixelsize>
+     <pixelsize>30</pixelsize>
    </fontdef>
    
    <fontdef name="videocodec" face="Arial">
@@ -39,19 +33,12 @@
      <weight>bold</weight>
    </fontdef>
    
-   <fontdef name="basesmallblack" from="base">
-     <pixelsize>25</pixelsize>
+   <fontdef name="basesmallblack" from="basesmall">
      <color>#000000</color>
    </fontdef>
    
    <fontdef name="basebutton" from="base">
-     <pixelsize>30</pixelsize>
-     <gradient direction="diagonal" alpha="255">
-       <stop position="0" color="#aa0000" />
-       <stop position="40" color="#800000"/>
-       <stop position="55" color="#D40000"/>	    
-       <stop position="70" color="#800000" />
-     </gradient>
+     <color>#aa0000</color>
    </fontdef>
    
    <fontdef name="basetitle" face="Orbitron">
@@ -70,12 +57,7 @@
    
    <fontdef name="basebuttontitle" face="Orbitron">
      <pixelsize>35</pixelsize>
-     <gradient direction="diagonal" alpha="255">
-       <stop position="0" color="#aa0000" />
-       <stop position="40" color="#800000"/>
-       <stop position="55" color="#D40000"/>	    
-       <stop position="70" color="#800000" />
-     </gradient>
+     <color>#aa0000</color>
    </fontdef>
    
    <fontdef name="basebuttontitlewhite" face="Orbitron">
@@ -114,7 +96,7 @@
    </fontdef>
    
    <fontdef name="basebuttonsubtitle" from="basebutton">
-     <pixelsize>30</pixelsize>
+     <pixelsize>35</pixelsize>
      <color>#000000</color>
    </fontdef>
 
@@ -129,7 +111,7 @@
    </fontdef>
    
    <fontdef name="basebuttontitlesubtitle" from="basebutton">
-     <pixelsize>22</pixelsize>
+     <pixelsize>30</pixelsize>
      <color>#FFFFFF</color>
    </fontdef>
    
@@ -184,7 +166,6 @@
      <multiline>no</multiline>
      <cutdown>yes</cutdown>
      <align>right,bottom</align>
-
    </textarea>
    
    <!-- A generic big textarea for states   -->
@@ -1540,10 +1521,9 @@
            <filename>580x55.png</filename>
          </imagetype>
          
-         <textarea name="buttontext">
+         <textarea name="buttontext" from="basetextarea">
            <area>0,0,580,55</area>
            <align>allcenter</align>
-           <font>basesmall</font>
          </textarea>
          
          <imagetype name="buttonarrow">
@@ -1988,11 +1968,9 @@
               <area>15,0,55,55</area>
               <preserveaspect>true</preserveaspect>
             </imagetype>
-            <textarea name="resolution">
+            <textarea name="resolution" from="basetextarea">
               <area>60,0,430,55</area>
               <align>allcenter</align>
-              <font>basesmall</font>
-              <cutdown>yes</cutdown>
             </textarea>
           </state>
           <state name="selectedactive">
@@ -2031,12 +2009,10 @@
             <imagetype name="buttonbackground">
               <filename>580x55.png</filename>
             </imagetype>
-            <textarea name="buttontext">
+            <textarea name="buttontext" from="basetextarea">
               <area>0,0,580,55</area>
               <align>allcenter</align>
-              <font>basesmall</font>
               <template>%TITLE% - %SUBTITLE%</template>
-              <cutdown>yes</cutdown>
             </textarea>
           </state>
           <state name="selectedactive">
@@ -2050,13 +2026,12 @@
               <font>basesmall</font>
               <template>%RELEASEDATE% %IMDB% %S##E##%</template>
             </textarea>
-            <textarea name="buttontext">
+            <textarea name="buttontext" from="basetextarea">
               <area>0,0,580,100</area>
               <font>basebuttontitle</font>
               <align>allcenter</align>
               <multiline>yes</multiline>
               <template>%TITLE% - %SUBTITLE%</template>
-              <cutdown>yes</cutdown>
             </textarea>
           </state>
         </statetype>
