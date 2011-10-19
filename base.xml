@@ -980,6 +980,72 @@
      </statetype>
    </button>
    
+   
+   <buttonlist name="basewideselector">
+     <area>0,0,580,40</area>
+     <layout>horizontal</layout>
+     <statetype name="buttonitem">
+       <loadondemand>true</loadondemand>     
+       <state name="active">
+         <imagetype name="background">
+           <area>30,0,520,40</area>
+           <filename>spinbox-520x40.png</filename>
+           <alpha>150</alpha>
+         </imagetype>
+         
+         <textarea name="buttontext">
+           <area>30,0,520,40</area>
+           <align>allcenter</align>
+           <font>basesmall</font>
+           <cutdown>yes</cutdown>
+         </textarea>
+       </state>
+       
+       <state name="selectedactive" from="active">
+         <imagetype name="background">
+           <alpha>200</alpha>
+         </imagetype>
+         
+         <textarea name="buttontext">
+           <font>basebuttontitle</font>
+         </textarea>
+       </state>
+       
+       <state name="selectedinactive" from="active">
+         <imagetype name="buttonbackground">
+           <alpha>127</alpha>
+         </imagetype>
+         
+         <textarea name="buttontext">
+           <alpha>127</alpha>
+         </textarea>
+       </state>
+       
+       <state name="disabled" from="active">
+         <imagetype name="background">
+           <alpha>30</alpha>
+         </imagetype>
+         
+         <textarea name="buttontext">
+           <alpha>30</alpha>
+         </textarea>
+       </state>
+     </statetype>
+     
+     <statetype name="upscrollarrow" from="baseleftscrollarrow">
+       <position>-3,2</position>
+     </statetype>
+     
+     <statetype name="downscrollarrow" from="baserightscrollarrow">
+       <position>550,2</position>
+     </statetype>
+   </buttonlist>
+   
+   
+   
+   
+   
+   
    <!-- Base definition of a spinbox -->
    
    <spinbox name="basespinbox">
@@ -1603,13 +1669,17 @@
      <filename>MythPopupBox-background.png</filename>
    </imagetype>
    
+   <imagetype name="baseglowwhite">
+     <filepattern low="1" high="9" cycle="reverse">animations/glow-white/%1.png</filepattern>
+     <delay>150</delay>
+   </imagetype>
    
    <!-- Popup Dialogue Box -->
    
    <window name="MythPopupBox">
      <area>-1,-1,600,800</area>
      <imagetype name="backimg" from="basepopupboxback" />
-     
+
      <textarea name="messagearea" from="basemessagearea" />
      <buttonlist name="list" from="basepopupboxlist" />
    </window>

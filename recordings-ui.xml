@@ -310,8 +310,8 @@
           <statetype name="processing">
             <state name="yes">
               <imagetype name="animation">
-                <area>0,0,45,45</area>
-                <position>900,5</position>
+                <area>0,0,25,25</area>
+                <position>1005,5</position>
                 <filepattern low="1" high="8">animations/process/%1.png</filepattern>
                 <delay>400</delay>
               </imagetype>
@@ -321,8 +321,8 @@
           <statetype name="inuse">
             <state name="yes">
               <imagetype name="animation">
-                <area>0,0,45,45</area>
-                <position>900,5</position>
+                <area>0,0,25,25</area>
+                <position>1005,5</position>
                 <filepattern low="1" high="8">animations/process/%1.png</filepattern>
                 <delay>400</delay>
               </imagetype>

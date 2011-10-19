@@ -8,6 +8,9 @@
       <area>0,445,1680,152</area>
       <filename>band.png</filename>
     </imagetype>
+    <imagetype name="glow" from="baseglowwhite">
+       <position>1000,225</position>
+     </imagetype>
     <buttonlist name="menu">
       <loadondemand>true</loadondemand> 
       <area>0,0,1680,1050</area>

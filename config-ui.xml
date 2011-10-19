@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="iconimport">
+
+
+       <imagetype name="backgroundlogo" from="basebackgroundlogo" />
+       
+       <!-- Fanart behind everyhting  -->
+       <imagetype name="fanart">
+         <area>0,105,1680,945</area>
+         <filename />
+         <alpha>150</alpha>
+       </imagetype>
+       <imagetype name="recbackground">
+         <position>0,0</position>
+         <filename>schedule/managerecrulesbackground.png</filename>
+       </imagetype>
+       
+       <clock name="clock" from="baseclock" />
+
+        <textarea name="heading" from="basepagetitle">
+            <value>Icon Importer</value>
+        </textarea>
+
+
+       <buttonlist name="icons" from="basebuttonlist2">
+         <position>254,180</position>
+         <statetype name="buttonitem">
+           <state name="active">
+                     <imagetype name="icon">
+                        <area>0,5,80,50</area>
+                        <preserveaspect>true</preserveaspect>
+                        <mask></mask>
+                    </imagetype>
+             <textarea name="buttontext" from="buttontext">
+               <font>basebuttontitlesubtitle</font>
+               <area>5,0,800,55</area>
+               <align>vcenter</align>
+               <cutdown>yes</cutdown>
+               <multiline>yes</multiline>
+             </textarea>
+           </state>
+           <state name="selectedactive">
+             <textarea name="buttontext" from="buttontext">
+               <font>basebuttonsubtitle</font>
+               <area>5,0,915,40</area>
+               <cutdown>yes</cutdown>
+             </textarea>
+  
+                     <imagetype name="icon">
+                        <area>5,40,915,40</area>
+                        <preserveaspect>true</preserveaspect>
+                        <mask></mask>
+                    </imagetype>     
+
+             <imagetype name="direction">
+               <alpha>0</alpha>
+             </imagetype>
+             <imagetype name="directionright">
+               <alpha>0</alpha>
+             </imagetype>
+           </state>
+	              
+         </statetype>
+       </buttonlist>
+    
+
+        <textarea name="status" from="basetextarea">
+            <area>30,540,1220,25</area>
+            <align>hcenter</align>
+        </textarea>
+
+       <textarea name="manuallabel" from="basetextarea">
+         <area>15,905,880,30</area>
+       </textarea>
+       
+       <textarea name="manualsearch" from="basetextarea">
+         <area>15,940,880,120</area>
+         <multiline>yes</multiline>
+       </textarea>	
+   
+   <button name="search" from="basebutton">
+     <position>714,630</position>
+     <value>Search</value>
+   </button>
+   
+   <button name="skip" from="basebutton">
+     <position>1027,630</position>
+     <value>Skip</value>
+   </button>
+
+    </window>
+
+    <window name="channeloverview">
+
+
+       <imagetype name="recbackground">
+         <position>0,0</position>
+         <filename>config-channelsbackground.png</filename>
+       </imagetype>
+       
+       <clock name="clock" from="baseclock" />
+       
+       <textarea name="title" from="basepagetitle">
+         <value>Channel Editor</value>
+       </textarea>
+       
+           <buttonlist name="channels" from="basegroups">
+      <position>5,180</position>
+      <loadondemand>true</loadondemand> 
+      <statetype name="buttonitem">
+        <state name="active">
+                     <imagetype name="icon">
+                        <preserveaspect>true</preserveaspect>
+            <area>393,0,97,53</area>
+          </imagetype>
+             <textarea name="name" from="buttontext">
+               <font>basebuttontitlesubtitle</font>
+               <area>5,0,390,55</area>
+	       <template>%CHANNUM| %%NAME| - %%CALLSIGN| %</template>
+	       <alpha>200</alpha>
+               <align>vcenter</align>
+	       <multiline>yes</multiline>
+             </textarea>
+
+        </state>
+	
+        <state name="selectedactive">
+            <imagetype name="icon">
+            <preserveaspect>true</preserveaspect>
+            <area>250,2,240,135</area>
+            <mask>wr-previewmask.png</mask>
+          </imagetype> 
+             <textarea name="channum" from="buttontext">
+               <font>basebuttontitle</font>
+               <area>5,0,250,70</area>
+               <template>%CHANNUM| %%CALLSIGN|\n%%NAME%</template>
+	       <multiline>yes</multiline>
+             </textarea>
+             <textarea name="name" from="buttontext">
+               <font>basebuttonsubtitle</font>
+               <area>5,65,250,85</area>
+	       <cutdown>yes</cutdown>
+	       <multiline>yes</multiline>
+	    <align>top</align>
+            <alpha>200</alpha>
+	    <template>%SOURCENAME|\n%%CHANID| %</template>
+             </textarea>
+	     </state>
+        <state name="selectedinactive" from="selectedactive">
+	  <imagetype name="icon">
+            <alpha>30</alpha>
+          </imagetype>
+          <textarea name="channum">
+            <alpha>30</alpha>
+          </textarea>
+	  <textarea name="name">
+            <alpha>30</alpha>
+          </textarea>
+          <!-- show to the user that he can jump to the right -->
+          <imagetype name="direction">
+            <alpha>0</alpha>
+          </imagetype>
+        </state>
+        <state name="inactive" from="active">
+	  <imagetype name="icon">
+            <alpha>30</alpha>
+          </imagetype>
+          <textarea name="channum">
+            <alpha>30</alpha>
+          </textarea>
+	  <textarea name="name">
+            <alpha>30</alpha>
+          </textarea>
+          
+ 
+        </state>
+      </statetype>
+    </buttonlist>
+       
+       <checkbox name="nochannum" from="basecheckbox">
+         <position>600,190</position>
+       </checkbox>
+       
+       <textarea name="nochannumlabel" from="basetextarea">
+         <area>650,190,400,30</area>
+       <value>Hide Channels without channel number.</value>
+       </textarea>
+       
+       <buttonlist name="sorting" from="basewideselector">
+         <position>600,260</position>
+         <value>Metadata Options</value>
+         <helptext>
+         </helptext>
+       </buttonlist>
+       
+       <buttonlist name="source" from="basewideselector">
+         <position>600,340</position>
+         <value>Schedule Options</value>
+         <helptext>
+         </helptext>
+       </buttonlist>
+       
+       <button name="scan" from="basepopupbutton">
+         <position>600,480</position>
+         <value>Channel Scan</value>
+         <helptext>
+         </helptext>
+       </button>
+       
+       <button name="importicons" from="basepopupbutton">
+         <position>600,580</position>
+         <value>Icon Download</value>
+         <helptext>
+         </helptext>
+       </button>
+       
+       <button name="edittransport" from="basepopupbutton">
+         <position>600,680</position>
+         <value>Edit Transports</value>
+         <helptext>
+         </helptext>
+       </button>
+       
+       
+       <button name="preview" from="basepopupbutton">
+         <position>600,780</position>
+         <value>Preview</value>
+         <helptext>
+         </helptext>
+       </button>
+       
+       <button name="delete" from="basepopupbutton">
+         <position>1080,960</position>
+         <value>Delete All</value>
+       </button>
+       
+
+       
+
+       
+
+       
+    </window>
+
+</mythuitheme>
