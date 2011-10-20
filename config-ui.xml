@@ -4,7 +4,6 @@
 
     <window name="iconimport">
 
-
        <imagetype name="backgroundlogo" from="basebackgroundlogo" />
        
        <!-- Fanart behind everyhting  -->
@@ -23,7 +22,6 @@
         <textarea name="heading" from="basepagetitle">
             <value>Icon Importer</value>
         </textarea>
-
 
        <buttonlist name="icons" from="basebuttonlist2">
          <position>254,180</position>
@@ -66,7 +64,6 @@
          </statetype>
        </buttonlist>
     
-
         <textarea name="status" from="basetextarea">
             <area>30,540,1220,25</area>
             <align>hcenter</align>
@@ -94,7 +91,6 @@
     </window>
 
     <window name="channeloverview">
-
 
        <imagetype name="recbackground">
          <position>0,0</position>
@@ -174,8 +170,7 @@
 	  <textarea name="name">
             <alpha>30</alpha>
           </textarea>
-          
- 
+
         </state>
       </statetype>
     </buttonlist>
@@ -224,7 +219,6 @@
          </helptext>
        </button>
        
-       
        <button name="preview" from="basepopupbutton">
          <position>600,780</position>
          <value>Preview</value>
@@ -236,13 +230,7 @@
          <position>1080,960</position>
          <value>Delete All</value>
        </button>
-       
 
-       
-
-       
-
-       
     </window>
 
 </mythuitheme>
