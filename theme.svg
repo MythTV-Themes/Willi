@@ -31,7 +31,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.36666666"
      inkscape:cx="704.46756"
-     inkscape:cy="299.34812"
+     inkscape:cy="408.43903"
      inkscape:document-units="px"
      inkscape:current-layer="layer9"
      showgrid="false"
@@ -33881,14 +33881,14 @@
        style="fill:url(#radialGradient6702);fill-opacity:1;stroke:none" />
   </g>
   <g
-     style="display:none"
+     style="display:inline"
      inkscape:label="Groups"
      id="layer8"
      inkscape:groupmode="layer">
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
-       inkscape:export-filename="/usr/share/mythtv/themes/Willi/wr-recordings.png"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/schedules-viewschedules-background.png"
        rx="20.000002"
        ry="20"
        y="150.50003"
@@ -33911,7 +33911,7 @@
        style="fill:#000000;fill-opacity:1;stroke:none;display:inline" />
   </g>
   <g
-     style="display:none"
+     style="display:inline"
      transform="translate(0,-2.3621826)"
      id="layer1"
      inkscape:groupmode="layer"
@@ -33919,7 +33919,7 @@
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
-       inkscape:export-filename="/usr/share/mythtv/themes/Willi/wr-recordings.png"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/schedules-viewschedules-background.png"
        rx="20"
        ry="20"
        y="152.86218"
@@ -33931,7 +33931,7 @@
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
-       inkscape:export-filename="/usr/share/mythtv/themes/Willi/wr-recordings.png"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/schedules-viewschedules-background.png"
        y="2.3621826"
        x="0"
        height="105"
@@ -33953,7 +33953,7 @@
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
-       inkscape:export-filename="/usr/share/mythtv/themes/Willi/wr-recordings.png"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/schedules-viewschedules-background.png"
        y="107.36218"
        x="0"
        height="2"
@@ -38516,7 +38516,7 @@
        style="opacity:0.8;fill:#ffffff;fill-opacity:1;stroke:none;display:inline" />
   </g>
   <g
-     style="display:inline"
+     style="display:none"
      inkscape:label="Icons"
      id="layer14"
      inkscape:groupmode="layer">
@@ -38942,7 +38942,7 @@
       <polygon
          style="fill:url(#linearGradient10189);fill-opacity:1;stroke:#9a0c00;stroke-width:0.23427226;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          id="polygon45129"
-         points="295.74658,11.960449 297.04443,12.300293 297.04443,12.300293 296.39941,13.384766 295.13281,14.71875 294.73242,13.672852 "
+         points="297.04443,12.300293 296.39941,13.384766 295.13281,14.71875 294.73242,13.672852 295.74658,11.960449 297.04443,12.300293 "
          transform="matrix(3.637893,0,0,3.470375,-741.37508,613.9911)" />
       <path
          style="fill:url(#linearGradient10191);fill-opacity:1;stroke:none"
@@ -38987,7 +38987,7 @@
       <polygon
          style="fill:url(#linearGradient10205);fill-opacity:1;stroke:url(#linearGradient10207);stroke-width:0.22966424;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          id="polygon45101"
-         points="298.25391,11.960449 296.95605,12.300293 296.95605,12.300293 297.6001,13.384766 298.86719,14.71875 299.26807,13.672852 "
+         points="296.95605,12.300293 297.6001,13.384766 298.86719,14.71875 299.26807,13.672852 298.25391,11.960449 296.95605,12.300293 "
          transform="matrix(3.624438,0,0,3.624438,-738.43808,613.15114)" />
       <path
          style="fill:url(#linearGradient10209);fill-opacity:1;stroke:none"

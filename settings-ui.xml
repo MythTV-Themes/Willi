@@ -80,7 +80,7 @@
 	
 	<imagetype name="recbackground">
 	    <position>0,0</position>
-	    <filename>statusbackground.png</filename>
+	    <filename>schedules-viewschedules-background.png</filename>
 	</imagetype>
 	
 	<clock name="clock" from="baseclock" />
