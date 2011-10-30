@@ -661,9 +661,7 @@
   <!-- This is the popup where you can select which Group to filter -->
   <window name="groupselector">
     <area>-1,-1,600,800</area>
-    <imagetype name="backimg">
-      <filename>MythPopupBox-background.png</filename>
-    </imagetype>
+    <imagetype name="backimg" from="basepopupboxback" />
     <textarea name="label" from="basemessagearea" />
     <buttonlist name="groups" from="basepopupboxlist">
       <buttonarea>0,205,600,580</buttonarea>
@@ -671,9 +669,7 @@
   </window>
   <window name="changeview">
     <area>-1,-1,600,800</area>
-    <imagetype name="backimg">
-      <filename>MythPopupBox-background.png</filename>
-    </imagetype>
+    <imagetype name="backimg" from="basepopupboxback" />
     <textarea name="title">
       <value>Change View</value>
     </textarea>
@@ -727,9 +723,7 @@
   <!-- Popup to change the password of a group -->
   <window name="passwordchanger">
     <area>-1,-1,600,800</area>
-    <imagetype name="backimg">
-      <filename>MythPopupBox-background.png</filename>
-    </imagetype>
+    <imagetype name="backimg" from="basepopupboxback" />
     <textarea name="label" from="basemessagearea">
       <value>Change Recording Group Password</value>
     </textarea>
@@ -756,9 +750,7 @@
   <window name="editmetadata">
     
     <area>-1,-1,600,800</area>
-    <imagetype name="backimg">
-      <filename>MythPopupBox-background.png</filename>
-    </imagetype>
+    <imagetype name="backimg" from="basepopupboxback" />
     
     <textarea name="header">
       <value>Edit Metadata Information</value>
@@ -771,7 +763,7 @@
     <!-- Labels  -->
     
     <textarea name="title_text" from="basetextarea">
-      <area>5,100,210,30</area>
+      <area>5,100,210,36</area>
       <value>Title:</value>
       <align>right</align>
     </textarea>
@@ -795,16 +787,16 @@
     </textarea>
     
     <spinbox name="season" from="basesmallspinbox">
-      <position>10,225</position>
+      <position>10,230</position>
     </spinbox>
     
     <textarea name="episode_text" from="title_text">
-      <position>5,265</position>
+      <position>5,275</position>
       <value>Episode:</value>
     </textarea>
     
     <spinbox name="episode" from="basesmallspinbox">
-      <position>10,295</position>
+      <position>10,310</position>
     </spinbox>
     
     <textarea name="description_text" from="title_text">
@@ -812,17 +804,17 @@
       <value>Description:</value>
     </textarea>
     
-    <textedit name="description" from="subtitle">
+    <textedit name="description" from="basemultilinetextedit">
       <position>230,370</position>
     </textedit>
     
     <textarea name="inetref_text" from="title_text">
-      <position>5,420</position>
+      <position>5,680</position>
       <value>INETREF:</value>
     </textarea>
     
     <textedit name="inetref" from="subtitle">
-      <position>230,420</position>
+      <position>230,680</position>
     </textedit>
     
     <button name="ok" from="basepopupbuttonok">

@@ -662,7 +662,6 @@
  </button>
 
 
-
    <!-- Base definition of a search button -->
    
    <button name="basesearchbutton">
@@ -1426,6 +1425,36 @@
      </textarea>
    </textedit>
    
+   <textedit name="basemultilinetextedit" from="basetextedit">
+     <area>0,0,350,186</area>
+   <statetype name="background">
+       <loadondemand>true</loadondemand>     
+       <state name="active">
+         <imagetype name="background">
+           <area>0,0,350,186</area>
+           <filename>textedit-350x186.png</filename>
+           <alpha>150</alpha>
+         </imagetype>
+       </state>
+       
+       <state name="selected" from="active">
+         <imagetype name="background">
+           <alpha>255</alpha>
+         </imagetype>
+       </state>
+       
+       <state name="inactive" from="active">
+         <imagetype name="background">
+           <alpha>150</alpha>
+         </imagetype>
+       </state>
+     </statetype>
+
+     <textarea name="text">
+       <area>5,3,338,180</area>
+     </textarea>
+   </textedit>
+   
    <textedit name="basetexteditwide" from="basetextedit">
      <area>0,0,560,36</area>
      <statetype name="background">
@@ -1993,14 +2022,16 @@
    <window name="MythSearchListDialog">
      <area>-1,-1,600,800</area>
 
- <imagetype name="backimg" from="basepopupboxback" />     
+ <imagetype name="bg">
+   <filename>MythSearchListDialog-background.png</filename>
+ </imagetype>
      <textarea name="title" from="basemessagearea">
        <area>5,5,590,40</area>
        <value>Search List</value>
      </textarea>
      
      <textedit name="searchedit" from="basetexteditwide">
-       <position>20,40</position>
+       <position>20,48</position>
      </textedit>
      <button name="nextbutton" from="basepopupbuttonright">
        <value>Next</value>
@@ -2013,10 +2044,7 @@
      </button>
     </window> 
     
-    
-    
-    
-    
+
     <window name="MythArtworkResults">
       <!-- A list of returned artwork items, for user selection.  -->
       <area>-1,-1,600,800</area>

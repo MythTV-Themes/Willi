@@ -1520,7 +1520,6 @@
      
      <window name="scheduleoptionseditor">
        
-       
        <imagetype name="backgroundlogo" from="basebackgroundlogo" />
        
        <imagetype name="recbackground">
@@ -1971,22 +1970,17 @@
          <window name="metadataoptions">
            
            <area>-1,-1,600,800</area>
-           <imagetype name="backimg">
-             <filename>MythPopupBox-background.png</filename>
-           </imagetype>
+           <imagetype name="backimg" from="basepopupboxback" />
            
-           <textarea name="header">
+           <textarea name="header" from="basemessagearea">
+	     <area>5,5,590,100</area>
              <value>Edit Metadata Information</value>
-             <font>base</font>
-             <area>5,5,590,100</area>
-             <multiline>yes</multiline>
-             <align>allcenter</align>
            </textarea>
            
            <!-- Labels  -->
            
            <textarea name="inet_text" from="basetextarea">
-             <area>5,100,210,30</area>
+             <area>5,100,210,36</area>
              <value>TMDB/TVDB #:</value>
              <align>right</align>
            </textarea>
@@ -2005,12 +1999,12 @@
            </spinbox>
            
            <textarea name="ep" from="inet_text">
-             <position>5,235</position>
+             <position>5,250</position>
              <value>Episode:</value>
            </textarea>
            
            <spinbox name="episode_spinbox" from="basesmallspinbox">
-             <position>10,265</position>
+             <position>10,280</position>
            </spinbox>
            
            <button name="query_button" from="basepopupbutton">
