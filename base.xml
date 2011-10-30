@@ -116,7 +116,7 @@
    </fontdef>
    
    <fontdef name="basebuttondescription" from="basebutton">
-     <pixelsize>20</pixelsize>
+     <pixelsize>30</pixelsize>
      <color>#000000</color>
    </fontdef>
    
@@ -147,14 +147,14 @@
    
    <!-- Title on all pages   -->
    <textarea name="basepagetitle">
-     <area>10,0,1400,100</area>
+     <area>10,0,1350,100</area>
      <font>basetitle</font>
      <align>bottom,vcenter</align>
    </textarea>
    
    <!-- Statusbar for OSD -->
    <imagetype name="basestatusbar">
-     <area>0,0,1680,105</area>
+     <area>0,0,1680,107</area>
      <position>0,0</position>
      <filename>OSD/statusbar.png</filename>
    </imagetype>

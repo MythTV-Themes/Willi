@@ -23,7 +23,6 @@
       <value>Watch Recordings</value>
     </textarea>
     <!-- The banner of the current show -->
-    <group name="banner">
     <imagetype name="banner">
       <area>915,905,758,140</area>
       <filename />
@@ -33,7 +32,6 @@
       <area>915,905,758,140</area>
       <filename>wr-bannerframe.png</filename>
     </imagetype>
-  </group>
     <!--draws the recording groups on top of the tabs	 -->
     <buttonlist name="recgroups">
       <area>10,107,1658,40</area>
