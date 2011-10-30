@@ -9,12 +9,11 @@
     <imagetype name="fanart">
       <area>0,105,1680,945</area>
       <filename />
-      <alpha>180</alpha>
+      <alpha>150</alpha>
     </imagetype>
     <imagetype name="recbackground">
       <position>0,0</position>
       <filename>wr-recordings.png</filename>
-      <alpha>180</alpha>
     </imagetype>
     <!--Clock and Date on the right	-->
     <clock name="clock" from="baseclock" />
@@ -132,8 +131,7 @@
             <cutdown>yes</cutdown>
             <multiline>yes</multiline>
             <template>%00x00| %%TITLE| - %%SUBTITLE| %%|(LENMINS|)%</template>
-	    <alpha>200</alpha>
-            <align>vcenter</align>
+	    <align>vcenter</align>
 	    </textarea>
         
           <!--The little screenshot/preview of the recording -->
@@ -242,7 +240,6 @@
             <area>5,35,915,45</area>
             <cutdown>yes</cutdown>
 	    <align>top</align>
-            <alpha>200</alpha>
             <template>%00x00| %%subtitle%</template>
           </textarea>
           <!--The description field, that in this case fuses subtitle + rating + description into one -->
