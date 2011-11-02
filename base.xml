@@ -8,7 +8,7 @@
    <fontdef name="menuselectfont" face="Orbitron">
      <pixelsize>90</pixelsize>
      <color>#aa0000</color>
-     
+   
    </fontdef>
    
    <fontdef name="menufont" face="Orbitron">
@@ -21,6 +21,9 @@
    <fontdef name="base" face="League Gothic">
      <pixelsize>40</pixelsize>
      <color>#FFFFFF</color>
+     <outlinecolor>#000000</outlinecolor>
+     <outlinesize>2</outlinesize>
+     <outlinealpha>100</outlinealpha>
    </fontdef>
    
    <fontdef name="basesmall" from="base">
@@ -37,7 +40,8 @@
      <color>#000000</color>
    </fontdef>
    
-   <fontdef name="basebutton" from="base">
+   <fontdef name="basebutton" face="League Gothic">
+     <pixelsize>30</pixelsize>
      <color>#aa0000</color>
    </fontdef>
    
@@ -53,33 +57,59 @@
    
    <fontdef name="basetitleblack" from="basetitle">
      <color>#000000</color>
+     <outlinecolor>#FFFFFF</outlinecolor>
+     <outlinesize>2</outlinesize>
+     <outlinealpha>100</outlinealpha>
    </fontdef>
    
    <fontdef name="basebuttontitle" face="Orbitron">
      <pixelsize>35</pixelsize>
-     <color>#aa0000</color>
+     <color>#800000</color>
+     <outlinecolor>#FFFFFF</outlinecolor>
+     <outlinesize>2</outlinesize>    
+     <outlinealpha>100</outlinealpha>
    </fontdef>
    
    <fontdef name="basebuttontitlewhite" face="Orbitron">
      <pixelsize>35</pixelsize>
      <color>#FFFFFF</color>
+     <outlinecolor>#000000</outlinecolor>
+     <outlinesize>2</outlinesize>
+     <outlinealpha>100</outlinealpha>
+   </fontdef>
+
+   <fontdef name="basebuttontitleblack" face="Orbitron">
+     <pixelsize>35</pixelsize>
+     <color>#000000</color>
+     <outlinecolor>#FFFFFF</outlinecolor>
+     <outlinesize>2</outlinesize>    
+     <outlinealpha>100</outlinealpha>
    </fontdef>
    
    
    <fontdef name="basestate" face="Orbitron">
      <pixelsize>20</pixelsize>
      <color>#FFFFFF</color>
+     <outlinecolor>#000000</outlinecolor>
+     <outlinesize>2</outlinesize>
+     <outlinealpha>100</outlinealpha>
    </fontdef>
    
    <fontdef name="basemenustate" from="basestate">
      <pixelsize>20</pixelsize>
      <color>#800000</color>
+     <outlinecolor>#aa0000</outlinecolor>
+     <outlinesize>2</outlinesize>    
+     <outlinealpha>100</outlinealpha>
    </fontdef>
    
    
    <fontdef name="basebigstate" face="Orbitron">
      <pixelsize>25</pixelsize>
      <color>#FFFFFF</color>
+     <outlinecolor>#000000</outlinecolor>
+     <outlinesize>2</outlinesize>
+     <outlinealpha>100</outlinealpha>
    </fontdef>
    
    <fontdef name="basebigstateoutline" face="Orbitron">
@@ -93,11 +123,17 @@
    <fontdef name="baseverybigstate" face="Orbitron">
      <pixelsize>30</pixelsize>
      <color>#FFFFFF</color>
+     <outlinecolor>#000000</outlinecolor>
+     <outlinesize>2</outlinesize>
+     <outlinealpha>100</outlinealpha>
    </fontdef>
    
    <fontdef name="basebuttonsubtitle" from="basebutton">
      <pixelsize>35</pixelsize>
      <color>#000000</color>
+     <outlinecolor>#FFFFFF</outlinecolor>
+     <outlinesize>2</outlinesize>    
+     <outlinealpha>100</outlinealpha>
    </fontdef>
 
  <fontdef name="basebuttonsmalltitle" from="basebuttontitle">
@@ -105,12 +141,12 @@
  </fontdef>
 
 
-   <fontdef name="basebuttontitlesubtitlewatched" from="basebutton">
+   <fontdef name="basebuttontitlesubtitlewatched" from="base">
      <pixelsize>22</pixelsize>
      <color>#FFFFFF</color>
    </fontdef>
    
-   <fontdef name="basebuttontitlesubtitle" from="basebutton">
+   <fontdef name="basebuttontitlesubtitle" from="base">
      <pixelsize>30</pixelsize>
      <color>#FFFFFF</color>
    </fontdef>
@@ -118,6 +154,9 @@
    <fontdef name="basebuttondescription" from="basebutton">
      <pixelsize>30</pixelsize>
      <color>#000000</color>
+     <outlinecolor>#FFFFFF</outlinecolor>
+     <outlinesize>2</outlinesize>    
+     <outlinealpha>100</outlinealpha>
    </fontdef>
    
    <fontdef name="baseclock" from="basetitle">

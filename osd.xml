@@ -46,7 +46,7 @@
     <textarea name="title" from="basepagetitle" />
     
     <textarea name="subtitle" from="basetextarea">
-      <font>basebuttontitle</font>
+      <font>basebuttontitlewhite</font>
       <area>160,895,1110,80</area>
       <cutdown>yes</cutdown>
       <template>%SUBTITLE%</template>
@@ -405,7 +405,7 @@
     <textarea name="title" from="basepagetitle" />
     
     <textarea name="subtitle" from="basetextarea">
-      <font>basebuttontitle</font>
+      <font>basebuttontitlewhite</font>
       <area>160,898,1410,40</area>
       <cutdown>yes</cutdown>
       <template>%SUBTITLE%</template>
@@ -545,7 +545,7 @@
       <template>Frame %1</template>
     </textarea>
     <textarea name="timedisplay" from="basebigstatetext">
-      <font>basebuttontitle</font>
+      <font>basebuttontitlewhite</font>
       <area>0,890,1640,58</area>
       <align>allcenter</align>
     </textarea>
