@@ -2,13 +2,18 @@
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
   <window name="browser">
-    <!--  we use one large background image to draw all widgets on top        -->
+    <animation trigger="AboutToShow">
+      <section duration="500" centre="middle">
+	<alpha start="0" end="255" easingcurve="InOutQuad"/>
+      </section>
+    </animation>
+
+    <!--we use one large background image to draw all widgets on top	-->
     <imagetype name="background" from="basebackground" />
-    <!-- Fanart behind everyhting  -->
+    <!-- Fanart behind the recordings(remove it if you don't want it!)--> 
     <imagetype name="fanart">
-      <area>0,105,1680,945</area>
+      <area>0,0,1920,1080</area>
       <filename />
-      <alpha>150</alpha>
     </imagetype>
     <imagetype name="recbackground">
       <position>0,0</position>
@@ -19,78 +24,58 @@
     <textarea name="pagetitle" from="basepagetitle">
       <value>Videos</value>
     </textarea>
-    <textarea name="breadcrumbs" from="basetextarea">
-      <area>10,100,1658,40</area>
-      <font>basesmall</font>
-      <align>vcenter</align>
-    </textarea>
-    <textarea name="position" from="basetextarea">
-      <area>10,100,1658,40</area>
-      <font>basemedium</font>
-      <align>vcenter,right</align>
-    </textarea>
+
     <buttonlist name="videos">
-      <area>25,135,1630,280</area>
+      <area>0,125,1910,600</area>
       <layout>horizontal</layout>
       <arrange>stack</arrange>
-      <spacing>35</spacing>
+      <spacing>5</spacing>
       <scrollstyle>center</scrollstyle>
-      <align>center</align>
+      <align>top,hcenter</align>
       <buttonarea>0,0,100%,100%</buttonarea>
       <statetype name="buttonitem">
 	<state name="active">
-	  <imagetype name="200x270">
-	    <area>0,0,200,270</area>
-	    <filename>video/browser/wr-200x270.png</filename>
-	  </imagetype>
+
 	  
 	  <imagetype name="buttonimage">
-	    <area>5,5,190,260</area>
+	    <area>5,5,230,310</area>
 	    <filename>video/unknown.png</filename>
 	    <preserveaspect>true</preserveaspect>
+	    
 	  </imagetype>
-	  <imagetype name="coverart">
-	    <area>5,5,190,260</area>
-	    <alpha>200</alpha>
-	    <preserveaspect>true</preserveaspect>
-	  </imagetype>
+
 	  <statetype name="nodetype">
 	    
 	    <state name="subfolder">
 	      <imagetype name="icon">
-		<area>150,210,50,58</area>
+		<area>150,260,50,58</area>
 		<filename>video/browser/folder.png</filename>
 	      </imagetype>
 	    </state>
 	    <state name="upfolder">
 	      <imagetype name="icon">
-		<area>150,210,50,58</area>
+		<area>150,260,50,58</area>
 		<filename>video/browser/folderback.png</filename>
 	      </imagetype>
 	    </state>
 	  </statetype>
 	  <textarea name="childcount" from="basetextarea">
-	    <area>150,210,50,55</area>
+	    <area>150,260,50,55</area>
 	    <font>basestate</font>
 	    <align>bottom,hcenter</align>
 	  </textarea>
 	</state>
 	<state name="selectedactive">
-	  <imagetype name="selector-center">
-	    <area>0,0,200,270</area>
-	    <filename>video/browser/selector-center.png</filename>
-	  </imagetype>
+
 	  <imagetype name="buttonimage">
-	    <area>5,5,190,260</area>
-	    <filename>video/unknown.png</filename>
+	    <area>5,5,408,600</area>
+	    <filename>video/unknowncover.png</filename>
 	    <preserveaspect>true</preserveaspect>
+	    <mask>video/browser/covermask.png</mask>
 	  </imagetype>
-	  <imagetype name="coverart">
-	    <area>5,5,190,260</area>
-	    <preserveaspect>true</preserveaspect>
-	  </imagetype>
+
 	  <statetype name="nodetype">
-	    <position>150,210</position>
+	    <position>300,550</position>
 	    <state name="subfolder">
 	      <imagetype name="icon">
 		<area>0,0,50,58</area>
@@ -98,75 +83,71 @@
 	      </imagetype>
 	    </state>
 	    <state name="upfolder">
-	      <imagetype name="icon">
-		<area>0,0,50,58</area>
+	      <imagetype name="buttonimage">
+		<area>-300,-400,400,383</area>
 		<filename>video/browser/folderback.png</filename>
 	      </imagetype>
 	    </state>
 	  </statetype>
 	  <textarea name="childcount" from="basetextarea">
-	    <area>150,210,50,55</area>
+	    <area>300,550,50,55</area>
 	    <font>basestate</font>
 	    <align>bottom,hcenter</align>
 	  </textarea>
 	</state>
       </statetype>
     </buttonlist>
-    <imagetype name="1170x140">
-      <area>503,460,1170,140</area>
-      <filename>wr-1170x140.png</filename>
+    <imagetype name="710x140">
+      <area>10,495,710,140</area>
+      <filename>video/browser/710x140.png</filename>
     </imagetype>
     <textarea name="title" from="basetextarea">
-      <area>520,465,1170,50</area>
+      <area>20,500,690,50</area>
       <font>basetitleblack</font>
       <cutdown>yes</cutdown>
     </textarea>
     <textarea name="subtitle" from="basetextarea">
-      <area>520,515,1170,40</area>
+      <area>20,545,690,40</area>
       <font>basebuttontitle</font>
       <cutdown>yes</cutdown>
     </textarea>
     
     
     <textarea name="director" from="basetextarea">
-      <area>520,560,1150,40</area>
+      <area>20,590,690,40</area>
       <template>%DIRECTOR%</template>
       <font>basebuttonsubtitle</font>
     </textarea>
     <textarea name="rating" from="basetextarea">
       <font>basebuttonsubtitle</font>
-      <area>520,560,1140,40</area>
+      <area>20,590,690,40</area>
       <align>right</align>
     </textarea>
     
-    <imagetype name="1170x300">
-      <area>503,610,1170,300</area>
-      <filename>video/browser/1170x300.png</filename>
+    <imagetype name="710x300">
+      <area>10,640,710,300</area>
+      <filename>video/browser/710x300.png</filename>
     </imagetype>
     
     <textarea name="description" from="basetextarea">
-      <area>520,615,1150,200</area>
+      <area>20,645,690,200</area>
       <font>basebuttonsubtitle</font>
       <multiline>yes</multiline>
       <cutdown>yes</cutdown>
     </textarea>
     
     <textarea name="cast" from="basetextarea">
-      <area>520,810,1150,90</area>
+      <area>20,840,690,90</area>
       <multiline>yes</multiline>
       <cutdown>yes</cutdown>
     </textarea>
     <textarea name="year" from="basetextarea">
-      <area>520,945,1140,100</area>
+      <area>20,975,690,100</area>
       <font>baseclock</font>
       <align>right,bottom</align>
     </textarea>
-    <imagetype name="coverart">
-      <area>45,445,408,600</area>
-      <mask>video/browser/covermask.png</mask>
-    </imagetype>
     <statetype name="parentallevel">
-      <position>1620,460</position>
+      <position>700,465</position>
       <state name="None">
 	<imagetype name="icon">
 	  <filename>mv_level_none.png</filename>
@@ -193,11 +174,14 @@
 	</imagetype>
       </state>
     </statetype>
-    <imagetype name="banner">
-      <area>503,905,758,140</area>
-      <filename />
-      <mask>wr-bannermask.png</mask>
-    </imagetype>
+    <textarea name="breadcrumbs" from="basetextarea">
+      <area>1190,445,710,40</area>
+
+    </textarea>
+    <textarea name="position" from="basetextarea">
+      <area>760,700,300,40</area>
+    </textarea>
+
   </window>
   <window name="tree">
     <!--  we use one large background image to draw all widgets on top       -->
