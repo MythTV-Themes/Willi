@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+
+ <mythuitheme>
+   
+   <window name="generalsettings">
+     
+     <animation trigger="AboutToShow">
+       <section duration="500" centre="middle">
+	 <alpha start="0" end="255" easingcurve="InOutQuad"/>
+       </section>
+     </animation>
+     
+     <!--we use one large background image to draw all widgets on top	-->
+     <imagetype name="background" from="basebackground" />
+     <!-- Fanart behind the recordings(remove it if you don't want it!)--> 
+     <imagetype name="fanart">
+       <area>0,0,1920,1080</area>
+       <filename />
+     </imagetype>
+     <imagetype name="recbackground">
+       <position>0,0</position>
+       <filename>schedule/managerecrulesbackground.png</filename>
+     </imagetype>
+     <!--Clock and Date on the right	-->
+     <clock name="clock" from="baseclock" />
+     <!--Title on top of the page	-->
+     <textarea name="pagetitle" from="basepagetitle">
+       <value>General Settings</value>
+     </textarea>
+     
+     
+     <textarea name="musiclocation_label" from="basetextarea">
+       <area>300,240,500,50</area>
+       <align>right,vcenter</align>
+       <value>Directory to hold music:</value>
+     </textarea> 
+     <textedit name="musiclocation" from="basetexteditwide">
+       <position>810,240</position>
+     </textedit>
+     
+     <textarea name="musiccddevice_label" from="basetextarea">
+       <area>300,300,500,50</area>
+       <align>right,vcenter</align>
+       <value>CD device:</value>
+     </textarea>
+     <textedit name="musiccddevice" from="basetexteditwide">
+       <position>810,300</position>
+     </textedit>
+     
+     <textarea name="musicaudiodevice_label" from="basetextarea">
+       <area>300,360,500,50</area>
+       <align>right,vcenter</align>
+       <value>Audio device:</value>
+     </textarea>
+     <textedit name="musicaudiodevice" from="basetexteditwide">
+       <position>810,360</position>
+     </textedit>
+     
+     <textarea name="musicdefaultupmix_label" from="basetextarea">
+       <area>300,415,500,40</area>
+       <align>right,vcenter</align>
+       <value>Convert stereo to 5.1 sound:</value>
+     </textarea>
+     <checkbox name="musicdefaultupmix" from="basecheckbox">
+       <position>810,410</position>
+     </checkbox>
+     
+     <textarea name="nonid3filenameformat_label" from="basetextarea">
+       <area>300,460,500,50</area>
+       <align>right,vcenter</align>
+       <value>Filename Format:</value>
+     </textarea>
+     <textedit name="nonid3filenameformat" from="basetexteditwide">
+       <position>810,460</position>
+     </textedit>
+     
+     <textarea name="ignoreid3tags_label" from="basetextarea">
+       <area>300,515,500,40</area>
+       <align>right,vcenter</align>
+       <value>Ignore ID3 Tags:</value>
+     </textarea>
+     <checkbox name="ignoreid3tags" from="basecheckbox">
+       <position>810,510</position>
+     </checkbox>
+     
+     <textarea name="tagencoding_label" from="basetextarea">
+       <area>300,560,500,40</area>
+       <align>right,vcenter</align>
+       <value>Tag Encoding:</value>
+     </textarea>
+     <buttonlist name="tagencoding" from="basewideselector">
+       <position>810,550</position>
+     </buttonlist>
+     
+     <textarea name="allowtagwriting_label" from="basetextarea">
+       <area>300,610,500,40</area>
+       <align>right,vcenter</align>
+       <value>Allow metadata to be written to tags:</value>
+     </textarea>
+     <checkbox name="allowtagwriting" from="basecheckbox">
+       <position>810,605</position>
+     </checkbox>
+     
+     <textarea name="helptext" from="basesettingshelptext"/>
+     
+     
+     <button name="cancel" from="basepopupbuttoncancel">
+       <position>300,700</position>
+       <value>Cancel</value>
+     </button>
+     
+     <button name="save" from="basepopupbuttonsave">
+       <position>1020,700</position>
+       <value>Save</value>
+     </button>
+   </window>
+   
+   <window name="playersettings">
+     <animation trigger="AboutToShow">
+       <section duration="500" centre="middle">
+	 <alpha start="0" end="255" easingcurve="InOutQuad"/>
+       </section>
+     </animation>
+     
+     <!--we use one large background image to draw all widgets on top	-->
+     <imagetype name="background" from="basebackground" />
+     <!-- Fanart behind the recordings(remove it if you don't want it!)--> 
+     <imagetype name="fanart">
+       <area>0,0,1920,1080</area>
+       <filename />
+     </imagetype>
+     <imagetype name="recbackground">
+       <position>0,0</position>
+       <filename>schedule/managerecrulesbackground.png</filename>
+     </imagetype>
+     <!--Clock and Date on the right	-->
+     <clock name="clock" from="baseclock" />
+     <!--Title on top of the page	-->
+     <textarea name="pagetitle" from="basepagetitle">
+       <value>Player Settings</value>
+     </textarea>
+     
+     
+     <textarea name="resumemode_label" from="basetextarea">
+       <area>300,320,500,40</area>
+       <align>right,vcenter</align>
+       <value>Resume mode:</value>
+     </textarea>
+     <buttonlist name="resumemode" from="basewideselector">
+       <position>810,320</position>
+     </buttonlist>
+     
+     <textarea name="exitaction_label" from="basetextarea">
+       <area>300,390,500,40</area>
+       <align>right,vcenter</align>
+       <value>Action on exit:</value>
+     </textarea>
+     <buttonlist name="exitaction" from="basewideselector">
+       <position>810,390</position>
+     </buttonlist>
+     
+     <textarea name="autolookupcd_label" from="basetextarea">
+       <area>300,460,500,40</area>
+       <align>right,vcenter</align>
+       <value>Automatically lookup CDs:</value>
+     </textarea>
+     <checkbox name="autolookupcd" from="basecheckbox">
+       <position>810,460</position>
+     </checkbox>
+     
+     <textarea name="autoplaycd_label" from="basetextarea">
+       <area>300,510,500,40</area>
+       <align>right,vcenter</align>
+       <value>Automatically Play CDs:</value>
+     </textarea>
+     <checkbox name="autoplaycd" from="basecheckbox">
+       <position>810,510</position>
+     </checkbox>
+     
+     <textarea name="helptext" from="basesettingshelptext"/>
+     
+     <button name="cancel" from="basepopupbuttoncancel">
+       <position>300,700</position>
+       <value>Cancel</value>
+     </button>
+     
+     <button name="save" from="basepopupbuttonsave">
+       <position>1020,700</position>
+       <value>Save</value>
+     </button>
+   </window>
+   
+   <window name="ratingsettings">
+     <animation trigger="AboutToShow">
+       <section duration="500" centre="middle">
+	 <alpha start="0" end="255" easingcurve="InOutQuad"/>
+       </section>
+     </animation>
+     
+     <!--we use one large background image to draw all widgets on top	-->
+     <imagetype name="background" from="basebackground" />
+     <!-- Fanart behind the recordings(remove it if you don't want it!)--> 
+     <imagetype name="fanart">
+       <area>0,0,1920,1080</area>
+       <filename />
+     </imagetype>
+     <imagetype name="recbackground">
+       <position>0,0</position>
+       <filename>schedule/managerecrulesbackground.png</filename>
+     </imagetype>
+     <!--Clock and Date on the right	-->
+     <clock name="clock" from="baseclock" />
+     <!--Title on top of the page	-->
+     <textarea name="pagetitle" from="basepagetitle">
+       <value>Rating Settings</value>
+     </textarea>
+     
+     <textarea name="ratingweight_label" from="basetextarea">
+       <area>300,240,500,40</area>
+       <align>right,vcenter</align>
+       <value>Rating Weight:</value>
+     </textarea>
+     <spinbox name="ratingweight" from="basespinbox">
+       <position>810,240</position>
+     </spinbox>
+     
+     <textarea name="playcountweight_label" from="basetextarea">
+       <area>300,290,500,40</area>
+       <align>right,vcenter</align>
+       <value>Play Count Weight:</value>
+     </textarea>
+     <spinbox name="playcountweight" from="basespinbox">
+       <position>810,290</position>
+     </spinbox>
+     
+     <textarea name="lastplayweight_label" from="basetextarea">
+       <area>300,340,500,40</area>
+       <align>right,vcenter</align>
+       <value>Last Play Weight:</value>
+     </textarea>
+     <spinbox name="lastplayweight" from="basespinbox">
+       <position>810,340</position>
+     </spinbox>
+     
+     <textarea name="randomweight_label" from="basetextarea">
+       <area>300,390,500,40</area>
+       <align>right,vcenter</align>
+       <value>Random Weight:</value>
+     </textarea>
+     <spinbox name="randomweight" from="basespinbox">
+       <position>810,390</position>
+     </spinbox>
+     
+     <textarea name="helptext" from="basesettingshelptext"/>
+     
+     <button name="cancel" from="basepopupbuttoncancel">
+       <position>300,700</position>
+       <value>Cancel</value>
+     </button>
+     
+     <button name="save" from="basepopupbuttonsave">
+       <position>1020,700</position>
+       <value>Save</value>
+     </button>
+   </window>
+   
+   <window name="importsettings">
+     <animation trigger="AboutToShow">
+       <section duration="500" centre="middle">
+	 <alpha start="0" end="255" easingcurve="InOutQuad"/>
+       </section>
+     </animation>
+     
+     <!--we use one large background image to draw all widgets on top	-->
+     <imagetype name="background" from="basebackground" />
+     <!-- Fanart behind the recordings(remove it if you don't want it!)--> 
+     <imagetype name="fanart">
+       <area>0,0,1920,1080</area>
+       <filename />
+     </imagetype>
+     <imagetype name="recbackground">
+       <position>0,0</position>
+       <filename>schedule/managerecrulesbackground.png</filename>
+     </imagetype>
+     <!--Clock and Date on the right	-->
+     <clock name="clock" from="baseclock" />
+     <!--Title on top of the page	-->
+     <textarea name="pagetitle" from="basepagetitle">
+       <value>Ripper Settings</value>
+     </textarea>
+     
+     
+     <textarea name="paranoialevel_label" from="basetextarea">
+       <area>300,245,500,50</area>
+       <align>right,vcenter</align>
+       <value>Paranoia Level:</value>
+     </textarea>
+     <buttonlist name="paranoialevel" from="baseselector">
+       <position>810,245</position>
+     </buttonlist>
+     
+     <textarea name="filenametemplate_label" from="basetextarea">
+       <area>300,295,500,50</area>
+       <align>right,vcenter</align>
+       <value>File storage location:</value>
+     </textarea>
+     <textedit name="filenametemplate" from="basetexteditwide">
+       <position>810,295</position>
+     </textedit>
+     
+     <textarea name="nowhitespace_label" from="basetextarea">
+       <area>300,345,500,40</area>
+       <align>right,vcenter</align>
+       <value>Replace space with underscore:</value>
+     </textarea>
+     <checkbox name="nowhitespace" from="basecheckbox">
+       <position>810,350</position>
+     </checkbox>
+     
+     <textarea name="encoding_label" from="basetextarea">
+       <area>300,395,500,40</area>
+       <align>right,vcenter</align>
+       <value>Encoding Type:</value>
+     </textarea>
+     <buttonlist name="encodertype" from="baseselector">
+       <position>810,395</position>
+     </buttonlist>
+     
+     <textarea name="defaultripquality_label" from="basetextarea">
+       <area>300,445,500,40</area>
+       <align>right,vcenter</align>
+       <value>Default Rip Quality:</value>
+     </textarea>
+     <buttonlist name="defaultripquality" from="baseselector">
+       <position>810,445</position>
+     </buttonlist>
+     
+     <textarea name="mp3usevbr_label" from="basetextarea">
+       <area>300,495,500,40</area>
+       <align>right,vcenter</align>
+       <value>Use variable bitrates:</value>
+     </textarea>
+     <checkbox name="mp3usevbr" from="basecheckbox">
+       <position>810,500</position>
+     </checkbox>
+     
+     <textarea name="ejectcd_label" from="basetextarea">
+       <area>300,545,500,40</area>
+       <align>right,vcenter</align>
+       <value>Automatically eject CDs after ripping:</value>
+     </textarea>
+     <checkbox name="ejectcd" from="basecheckbox">
+       <position>810,550</position>
+     </checkbox>
+     
+     <textarea name="postcdripscript_label" from="basetextarea">
+       <area>300,595,500,50</area>
+       <align>right,vcenter</align>
+       <value>Script Path:</value>
+     </textarea>
+     <textedit name="postcdripscript" from="basetexteditwide">
+       <position>810,595</position>
+     </textedit>
+     
+     <textarea name="helptext" from="basetextarea">
+       <area>10,445,780,100</area>
+       <cutdown>yes</cutdown>
+       <align>allcenter</align>
+       <multiline>yes</multiline>
+     </textarea>
+     
+     <textarea name="helptext" from="basesettingshelptext"/>
+     
+     <button name="cancel" from="basepopupbuttoncancel">
+       <position>300,700</position>
+       <value>Cancel</value>
+     </button>
+     
+     <button name="save" from="basepopupbuttonsave">
+       <position>1020,700</position>
+       <value>Save</value>
+     </button>
+   </window>
+   
+   <window name="visualizationsettings">
+     <animation trigger="AboutToShow">
+       <section duration="500" centre="middle">
+	 <alpha start="0" end="255" easingcurve="InOutQuad"/>
+       </section>
+     </animation>
+     
+     <!--we use one large background image to draw all widgets on top	-->
+     <imagetype name="background" from="basebackground" />
+     <!-- Fanart behind the recordings(remove it if you don't want it!)--> 
+     <imagetype name="fanart">
+       <area>0,0,1920,1080</area>
+       <filename />
+     </imagetype>
+     <imagetype name="recbackground">
+       <position>0,0</position>
+       <filename>schedule/managerecrulesbackground.png</filename>
+     </imagetype>
+     <!--Clock and Date on the right	-->
+     <clock name="clock" from="baseclock" />
+     <!--Title on top of the page	-->
+     <textarea name="pagetitle" from="basepagetitle">
+       <value>Visualiser Settings</value>
+     </textarea>
+     
+     <textarea name="cycleonsongchange_label" from="basetextarea">
+       <area>300,255,500,40</area>
+       <align>right,vcenter</align>
+       <value>Change Visualizer on each song:</value>
+     </textarea>
+     <checkbox name="cycleonsongchange" from="basecheckbox">
+       <position>810,260</position>
+     </checkbox>
+     
+     <textarea name="randomizeorder_label" from="basetextarea">
+       <area>300,305,500,40</area>
+       <align>right,vcenter</align>
+       <value>Randomize Visualizer order:</value>
+     </textarea>
+     <checkbox name="randomizeorder" from="basecheckbox">
+       <position>810,310</position>
+     </checkbox>
+     
+     <textarea name="scalewidth_label" from="basetextarea">
+       <area>300,360,500,40</area>
+       <align>right,vcenter</align>
+       <value>Width for Visual Scaling:</value>
+     </textarea>
+     <spinbox name="scalewidth" from="basespinbox">
+       <position>810,360</position>
+     </spinbox>
+     
+     <textarea name="scaleheight_label" from="basetextarea">
+       <area>300,410,500,40</area>
+       <align>right,vcenter</align>
+       <value>Height for Visual Scaling:</value>
+     </textarea>
+     <spinbox name="scaleheight" from="basespinbox">
+       <position>810,410</position>
+     </spinbox>
+     
+     <textarea name="helptext" from="basesettingshelptext"/>
+     
+     <button name="cancel" from="basepopupbuttoncancel">
+       <position>300,700</position>
+       <value>Cancel</value>
+     </button>
+     
+     <button name="save" from="basepopupbuttonsave">
+       <position>1020,700</position>
+       <value>Save</value>
+     </button>
+   </window>
+   
+ </mythuitheme>
+ 

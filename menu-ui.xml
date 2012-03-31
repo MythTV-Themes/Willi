@@ -2,44 +2,57 @@
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
   <window name="mainmenu">
+    
+<animation trigger="AboutToShow">
+<section duration="500" centre="middle">
+<alpha start="0" end="255" easingcurve="InOutQuad"/>
+</section>
+</animation>
+    
     <imagetype name="background" from="basebackground"/>
-
     <imagetype name="band">
-      <area>0,445,1680,152</area>
+      <area>0,0,1920,132</area>
       <filename>band.png</filename>
     </imagetype>
+
+
+    <imagetype name="band">
+      <area>0,454,1920,172</area>
+      <filename>band.png</filename>
+    </imagetype>
+    
+    
     <imagetype name="glow" from="baseglowwhite">
        <position>1000,225</position>
      </imagetype>
     <buttonlist name="menu">
       <loadondemand>true</loadondemand> 
-      <area>0,0,1680,1050</area>
+      <area>0,0,1920,1080</area>
       <layout>vertical</layout>
       <arrange>stack</arrange>
       <scrollstyle>center</scrollstyle>
       <align>center</align>
-      <buttonarea>0,0,1680,1050</buttonarea>
+      <buttonarea>0,0,100%,100%</buttonarea>
       <statetype name="buttonitem">
         <state name="active">
-          <area>0,0,1680,60</area>
           <textarea name="buttontext">
-            <area>0,0,1680,60</area>
+            <area>0,0,1920,60</area>
             <font>menufont</font>
             <align>allcenter</align>
             <cutdown>yes</cutdown>
           </textarea>
         </state>
         <state name="selectedactive"> 
-          <area>0,0,1680,160</area>
-          <textarea name="buttontext">
-            <area>0,0,1680,160</area>
+<area>0,0,1920,172</area>
+        <textarea name="buttontext">
+            <area>0,0,1920,150</area>
             <font>menuselectfont</font>
             <align>allcenter</align>
             <cutdown>yes</cutdown>
-            <case>upper</case>
+            <case>lower</case>
           </textarea>
           <textarea name="description">
-            <area>0,110,1680,30</area>
+            <area>0,110,1920,30</area>
             <font>basemenustate</font>
             <align>bottom,hcenter</align>
             <cutdown>yes</cutdown>

@@ -1,38 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mythuitheme>
+  
+  <window name="gallery">
+    <animation trigger="AboutToShow">
+      <section duration="500" centre="middle">
+	<alpha start="0" end="255" easingcurve="InOutQuad"/>
+      </section>
+    </animation>
+    <!--  we use one large background image to draw all widgets on top	  -->
+    <imagetype name="background" from="basebackground" />
     
-    <window name="gallery">
-	
-	<!--  we use one large background image to draw all widgets on top	  -->
-	<imagetype name="background" from="basebackground" />
-	
-	<imagetype name="gallerybackground">
-	    <position>0,0</position>
-	    <filename>gallery-background.png</filename>
-	</imagetype>
-	
-	<!--  Clock and Date on the right	  -->
-	<clock name="clock" from="baseclock" />
-	
-
-	<textarea name="pagetitle" from="basepagetitle">
-	    <value>Images</value>
-	</textarea>
-	
-	<textarea name="breadcrumbs" from="basetextarea">
-	    <area>10,100,1658,40</area>
-	    <font>basesmall</font>
-	    <align>vcenter</align>
-	</textarea>
-	
-	<textarea name="position" from="basetextarea">
-	    <area>10,100,1658,40</area>
-	    <font>basemedium</font>
-	    <align>vcenter,right</align>
-	</textarea>
-
-	<buttonlist name="images">
-      <area>20,165,1670,860</area>
+    <imagetype name="gallerybackground">
+      <position>0,0</position>
+      <filename>gallery-background.png</filename>
+    </imagetype>
+    
+    <!--  Clock and Date on the right	  -->
+    <clock name="clock" from="baseclock" />
+    
+    
+    <textarea name="pagetitle" from="basepagetitle">
+      <value>Images</value>
+    </textarea>
+    
+    <textarea name="breadcrumbs" from="basetextarea">
+      <area>10,100,1890,40</area>
+      <font>basesmall</font>
+      <align>vcenter</align>
+    </textarea>
+    
+    <textarea name="position" from="basetextarea">
+      <area>10,100,1890,40</area>
+      <font>basemedium</font>
+      <align>vcenter,right</align>
+    </textarea>
+    
+    <buttonlist name="images">
+      <area>25,200,1900,860</area>
       <layout>grid</layout>
       <spacing>10</spacing>
       <wrapstyle>flowing</wrapstyle>
@@ -40,20 +44,20 @@
       <buttonarea>0,0,100%,100%</buttonarea>
       <statetype name="buttonitem">
 	<state name="active">
-	  <area>0,0,320,280</area>
+	  <area>0,0,300,280</area>
 	  <imagetype name="buttonbackground">
-	    <filename>gallery-320x280-bar.png</filename>
+	    <filename>gallery-300x260-bar.png</filename>
 	  </imagetype>
 	  <imagetype name="buttonimage">
-	    <area>0,0,320,245</area>
+	    <area>0,0,300,225</area>
 	    <filename>gallery-unknown.png</filename>
 	    <preserveaspect>true</preserveaspect>
 	  </imagetype>
 	  <textarea name="buttontext" from="basetextarea">
-	    <area>5,245,315,35</area>
+	    <area>5,225,300,35</area>
 	  </textarea>
 	  <statetype name="nodetype">
-	    <position>220,165</position>
+	    <position>210,165</position>
 	    <state name="subfolder">
 	      <imagetype name="icon">
 		<area>0,0,100,115</area>
@@ -74,44 +78,45 @@
 	    <showempty>yes</showempty>
 	    <state type="full">
 	      <imagetype name="marked">
-		<filename>gallery-320x280-selected.png</filename>
+		<filename>gallery-300x260-selected.png</filename>
 	      </imagetype>
 	    </state>
 	  </statetype>
 	  
 	  <textarea name="childcount" from="basetextarea">
-	    <area>5,0,305,275</area>
+	    <area>5,0,300,265</area>
 	    <font>basebigstate</font>
 	    <align>bottom,right</align>
 	  </textarea>
 	</state>
 	<state name="selectedactive" from="active">
 	  <imagetype name="buttonbackground">
-	    <filename>gallery-320x280.png</filename>
+	    <filename>gallery-300x260.png</filename>
 	  </imagetype>
 	  <textarea name="buttontext">
 	    <font>basebuttontitle</font>
 	  </textarea>       
 	  
 	</state>
-	    </statetype>
-	<statetype name="upscrollarrow" from="baseupscrollarrow">
+      </statetype>
+      <statetype name="upscrollarrow" from="baseupscrollarrow">
 	<position>10,-35</position>
-		</statetype>
-	
-	<statetype name="downscrollarrow" from="basedownscrollarrow">
-		<position>10,820</position>
-		</statetype>
-	</buttonlist>
-	
+      </statetype>
+      
+      <statetype name="downscrollarrow" from="basedownscrollarrow">
+	<position>10,840</position>
+      </statetype>
+    </buttonlist>
+    
     <!-- optional - shows a message when no images are available
-	    in the current directory -->
+      in the current directory -->
 	<textarea name="noimages" from="basetextarea">
-	    <area>5,200,1670,850</area>
-	    <align>allcenter</align>
-	    <font>basebuttontitle</font>
+	  <area>5,200,1910,850</area>
+	  <align>allcenter</align>
+	  <font>basebuttontitle</font>
 	</textarea>
 	
-    </window>
+      </window>
+      
+    </mythuitheme>
     
-</mythuitheme>
