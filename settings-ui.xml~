@@ -89,7 +89,7 @@
 	    <value>Choose a Theme</value>
 	</textarea>
 	<buttonlist name="themes" from="basegroups">
-	    <position>5,210</position>
+	    <position>5,180</position>
 	    <buttonarea>0,0,100%,100%</buttonarea>
 	    <statetype name="buttonitem">
 		<state name="active">
@@ -138,7 +138,7 @@
 	
 	<!--  The preview of the theme cut to size so it fits into the cover screen -->
 	<imagetype name="preview">
-	    <area>503,210,1400,660</area>
+	    <area>503,180,1170,660</area>
 	    <preserveaspect>true</preserveaspect>
 	    <filename />
 	</imagetype>
