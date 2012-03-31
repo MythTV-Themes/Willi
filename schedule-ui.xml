@@ -30,10 +30,10 @@
     </textarea>
     
     <guidegrid name="guidegrid">
-      <area>260,190,1415,732</area>
+      <area>270,200,1640,680</area>
       <layout>horizontal</layout>
-      <channels>6</channels>
-      <timeslots>5</timeslots>
+      <channels>8</channels>
+      <timeslots>6</timeslots>
       <solidcolor>#ccccccff</solidcolor>
       <selector type="box" fillcolor="#800000" >
       </selector>
@@ -71,7 +71,7 @@
     </guidegrid>
     
     <buttonlist name="timelist">
-      <area>260,120,1415,50</area>
+      <area>270,115,1640,50</area>
       <layout>horizontal</layout>
       <spacing>0</spacing>
       <buttonarea>0,0,100%,100%</buttonarea>
@@ -121,20 +121,20 @@
     </buttonlist>
     
     <buttonlist name="channellist">
-      <area>7,190,244,732</area>
+      <area>10,200,244,680</area>
       <layout>vertical</layout>
       <spacing>0</spacing>
       <buttonarea>0,0,100%,100%</buttonarea>
       <statetype name="buttonitem">
-	<area>0,0,244,122</area>
+	<area>0,0,244,85</area>
 	<state name="active">
 	  <imagetype name="channelicon">
-	    <area>0,0,242,120</area>
+	    <area>0,0,242,85</area>
 	    <preserveaspect>true</preserveaspect>
 	    <alpha>70</alpha>
 	  </imagetype>
 	  <textarea name="buttontext" from="basetextarea">
-	    <area>4,0,240,122</area>
+	    <area>4,0,240,85</area>
 	    <align>allcenter</align>
 	    <font>basebigstateoutline</font>
 	    <cutdown>yes</cutdown>
@@ -175,6 +175,8 @@
     
     <!-- Filesize --> 
     <textarea name="subtitle" from="basetextarea">
+      <font>basebuttontitlesubtitle</font>
+      <template>%00x00| %%subtitle%</template>
       <area>15,950,890,30</area>
     </textarea>
     
@@ -201,10 +203,13 @@
     
     <!-- Channel name and number --> 
     <textarea name="description" from="basetextarea">
-      <area>800,950,860,90</area>
+      <area>800,935,1080,150</area>
       <multiline>yes</multiline>
     </textarea>
-    
+    	  <statetype name="ratingstate" from="baserating">
+	    <position>15,1030</position>
+	    <alpha>180</alpha>
+	  </statetype>
     
     
   </window>
@@ -1534,7 +1539,7 @@
 	</button>
 	
 	<button name="save" from="basepopupbuttonsave">
-	  <position>1440,960</position>
+	  <position>1080,960</position>
 	  <value>Save</value>
 	</button>
       </window>
