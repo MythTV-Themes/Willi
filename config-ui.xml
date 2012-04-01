@@ -236,6 +236,7 @@
   </window>
   
   <window name="languageselection">
+    
     <imagetype name="languageselectionbackground">
       <position>0,0</position>
       <filename>language-background.pmg</filename>
@@ -314,8 +315,8 @@
 	</state>
       </statetype>
     </buttonlist>
-
-        <buttonlist name="languages" from="basegroups">
+    
+    <buttonlist name="languages" from="basegroups">
       <position>503,180</position>
       <loadondemand>true</loadondemand> 
       <statetype name="buttonitem">
@@ -344,53 +345,133 @@
 	    <area>5,0,250,70</area>
 	    <multiline>yes</multiline>
 	  </textarea>
-<!--	  <textarea name="nativecountry" from="buttontext">
-	    <font>basebuttonsubtitle</font>
-	    <area>5,65,250,85</area>
-	    <cutdown>yes</cutdown>
-	    <multiline>yes</multiline>
-	    <align>top</align>
-	    <alpha>200</alpha>
-	  </textarea>-->
-	</state>
-	<state name="selectedinactive" from="selectedactive">
-	  <imagetype name="icon">
-	    <alpha>30</alpha>
-	  </imagetype>
-	  <textarea name="language">
-	    <alpha>30</alpha>
-	  </textarea>
-<!--	  <textarea name="nativecountry">
-	    <alpha>30</alpha>
-	  </textarea>-->
-	  <!-- show to the user that he can jump to the right -->
-	  <imagetype name="direction">
-	    <alpha>0</alpha>
-	  </imagetype>
-	</state>
-	<state name="inactive" from="active">
-	  <imagetype name="icon">
-	    <alpha>30</alpha>
-	  </imagetype>
-	  <textarea name="language">
-	    <alpha>30</alpha>
-	  </textarea>
-<!--	  <textarea name="nativecountry">
-	    <alpha>30</alpha>
-	  </textarea>-->
-	</state>
-      </statetype>
-    </buttonlist>
-    
-           <button name="cancel" from="basepopupbuttoncancel">
-         <position>20,960</position>
-         <value>Cancel</value>
-       </button>
-       
-       <button name="save" from="basepopupbuttonsave">
-         <position>1080,960</position>
-         <value>Save</value>
-       </button>
-    
-    </window>
-</mythuitheme>
+	  <!--	  <textarea name="nativecountry" from="buttontext">
+	  <font>basebuttonsubtitle</font>
+	  <area>5,65,250,85</area>
+	  <cutdown>yes</cutdown>
+	  <multiline>yes</multiline>
+	  <align>top</align>
+	  <alpha>200</alpha>
+	</textarea>-->
+      </state>
+      <state name="selectedinactive" from="selectedactive">
+	<imagetype name="icon">
+	  <alpha>30</alpha>
+	</imagetype>
+	<textarea name="language">
+	  <alpha>30</alpha>
+	</textarea>
+	<!--	  <textarea name="nativecountry">
+	<alpha>30</alpha>
+      </textarea>-->
+	<!-- show to the user that he can jump to the right -->
+	<imagetype name="direction">
+	  <alpha>0</alpha>
+	</imagetype>
+      </state>
+      <state name="inactive" from="active">
+	<imagetype name="icon">
+	  <alpha>30</alpha>
+	</imagetype>
+	<textarea name="language">
+	  <alpha>30</alpha>
+	</textarea>
+	<!--	  <textarea name="nativecountry">
+	<alpha>30</alpha>
+      </textarea>-->
+    </state>
+  </statetype>
+</buttonlist>
+
+ <button name="cancel" from="basepopupbuttoncancel">
+   <position>20,960</position>
+   <value>Cancel</value>
+ </button>
+ 
+ <button name="save" from="basepopupbuttonsave">
+   <position>1080,960</position>
+   <value>Save</value>
+ </button>
+ 
+ </window>
+ 
+ <window name="grabbersettings">
+   <animation trigger="AboutToShow">
+     <section duration="500" centre="middle">
+       <alpha start="0" end="255" easingcurve="InOutQuad"/>
+     </section>
+   </animation>
+   
+   
+   <imagetype name="recbackground">
+     <position>0,0</position>
+     <filename>schedule/managerecrulesbackground.png</filename>
+   </imagetype>
+   
+   <clock name="clock" from="baseclock" />
+   
+   <textarea name="pagetitle" from="basepagetitle">
+     <value>Artwork and Metadata Sources</value>
+   </textarea>
+
+
+   <textarea name="moviegrabber_text" from="basetextarea">
+     <area>300,273,500,30</area>
+     <font>basesmall</font>
+     <value>Movie Metadata Source:</value>
+   </textarea>
+   
+   <textarea name="tvgrabber_text" from="basetextarea">
+     <area>300,338,500,30</area>
+     <font>basesmall</font>
+     <value>Television Metadata Source:</value>
+   </textarea>
+   
+   <textarea name="gamegrabber_text" from="basetextarea">
+     <area>300,403,500,30</area>
+     <font>basesmall</font>
+     <value>Game Metadata Source:</value>
+   </textarea>
+   
+   <textarea name="dailyupdates_text" from="basetextarea">
+     <area>430,565,500,40</area>
+     <value>Perform daily updates of recording artwork</value>
+     <align>left,vcenter</align>
+   </textarea>
+   
+   <!--Widgets-->
+   
+   <buttonlist name="moviegrabber" from="basewideselector">
+     <position>510,267</position>
+   </buttonlist>
+   
+   <buttonlist name="tvgrabber" from="basewideselector">
+     <position>510,332</position>
+   </buttonlist>
+   
+   <buttonlist name="gamegrabber" from="basewideselector">
+     <position>510,497</position>
+   </buttonlist>
+   
+   <checkbox name="dailyupdates" from="basecheckbox">
+     <position>290,570</position>
+   </checkbox>
+   
+   
+   <textarea name="helptext" from="basesettingshelptext"/>
+   
+   
+   <button name="cancel" from="basepopupbuttoncancel">
+     <position>300,700</position>
+     <value>Cancel</value>
+   </button>
+   
+   <button name="ok" from="basepopupbuttonok">
+     <position>1020,700</position>
+     <value>ok</value>
+   </button>
+   
+ </window>
+ 
+ </mythuitheme>
+ 

@@ -10,7 +10,7 @@
       </section>
     </animation>
     
-    <imagetype name="backgroundlogo" from="basebackgroundlogo" />
+    
     
     <!-- Fanart behind everyhting  -->
     <imagetype name="fanart">
@@ -217,7 +217,7 @@
   
   
   <window name="viewscheduled">
-    <imagetype name="backgroundlogo" from="basebackgroundlogo" />
+    
     
     <!-- Fanart behind everyhting  -->
     <imagetype name="fanart">
@@ -771,7 +771,11 @@
   </window>
   
   <window name="programlist">
-    <imagetype name="backgroundlogo" from="basebackgroundlogo" />
+        <animation trigger="AboutToShow">
+      <section duration="500" centre="middle">
+	<alpha start="0" end="255" easingcurve="InOutQuad"/>
+      </section>
+    </animation>
     
     <imagetype name="recbackground">
       <position>0,0</position>
@@ -892,15 +896,17 @@
       </window>
       
       <window name="progdetails">
-	
-	<imagetype name="fanart">
-	  <area>0,105,1680,945</area>
-	  <filename />
-	  <alpha>150</alpha>
-	</imagetype>
-	
+	    <animation trigger="AboutToShow">
+      <section duration="500" centre="middle">
+	<alpha start="0" end="255" easingcurve="InOutQuad"/>
+      </section>
+    </animation>
+    <imagetype name="fanart">
+      <area>0,0,1920,1080</area>
+      <filename />
+    </imagetype>
 	<!--  we use one large background image to draw all widgets on top	  -->
-	<imagetype name="backgroundlogo" from="basebackgroundlogo" />
+	
 	<imagetype name="recbackground">
 	  <position>0,0</position>
 	  <filename>schedule/managerecrulesbackground.png</filename>
@@ -1097,14 +1103,12 @@
       
       <window name="managerecrules">
 	
-	<imagetype name="backgroundlogo" from="basebackgroundlogo" />
+		    <animation trigger="AboutToShow">
+      <section duration="500" centre="middle">
+	<alpha start="0" end="255" easingcurve="InOutQuad"/>
+      </section>
+    </animation>
 	
-	<!-- Fanart behind everyhting  -->
-	<imagetype name="fanart">
-	  <area>0,105,1680,945</area>
-	  <filename />
-	  <alpha>150</alpha>
-	</imagetype>
 	<imagetype name="recbackground">
 	  <position>0,0</position>
 	  <filename>schedule/managerecrulesbackground.png</filename>
@@ -1248,7 +1252,11 @@
       <window name="customedit">
 	<!-- custom recording rules screen -->
 	
-	<imagetype name="backgroundlogo" from="basebackgroundlogo" />
+		    <animation trigger="AboutToShow">
+      <section duration="500" centre="middle">
+	<alpha start="0" end="255" easingcurve="InOutQuad"/>
+      </section>
+    </animation>
 	
 	<imagetype name="recbackground">
 	  <position>0,0</position>
@@ -1333,14 +1341,12 @@
       
       <window name="manualschedule">
 	
-	<imagetype name="backgroundlogo" from="basebackgroundlogo" />
 	
-	<!-- Fanart behind everyhting  -->
-	<imagetype name="fanart">
-	  <area>0,105,1680,945</area>
-	  <filename />
-	  <alpha>150</alpha>
-	</imagetype>
+	    <animation trigger="AboutToShow">
+      <section duration="500" centre="middle">
+	<alpha start="0" end="255" easingcurve="InOutQuad"/>
+      </section>
+    </animation>
 	<imagetype name="recbackground">
 	  <position>0,0</position>
 	  <filename>schedule/customrecrulesbackground.png</filename>
@@ -1429,8 +1435,12 @@
       
       
       <window name="scheduleeditor">
+		    <animation trigger="AboutToShow">
+      <section duration="500" centre="middle">
+	<alpha start="0" end="255" easingcurve="InOutQuad"/>
+      </section>
+    </animation>
 	
-	<imagetype name="backgroundlogo" from="basebackgroundlogo" />
 	
 	<imagetype name="recbackground">
 	  <position>0,0</position>
@@ -1545,8 +1555,12 @@
       </window>
       
       <window name="scheduleoptionseditor">
+		    <animation trigger="AboutToShow">
+      <section duration="500" centre="middle">
+	<alpha start="0" end="255" easingcurve="InOutQuad"/>
+      </section>
+    </animation>
 	
-	<imagetype name="backgroundlogo" from="basebackgroundlogo" />
 	
 	<imagetype name="recbackground">
 	  <position>0,0</position>
@@ -1651,8 +1665,12 @@
       </window>
       
       <window name="storageoptionseditor">
+		    <animation trigger="AboutToShow">
+      <section duration="500" centre="middle">
+	<alpha start="0" end="255" easingcurve="InOutQuad"/>
+      </section>
+    </animation>
 	
-	<imagetype name="backgroundlogo" from="basebackgroundlogo" />
 	
 	<imagetype name="recbackground">
 	  <position>0,0</position>
@@ -1749,8 +1767,12 @@
       </window>
       
       <window name="postproceditor">
+		    <animation trigger="AboutToShow">
+      <section duration="500" centre="middle">
+	<alpha start="0" end="255" easingcurve="InOutQuad"/>
+      </section>
+    </animation>
 	
-	<imagetype name="backgroundlogo" from="basebackgroundlogo" />
 	
 	<imagetype name="recbackground">
 	  <position>0,0</position>
@@ -1870,15 +1892,13 @@
       
       
       <window name="schedulediff">
+		    <animation trigger="AboutToShow">
+      <section duration="500" centre="middle">
+	<alpha start="0" end="255" easingcurve="InOutQuad"/>
+      </section>
+    </animation>
 	
-	<imagetype name="backgroundlogo" from="basebackgroundlogo" />
-	
-	<!-- Fanart behind everyhting  -->
-	<imagetype name="fanart">
-	  <area>0,105,1680,945</area>
-	  <filename />
-	  <alpha>150</alpha>
-	</imagetype>
+
 	<imagetype name="recbackground">
 	  <position>0,0</position>
 	  <filename>schedule/conflictlistbackground.png</filename>
@@ -1991,7 +2011,12 @@
 	  
 	  
 	  <window name="metadataoptions">
-	    
+	        <animation trigger="AboutToShow">
+      <section duration="600" centre="middle">
+	<zoom start="0" end="100" easingcurve="InOutElastic" />
+	<alpha start="0" end="255" easingcurve="InOutElastic"/>
+      </section>
+    </animation>
 	    <area>-1,-1,600,800</area>
 	    <imagetype name="backimg" from="basepopupboxback" />
 	    
