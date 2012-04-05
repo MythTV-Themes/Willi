@@ -3,15 +3,12 @@
 <mythuitheme>
   
   <window name="iconimport">
-    
+    <animation trigger="AboutToShow">
+      <section duration="500" centre="middle">
+	<alpha start="0" end="255" easingcurve="InOutQuad"/>
+      </section>
+    </animation>
     <imagetype name="backgroundlogo" from="basebackgroundlogo" />
-    
-    <!-- Fanart behind everyhting  -->
-    <imagetype name="fanart">
-      <area>0,105,1680,945</area>
-      <filename />
-      <alpha>150</alpha>
-    </imagetype>
     <imagetype name="recbackground">
       <position>0,0</position>
       <filename>schedule/managerecrulesbackground.png</filename>
@@ -93,7 +90,11 @@
   </window>
   
   <window name="channeloverview">
-    
+    <animation trigger="AboutToShow">
+      <section duration="500" centre="middle">
+	<alpha start="0" end="255" easingcurve="InOutQuad"/>
+      </section>
+    </animation>    
     <imagetype name="recbackground">
       <position>0,0</position>
       <filename>config-channelsbackground.png</filename>
@@ -106,14 +107,11 @@
     </textarea>
     
     <buttonlist name="channels" from="basegroups">
-      <position>5,180</position>
+      <position>5,210</position>
       <loadondemand>true</loadondemand> 
       <statetype name="buttonitem">
 	<state name="active">
-	  <imagetype name="icon">
-	    <preserveaspect>true</preserveaspect>
-	    <area>393,0,97,53</area>
-	  </imagetype>
+	  
 	  <textarea name="name" from="buttontext">
 	    <font>basebuttontitlesubtitle</font>
 	    <area>5,0,390,55</area>
@@ -126,11 +124,7 @@
 	</state>
 	
 	<state name="selectedactive">
-	  <imagetype name="icon">
-	    <preserveaspect>true</preserveaspect>
-	    <area>250,2,240,135</area>
-	    <mask>wr-previewmask.png</mask>
-	  </imagetype> 
+	  
 	  <textarea name="channum" from="buttontext">
 	    <font>basebuttontitle</font>
 	    <area>5,0,250,70</area>
@@ -148,7 +142,7 @@
 	  </textarea>
 	</state>
 	<state name="selectedinactive" from="selectedactive">
-	  <imagetype name="icon">
+	  <imagetype name="buttonimage">
 	    <alpha>30</alpha>
 	  </imagetype>
 	  <textarea name="channum">
@@ -163,7 +157,7 @@
 	  </imagetype>
 	</state>
 	<state name="inactive" from="active">
-	  <imagetype name="icon">
+	  <imagetype name="buttonimage">
 	    <alpha>30</alpha>
 	  </imagetype>
 	  <textarea name="channum">
@@ -236,7 +230,11 @@
   </window>
   
   <window name="languageselection">
-    
+    <animation trigger="AboutToShow">
+      <section duration="500" centre="middle">
+	<alpha start="0" end="255" easingcurve="InOutQuad"/>
+      </section>
+    </animation>    
     <imagetype name="languageselectionbackground">
       <position>0,0</position>
       <filename>language-background.pmg</filename>
@@ -253,10 +251,7 @@
       <loadondemand>true</loadondemand> 
       <statetype name="buttonitem">
 	<state name="active">
-	  <imagetype name="icon">
-	    <preserveaspect>true</preserveaspect>
-	    <area>393,0,97,53</area>
-	  </imagetype>
+
 	  <textarea name="country" from="buttontext">
 	    <font>basebuttontitlesubtitle</font>
 	    <area>5,0,390,55</area>
@@ -268,11 +263,6 @@
 	</state>
 	
 	<state name="selectedactive">
-	  <imagetype name="icon">
-	    <preserveaspect>true</preserveaspect>
-	    <area>250,2,240,135</area>
-	    <mask>wr-previewmask.png</mask>
-	  </imagetype> 
 	  <textarea name="country" from="buttontext">
 	    <font>basebuttontitle</font>
 	    <area>5,0,250,70</area>
@@ -288,9 +278,6 @@
 	  </textarea>
 	</state>
 	<state name="selectedinactive" from="selectedactive">
-	  <imagetype name="icon">
-	    <alpha>30</alpha>
-	  </imagetype>
 	  <textarea name="country">
 	    <alpha>30</alpha>
 	  </textarea>
@@ -303,9 +290,6 @@
 	  </imagetype>
 	</state>
 	<state name="inactive" from="active">
-	  <imagetype name="icon">
-	    <alpha>30</alpha>
-	  </imagetype>
 	  <textarea name="country">
 	    <alpha>30</alpha>
 	  </textarea>
@@ -317,7 +301,7 @@
     </buttonlist>
     
     <buttonlist name="languages" from="basegroups">
-      <position>503,180</position>
+      <position>503,210</position>
       <loadondemand>true</loadondemand> 
       <statetype name="buttonitem">
 	<state name="active">
@@ -413,23 +397,23 @@
    <textarea name="pagetitle" from="basepagetitle">
      <value>Artwork and Metadata Sources</value>
    </textarea>
-
-
+   
+   
    <textarea name="moviegrabber_text" from="basetextarea">
      <area>300,273,500,30</area>
-     <font>basesmall</font>
+     
      <value>Movie Metadata Source:</value>
    </textarea>
    
    <textarea name="tvgrabber_text" from="basetextarea">
      <area>300,338,500,30</area>
-     <font>basesmall</font>
+     
      <value>Television Metadata Source:</value>
    </textarea>
    
    <textarea name="gamegrabber_text" from="basetextarea">
      <area>300,403,500,30</area>
-     <font>basesmall</font>
+     
      <value>Game Metadata Source:</value>
    </textarea>
    
@@ -472,6 +456,225 @@
    </button>
    
  </window>
+ 
+ <window name="generalwizard">
+   
+   <animation trigger="AboutToShow">
+     <section duration="500" centre="middle">
+       <alpha start="0" end="255" easingcurve="InOutQuad"/>
+     </section>
+   </animation>    
+   <imagetype name="recbackground">
+     <position>0,0</position>
+     <filename>schedule/managerecrulesbackground.png</filename>
+   </imagetype>
+   
+   <clock name="clock" from="baseclock" />
+   
+   <textarea name="title" from="basepagetitle">
+     <value>MythTV Configuration Wizard</value>
+   </textarea>
+   
+   
+   
+   <button name="submit" from="basepopupbutton">
+     <position>300,267</position>
+     <value>Submit your hardware profile</value>
+   </button>
+   
+   <button name="view" from="basepopupbutton">
+     <position>300,332</position>
+     <value>View your hardware profile</value>
+   </button>
+   
+   <button name="delete" from="basepopupbutton">
+     <position>300,397</position>
+     <value>Delete your hardware profile</value>
+   </button>
+   
+   
+   <textarea name="helptext" from="basesettingshelptext"/>
+   
+   
+   <button name="cancel" from="basepopupbuttoncancel">
+     <position>300,820</position>
+     <value>Cancel</value>
+   </button>
+   
+   <button name="next" from="basepopupbuttonok">
+     <position>1020,820</position>
+     <value>Next</value>
+   </button>
+   
+ </window>
+ 
+ <window name="audiowizard">
+   
+   
+   <animation trigger="AboutToShow">
+     <section duration="500" centre="middle">
+       <alpha start="0" end="255" easingcurve="InOutQuad"/>
+     </section>
+   </animation>    
+   <imagetype name="recbackground">
+     <position>0,0</position>
+     <filename>schedule/managerecrulesbackground.png</filename>
+   </imagetype>
+   
+   <clock name="clock" from="baseclock" />
+   
+   <textarea name="title" from="basepagetitle">
+     <value>Audio Configuration</value>
+   </textarea>
+   
+   
+   
+   <textarea name="auddev_text" from="basetextarea">
+     <area>240,203,300,30</area>
+     <align>right</align>
+     <value>Audio Device:</value>
+   </textarea>
+   
+   <textarea name="ac3_text" from="basetextarea">
+     <area>610,255,-20,30</area>
+     
+     <value>My audio subsystem supports Dolby Digital</value>
+   </textarea>
+   
+   <textarea name="dts_text" from="basetextarea">
+     <area>610,300,-20,30</area>
+     
+     <value>My audio subsystem supports DTS</value>
+   </textarea>
+   
+   <textarea name="eac3_text" from="basetextarea">
+     <area>610,345,-20,30</area>
+     
+     <value>My audio subsystem supports E-AC-3</value>
+   </textarea>
+   
+   <textarea name="truehd_text" from="basetextarea">
+     <area>610,390,-20,30</area>
+     
+     <value>My audio subsystem supports TrueHD</value>
+   </textarea>
+   
+   <textarea name="dtshd_text" from="basetextarea">
+     <area>610,435,-20,30</area>
+     
+     <value>My audio subsystem supports DTS-HD</value>
+   </textarea>
+   
+   <textarea name="speaktext_text" from="auddev_text">
+     <position>240,478</position>
+     <value>Number of Speakers:</value>
+   </textarea>
+   
+   <buttonlist name="audiodevices" from="basewideselector">
+     <position>560,197</position>
+   </buttonlist>
+   
+   <checkbox name="ac3check" from="basecheckbox">
+     <position>560,252</position>
+   </checkbox>
+   
+   <checkbox name="dtscheck" from="basecheckbox">
+     <position>560,297</position>
+   </checkbox>
+   
+   <checkbox name="eac3check" from="basecheckbox">
+     <position>560,342</position>
+   </checkbox>
+   
+   <checkbox name="truehdcheck" from="basecheckbox">
+     <position>560,387</position>
+   </checkbox>
+   
+   <checkbox name="dtshdcheck" from="basecheckbox">
+     <position>560,432</position>
+   </checkbox>
+   
+   <buttonlist name="speakers" from="basewideselector">
+     <position>560,472</position>
+   </buttonlist>
+   
+   <button name="testspeakers" from="basepopupbutton">
+     <position>300,622</position>
+   </button>
+   
+   <textarea name="helptext" from="basesettingshelptext"/>
+   
+   
+   <button name="previous" from="basepopupbuttonback">
+     <position>300,820</position>
+     <value>Previous</value>
+   </button>
+   
+   <button name="next" from="basepopupbuttonok">
+     <position>1020,820</position>
+     <value>Next</value>
+   </button>
+   
+ </window>
+ 
+ <window name="videowizard">
+   
+   <animation trigger="AboutToShow">
+     <section duration="500" centre="middle">
+       <alpha start="0" end="255" easingcurve="InOutQuad"/>
+     </section>
+   </animation>    
+   <imagetype name="recbackground">
+     <position>0,0</position>
+     <filename>schedule/managerecrulesbackground.png</filename>
+   </imagetype>
+   
+   <clock name="clock" from="baseclock" />
+   
+   <textarea name="title" from="basepagetitle">
+     <value>Video Configuration</value>
+   </textarea>
+   
+   
+   <textarea name="prof_text" from="basetextarea">
+     <area>240,203,300,30</area>
+     
+     <align>right</align>
+     <value>Video Playback Profile:</value>
+   </textarea>
+   
+   <!--Widgets-->
+   
+   <buttonlist name="playbackprofiles" from="basewideselector">
+     <position>560,197</position>
+   </buttonlist>
+   
+   <button name="testsd" from="basepopupbutton">
+     <position>300,522</position>
+     <value>Test Standard Definition</value>
+   </button>
+   
+   <button name="testhd" from="basepopupbutton">
+     <position>300,622</position>
+     <value>Test High Definition</value>
+   </button>
+   
+   
+   <textarea name="helptext" from="basesettingshelptext"/>
+   
+   
+   <button name="previous" from="basepopupbuttonback">
+     <position>300,820</position>
+     <value>Previous</value>
+   </button>
+   
+   <button name="next" from="basepopupbuttonsave">
+     <position>1020,820</position>
+     <value>Finish</value>
+   </button>
+   
+ </window>
+ 
  
  </mythuitheme>
  

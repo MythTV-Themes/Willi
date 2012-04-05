@@ -1135,7 +1135,12 @@
 	 </imagetype>
        </state>
        
-       <state name="disabled" />
+       <state name="disabled">
+	 <imagetype name="background">
+	   <alpha>30</alpha>
+	 </imagetype>
+       </state> 
+	 
      </statetype>
      
      <statetype name="checkstate">
@@ -1337,7 +1342,7 @@
 	 
 	 <textarea name="buttontext">
 	   <area>30,0,980,48</area>
-	   <align>allcenter</align>
+	   <align>hcenter</align>
 	   <font>basesmall</font>
 	   <cutdown>yes</cutdown>
 	 </textarea>

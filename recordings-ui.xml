@@ -9,10 +9,7 @@
 	<alpha start="0" end="255" easingcurve="InOutQuad"/>
       </section>
     </animation>
-    
-    
-    <!--we use one large background image to draw all widgets on top	-->
-    <imagetype name="background" from="basebackground" />
+
     <!-- Fanart behind the recordings(remove it if you don't want it!)--> 
     <imagetype name="fanart">
       <area>0,0,1920,1080</area>
