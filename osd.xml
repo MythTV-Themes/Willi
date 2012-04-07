@@ -462,16 +462,11 @@
       <template>%VALUE% %UNITS%</template>
       <font>progressnumberfont</font>
     </textarea>
-    <textarea name="playedtime">
-      <area>10,-2,1620,63</area>
-      <align>left,vcenter</align>
-      <template>%PLAYEDTIME%</template>
-      <font>progressnumberfont</font>
-    </textarea>
+
     <textarea name="remainingtime">
       <area>10,-2,1620,63</area>
-      <align>right,vcenter</align>
-      <template>%REMAININGTIME| %%BEHINDTIME| % of %TOTALTIME%</template>
+      <align>allcenter</align>
+      <template>%PLAYEDTIME% of %TOTALTIME% %(|REMAININGTIME| remaining)%%(|BEHINDTIME| behind)%</template>
       <font>progressnumberfont</font>
     </textarea>
   </window>

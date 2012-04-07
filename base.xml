@@ -1674,6 +1674,7 @@
      
      <textarea name="text">
        <area>5,3,338,180</area>
+       <multiline>yes</multiline>
      </textarea>
    </textedit>
    

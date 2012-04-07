@@ -777,7 +777,7 @@
     <imagetype name="backimg" from="basepopupboxback" />
     
     <textarea name="header">
-      <value>Edit Metadata Information</value>
+      <value>Edit Recording Metadata</value>
       <font>base</font>
       <area>5,5,590,100</area>
       <multiline>yes</multiline>
