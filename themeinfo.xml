@@ -16,7 +16,7 @@
   <baseres>1920x1080</baseres>
   <version>
     <major>2</major>
-    <minor>13</minor>
+    <minor>14</minor>
   </version>
   <detail>
     <thumbnail name="preview">preview.jpg</thumbnail>
