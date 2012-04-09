@@ -26,7 +26,6 @@
             <value>Watch Recordings</value>
         </textarea>
         <!-- The banner of the current show -->
-        
         <imagetype name="banner">
             <area>1145,935,758,140</area>
             <filename />
@@ -39,7 +38,6 @@
         
         <!--draws the recording groups on top of the tabs	 -->
         <buttonlist name="recgroups">
-            
             <area>10,121,1900,40</area>
             <spacing>5</spacing>
             <arrange>spread</arrange>
@@ -227,15 +225,6 @@
                         <state name="yes">
                         </state>
                     </statetype>
-                    
-                    <!--<textarea name="00x00" from="basetextarea">    
-	  <area>0,0,920,140</area>
-	  <font>baseclock</font>
-	  <template>%00x00%</template>
-	  <align>right,top</align>
-	  <alpha>180</alpha>
-	</textarea>-->
-                    
                     <textarea name="title" from="buttontext">
                         <font>basebuttontitle</font>
                         <area>5,0,1030,45</area>
@@ -670,8 +659,9 @@
             <align>allcenter</align>
         </textarea>
     </window>
+    
     <!-- This is the popup where you can select which Group to filter -->
-    <window name="groupselector"  from="basepopupboxback" >
+    <window name="groupselector" from="MythPopupBox">
         <area>-1,-1,600,800</area>
         <imagetype name="backimg" from="basepopupboxback" />
         <textarea name="label" from="basemessagearea" />
@@ -685,6 +675,7 @@
             </section>
         </animation>
     </window>
+    
     <window name="changeview">
         <area>-1,-1,600,1030</area>
         <imagetype name="backimg" from="basepopupboxback" />
@@ -738,8 +729,9 @@
             <value>Save</value>
         </button>
     </window>
+    
     <!-- Popup to change the password of a group -->
-    <window name="passwordchanger" from="basepopupboxback" >
+    <window name="passwordchanger" from="MythPopupBox">
         <area>-1,-1,600,800</area>
         <imagetype name="backimg" from="basepopupboxback" />
         <textarea name="label" from="basemessagearea">
@@ -771,8 +763,13 @@
         </animation>
     </window> 
     
-    <window name="editmetadata" from="basepopupboxback" >
-        
+    <window name="editmetadata" from="MythPopupBox">
+        <animation trigger="AboutToShow">
+            <section duration="300" centre="middle">
+                <zoom start="0" end="100" easingcurve="InOutElastic" />
+                <alpha start="0" end="255" easingcurve="InOutElastic"/>
+            </section>
+        </animation>        
         <area>-1,-1,600,800</area>
         <imagetype name="backimg" from="basepopupboxback" />
         
@@ -785,7 +782,6 @@
         </textarea>
         
         <!-- Labels  -->
-        
         <textarea name="title_text" from="basetextarea">
             <area>5,100,210,36</area>
             <value>Title:</value>
@@ -845,11 +841,5 @@
             <position>10,735</position>
             <value>OK</value>
         </button>
-        <animation trigger="AboutToShow">
-            <section duration="300" centre="middle">
-                <zoom start="0" end="100" easingcurve="InOutElastic" />
-                <alpha start="0" end="255" easingcurve="InOutElastic"/>
-            </section>
-        </animation>
     </window>
 </mythuitheme>
