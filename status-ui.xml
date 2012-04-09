@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE mythuitheme SYSTEM "../mythuitheme.dtd"> 
 <mythuitheme>
-
+    
     <window name="status">        
-    <!--  we use one large background image to draw all widgets on top	  -->
+        <!--  we use one large background image to draw all widgets on top	  -->
         <imagetype name="background" from="basebackground" />
         
         <!-- Fanart behind the recordings  (remove it if you don't want it!)  -->   
@@ -13,34 +13,34 @@
             <alpha>180</alpha>
         </imagetype>
         
-
+        
         <imagetype name="statusbackground">
             <position>0,0</position>
             <filename>statusbackground.png</filename>
         </imagetype>
-
+        
         <!--  Clock and Date on the right	  -->
         <clock name="clock" from="baseclock" />
-
+        
         <!--  Title on top of the page	  -->
         <textarea name="pagetitle" from="basepagetitle">
             <value>System Status</value>
         </textarea>
         
-                <!-- The banner of the current show -->
+        <!-- The banner of the current show -->
         <imagetype name="banner">
             <area>910,905,758,140</area>
             <filename />
             <mask>wr-bannermask.png</mask>
         </imagetype>
-
+        
         <textarea name="helptext" from="basetextarea">
             <area>15,910,880,130</area>
             <font>basebuttontitlesubtitle</font>
             <multiline>yes</multiline>
         </textarea>
-
-
+        
+        
         <!--  This is the left side of the selections. It shows the groups that are available to the user.	  -->
         <buttonlist name="category" from="basegroups">
             <area>5,180,490,660</area>
@@ -85,15 +85,15 @@
                 </state>
             </statetype>
         </buttonlist>
-
-
+        
+        
         <!--  This is the right side of the selections. It shows the recordings that are available to the user.	  -->
         <buttonlist name="log" from="basebuttonlist2">
             <area>503,180,1170,660</area>
             <buttonarea>0,0,100%,100%</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                
+                    
                     <area>0,0,1170,55</area>
                     
                     <textarea name="buttontext">
@@ -103,14 +103,14 @@
                         <cutdown>yes</cutdown>
                         <multiline>yes</multiline>
                     </textarea>
-                  
+                    
                 </state>
                 
                 <!--  The item that is selected when the list is active  -->                
                 <state name="selectedactive">
                     
                     <area>0,0,1170,140</area>
-
+                    
                     <textarea name="buttontext">
                         <font>basebuttontitle</font>
                         <align>vcenter</align>
@@ -118,7 +118,7 @@
                         <cutdown>yes</cutdown>
                         <multiline>yes</multiline>
                     </textarea>
-
+                    
                     
                     <!-- show to the user that he can jump to the right -->
                     <imagetype name="direction">
@@ -127,17 +127,17 @@
                         <alpha>200</alpha>
                     </imagetype>
                 </state>
-                	
+                
                 
                 <state name="selectedinactive" from="selectedactive">
-                
+                    
                     <textarea name="buttontext">
                         <font>basebuttontitle</font>
                         <alpha>30</alpha>
                     </textarea>
-                           <imagetype name="direction">
-          <alpha>0</alpha>
-        </imagetype>
+                    <imagetype name="direction">
+                        <alpha>0</alpha>
+                    </imagetype>
                 </state>
                 
                 
@@ -145,14 +145,14 @@
                     <textarea name="buttontext">
                         <alpha>30</alpha>
                     </textarea>
-                            <imagetype name="direction">
-          <alpha>0</alpha>
-        </imagetype>
+                    <imagetype name="direction">
+                        <alpha>0</alpha>
+                    </imagetype>
                 </state>
             </statetype>
         </buttonlist>
-
+        
     </window>
-
+    
 </mythuitheme>
 

@@ -1,855 +1,855 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
-  <!--This XML file defines the Window that enables the user to watch a recorded program.-->
-  <window name="watchrecordings">
-    
-    <animation trigger="AboutToShow">
-      <section duration="500" centre="middle">
-	<alpha start="0" end="255" easingcurve="InOutQuad"/>
-      </section>
-    </animation>
-
-    <!-- Fanart behind the recordings(remove it if you don't want it!)--> 
-    <imagetype name="fanart">
-      <area>0,0,1920,1080</area>
-      <filename />
-    </imagetype>
-    <imagetype name="recbackground">
-      <position>0,0</position>
-      <filename>wr-recordings.png</filename>
-    </imagetype>
-    <!--Clock and Date on the right	-->
-    <clock name="clock" from="baseclock" />
-    <!--Title on top of the page	-->
-    <textarea name="pagetitle" from="basepagetitle">
-      <value>Watch Recordings</value>
-    </textarea>
-    <!-- The banner of the current show -->
-    
-    <imagetype name="banner">
-      <area>1145,935,758,140</area>
-      <filename />
-      <mask>wr-bannermask.png</mask>
-    </imagetype>
-    <imagetype name="bannerframe">
-      <area>1145,935,758,140</area>
-      <filename>wr-bannerframe.png</filename>
-    </imagetype>
-    
-    <!--draws the recording groups on top of the tabs	 -->
-    <buttonlist name="recgroups">
-      
-      <area>10,121,1900,40</area>
-      <spacing>5</spacing>
-      <arrange>spread</arrange>
-      <scrollstyle>center</scrollstyle>
-      <wrapstyle>items</wrapstyle>
-      <align>center</align>
-      <layout>horizontal</layout>
-      <buttonarea>0,0,1900,40</buttonarea>
-      <statetype name="buttonitem">
-	<state name="active">
-	  <textarea name="buttontext">
-	    <area>0,0,200,40</area>
-	    <align>allcenter</align>
-	    <font>basesmall</font>
-	  </textarea>
-	</state>
-	<state name="selectedactive" from="active" />
-	<state name="selectedinactive">
-	  <imagetype name="banner">
-	    <area>0,0,300,40</area>
-	    <filename>wr-300x40.png</filename>
-	  </imagetype>
-	  <textarea name="buttontext">
-	    <area>0,5,300,35</area>
-	    <align>allcenter</align>
-	    <font>basebuttontitle</font>
-	  </textarea>
-	</state>
-      </statetype>
-    </buttonlist>
-    
-    <!--This is the left side of the selections. It shows the groups that are available to the user.	-->
-    <buttonlist name="groups" from="basegroups">
-      <area>5,210,490,660</area>
-      <buttonarea>0,0,100%,100%</buttonarea>
-      <loadondemand>true</loadondemand> 
-      <statetype name="buttonitem">
-	<state name="active">
-	  <area>0,0,490,55</area>
-	  <textarea name="buttontext">
-	    <area>5,0,480,55</area>
-	    <align>vcenter</align>
-	    <cutdown>yes</cutdown>
-	  </textarea>
-	</state>
-	<state name="selectedactive">
-	  <area>0,0,490,140</area>
-	  <textarea name="buttontext">
-	    <font>basebuttontitle</font>
-	    <area>5,0,480,140</area>
-	    <cutdown>yes</cutdown>
-	    <multiline>yes</multiline>
-	  </textarea>
-	  <!-- show to the user that he can jump to the right -->
-	  <imagetype name="direction">
-	    <position>455,59</position>
-	    <filename>icons/draw-triangle2.png</filename>
-	    <alpha>200</alpha>
-	  </imagetype>
-	</state>
-	<state name="selectedinactive" from="selectedactive">
-	  <textarea name="buttontext">
-	    <alpha>30</alpha>
-	  </textarea>
-	  <!-- show to the user that he can jump to the right -->
-	  <imagetype name="direction">
-	    <alpha>0</alpha>
-	  </imagetype>
-	</state>
-	<state name="inactive" from="active">
-	  <textarea name="buttontext">
-	    <alpha>30</alpha>
-	  </textarea>
-	</state>
-      </statetype>
-    </buttonlist>
-    
-    <!--show the coverart over the groups, only if browsing the recordings -->
-    <imagetype name="coverart" from="basecoverart"/>
-    
-    <!--This is the right side of the selections. It shows the recordings that are available to the user.	-->
-    <buttonlist name="recordings" from="basebuttonlist2">
-      <position>503,210</position>
-      <statetype name="buttonitem">
-	<state name="active">
-	  <!--changes the background if recording part of a playlist-->
-	  <statetype name="playlist">
-	    <state name="yes">
-	      <imagetype name="1400x55">
-		<filename>wr-1400x55-playlist.png</filename>
-	      </imagetype>
-	    </state>
-	  </statetype>
-	<textarea name="startdate" from="basesmallstatetext">
-	    <template>%SHORTTIMEDATE%</template>
-	    <position>0,+27</position>
-	  </textarea>
-	  <textarea name="subtitle">
-	    <font>basebuttontitlesubtitle</font>
-	    <area>5,0,1030,55</area>
-	    <cutdown>yes</cutdown>
-	    <multiline>yes</multiline>
-	    <template>%00x00| %%TITLE| - %%SUBTITLE| %%|(LENMINS|)%</template>
-	    <align>vcenter</align>
-	  </textarea>
-	  
-	  <!--The little screenshot/preview of the recording -->
-	  <imagetype name="preview">
-	    <area>1300,0,100,55</area>
-	    <preserveaspect>true</preserveaspect>
-	  </imagetype>
-	  <!--icon if recording was watched	-->
-	  <statetype name="watched">
-	    <state name="yes">
-	      <imagetype name="watched">
-		<area>0,0,24,24</area>
-		<position>1270,5</position>
-		<filename>icons/watched.png</filename>
-		<alpha>180</alpha>
-	      </imagetype>
-	    </state>
-	    <state name="no">
-	    </state>
-	  </statetype>
-	  <!--icon if a recording is marked preserved	-->
-	  <statetype name="bookmark">
-	    <state name="yes">
-	      <imagetype name="bookmark">
-		<area>0,0,12,52</area>
-		<position>1370,-5</position>
-		<filename>icons/bookmark.png</filename>
-		<alpha>180</alpha>
-	      </imagetype>
-	    </state>
-	  </statetype>
-
-	  <!--A statetype for an item that is being processed	-->
-	  <statetype name="processing">
-	    <state name="yes">
-	      <imagetype name="animation">
-		<area>0,0,25,25</area>
-		<position>1275,5</position>
-		<filepattern low="1" high="8">animations/process/%1.png</filepattern>
-		<delay>400</delay>
-	      </imagetype>
-	    </state>
-	  </statetype>
-	  <!--A statetype for an item that is being processed	-->
-	  <statetype name="inuse">
-	    <state name="yes">
-	      <imagetype name="animation">
-		<area>0,0,25,25</area>
-		<position>1275,5</position>
-		<filepattern low="1" high="8">animations/process/%1.png</filepattern>
-		<delay>400</delay>
-	      </imagetype>
-	    </state>
-	  </statetype>
-	  <!--icon displaying the state of running jobs	-->
-	  <statetype name="jobstate">
-	    <position>1270,2</position>
-	    <!--This show is being recorded at this time-->
-	    <state name="recording">
-	      <imagetype name="recording">
-		<area>0,0,25,25</area>
-		<filepattern low="1" high="2">animations/record/%1.png</filepattern>
-		<delay>400</delay>
-	      </imagetype>
-	    </state>
-	    <!--This show is being transcoded-->
-	    <state name="transcoding">
-	      <imagetype name="transcoding">
-		<area>0,0,25,25</area>
-		<filepattern low="1" high="6">animations/transcode/%1.png</filepattern>
-		<delay>100</delay>
-	      </imagetype>
-	    </state>
-	  </statetype>
-	</state>
-	<!--The item that is selected when the list is active-->
-	<state name="selectedactive">
-	  <area>0,0,1400,140</area>
-	  <!--icon if a recording is in a playlist	-->
-	  <statetype name="playlist">
-	    <state name="yes">
-	    </state>
-	  </statetype>
-	  
-	  <!--<textarea name="00x00" from="basetextarea">    
+    <!--This XML file defines the Window that enables the user to watch a recorded program.-->
+    <window name="watchrecordings">
+        
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <alpha start="0" end="255" easingcurve="InOutQuad"/>
+            </section>
+        </animation>
+        
+        <!-- Fanart behind the recordings(remove it if you don't want it!)--> 
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename />
+        </imagetype>
+        <imagetype name="recbackground">
+            <position>0,0</position>
+            <filename>wr-recordings.png</filename>
+        </imagetype>
+        <!--Clock and Date on the right	-->
+        <clock name="clock" from="baseclock" />
+        <!--Title on top of the page	-->
+        <textarea name="pagetitle" from="basepagetitle">
+            <value>Watch Recordings</value>
+        </textarea>
+        <!-- The banner of the current show -->
+        
+        <imagetype name="banner">
+            <area>1145,935,758,140</area>
+            <filename />
+            <mask>wr-bannermask.png</mask>
+        </imagetype>
+        <imagetype name="bannerframe">
+            <area>1145,935,758,140</area>
+            <filename>wr-bannerframe.png</filename>
+        </imagetype>
+        
+        <!--draws the recording groups on top of the tabs	 -->
+        <buttonlist name="recgroups">
+            
+            <area>10,121,1900,40</area>
+            <spacing>5</spacing>
+            <arrange>spread</arrange>
+            <scrollstyle>center</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <align>center</align>
+            <layout>horizontal</layout>
+            <buttonarea>0,0,1900,40</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="buttontext">
+                        <area>0,0,200,40</area>
+                        <align>allcenter</align>
+                        <font>basesmall</font>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active" />
+                <state name="selectedinactive">
+                    <imagetype name="banner">
+                        <area>0,0,300,40</area>
+                        <filename>wr-300x40.png</filename>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>0,5,300,35</area>
+                        <align>allcenter</align>
+                        <font>basebuttontitle</font>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+        
+        <!--This is the left side of the selections. It shows the groups that are available to the user.	-->
+        <buttonlist name="groups" from="basegroups">
+            <area>5,210,490,660</area>
+            <buttonarea>0,0,100%,100%</buttonarea>
+            <loadondemand>true</loadondemand> 
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,490,55</area>
+                    <textarea name="buttontext">
+                        <area>5,0,480,55</area>
+                        <align>vcenter</align>
+                        <cutdown>yes</cutdown>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,490,140</area>
+                    <textarea name="buttontext">
+                        <font>basebuttontitle</font>
+                        <area>5,0,480,140</area>
+                        <cutdown>yes</cutdown>
+                        <multiline>yes</multiline>
+                    </textarea>
+                    <!-- show to the user that he can jump to the right -->
+                    <imagetype name="direction">
+                        <position>455,59</position>
+                        <filename>icons/draw-triangle2.png</filename>
+                        <alpha>200</alpha>
+                    </imagetype>
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+                    <textarea name="buttontext">
+                        <alpha>30</alpha>
+                    </textarea>
+                    <!-- show to the user that he can jump to the right -->
+                    <imagetype name="direction">
+                        <alpha>0</alpha>
+                    </imagetype>
+                </state>
+                <state name="inactive" from="active">
+                    <textarea name="buttontext">
+                        <alpha>30</alpha>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+        
+        <!--show the coverart over the groups, only if browsing the recordings -->
+        <imagetype name="coverart" from="basecoverart"/>
+        
+        <!--This is the right side of the selections. It shows the recordings that are available to the user.	-->
+        <buttonlist name="recordings" from="basebuttonlist2">
+            <position>503,210</position>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <!--changes the background if recording part of a playlist-->
+                    <statetype name="playlist">
+                        <state name="yes">
+                            <imagetype name="1400x55">
+                                <filename>wr-1400x55-playlist.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <textarea name="startdate" from="basesmallstatetext">
+                        <template>%SHORTTIMEDATE%</template>
+                        <position>0,+27</position>
+                    </textarea>
+                    <textarea name="subtitle">
+                        <font>basebuttontitlesubtitle</font>
+                        <area>5,0,1030,55</area>
+                        <cutdown>yes</cutdown>
+                        <multiline>yes</multiline>
+                        <template>%00x00| %%TITLE| - %%SUBTITLE| %%|(LENMINS|)%</template>
+                        <align>vcenter</align>
+                    </textarea>
+                    
+                    <!--The little screenshot/preview of the recording -->
+                    <imagetype name="preview">
+                        <area>1300,0,100,55</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <!--icon if recording was watched	-->
+                    <statetype name="watched">
+                        <state name="yes">
+                            <imagetype name="watched">
+                                <area>0,0,24,24</area>
+                                <position>1270,5</position>
+                                <filename>icons/watched.png</filename>
+                                <alpha>180</alpha>
+                            </imagetype>
+                        </state>
+                        <state name="no">
+                        </state>
+                    </statetype>
+                    <!--icon if a recording is marked preserved	-->
+                    <statetype name="bookmark">
+                        <state name="yes">
+                            <imagetype name="bookmark">
+                                <area>0,0,12,52</area>
+                                <position>1370,-5</position>
+                                <filename>icons/bookmark.png</filename>
+                                <alpha>180</alpha>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    
+                    <!--A statetype for an item that is being processed	-->
+                    <statetype name="processing">
+                        <state name="yes">
+                            <imagetype name="animation">
+                                <area>0,0,25,25</area>
+                                <position>1275,5</position>
+                                <filepattern low="1" high="8">animations/process/%1.png</filepattern>
+                                <delay>400</delay>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <!--A statetype for an item that is being processed	-->
+                    <statetype name="inuse">
+                        <state name="yes">
+                            <imagetype name="animation">
+                                <area>0,0,25,25</area>
+                                <position>1275,5</position>
+                                <filepattern low="1" high="8">animations/process/%1.png</filepattern>
+                                <delay>400</delay>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <!--icon displaying the state of running jobs	-->
+                    <statetype name="jobstate">
+                        <position>1270,2</position>
+                        <!--This show is being recorded at this time-->
+                        <state name="recording">
+                            <imagetype name="recording">
+                                <area>0,0,25,25</area>
+                                <filepattern low="1" high="2">animations/record/%1.png</filepattern>
+                                <delay>400</delay>
+                            </imagetype>
+                        </state>
+                        <!--This show is being transcoded-->
+                        <state name="transcoding">
+                            <imagetype name="transcoding">
+                                <area>0,0,25,25</area>
+                                <filepattern low="1" high="6">animations/transcode/%1.png</filepattern>
+                                <delay>100</delay>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+                <!--The item that is selected when the list is active-->
+                <state name="selectedactive">
+                    <area>0,0,1400,140</area>
+                    <!--icon if a recording is in a playlist	-->
+                    <statetype name="playlist">
+                        <state name="yes">
+                        </state>
+                    </statetype>
+                    
+                    <!--<textarea name="00x00" from="basetextarea">    
 	  <area>0,0,920,140</area>
 	  <font>baseclock</font>
 	  <template>%00x00%</template>
 	  <align>right,top</align>
 	  <alpha>180</alpha>
 	</textarea>-->
-	
-	  <textarea name="title" from="buttontext">
-	    <font>basebuttontitle</font>
-	    <area>5,0,1030,45</area>
-	    <cutdown>yes</cutdown>
-	  </textarea>
-	  <textarea name="subtitle" from="buttontext">
-	    <font>basebuttonsubtitle</font>
-	    <area>5,35,915,45</area>
-	    <cutdown>yes</cutdown>
-	    <align>top</align>
-	    <template>%00x00| %%subtitle%</template>
-	  </textarea>
-	  <!--The description field, that in this case fuses subtitle + rating + description into one -->
-	  <textarea name="description" from="buttontext">
-	    <font>basebuttondescription</font>
-	    <area>5,50,1150,90</area>	
-	    <multiline>yes</multiline>
-	    <align>bottom</align>
-	    <cutdown>yes</cutdown>
-	    <template>%DESCRIPTION| %(%YEAR|, %%LENMINS%)</template>
-	  </textarea>
-	  <!--The little screenshot/preview of the recording -->
-	  <imagetype name="preview">
-	    <area>1150,0,250,140</area>
-	    <preserveaspect>true</preserveaspect>
-	  </imagetype>
-	  <!--icon if a recording is marked preserved   -->
-	  <statetype name="damaged">
-	    <state name="yes">
-	      <imagetype name="bookmark">
-		<area>1155,2,240,135</area>
-		<filename>shattered.png</filename>
-	      </imagetype>
-	    </state>
-	  </statetype>
-	  <statetype name="ratingstate" from="baserating">
-	    <position>1190,5</position>
-	    <alpha>180</alpha>
-	  </statetype>
-	  <!--icon if recording was watched	-->
-	  <statetype name="watched">
-	    <state name="yes">
-	      <imagetype name="watched">
-		<area>0,0,45,45</area>
-		<position>1105,2</position>
-		<filename>icons/watched.png</filename>
-	      </imagetype>
-	    </state>
-	    <state name="no">
-	    </state>
-	  </statetype>
-	  <!--icon if a recording is marked preserved	-->
-	  <statetype name="bookmark">
-	    <state name="yes">
-	      <imagetype name="bookmark">
-		<area>0,0,34,140</area>
-		<position>1350,-15</position>
-		<filename>icons/bookmark.png</filename>
-	      </imagetype>
-	    </state>
-	  </statetype>
-	  <!--icon displaying the state of running jobs	-->
-	  <statetype name="jobstate">
-	    <position>1335,2</position>
-	    <state name="recording">
-	      <imagetype name="recording">
-		<area>0,0,45,45</area>
-		<filepattern low="1" high="2">animations/record/%1.png</filepattern>
-		<delay>400</delay>
-	      </imagetype>
-	    </state>
-	    <!--This show is being transcoded-->
-	    <state name="transcoding">
-	      <imagetype name="transcoding">
-		<area>0,0,45,45</area>
-		<filepattern low="1" high="6">animations/transcode/%1.png</filepattern>
-		<delay>100</delay>
-	      </imagetype>
-	    </state>
-	  </statetype>
-	  <!--A statetype for an item that is being processed	-->
-	  <statetype name="processing">
-	    <state name="yes">
-	      <imagetype name="animation">
-		<area>0,0,25,25</area>
-		<position>1235,5</position>
-		<filepattern low="1" high="8">animations/process/%1.png</filepattern>
-		<delay>400</delay>
-	      </imagetype>
-	    </state>
-	  </statetype>
-	  <!--A statetype for an item that is being processed	-->
-	  <statetype name="inuse">
-	    <state name="yes">
-	      <imagetype name="animation">
-		<area>0,0,25,25</area>
-		<position>1235,5</position>
-		<filepattern low="1" high="8">animations/process/%1.png</filepattern>
-		<delay>400</delay>
-	      </imagetype>
-	    </state>
-	  </statetype>
-	  <!-- show to the user that he can jump to the left -->
-	  <imagetype name="direction">
-	    <position>-40,59</position>
-	    <filename>icons/draw-triangle1.png</filename>
-	    <alpha>200</alpha>
-	  </imagetype>
-	  <!-- dont't show to the user that he can jump to the right -->
-	  <imagetype name="directionright">
-	    <alpha>0</alpha>
-	  </imagetype>
-	</state>
-	<state name="selectedinactive" from="selectedactive">
-	  <textarea name="startdate">
-	    <alpha>30</alpha>
-	  </textarea>
-	  <textarea name="00x00">
-	    <alpha>30</alpha>
-	  </textarea>
-	  <textarea name="title">
-	    <alpha>30</alpha>
-	  </textarea>
-	  <textarea name="subtitle">
-	    <alpha>30</alpha>
-	  </textarea>
-	  <textarea name="description">
-	    <alpha>30</alpha>
-	  </textarea>
-	  <!--The little screenshot/preview of the recording -->
-	  <imagetype name="preview">
-	    <alpha>30</alpha>
-	  </imagetype>
-	  <!--icon if recording was watched	-->
-	  <statetype name="watched">
-	    <state name="yes">
-	      <imagetype name="watched">
-		<alpha>30</alpha>
-	      </imagetype>
-	    </state>
-	  </statetype>
-	  <!--icon displaying the state of running jobs	-->
-	  <statetype name="jobstate">
-	    <state name="recording">
-	      <imagetype name="recording">
-		<alpha>30</alpha>
-	      </imagetype>
-	    </state>
-	    <state name="commflagging">
-	      <imagetype name="commflagging">
-		<alpha>30</alpha>
-	      </imagetype>
-	    </state>
-	    <state name="transcoding">
-	      <imagetype name="transcoding">
-		<alpha>30</alpha>
-	      </imagetype>
-	    </state>
-	  </statetype>
-	  <!--icon if a recording is in a playlist	-->
-	  <statetype name="playlist">
-	    <state name="yes">
-	    </state>
-	  </statetype>
-	  <!--icon if a recording is marked preserved	-->
-	  <statetype name="bookmark">
-	    <state name="yes">
-	      <imagetype name="bookmark">
-		<alpha>30</alpha>
-	      </imagetype>
-	    </state>
-	  </statetype>
-	  <statetype name="ratingstate" from="baserating">
-	    <alpha>30</alpha>
-	  </statetype>
-	  <!-- show to the user that he can jump to the right -->
-	  <imagetype name="direction">
-	    <alpha>0</alpha>
-	  </imagetype>
-	</state>
-	<state name="inactive" from="active">
-	  <textarea name="startdate">
-	    <alpha>30</alpha>
-	  </textarea>
-	  <textarea name="00x00">
-	    <alpha>30</alpha>
-	  </textarea>
-	  <textarea name="title">
-	    <alpha>30</alpha>
-	  </textarea>
-	  <textarea name="subtitle">
-	    <alpha>30</alpha>
-	  </textarea>
-	  <imagetype name="preview">
-	    <alpha>30</alpha>
-	  </imagetype>
-	  <!--icon if recording was watched	-->
-	  <statetype name="watched">
-	    <state name="yes">
-	      <imagetype name="watched">
-		<alpha>30</alpha>
-	      </imagetype>
-	    </state>
-	  </statetype>
-	  <!--icon displaying the state of running jobs	-->
-	  <statetype name="jobstate">
-	    <state name="recording">
-	      <imagetype name="recording">
-		<alpha>30</alpha>
-	      </imagetype>
-	    </state>
-	    <state name="commflagging">
-	      <imagetype name="commflagging">
-		<alpha>30</alpha>
-	      </imagetype>
-	    </state>
-	    <state name="transcoding">
-	      <imagetype name="transcoding">
-		<alpha>30</alpha>
-	      </imagetype>
-	    </state>
-	  </statetype>
-	  <!--icon if a recording is marked preserved	-->
-	  <statetype name="bookmark">
-	    <state name="yes">
-	      <imagetype name="bookmark">
-		<alpha>30</alpha>
-	      </imagetype>
-	    </state>
-	  </statetype>
-	  <statetype name="ratingstate" from="baserating">
-	    <alpha>30</alpha>
-	  </statetype>
-	  <!--icon if a recording is in a playlist	-->
-	  <textarea name="shortdate">
-	    <alpha>30</alpha>
-	  </textarea>
-	</state>
-      </statetype>
-    </buttonlist>
-    <!--icon if a recording will be deleted when needed	-->
-    <statetype name="subtitletypes">
-      <state name="cc">
-	<imagetype name="subs">
-	  <area>0,0,75,75</area>
-	  <preserveaspect>true</preserveaspect>
-	  <position>120,938</position>
-	  <filename>icons/subscc.png</filename>
-	  <alpha>200</alpha>
-	</imagetype>
-      </state>
-      <state name="subtitles">
-	<imagetype name="subs">
-	  <area>0,0,75,75</area>
-	  <preserveaspect>true</preserveaspect>
-	  <position>120,938</position>
-	  <filename>icons/subs.png</filename>
-	  <alpha>200</alpha>
-	</imagetype>
-      </state>
-      <state name="onscreensubs">
-	<imagetype name="subs">
-	  <area>0,0,75,75</area>
-	  <preserveaspect>true</preserveaspect>
-	  <position>120,938</position>
-	  <filename>icons/subscc.png</filename>
-	  <alpha>200</alpha>
-	</imagetype>
-      </state>
-    </statetype>
-    <!--icon if a recording will be deleted when needed	-->
-    <statetype name="transcoded">
-      <state name="yes">
-	<imagetype name="transcodedyes">
-	  <area>0,0,75,75</area>
-	  <preserveaspect>true</preserveaspect>
-	  <position>195,938</position>
-	  <filename>animations/transcode/1.png</filename>
-	  <alpha>200</alpha>
-	</imagetype>
-      </state>
-    </statetype>
-    <!--icon if a recording will be deleted when needed	-->
-    <statetype name="autoexpire">
-      <state name="yes">
-	<imagetype name="autoexpireyes">
-	  <area>0,0,75,75</area>
-	  <preserveaspect>true</preserveaspect>
-	  <position>275,938</position>
-	  <filename>states/autoexpire.png</filename>
-	  <alpha>200</alpha>
-	</imagetype>
-      </state>
-    </statetype>
-    <!--icon if a recording has a cutlist	-->
-    <statetype name="cutlist">
-      <state name="yes">
-	<imagetype name="cutlistyes">
-	  <area>0,0,75,75</area>
-	  <preserveaspect>true</preserveaspect>
-	  <position>355,938</position>
-	  <filename>states/cutlist.png</filename>
-	  <alpha>200</alpha>
-	</imagetype>
-      </state>
-    </statetype>
-    <!--icon if a recording has a cutlist	-->
-    <statetype name="commflagged">
-      <state name="yes">
-	<imagetype name="commflaggedyes">
-	  <area>0,0,75,75</area>
-	  <preserveaspect>true</preserveaspect>
-	  <position>435,938</position>
-	  <filename>states/commflag.png</filename>
-	  <alpha>200</alpha>
-	</imagetype>
-      </state>
-    </statetype>
-    <!--The type of sound in the recording-->
-    <statetype name="audioprops">
-      <state name="mono">
-	<imagetype name="mono">
-	  <area>0,0,75,75</area>
-	  <position>515,938</position>
-	  <filename>icons/mono.png</filename>
-	  <alpha>200</alpha>
-	</imagetype>
-      </state>
-      <state name="stereo">
-	<imagetype name="stereo">
-	  <area>0,0,75,75</area>
-	  <position>515,938</position>
-	  <filename>icons/stereo.png</filename>
-	  <alpha>200</alpha>
-	</imagetype>
-      </state>
-      <state name="surround">
-	<imagetype name="surround">
-	  <area>0,0,75,75</area>
-	  <position>515,938</position>
-	  <filename>icons/surround.png</filename>
-	  <alpha>200</alpha>
-	</imagetype>
-      </state>
-      <state name="dolby">
-	<imagetype name="dolby">
-	  <area>0,0,75,75</area>
-	  <position>515,938</position>
-	  <filename>icons/dolby.png</filename>
-	  <alpha>200</alpha>
-	</imagetype>
-      </state>
-    </statetype>
-    <!--The type of sound in the recording-->
-    <statetype name="videoprops">
-      <state name="hdtv">
-	<imagetype name="hdtv">
-	  <area>0,0,75,75</area>
-	  <position>595,938</position>
-	  <filename>icons/hdtv.png</filename>
-	  <alpha>200</alpha>
-	</imagetype>
-      </state>
-      <state name="widescreen">
-	<imagetype name="widescreen">
-	  <area>0,0,75,75</area>
-	  <position>595,938</position>
-	  <filename>icons/widescreen.png</filename>
-	  <alpha>200</alpha>
-	</imagetype>
-      </state>
-      <state name="avchd">
-	<imagetype name="avchd">
-	  <area>0,0,75,75</area>
-	  <position>595,938</position>
-	  <filename>icons/avchd.png</filename>
-	  <alpha>200</alpha>
-	</imagetype>
-      </state>
-      <state name="hd720">
-	<imagetype name="hd720">
-	  <area>0,0,75,75</area>
-	  <position>595,938</position>
-	  <filename>icons/hd720.png</filename>
-	  <alpha>200</alpha>
-	</imagetype>
-      </state>
-      <state name="hd1080">
-	<imagetype name="hd1080">
-	  <area>0,0,75,75</area>
-	  <position>595,938</position>
-	  <filename>icons/hd1080.png</filename>
-	  <alpha>200</alpha>
-	</imagetype>
-      </state>
-    </statetype>
-    <!-- Date and Time of recording --> 
-    <textarea name="startdate" from="basetextarea">
-      <area>15,935,890,36</area>
-    </textarea>
-    <!-- Date of recording --> 
-    <textarea name="starttime" from="basetextarea">
-      <area>15,1190,890,36</area>
-      <template>%STARTTIME%-%ENDTIME%</template>
-    </textarea>
-    <!-- Filesize --> 
-    <textarea name="filesize_str" from="basetextarea">
-      <area>15,985,890,36</area>
-    </textarea>
-    <!-- Channel name and number --> 
-    <textarea name="longchannel" from="basetextarea">
-      <area>600,935,287,36</area>	
-      <align>right</align>
-    </textarea>
-    <!-- what playgroup is this recording part of --> 
-    <textarea name="playgroup" from="basetextarea">
-      <area>600,1190,287,36</area>	
-      <align>right</align>
-    </textarea>
-    <!-- what category was this recording recorded in --> 
-    <textarea name="category" from="basetextarea">
-      <area>500,985,387,36</area>	
-      <align>right</align>
-      <cutdown>yes</cutdown>
-    </textarea>
-    <progressbar name="usedbar" from="baseprogressbar">
-      <position>5,1017</position>
-    </progressbar>
-    <textarea name="freereport" from="basetextarea">
-      <font>basebuttonsubtitle</font>
-      <area>5,1017,890,58</area>
-      <align>allcenter</align>
-    </textarea>
-  </window>
-  <!-- This is the popup where you can select which Group to filter -->
-  <window name="groupselector"  from="basepopupboxback" >
-    <area>-1,-1,600,800</area>
-    <imagetype name="backimg" from="basepopupboxback" />
-    <textarea name="label" from="basemessagearea" />
-    <buttonlist name="groups" from="basepopupboxlist">
-      <buttonarea>0,205,600,580</buttonarea>
-    </buttonlist>
-    <animation trigger="AboutToShow">
-      <section duration="300" centre="middle">
-	<zoom start="0" end="100" easingcurve="InOutElastic" />
-	<alpha start="0" end="255" easingcurve="InOutElastic"/>
-      </section>
-    </animation>
-  </window>
-  <window name="changeview">
-    <area>-1,-1,600,1030</area>
-    <imagetype name="backimg" from="basepopupboxback" />
-    <textarea name="title">
-      <value>Change View</value>
-    </textarea>
-    <checkbox name="titles" from="basecheckbox">
-      <position>90,100</position>
-    </checkbox>
-    <textarea name="titlelabel" from="basetextarea">
-      <area>140,100,300,36</area>
-      <value>Show Titles</value>
-    </textarea>
-    <checkbox name="categories" from="basecheckbox">
-      <position>90,150</position>
-    </checkbox>
-    <textarea name="catlabel" from="titlelabel">
-      <position>140,150</position>
-      <value>Show Categories</value>
-    </textarea>
-    <checkbox name="recgroups" from="basecheckbox">
-      <position>90,200</position>
-    </checkbox>
-    <textarea name="grouplabel" from="titlelabel">
-      <position>140,200</position>
-      <value>Show Recording Groups</value>
-    </textarea>
-    <checkbox name="watchlist" from="basecheckbox">
-      <position>90,250</position>
-    </checkbox>
-    <textarea name="watchlabel" from="titlelabel">
-      <position>140,250</position>
-      <value>Show Watch List</value>
-    </textarea>
-    <checkbox name="searches" from="basecheckbox">
-      <position>90,300</position>
-    </checkbox>
-    <textarea name="searchlabel" from="titlelabel">
-      <position>140,300</position>
-      <value>Show Searches</value>
-    </textarea>
-    <checkbox name="livetv" from="basecheckbox">
-      <position>90,350</position>
-    </checkbox>
-    <textarea name="livelabel" from="titlelabel">
-      <position>140,350</position>
-      <value>Show LiveTV</value>
-    </textarea>
-    <button name="save" from="basepopupbuttonsave">
-      <position>5,705</position>
-      <value>Save</value>
-    </button>
-  </window>
-  <!-- Popup to change the password of a group -->
-  <window name="passwordchanger" from="basepopupboxback" >
-    <area>-1,-1,600,800</area>
-    <imagetype name="backimg" from="basepopupboxback" />
-    <textarea name="label" from="basemessagearea">
-      <value>Change Recording Group Password</value>
-    </textarea>
-    <textarea name="oldpasslabel" from="basetextarea">
-      <area>20,180,300,36</area>
-      <value>Old Password:</value>
-    </textarea>
-    <textedit name="oldpassword" from="basetexteditwide">
-      <position>20,210</position>
-    </textedit>
-    <textarea name="newpasslabel" from="basetextarea">
-      <area>20,310,300,36</area>
-      <value>New Password:</value>
-    </textarea>
-    <textedit name="newpassword" from="basetexteditwide">
-      <position>20,340</position>
-    </textedit>
-    <button name="ok" from="basepopupbuttonok">
-      <position>5,705</position>
-      <value>OK</value>
-    </button>
-    <animation trigger="AboutToShow">
-      <section duration="300" centre="middle">
-	<zoom start="0" end="100" easingcurve="InOutElastic" />
-	<alpha start="0" end="255" easingcurve="InOutElastic"/>
-      </section>
-    </animation>
-  </window> 
-  
-  <window name="editmetadata" from="basepopupboxback" >
+                    
+                    <textarea name="title" from="buttontext">
+                        <font>basebuttontitle</font>
+                        <area>5,0,1030,45</area>
+                        <cutdown>yes</cutdown>
+                    </textarea>
+                    <textarea name="subtitle" from="buttontext">
+                        <font>basebuttonsubtitle</font>
+                        <area>5,35,915,45</area>
+                        <cutdown>yes</cutdown>
+                        <align>top</align>
+                        <template>%00x00| %%subtitle%</template>
+                    </textarea>
+                    <!--The description field, that in this case fuses subtitle + rating + description into one -->
+                    <textarea name="description" from="buttontext">
+                        <font>basebuttondescription</font>
+                        <area>5,50,1150,90</area>	
+                        <multiline>yes</multiline>
+                        <align>bottom</align>
+                        <cutdown>yes</cutdown>
+                        <template>%DESCRIPTION| %(%YEAR|, %%LENMINS%)</template>
+                    </textarea>
+                    <!--The little screenshot/preview of the recording -->
+                    <imagetype name="preview">
+                        <area>1150,0,250,140</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <!--icon if a recording is marked preserved   -->
+                    <statetype name="damaged">
+                        <state name="yes">
+                            <imagetype name="bookmark">
+                                <area>1155,2,240,135</area>
+                                <filename>shattered.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <statetype name="ratingstate" from="baserating">
+                        <position>1190,5</position>
+                        <alpha>180</alpha>
+                    </statetype>
+                    <!--icon if recording was watched	-->
+                    <statetype name="watched">
+                        <state name="yes">
+                            <imagetype name="watched">
+                                <area>0,0,45,45</area>
+                                <position>1105,2</position>
+                                <filename>icons/watched.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="no">
+                        </state>
+                    </statetype>
+                    <!--icon if a recording is marked preserved	-->
+                    <statetype name="bookmark">
+                        <state name="yes">
+                            <imagetype name="bookmark">
+                                <area>0,0,34,140</area>
+                                <position>1350,-15</position>
+                                <filename>icons/bookmark.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <!--icon displaying the state of running jobs	-->
+                    <statetype name="jobstate">
+                        <position>1335,2</position>
+                        <state name="recording">
+                            <imagetype name="recording">
+                                <area>0,0,45,45</area>
+                                <filepattern low="1" high="2">animations/record/%1.png</filepattern>
+                                <delay>400</delay>
+                            </imagetype>
+                        </state>
+                        <!--This show is being transcoded-->
+                        <state name="transcoding">
+                            <imagetype name="transcoding">
+                                <area>0,0,45,45</area>
+                                <filepattern low="1" high="6">animations/transcode/%1.png</filepattern>
+                                <delay>100</delay>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <!--A statetype for an item that is being processed	-->
+                    <statetype name="processing">
+                        <state name="yes">
+                            <imagetype name="animation">
+                                <area>0,0,25,25</area>
+                                <position>1235,5</position>
+                                <filepattern low="1" high="8">animations/process/%1.png</filepattern>
+                                <delay>400</delay>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <!--A statetype for an item that is being processed	-->
+                    <statetype name="inuse">
+                        <state name="yes">
+                            <imagetype name="animation">
+                                <area>0,0,25,25</area>
+                                <position>1235,5</position>
+                                <filepattern low="1" high="8">animations/process/%1.png</filepattern>
+                                <delay>400</delay>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <!-- show to the user that he can jump to the left -->
+                    <imagetype name="direction">
+                        <position>-40,59</position>
+                        <filename>icons/draw-triangle1.png</filename>
+                        <alpha>200</alpha>
+                    </imagetype>
+                    <!-- dont't show to the user that he can jump to the right -->
+                    <imagetype name="directionright">
+                        <alpha>0</alpha>
+                    </imagetype>
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+                    <textarea name="startdate">
+                        <alpha>30</alpha>
+                    </textarea>
+                    <textarea name="00x00">
+                        <alpha>30</alpha>
+                    </textarea>
+                    <textarea name="title">
+                        <alpha>30</alpha>
+                    </textarea>
+                    <textarea name="subtitle">
+                        <alpha>30</alpha>
+                    </textarea>
+                    <textarea name="description">
+                        <alpha>30</alpha>
+                    </textarea>
+                    <!--The little screenshot/preview of the recording -->
+                    <imagetype name="preview">
+                        <alpha>30</alpha>
+                    </imagetype>
+                    <!--icon if recording was watched	-->
+                    <statetype name="watched">
+                        <state name="yes">
+                            <imagetype name="watched">
+                                <alpha>30</alpha>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <!--icon displaying the state of running jobs	-->
+                    <statetype name="jobstate">
+                        <state name="recording">
+                            <imagetype name="recording">
+                                <alpha>30</alpha>
+                            </imagetype>
+                        </state>
+                        <state name="commflagging">
+                            <imagetype name="commflagging">
+                                <alpha>30</alpha>
+                            </imagetype>
+                        </state>
+                        <state name="transcoding">
+                            <imagetype name="transcoding">
+                                <alpha>30</alpha>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <!--icon if a recording is in a playlist	-->
+                    <statetype name="playlist">
+                        <state name="yes">
+                        </state>
+                    </statetype>
+                    <!--icon if a recording is marked preserved	-->
+                    <statetype name="bookmark">
+                        <state name="yes">
+                            <imagetype name="bookmark">
+                                <alpha>30</alpha>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <statetype name="ratingstate" from="baserating">
+                        <alpha>30</alpha>
+                    </statetype>
+                    <!-- show to the user that he can jump to the right -->
+                    <imagetype name="direction">
+                        <alpha>0</alpha>
+                    </imagetype>
+                </state>
+                <state name="inactive" from="active">
+                    <textarea name="startdate">
+                        <alpha>30</alpha>
+                    </textarea>
+                    <textarea name="00x00">
+                        <alpha>30</alpha>
+                    </textarea>
+                    <textarea name="title">
+                        <alpha>30</alpha>
+                    </textarea>
+                    <textarea name="subtitle">
+                        <alpha>30</alpha>
+                    </textarea>
+                    <imagetype name="preview">
+                        <alpha>30</alpha>
+                    </imagetype>
+                    <!--icon if recording was watched	-->
+                    <statetype name="watched">
+                        <state name="yes">
+                            <imagetype name="watched">
+                                <alpha>30</alpha>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <!--icon displaying the state of running jobs	-->
+                    <statetype name="jobstate">
+                        <state name="recording">
+                            <imagetype name="recording">
+                                <alpha>30</alpha>
+                            </imagetype>
+                        </state>
+                        <state name="commflagging">
+                            <imagetype name="commflagging">
+                                <alpha>30</alpha>
+                            </imagetype>
+                        </state>
+                        <state name="transcoding">
+                            <imagetype name="transcoding">
+                                <alpha>30</alpha>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <!--icon if a recording is marked preserved	-->
+                    <statetype name="bookmark">
+                        <state name="yes">
+                            <imagetype name="bookmark">
+                                <alpha>30</alpha>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <statetype name="ratingstate" from="baserating">
+                        <alpha>30</alpha>
+                    </statetype>
+                    <!--icon if a recording is in a playlist	-->
+                    <textarea name="shortdate">
+                        <alpha>30</alpha>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+        <!--icon if a recording will be deleted when needed	-->
+        <statetype name="subtitletypes">
+            <state name="cc">
+                <imagetype name="subs">
+                    <area>0,0,75,75</area>
+                    <preserveaspect>true</preserveaspect>
+                    <position>120,938</position>
+                    <filename>icons/subscc.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+            <state name="subtitles">
+                <imagetype name="subs">
+                    <area>0,0,75,75</area>
+                    <preserveaspect>true</preserveaspect>
+                    <position>120,938</position>
+                    <filename>icons/subs.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+            <state name="onscreensubs">
+                <imagetype name="subs">
+                    <area>0,0,75,75</area>
+                    <preserveaspect>true</preserveaspect>
+                    <position>120,938</position>
+                    <filename>icons/subscc.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <!--icon if a recording will be deleted when needed	-->
+        <statetype name="transcoded">
+            <state name="yes">
+                <imagetype name="transcodedyes">
+                    <area>0,0,75,75</area>
+                    <preserveaspect>true</preserveaspect>
+                    <position>195,938</position>
+                    <filename>animations/transcode/1.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <!--icon if a recording will be deleted when needed	-->
+        <statetype name="autoexpire">
+            <state name="yes">
+                <imagetype name="autoexpireyes">
+                    <area>0,0,75,75</area>
+                    <preserveaspect>true</preserveaspect>
+                    <position>275,938</position>
+                    <filename>states/autoexpire.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <!--icon if a recording has a cutlist	-->
+        <statetype name="cutlist">
+            <state name="yes">
+                <imagetype name="cutlistyes">
+                    <area>0,0,75,75</area>
+                    <preserveaspect>true</preserveaspect>
+                    <position>355,938</position>
+                    <filename>states/cutlist.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <!--icon if a recording has a cutlist	-->
+        <statetype name="commflagged">
+            <state name="yes">
+                <imagetype name="commflaggedyes">
+                    <area>0,0,75,75</area>
+                    <preserveaspect>true</preserveaspect>
+                    <position>435,938</position>
+                    <filename>states/commflag.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <!--The type of sound in the recording-->
+        <statetype name="audioprops">
+            <state name="mono">
+                <imagetype name="mono">
+                    <area>0,0,75,75</area>
+                    <position>515,938</position>
+                    <filename>icons/mono.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+            <state name="stereo">
+                <imagetype name="stereo">
+                    <area>0,0,75,75</area>
+                    <position>515,938</position>
+                    <filename>icons/stereo.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+            <state name="surround">
+                <imagetype name="surround">
+                    <area>0,0,75,75</area>
+                    <position>515,938</position>
+                    <filename>icons/surround.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+            <state name="dolby">
+                <imagetype name="dolby">
+                    <area>0,0,75,75</area>
+                    <position>515,938</position>
+                    <filename>icons/dolby.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <!--The type of sound in the recording-->
+        <statetype name="videoprops">
+            <state name="hdtv">
+                <imagetype name="hdtv">
+                    <area>0,0,75,75</area>
+                    <position>595,938</position>
+                    <filename>icons/hdtv.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+            <state name="widescreen">
+                <imagetype name="widescreen">
+                    <area>0,0,75,75</area>
+                    <position>595,938</position>
+                    <filename>icons/widescreen.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+            <state name="avchd">
+                <imagetype name="avchd">
+                    <area>0,0,75,75</area>
+                    <position>595,938</position>
+                    <filename>icons/avchd.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+            <state name="hd720">
+                <imagetype name="hd720">
+                    <area>0,0,75,75</area>
+                    <position>595,938</position>
+                    <filename>icons/hd720.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+            <state name="hd1080">
+                <imagetype name="hd1080">
+                    <area>0,0,75,75</area>
+                    <position>595,938</position>
+                    <filename>icons/hd1080.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <!-- Date and Time of recording --> 
+        <textarea name="startdate" from="basetextarea">
+            <area>15,935,890,36</area>
+        </textarea>
+        <!-- Date of recording --> 
+        <textarea name="starttime" from="basetextarea">
+            <area>15,1190,890,36</area>
+            <template>%STARTTIME%-%ENDTIME%</template>
+        </textarea>
+        <!-- Filesize --> 
+        <textarea name="filesize_str" from="basetextarea">
+            <area>15,985,890,36</area>
+        </textarea>
+        <!-- Channel name and number --> 
+        <textarea name="longchannel" from="basetextarea">
+            <area>600,935,287,36</area>	
+            <align>right</align>
+        </textarea>
+        <!-- what playgroup is this recording part of --> 
+        <textarea name="playgroup" from="basetextarea">
+            <area>600,1190,287,36</area>	
+            <align>right</align>
+        </textarea>
+        <!-- what category was this recording recorded in --> 
+        <textarea name="category" from="basetextarea">
+            <area>500,985,387,36</area>	
+            <align>right</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+        <progressbar name="usedbar" from="baseprogressbar">
+            <position>5,1017</position>
+        </progressbar>
+        <textarea name="freereport" from="basetextarea">
+            <font>basebuttonsubtitle</font>
+            <area>5,1017,890,58</area>
+            <align>allcenter</align>
+        </textarea>
+    </window>
+    <!-- This is the popup where you can select which Group to filter -->
+    <window name="groupselector"  from="basepopupboxback" >
+        <area>-1,-1,600,800</area>
+        <imagetype name="backimg" from="basepopupboxback" />
+        <textarea name="label" from="basemessagearea" />
+        <buttonlist name="groups" from="basepopupboxlist">
+            <buttonarea>0,205,600,580</buttonarea>
+        </buttonlist>
+        <animation trigger="AboutToShow">
+            <section duration="300" centre="middle">
+                <zoom start="0" end="100" easingcurve="InOutElastic" />
+                <alpha start="0" end="255" easingcurve="InOutElastic"/>
+            </section>
+        </animation>
+    </window>
+    <window name="changeview">
+        <area>-1,-1,600,1030</area>
+        <imagetype name="backimg" from="basepopupboxback" />
+        <textarea name="title">
+            <value>Change View</value>
+        </textarea>
+        <checkbox name="titles" from="basecheckbox">
+            <position>90,100</position>
+        </checkbox>
+        <textarea name="titlelabel" from="basetextarea">
+            <area>140,100,300,36</area>
+            <value>Show Titles</value>
+        </textarea>
+        <checkbox name="categories" from="basecheckbox">
+            <position>90,150</position>
+        </checkbox>
+        <textarea name="catlabel" from="titlelabel">
+            <position>140,150</position>
+            <value>Show Categories</value>
+        </textarea>
+        <checkbox name="recgroups" from="basecheckbox">
+            <position>90,200</position>
+        </checkbox>
+        <textarea name="grouplabel" from="titlelabel">
+            <position>140,200</position>
+            <value>Show Recording Groups</value>
+        </textarea>
+        <checkbox name="watchlist" from="basecheckbox">
+            <position>90,250</position>
+        </checkbox>
+        <textarea name="watchlabel" from="titlelabel">
+            <position>140,250</position>
+            <value>Show Watch List</value>
+        </textarea>
+        <checkbox name="searches" from="basecheckbox">
+            <position>90,300</position>
+        </checkbox>
+        <textarea name="searchlabel" from="titlelabel">
+            <position>140,300</position>
+            <value>Show Searches</value>
+        </textarea>
+        <checkbox name="livetv" from="basecheckbox">
+            <position>90,350</position>
+        </checkbox>
+        <textarea name="livelabel" from="titlelabel">
+            <position>140,350</position>
+            <value>Show LiveTV</value>
+        </textarea>
+        <button name="save" from="basepopupbuttonsave">
+            <position>5,705</position>
+            <value>Save</value>
+        </button>
+    </window>
+    <!-- Popup to change the password of a group -->
+    <window name="passwordchanger" from="basepopupboxback" >
+        <area>-1,-1,600,800</area>
+        <imagetype name="backimg" from="basepopupboxback" />
+        <textarea name="label" from="basemessagearea">
+            <value>Change Recording Group Password</value>
+        </textarea>
+        <textarea name="oldpasslabel" from="basetextarea">
+            <area>20,180,300,36</area>
+            <value>Old Password:</value>
+        </textarea>
+        <textedit name="oldpassword" from="basetexteditwide">
+            <position>20,210</position>
+        </textedit>
+        <textarea name="newpasslabel" from="basetextarea">
+            <area>20,310,300,36</area>
+            <value>New Password:</value>
+        </textarea>
+        <textedit name="newpassword" from="basetexteditwide">
+            <position>20,340</position>
+        </textedit>
+        <button name="ok" from="basepopupbuttonok">
+            <position>5,705</position>
+            <value>OK</value>
+        </button>
+        <animation trigger="AboutToShow">
+            <section duration="300" centre="middle">
+                <zoom start="0" end="100" easingcurve="InOutElastic" />
+                <alpha start="0" end="255" easingcurve="InOutElastic"/>
+            </section>
+        </animation>
+    </window> 
     
-    <area>-1,-1,600,800</area>
-    <imagetype name="backimg" from="basepopupboxback" />
-    
-    <textarea name="header">
-      <value>Edit Recording Metadata</value>
-      <font>base</font>
-      <area>5,5,590,100</area>
-      <multiline>yes</multiline>
-      <align>allcenter</align>
-    </textarea>
-    
-    <!-- Labels  -->
-    
-    <textarea name="title_text" from="basetextarea">
-      <area>5,100,210,36</area>
-      <value>Title:</value>
-      <align>right</align>
-    </textarea>
-    
-    <textedit name="title" from="basetextedit">
-      <position>230,100</position>
-    </textedit>
-    
-    <textarea name="subtitle_text" from="title_text">
-      <position>5,150</position>
-      <value>Subtitle:</value>
-    </textarea>
-    
-    <textedit name="subtitle" from="basetextedit">
-      <position>230,150</position>
-    </textedit>       
-    
-    <textarea name="season_text" from="title_text">
-      <position>5,195</position>
-      <value>Season:</value>
-    </textarea>
-    
-    <spinbox name="season" from="basesmallspinbox">
-      <position>10,230</position>
-    </spinbox>
-    
-    <textarea name="episode_text" from="title_text">
-      <position>5,275</position>
-      <value>Episode:</value>
-    </textarea>
-    
-    <spinbox name="episode" from="basesmallspinbox">
-      <position>10,310</position>
-    </spinbox>
-    
-    <textarea name="description_text" from="title_text">
-      <position>5,370</position>
-      <value>Description:</value>
-    </textarea>
-    
-    <textedit name="description" from="basemultilinetextedit">
-      <position>230,370</position>
-    </textedit>
-    
-    <textarea name="inetref_text" from="title_text">
-      <position>5,680</position>
-      <value>INETREF:</value>
-    </textarea>
-    
-    <textedit name="inetref" from="subtitle">
-      <position>230,680</position>
-    </textedit>
-    
-    <button name="ok" from="basepopupbuttonok">
-      <position>10,735</position>
-      <value>OK</value>
-    </button>
-    <animation trigger="AboutToShow">
-      <section duration="300" centre="middle">
-	<zoom start="0" end="100" easingcurve="InOutElastic" />
-	<alpha start="0" end="255" easingcurve="InOutElastic"/>
-      </section>
-    </animation>
-  </window>
+    <window name="editmetadata" from="basepopupboxback" >
+        
+        <area>-1,-1,600,800</area>
+        <imagetype name="backimg" from="basepopupboxback" />
+        
+        <textarea name="header">
+            <value>Edit Recording Metadata</value>
+            <font>base</font>
+            <area>5,5,590,100</area>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+        
+        <!-- Labels  -->
+        
+        <textarea name="title_text" from="basetextarea">
+            <area>5,100,210,36</area>
+            <value>Title:</value>
+            <align>right</align>
+        </textarea>
+        
+        <textedit name="title" from="basetextedit">
+            <position>230,100</position>
+        </textedit>
+        
+        <textarea name="subtitle_text" from="title_text">
+            <position>5,150</position>
+            <value>Subtitle:</value>
+        </textarea>
+        
+        <textedit name="subtitle" from="basetextedit">
+            <position>230,150</position>
+        </textedit>       
+        
+        <textarea name="season_text" from="title_text">
+            <position>5,195</position>
+            <value>Season:</value>
+        </textarea>
+        
+        <spinbox name="season" from="basesmallspinbox">
+            <position>10,230</position>
+        </spinbox>
+        
+        <textarea name="episode_text" from="title_text">
+            <position>5,275</position>
+            <value>Episode:</value>
+        </textarea>
+        
+        <spinbox name="episode" from="basesmallspinbox">
+            <position>10,310</position>
+        </spinbox>
+        
+        <textarea name="description_text" from="title_text">
+            <position>5,370</position>
+            <value>Description:</value>
+        </textarea>
+        
+        <textedit name="description" from="basemultilinetextedit">
+            <position>230,370</position>
+        </textedit>
+        
+        <textarea name="inetref_text" from="title_text">
+            <position>5,680</position>
+            <value>INETREF:</value>
+        </textarea>
+        
+        <textedit name="inetref" from="subtitle">
+            <position>230,680</position>
+        </textedit>
+        
+        <button name="ok" from="basepopupbuttonok">
+            <position>10,735</position>
+            <value>OK</value>
+        </button>
+        <animation trigger="AboutToShow">
+            <section duration="300" centre="middle">
+                <zoom start="0" end="100" easingcurve="InOutElastic" />
+                <alpha start="0" end="255" easingcurve="InOutElastic"/>
+            </section>
+        </animation>
+    </window>
 </mythuitheme>
