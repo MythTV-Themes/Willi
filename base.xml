@@ -36,8 +36,8 @@
         <pixelsize>40</pixelsize>
         <color>#FFFFFF</color>
         <outlinecolor>#000000</outlinecolor>
-        <outlinesize>2</outlinesize>
-        <outlinealpha>100</outlinealpha>
+        <outlinesize>3</outlinesize>
+        <outlinealpha>150</outlinealpha>
     </fontdef>
     
     <fontdef name="basesmall" from="base">

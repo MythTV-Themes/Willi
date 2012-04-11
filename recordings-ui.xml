@@ -35,6 +35,8 @@
             <area>1145,935,758,140</area>
             <filename>wr-bannerframe.png</filename>
         </imagetype>
+	
+       
         
         <!--draws the recording groups on top of the tabs	 -->
         <buttonlist name="recgroups">
@@ -56,7 +58,7 @@
                 </state>
                 <state name="selectedactive" from="active" />
                 <state name="selectedinactive">
-                    <imagetype name="banner">
+                <imagetype name="banner">
                         <area>0,0,300,40</area>
                         <filename>wr-300x40.png</filename>
                     </imagetype>
