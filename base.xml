@@ -358,7 +358,7 @@
     <!-- Base definition of a buttonlist in normal configuration   -->
     
     <buttonlist name="basebuttonlist2">
-        <area>503,180,1400,660</area>
+        <area>503,210,1400,660</area>
         <layout>vertical</layout>
         <arrange>stack</arrange>
         <spacing>10</spacing>
@@ -422,7 +422,6 @@
             </state>
             <state name="inactive" from="active">
                 <textarea name="buttontext">
-                    <font>basebutton</font>
                     <alpha>30</alpha>
                 </textarea>
                 <imagetype name="direction">
@@ -443,7 +442,7 @@
     <!-- Base definition of a buttonlist only for the groups in recordings, should someday be removed for a standard one -->
     
     <buttonlist name="basegroups">
-        <area>0,0,490,660</area>
+        <area>5,210,490,660</area>
         <layout>vertical</layout>
         <arrange>stack</arrange>
         <spacing>10</spacing>

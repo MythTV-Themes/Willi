@@ -2,17 +2,12 @@
 <!DOCTYPE mythuitheme SYSTEM "../mythuitheme.dtd"> 
 <mythuitheme>
     
-    <window name="status">        
-        <!--  we use one large background image to draw all widgets on top	  -->
-        <imagetype name="background" from="basebackground" />
-        
-        <!-- Fanart behind the recordings  (remove it if you don't want it!)  -->   
-        <imagetype name="fanart">
-            <area>0,105,1680,945</area>
-            <filename />
-            <alpha>180</alpha>
-        </imagetype>
-        
+    <window name="status">
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <alpha start="0" end="255" easingcurve="InOutQuad"/>
+            </section>
+        </animation>      
         
         <imagetype name="statusbackground">
             <position>0,0</position>
@@ -27,130 +22,17 @@
             <value>System Status</value>
         </textarea>
         
-        <!-- The banner of the current show -->
-        <imagetype name="banner">
-            <area>910,905,758,140</area>
-            <filename />
-            <mask>wr-bannermask.png</mask>
-        </imagetype>
-        
         <textarea name="helptext" from="basetextarea">
-            <area>15,910,880,130</area>
+            <area>15,935,880,130</area>
             <font>basebuttontitlesubtitle</font>
             <multiline>yes</multiline>
         </textarea>
+
+        <!--  This is the left side of the selections. -->
+	<buttonlist name="category" from="basegroups"/>
         
-        
-        <!--  This is the left side of the selections. It shows the groups that are available to the user.	  -->
-        <buttonlist name="category" from="basegroups">
-            <area>5,180,490,660</area>
-            <buttonarea>0,0,100%,100%</buttonarea>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,490,55</area>
-                    <textarea name="buttontext">
-                        <area>5,0,480,55</area>
-                        <align>vcenter</align>
-                        <cutdown>yes</cutdown>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,490,140</area>
-                    <textarea name="buttontext">
-                        <font>basebuttontitle</font>
-                        <area>5,0,480,140</area>
-                        <cutdown>yes</cutdown>
-                        <multiline>yes</multiline>
-                    </textarea>
-                    <!-- show to the user that he can jump to the right -->
-                    <imagetype name="direction">
-                        <position>455,59</position>
-                        <filename>icons/draw-triangle2.png</filename>
-                        <alpha>200</alpha>
-                    </imagetype>
-                </state>
-                <state name="selectedinactive" from="selectedactive">
-                    <textarea name="buttontext">
-                        <alpha>30</alpha>
-                    </textarea>
-                    <!-- show to the user that he can jump to the right -->
-                    <imagetype name="direction">
-                        <alpha>0</alpha>
-                    </imagetype>
-                </state>
-                <state name="inactive" from="active">
-                    <textarea name="buttontext">
-                        <alpha>30</alpha>
-                    </textarea>
-                </state>
-            </statetype>
-        </buttonlist>
-        
-        
-        <!--  This is the right side of the selections. It shows the recordings that are available to the user.	  -->
-        <buttonlist name="log" from="basebuttonlist2">
-            <area>503,180,1170,660</area>
-            <buttonarea>0,0,100%,100%</buttonarea>
-            <statetype name="buttonitem">
-                <state name="active">
-                    
-                    <area>0,0,1170,55</area>
-                    
-                    <textarea name="buttontext">
-                        <font>basebuttontitlesubtitle</font>
-                        <area>5,0,1165,55</area>
-                        <align>vcenter</align>
-                        <cutdown>yes</cutdown>
-                        <multiline>yes</multiline>
-                    </textarea>
-                    
-                </state>
-                
-                <!--  The item that is selected when the list is active  -->                
-                <state name="selectedactive">
-                    
-                    <area>0,0,1170,140</area>
-                    
-                    <textarea name="buttontext">
-                        <font>basebuttontitle</font>
-                        <align>vcenter</align>
-                        <area>5,0,1165,140</area>
-                        <cutdown>yes</cutdown>
-                        <multiline>yes</multiline>
-                    </textarea>
-                    
-                    
-                    <!-- show to the user that he can jump to the right -->
-                    <imagetype name="direction">
-                        <position>-40,59</position>
-                        <filename>icons/draw-triangle1.png</filename>
-                        <alpha>200</alpha>
-                    </imagetype>
-                </state>
-                
-                
-                <state name="selectedinactive" from="selectedactive">
-                    
-                    <textarea name="buttontext">
-                        <font>basebuttontitle</font>
-                        <alpha>30</alpha>
-                    </textarea>
-                    <imagetype name="direction">
-                        <alpha>0</alpha>
-                    </imagetype>
-                </state>
-                
-                
-                <state name="inactive" from="active">
-                    <textarea name="buttontext">
-                        <alpha>30</alpha>
-                    </textarea>
-                    <imagetype name="direction">
-                        <alpha>0</alpha>
-                    </imagetype>
-                </state>
-            </statetype>
-        </buttonlist>
+        <!--  This is the right side of the selections.-->
+	<buttonlist name="log" from="basebuttonlist2"/>
         
     </window>
     
