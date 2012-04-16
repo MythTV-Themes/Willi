@@ -458,31 +458,93 @@
                         <imagetype name="buttonbackground">
                             <filename>gallery-320x280-bar.png</filename>
                         </imagetype>
+			<!-- defines the icons for covers, artists etc -->
+			<statetype name="nodetype">
+			    <position>0,0</position>
+			    <state name="default" />
+			    <state name="alltracks">
+				<imagetype name="alltracks">
+				    <area>0,0,320,245</area>
+				    <filename>mm_alltracks.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="genres">
+				<imagetype name="genres">
+				    <area>0,0,320,245</area>
+				    <filename>mm_genres.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="albums">
+				<imagetype name="albums">
+				    <area>0,0,320,245</area>
+				    <filename>mm_albums.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="artists">
+				<imagetype name="artists">
+				    <area>0,0,320,245</area>
+				    <filename>mm_artists.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="compartists">
+				<imagetype name="compartists">
+				    <area>0,0,320,245</area>
+				    <filename>mm_compartists.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="ratings">
+				<imagetype name="ratings">
+				    <area>0,0,320,245</area>
+				    <filename>mm_ratings.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="years">
+				<imagetype name="years">
+				    <area>0,0,320,245</area>
+				    <filename>mm_years.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="compilations">
+				<imagetype name="compilations">
+				    <area>0,0,320,245</area>
+				    <filename>mm_compilations.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="playlists">
+				<imagetype name="playlists">
+				    <area>0,0,320,245</area>
+				    <filename>mm_playlists.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="smartplaylists">
+				<imagetype name="smartplaylists">
+				    <area>0,0,320,245</area>
+				    <filename>mm_smartplaylists.png</filename>
+				</imagetype>
+			    </state>
+						    
+			    <state name="subfolder">
+				<imagetype name="icon">
+				    <area>220,165,100,115</area>
+				    <filename>video/browser/folder.png</filename>
+				    <alpha>180</alpha>
+				</imagetype>
+			    </state>
+			    <state name="upfolder">
+				<imagetype name="icon">
+				    <area>220,165,100,115</area>
+				    <filename>video/browser/folderback.png</filename>
+				      <alpha>180</alpha>
+				</imagetype>
+			    </state>
+                        </statetype>
                         <imagetype name="buttonimage">
                             <area>0,0,320,245</area>
-                            
                             <preserveaspect>true</preserveaspect>
                         </imagetype>
                         <textarea name="buttontext" from="basetextarea">
                             <area>5,245,315,35</area>
                         </textarea>
-                        <statetype name="nodetype">
-                            <position>220,165</position>
-                            <state name="subfolder">
-                                <imagetype name="icon">
-                                    <area>0,0,100,115</area>
-                                    <filename>video/browser/folder.png</filename>
-                                    <alpha>180</alpha>
-                                </imagetype>
-                            </state>
-                            <state name="upfolder">
-                                <imagetype name="icon">
-                                    <area>0,0,100,115</area>
-                                    <filename>video/browser/folderback.png</filename>
-                                    <alpha>180</alpha>
-                                </imagetype>
-                            </state>
-                        </statetype>
                         <statetype name="buttoncheck">
                             <position>0,0</position>
                             <showempty>yes</showempty>

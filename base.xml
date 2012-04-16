@@ -458,6 +458,71 @@
                     <area>0,0,490,55</area>
                     <filename>wr-490x55.png</filename>
                 </imagetype>
+					<!-- defines the icons for covers, artists etc -->
+			<statetype name="nodetype">
+			    <position>0,0</position>
+			    <state name="default" />
+			    <state name="alltracks">
+				<imagetype name="alltracks">
+				    <area>419,0,71,55</area>
+				    <filename>mm_alltracks.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="genres">
+				<imagetype name="genres">
+				    <area>419,0,71,55</area>
+				    <filename>mm_genres.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="albums">
+				<imagetype name="albums">
+				    <area>419,0,71,55</area>
+				    <filename>mm_albums.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="artists">
+				<imagetype name="artists">
+				    <area>419,0,71,55</area>
+				    <filename>mm_artists.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="compartists">
+				<imagetype name="compartists">
+				    <area>419,0,71,55</area>
+				    <filename>mm_compartists.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="ratings">
+				<imagetype name="ratings">
+				    <area>419,0,71,55</area>
+				    <filename>mm_ratings.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="years">
+				<imagetype name="years">
+				    <area>419,0,71,55</area>
+				    <filename>mm_years.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="compilations">
+				<imagetype name="compilations">
+				    <area>419,0,71,55</area>
+				    <filename>mm_compilations.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="playlists">
+				<imagetype name="playlists">
+				    <area>419,0,71,55</area>
+				    <filename>mm_playlists.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="smartplaylists">
+				<imagetype name="smartplaylists">
+				    <area>419,0,71,55</area>
+				    <filename>mm_smartplaylists.png</filename>
+				</imagetype>
+			    </state>
+			  </statetype>
                 <imagetype name="buttonimage">
                     <area>435,0,55,55</area>
                     <preserveaspect>true</preserveaspect>
@@ -504,6 +569,86 @@
                     <area>0,0,490,140</area>
                     <filename>wr-490x140.png</filename>
                 </imagetype>
+					<!-- defines the icons for covers, artists etc -->
+			<statetype name="nodetype">
+			    <position>0,0</position>
+			    <state name="default" />
+			    <state name="alltracks">
+				<imagetype name="alltracks">
+				    <area>308,0,182,140</area>
+				    <filename>mm_alltracks.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="genres">
+				<imagetype name="genres">
+				    <area>308,0,182,140</area>
+				    <filename>mm_genres.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="albums">
+				<imagetype name="albums">
+				    <area>308,0,182,140</area>
+				    <filename>mm_albums.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="artists">
+				<imagetype name="artists">
+				    <area>308,0,182,140</area>
+				    <filename>mm_artists.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="compartists">
+				<imagetype name="compartists">
+				    <area>308,0,182,140</area>
+				    <filename>mm_compartists.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="ratings">
+				<imagetype name="ratings">
+				    <area>308,0,182,140</area>
+				    <filename>mm_ratings.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="years">
+				<imagetype name="years">
+				    <area>308,0,182,140</area>
+				    <filename>mm_years.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="compilations">
+				<imagetype name="compilations">
+				    <area>308,0,182,140</area>
+				    <filename>mm_compilations.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="playlists">
+				<imagetype name="playlists">
+				    <area>308,0,182,140</area>
+				    <filename>mm_playlists.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="smartplaylists">
+				<imagetype name="smartplaylists">
+				    <area>308,0,182,140</area>
+				    <filename>mm_smartplaylists.png</filename>
+				</imagetype>
+			    </state>
+						    
+			    <state name="subfolder">
+				<imagetype name="icon">
+				    <area>220,165,100,115</area>
+				    <filename>video/browser/folder.png</filename>
+				    <alpha>180</alpha>
+				</imagetype>
+			    </state>
+			    <state name="upfolder">
+				<imagetype name="icon">
+				    <area>220,165,100,115</area>
+				    <filename>video/browser/folderback.png</filename>
+				      <alpha>180</alpha>
+				</imagetype>
+			    </state>
+                        </statetype>
                 <imagetype name="buttonimage">
                     <area>350,0,140,140</area>
                     <preserveaspect>true</preserveaspect>
