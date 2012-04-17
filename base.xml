@@ -1789,6 +1789,12 @@
         <filepattern low="1" high="38">animations/wait/wait-%1.png</filepattern>
         <delay>30</delay>
     </imagetype>
+
+
+<!--    <statetype name="basestateiconslarge" from="basestateicons">
+    <size>0,0,140,140</size>
+    </statetype>-->
+
     <buttonlist name="basepopupboxlist">
         <area>0,0,600,800</area>
         <layout>vertical</layout>
@@ -1808,6 +1814,36 @@
                     <area>0,0,580,55</area>
                     <align>allcenter</align>
                 </textarea>
+                <!-- display the statetypes if provided 
+                <statetype name="icons" from="basestateicons" \>-->
+		    <statetype name="icons">
+      <position>20,0</position>
+      <state name="commflagged">
+	<imagetype name="statusimage">
+	  <filename>states/commflag.png</filename>
+	  <area>0,0,55,55</area><preserveaspect>true</preserveaspect>
+	  </imagetype>
+	  </state>
+      <state name="cutlist"><imagetype name="statusimage"><filename>states/cutlist.png</filename><area>0,0,55,55</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="autoexpire"><imagetype name="statusimage"><filename>states/autoexpire.png</filename><area>0,0,55,55</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="bookmark"><imagetype name="statusimage"><filename>icons/bookmark.png</filename><area>0,0,55,55</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="inuse"><imagetype name="statusimage"><filename>animations/process/1.png</filename><area>0,0,55,55</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="transcoded"><imagetype name="statusimage"><filename>animations/transcode/4.png</filename><area>0,0,55,55</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="mono"><imagetype name="statusimage"><filename>icons/mono.png</filename><area>0,0,55,55</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="stereo"><imagetype name="statusimage"><filename>icons/stereo.png</filename><area>0,0,55,55</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="surround"><imagetype name="statusimage"><filename>icons/surround.png</filename><area>0,0,55,55</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="dolby"><imagetype name="statusimage"><filename>icons/dolby.png</filename><area>0,0,55,55</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="cc"><imagetype name="statusimage"><filename>icons/subscc.png</filename><area>0,0,55,55</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="subtitles"><imagetype name="statusimage"><filename>icons/subs.png</filename><area>0,0,55,55</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="onscreensub"><imagetype name="statusimage"><filename>icons/subscc.png</filename><area>0,0,55,55</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="hdtv"><imagetype name="statusimage"><filename>icons/hdtv.png</filename><area>0,0,55,55</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="hd720"><imagetype name="statusimage"><filename>icons/hd720.png</filename><area>0,0,55,55</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="hd1080"><imagetype name="statusimage"><filename>icons/hd1080.png</filename><area>0,0,55,55</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="avchd"><imagetype name="statusimage"><filename>icons/avchd.png</filename><area>0,0,55,55</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="widescreen"><imagetype name="statusimage"><filename>icons/widescreen.png</filename><area>0,0,55,55</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="watched"><imagetype name="statusimage"><filename>icons/watched.png</filename><area>0,0,55,55</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="processing"><imagetype name="statusimage"><filename>animations/process/1.png</filename><area>0,0,55,55</area><preserveaspect>true</preserveaspect></imagetype></state>
+    </statetype>
                 <imagetype name="buttonarrow">
                     <position>540,10</position>
                     <filename>icons/draw-triangle2.png</filename>
@@ -1822,12 +1858,42 @@
                     <alphapulse min="150" max="255" change="1" />
                     <filename>580x140.png</filename>
                 </imagetype>
+                		    <statetype name="icons">
+      <position>20,0</position>
+      <state name="commflagged">
+	<imagetype name="statusimage">
+	  <filename>states/commflag.png</filename>
+	  <area>0,30,75,75</area><preserveaspect>true</preserveaspect>
+	  </imagetype>
+	  </state>
+      <state name="cutlist"><imagetype name="statusimage"><filename>states/cutlist.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="autoexpire"><imagetype name="statusimage"><filename>states/autoexpire.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="bookmark"><imagetype name="statusimage"><filename>icons/bookmark.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="inuse"><imagetype name="statusimage"><filename>animations/process/1.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="transcoded"><imagetype name="statusimage"><filename>animations/transcode/4.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="mono"><imagetype name="statusimage"><filename>icons/mono.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="stereo"><imagetype name="statusimage"><filename>icons/stereo.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="surround"><imagetype name="statusimage"><filename>icons/surround.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="dolby"><imagetype name="statusimage"><filename>icons/dolby.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="cc"><imagetype name="statusimage"><filename>icons/subscc.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="subtitles"><imagetype name="statusimage"><filename>icons/subs.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="onscreensub"><imagetype name="statusimage"><filename>icons/subscc.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="hdtv"><imagetype name="statusimage"><filename>icons/hdtv.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="hd720"><imagetype name="statusimage"><filename>icons/hd720.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="hd1080"><imagetype name="statusimage"><filename>icons/hd1080.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="avchd"><imagetype name="statusimage"><filename>icons/avchd.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="widescreen"><imagetype name="statusimage"><filename>icons/widescreen.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="watched"><imagetype name="statusimage"><filename>icons/watched.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="processing"><imagetype name="statusimage"><filename>animations/process/1.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
+
+    </statetype>
                 <textarea name="buttontext">
                     <area>0,0,580,140</area>
                     <font>basebuttontitle</font>
                     <align>allcenter</align>      
                     <multiline>yes</multiline>
                 </textarea>
+
                 <imagetype name="buttonarrow">
                     <area>0,0,35,36</area>	
                     <position>540,50</position>

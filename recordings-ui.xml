@@ -844,4 +844,19 @@
             <value>OK</value>
         </button>
     </window>
+
+<window name="iconhelp" from="MythPopupBox">
+<area>-1,-1,600,800</area>
+<imagetype name="backimg" from="basepopupboxback" />
+<textarea name="label" from="basemessagearea">
+<value>Status Icons</value>
+</textarea>
+
+<buttonlist name="iconlist" from="basepopupboxlist">
+<buttonarea>0,205,600,580</buttonarea>
+</buttonlist>
+
+</window>
+
+
 </mythuitheme>
