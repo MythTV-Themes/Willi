@@ -1877,7 +1877,7 @@
 <state name="dolby"><imagetype name="statusimage"><filename>icons/dolby.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
 <state name="cc"><imagetype name="statusimage"><filename>icons/subscc.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
 <state name="subtitles"><imagetype name="statusimage"><filename>icons/subs.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
-<state name="onscreensub"><imagetype name="statusimage"><filename>icons/subscc.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
+<state name="onscreensub"><imagetype name="statusimage"><filename>icons/subsonscreen.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
 <state name="hdtv"><imagetype name="statusimage"><filename>icons/hdtv.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
 <state name="hd720"><imagetype name="statusimage"><filename>icons/hd720.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
 <state name="hd1080"><imagetype name="statusimage"><filename>icons/hd1080.png</filename><area>0,35,75,75</area><preserveaspect>true</preserveaspect></imagetype></state>
