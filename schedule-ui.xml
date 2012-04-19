@@ -3,12 +3,8 @@
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 
 <mythuitheme>
-    
-    
-    
+
     <window name="programguide">
-        
-        
         
         <animation trigger="AboutToShow">
             
@@ -19,12 +15,6 @@
             </section>
             
         </animation>
-        
-        
-        
-        
-        
-        
         
         <!-- Fanart behind everyhting  -->
         
@@ -408,7 +398,7 @@
         
         <textarea name="description" from="basetextarea">
             
-            <area>800,935,1080,150</area>
+            <area>800,935,710,150</area>
             
             <multiline>yes</multiline>
             
@@ -428,6 +418,420 @@
         
     </window>
     
+    <window name="programguide-video">
+        
+        <animation trigger="AboutToShow">
+            
+            <section duration="500" centre="middle">
+                
+                <alpha start="0" end="255" easingcurve="InOutQuad"/>
+                
+            </section>
+            
+        </animation>
+        
+        <!-- Fanart behind everyhting  -->
+        
+        <imagetype name="fanart">
+            
+            <area>0,105,1680,945</area>
+            
+            <filename />
+            
+            <alpha>150</alpha>
+            
+        </imagetype>
+        
+        <imagetype name="recbackground">
+            
+            <position>0,0</position>
+            
+            <filename>schedule/programguidebackground.png</filename>
+            
+        </imagetype>
+        
+        
+        
+        <clock name="clock" from="baseclock" />
+        
+        
+        
+        <textarea name="pagetitle" from="basepagetitle">
+            
+            <value>Program Guide</value>
+            
+        </textarea>
+        
+        
+        
+        <guidegrid name="guidegrid">
+            
+            <area>270,200,1640,680</area>
+            
+            <layout>horizontal</layout>
+            
+            <channels>8</channels>
+            
+            <timeslots>6</timeslots>
+            
+            <solidcolor>#ccccccff</solidcolor>
+            
+            <selector type="box" fillcolor="#800000" >
+                
+            </selector>
+            
+            <showcategories>no</showcategories>
+            
+            <categoryalpha>75</categoryalpha>
+            
+            <recordingcolor>#668000</recordingcolor>
+            
+            <conflictingcolor>#d4aa00</conflictingcolor>
+            
+            <cutdown>yes</cutdown>
+            
+            <multiline>yes</multiline>
+            
+            <textoffset>5,5</textoffset>
+            
+            <recordstatus type="SingleRecord" image="schedule/gg-rs-single.png">
+                
+            </recordstatus>
+            
+            <recordstatus type="TimeslotRecord" image="schedule/gg-rs-timeslot.png">
+                
+            </recordstatus>
+            
+            <recordstatus type="ChannelRecord" image="schedule/gg-rs-channel.png">
+                
+            </recordstatus>
+            
+            <recordstatus type="AllRecord" image="schedule/gg-rs-all.png">
+                
+            </recordstatus>
+            
+            <recordstatus type="WeekslotRecord" image="schedule/gg-rs-weekslot.png">
+                
+            </recordstatus>
+            
+            <recordstatus type="FindOneRecord" image="schedule/gg-rs-findone.png">
+                
+            </recordstatus>
+            
+            <recordstatus type="OverrideRecord" image="schedule/gg-rs-override.png">
+                
+            </recordstatus>
+            
+            <arrow direction="left" image="gg-arrow-left.png">
+                
+            </arrow>
+            
+            <arrow direction="right" image="gg-arrow-right.png">
+                
+            </arrow>
+            
+            <font>basesmall</font>
+            
+            <arrow direction="left" image="icons/draw-triangle1.png">
+                
+            </arrow>
+            
+            <arrow direction="right" image="icons/draw-triangle2.png">
+                
+            </arrow>
+            
+            <template>%TITLESUBTITLE%</template>
+            
+        </guidegrid>
+        
+        
+        
+        <buttonlist name="timelist">
+            
+            <area>270,115,1640,50</area>
+            
+            <layout>horizontal</layout>
+            
+            <spacing>0</spacing>
+            
+            <buttonarea>0,0,100%,100%</buttonarea>
+            
+            <statetype name="buttonitem">
+                
+                <area>0,0,283,50</area>
+                
+                
+                
+                <state name="active">
+                    
+                    
+                    
+                    <textarea name="buttontext" from="basetextarea">
+                        
+                        <area>0,0,283,50</area>
+                        
+                        <align>allcenter</align>
+                        
+                        <font>baseverybigstate</font>
+                        
+                    </textarea>
+                    
+                </state>
+                
+                
+                
+                <state name="selectedactive" from="active" />
+                
+                <state name="selectedinactive" from="active"/>
+                
+            </statetype>
+            
+            <statetype name="downscrollarrow">
+                
+                <state type="off">
+                    
+                    <imagetype name="dnon">
+                        
+                        <filename>
+                            
+                        </filename>
+                        
+                    </imagetype>
+                    
+                </state>
+                
+                <state type="full">
+                    
+                    <imagetype name="dnoff">
+                        
+                        <filename>
+                            
+                        </filename>
+                        
+                    </imagetype>
+                    
+                </state>
+                
+            </statetype>
+            
+            <statetype name="upscrollarrow">
+                
+                <state type="off">
+                    
+                    <imagetype name="upon">
+                        
+                        <filename>
+                            
+                        </filename>
+                        
+                    </imagetype>
+                    
+                </state>
+                
+                <state type="full">
+                    
+                    <imagetype name="upoff">
+                        
+                        <filename>
+                            
+                        </filename>
+                        
+                    </imagetype>
+                    
+                </state>
+                
+            </statetype>
+            
+        </buttonlist>
+        
+        
+        
+        <buttonlist name="channellist">
+            
+            <area>10,200,244,680</area>
+            
+            <layout>vertical</layout>
+            
+            <spacing>0</spacing>
+            
+            <buttonarea>0,0,100%,100%</buttonarea>
+            
+            <statetype name="buttonitem">
+                
+                <area>0,0,244,85</area>
+                
+                <state name="active">
+                    
+                    <imagetype name="channelicon">
+                        
+                        <area>0,0,242,85</area>
+                        
+                        <preserveaspect>true</preserveaspect>
+                        
+                        <alpha>70</alpha>
+                        
+                    </imagetype>
+                    
+                    <textarea name="buttontext" from="basetextarea">
+                        
+                        <area>4,0,240,85</area>
+                        
+                        <align>allcenter</align>
+                        
+                        <font>basebigstateoutline</font>
+                        
+                        <cutdown>yes</cutdown>
+                        
+                    </textarea>
+                    
+                </state>
+                
+                <state name="selectedactive" from="active"/>
+                
+                <state name="selectedinactive" from="active"/>
+                
+            </statetype>
+            
+            <statetype name="downscrollarrow">
+                
+                <state type="off">
+                    
+                    <imagetype name="dnon">
+                        
+                        <filename>
+                            
+                        </filename>
+                        
+                    </imagetype>
+                    
+                </state>
+                
+                <state type="full">
+                    
+                    <imagetype name="dnoff">
+                        
+                        <filename>
+                            
+                        </filename>
+                        
+                    </imagetype>
+                    
+                </state>
+                
+            </statetype>
+            
+            <statetype name="upscrollarrow">
+                
+                <state type="off">
+                    
+                    <imagetype name="upon">
+                        
+                        <filename>
+                            
+                        </filename>
+                        
+                    </imagetype>
+                    
+                </state>
+                
+                <state type="full">
+                    
+                    <imagetype name="upoff">
+                        
+                        <filename>
+                            
+                        </filename>
+                        
+                    </imagetype>
+                    
+                </state>
+                
+            </statetype>
+            
+        </buttonlist>
+        
+        
+        
+        <!-- Filesize --> 
+        
+        <textarea name="subtitle" from="basetextarea">
+            
+            <font>basebuttontitlesubtitle</font>
+            
+            <template>%00x00| %%subtitle%</template>
+            
+            <area>15,950,890,30</area>
+            
+        </textarea>
+        
+        
+        
+        <!-- Channel name and number --> 
+        
+        <textarea name="starttime">
+            
+            <area>15,985,287,30</area>	
+            
+            <template>%STARTTIME% - %ENDTIME%</template>
+            
+            <align>left</align>
+            
+            <font>baseverybigstate</font>
+            
+        </textarea>
+        
+        
+        
+        <!-- what playgroup is this recording part of --> 
+        
+        <textarea name="channelgroup" from="basetextarea">
+            
+            <area>350,980,387,30</area>	
+            
+            <align>right</align>
+            
+        </textarea>
+        
+        
+        
+        <!-- what category was this recording recorded in --> 
+        
+        <textarea name="rectypestatus" from="basetextarea">
+            
+            <area>350,1008,387,30</area>	
+            
+            <align>right</align>
+            
+            <cutdown>yes</cutdown>
+            
+        </textarea>
+        
+        
+        
+        <!-- Channel name and number --> 
+        
+        <textarea name="description" from="basetextarea">
+            
+            <area>800,935,710,150</area>
+            
+            <multiline>yes</multiline>
+            
+        </textarea>
+        
+        <statetype name="ratingstate" from="baserating">
+            
+            <position>15,1030</position>
+            
+            <alpha>180</alpha>
+            
+        </statetype>
+        
+	<imagetype name="video">
+            <area>1580,905,300,170</area>
+        </imagetype>
+
+        
+    </window>
     
     
     
