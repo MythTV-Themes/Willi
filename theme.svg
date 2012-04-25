@@ -44,7 +44,7 @@
      inkscape:snap-page="true"
      inkscape:snap-grids="true"
      inkscape:guide-bbox="true"
-     inkscape:current-layer="layer27">
+     inkscape:current-layer="layer28">
     <inkscape:grid
        snapvisiblegridlinesonly="true"
        enabled="true"
@@ -45317,11 +45317,11 @@
          id="stop28905" />
     </linearGradient>
     <linearGradient
-       y2="527.36218"
-       x2="4772.1216"
+       y2="523.49988"
+       x2="5398.0669"
        y1="527.36218"
        x1="400"
-       gradientTransform="matrix(0.38203125,0,0,0.99861106,-147.3125,13.3703)"
+       gradientTransform="matrix(0.38203127,0,0,0.99861106,-147.31251,13.3703)"
        gradientUnits="userSpaceOnUse"
        id="linearGradient28911"
        xlink:href="#linearGradient5440-77-3-9-9"
@@ -45401,7 +45401,7 @@
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
-       inkscape:export-filename="/usr/share/mythtv/themes/Willi/statusbackground.png"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/schedule/programguidebackground.png"
        y="0"
        x="0"
        height="105"
@@ -45411,7 +45411,7 @@
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
-       inkscape:export-filename="/usr/share/mythtv/themes/Willi/statusbackground.png"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/schedule/programguidebackground.png"
        y="103.3"
        x="0"
        height="1.7"
@@ -45420,7 +45420,7 @@
        style="opacity:0.8;fill:#ffffff;fill-opacity:1;stroke:none;display:inline" />
   </g>
   <g
-     style="display:inline"
+     style="display:none"
      inkscape:label="Groups"
      id="layer8"
      inkscape:groupmode="layer"
@@ -45451,7 +45451,7 @@
        style="fill:#000000;fill-opacity:1;stroke:none;display:inline" />
   </g>
   <g
-     style="display:inline"
+     style="display:none"
      transform="translate(0,27.637817)"
      id="layer1"
      inkscape:groupmode="layer"
@@ -46008,7 +46008,7 @@
      inkscape:groupmode="layer"
      id="layer28"
      inkscape:label="schedule program"
-     style="display:none">
+     style="display:inline">
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -46016,9 +46016,9 @@
        rx="20"
        ry="20"
        y="935.5"
-       x="10.5"
+       x="10.500001"
        height="139"
-       width="1899"
+       width="1529.0001"
        id="rect2818-1-7-4-86-5-6"
        style="opacity:0.8;color:#000000;fill:url(#linearGradient28911);fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <rect

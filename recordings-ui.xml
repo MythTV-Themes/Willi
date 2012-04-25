@@ -55,6 +55,9 @@
                         <align>allcenter</align>
                         <font>basesmall</font>
                     </textarea>
+		    <textarea name="reccount" from="buttontext">
+                        <align>vcenter,right</align>
+                    </textarea>
                 </state>
                 <state name="selectedactive" from="active" />
                 <state name="selectedinactive">
@@ -67,6 +70,7 @@
                         <align>allcenter</align>
                         <font>basebuttontitle</font>
                     </textarea>
+
                 </state>
             </statetype>
         </buttonlist>
@@ -119,7 +123,7 @@
         
         <!--show the coverart over the groups, only if browsing the recordings -->
         <imagetype name="coverart" from="basecoverart"/>
-        
+	
         <!--This is the right side of the selections. It shows the recordings that are available to the user.	-->
         <buttonlist name="recordings" from="basebuttonlist2">
             <position>503,210</position>
@@ -658,8 +662,13 @@
         <textarea name="freereport" from="basetextarea">
             <font>basebuttonsubtitle</font>
             <area>5,1017,890,58</area>
-            <align>allcenter</align>
+	    <align>allcenter</align>
         </textarea>
+	        	    <textarea name="rec_count">
+                        <font>menuselectfont</font>
+                        <area>503,220,1400,660</area>
+			<align>allcenter</align>
+                    </textarea>
     </window>
     
     <!-- This is the popup where you can select which Group to filter -->
