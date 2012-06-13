@@ -194,11 +194,10 @@
                     <!--A statetype for an item that is being processed	-->
                     <statetype name="inuse">
                         <state name="yes">
-                            <imagetype name="animation">
+                            <imagetype name="inuse">
                                 <area>0,0,25,25</area>
                                 <position>1275,5</position>
-                                <filepattern low="1" high="8">animations/process/%1.png</filepattern>
-                                <delay>400</delay>
+                                <filename>states/warning.png</filename>
                             </imagetype>
                         </state>
                     </statetype>
@@ -315,8 +314,8 @@
                     <statetype name="processing">
                         <state name="yes">
                             <imagetype name="animation">
-                                <area>0,0,25,25</area>
-                                <position>1235,5</position>
+                                <area>0,0,45,45</area>
+                                <position>1335,2</position>
                                 <filepattern low="1" high="8">animations/process/%1.png</filepattern>
                                 <delay>400</delay>
                             </imagetype>
@@ -325,11 +324,10 @@
                     <!--A statetype for an item that is being processed	-->
                     <statetype name="inuse">
                         <state name="yes">
-                            <imagetype name="animation">
-                                <area>0,0,25,25</area>
-                                <position>1235,5</position>
-                                <filepattern low="1" high="8">animations/process/%1.png</filepattern>
-                                <delay>400</delay>
+                            <imagetype name="inuse">
+                                <area>0,0,45,45</area>
+                                <position>1335,2</position>
+				<filename>states/warning.png</filename>
                             </imagetype>
                         </state>
                     </statetype>

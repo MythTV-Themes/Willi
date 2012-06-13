@@ -522,6 +522,12 @@
 				    <filename>mm_smartplaylists.png</filename>
 				</imagetype>
 			    </state>
+			    <state name="directory">
+			      <imagetype name="directory">
+				<area>419,0,71,55</area>
+				<filename>mm_directory.png</filename>
+			      </imagetype>
+			    </state>
 			  </statetype>
                 <imagetype name="buttonimage">
                     <area>435,0,55,55</area>
@@ -633,7 +639,12 @@
 				    <filename>mm_smartplaylists.png</filename>
 				</imagetype>
 			    </state>
-						    
+			    <state name="directory">
+			      <imagetype name="directory">
+				<area>308,0,182,140</area>
+				<filename>mm_directory.png</filename>
+			      </imagetype>
+			    </state>
 			    <state name="subfolder">
 				<imagetype name="icon">
 				    <area>220,165,100,115</area>

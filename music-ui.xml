@@ -115,7 +115,8 @@
         <!--     <video name="visualizer">
      <area>0,0,1920,1080</area>
    </video>-->
-        <imagetype name="musicbackground">
+   
+       <imagetype name="musicbackground">
             <position>0,0</position>
             <filename>music/background.png</filename>
         </imagetype>
@@ -380,34 +381,253 @@
     <window name="playlisteditorview_tree">
         <imagetype name="recbackground">
             <position>0,0</position>
-            <filename>video/tree/layout.png</filename>
+            <filename>wr-recordings.png</filename>
         </imagetype>
         <textarea name="pagetitle" from="basepagetitle">
             <value>Playlist Editor</value>
         </textarea>
         
         <buttontree name="playlist_tree">
-            <area>5,210,1500,660</area>
-            <numlists>3</numlists>
+            <area>5,210,490,660</area>
+            <numlists>1</numlists>
             <spacing>10</spacing>
             <buttonlist name="listtemplate" from="basegroups" />
         </buttontree>
+	
+	
+	
         
         <textarea name="breadcrumbs" from="basetextarea">
-            <area>10,100,1658,40</area>
+            <area>15,123,1658,40</area>
             <font>basesmall</font>
             <align>vcenter</align>
         </textarea>
         <textarea name="position" from="basetextarea">
-            <area>10,100,1658,40</area>
-            <font>basemedium</font>
+            <area>10,123,1880,40</area>
+            <font>basesmall</font>
             <align>vcenter,right</align>
         </textarea>
         
-        <statetype name="movingtracksstate" from="basemovingtracksstate">
-            <position>1243,395</position>
-        </statetype>
-        
+	<buttonlist name="currentplaylist" from="basebuttonlist2">
+            <area>503,210,1400,660</area>
+            <statetype name="buttonitem">
+
+                <state name="active">
+                    
+                    <textarea name="title">
+                        <font>basebuttontitlesubtitle</font>
+                        <area>5,0,1030,55</area>
+                        <cutdown>yes</cutdown>
+                        <multiline>yes</multiline>
+                        <align>vcenter</align>
+                    </textarea>
+                    <textarea name="artist">
+                        <font>basebuttontitlesubtitle</font>
+                        <area>700,0,400,55</area>
+                        <cutdown>yes</cutdown>
+                        <multiline>yes</multiline>
+                        <align>vcenter</align>
+                    </textarea>
+                    
+                    <textarea name="album">
+                        <font>basebuttontitlesubtitle</font>
+                        <area>890,0,445,55</area>
+                        <cutdown>yes</cutdown>
+                        <multiline>yes</multiline>
+                        <align>vcenter,right</align>
+                    </textarea>
+                    
+                    <imagetype name="buttonimage">
+                        <area>1342,0,55,55</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    
+                    <statetype name="playstate">
+                        <position>1350,2</position>
+                        <state name="default">
+                            
+                        </state>
+                        <state name="playing">
+                            <textarea name="title">
+                                <area>60,0,1030,55</area>
+                            </textarea>
+                            <imagetype name="playstatus">
+                                <area>0,0,44,51</area>
+                                <filename>music/media-playback-start.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="paused">
+                            <imagetype name="playstatus">
+                                <area>0,0,50,51</area>
+                                <filename>music/media-playback-pause.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="stopped">
+                            <imagetype name="playstatus">
+                                <area>0,0,49,51</area>
+                                <filename>music/media-playback-stop.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,1400,140</area>
+                    
+                    <textarea name="title" from="buttontext">
+                        <font>basebuttontitle</font>
+                        <area>5,5,695,90</area>
+                        <cutdown>yes</cutdown>
+                        <align>top</align>
+                        <multiline>true</multiline>
+                    </textarea>
+                    
+                    <textarea name="artist" from="buttontext">
+                        <font>basebuttonsubtitle</font>
+                        <area>700,0,400,45</area>
+                        <cutdown>yes</cutdown>
+                    </textarea>
+                    
+                    
+                    <textarea name="album" from="buttontext">
+                        <font>basebuttonsubtitle</font>
+                        <area>700,36,915,40</area>
+                        <cutdown>yes</cutdown>
+                    </textarea>
+                    <textarea name="year" from="buttontext">
+                        <font>basebuttondescription</font>
+                        <area>700,72,915,40</area>
+                        <cutdown>yes</cutdown>
+                        <template>%CD Track #: |TRACKNUM%%, |YEAR%%, |GENRE%</template>
+                    </textarea>
+                    
+                    <textarea name="lastplayed" from="buttontext">
+                        <font>basebuttondescription</font>
+                        <area>700,103,915,40</area>
+                        <cutdown>yes</cutdown>
+                    </textarea>
+                    <imagetype name="buttonimage">
+                        <area>1258,0,140,140</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <statetype name="ratingstate" from="baserating">
+                        <position>1230,43</position>
+                        <alpha>180</alpha>
+                    </statetype>
+                    
+                    <statetype name="playstate">
+                        <position>1350,85</position>
+                        <state name="default">
+                        </state>
+                        <state name="playing">
+                            
+                            <imagetype name="playstatus">
+                                <area>0,0,44,51</area>
+                                <filename>music/media-playback-start.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="paused">
+                            <imagetype name="playstatus">
+                                <area>0,0,50,51</area>
+                                <filename>music/media-playback-pause.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="stopped">
+                            <imagetype name="playstatus">
+                                <area>0,0,49,51</area>
+                                <filename>music/media-playback-stop.png</filename>
+                            </imagetype>
+                        </state>
+                        
+                    </statetype>
+
+                    <imagetype name="directionright">
+                        <alpha>0</alpha>
+                    </imagetype>
+                    <imagetype name="direction">
+                        <alpha>0</alpha>
+                    </imagetype>
+                </state>
+	    <state name="inactive" from="active">
+                <textarea name="buttontext">
+                    <alpha>50</alpha>
+                </textarea>
+
+                <textarea name="title">
+                    <alpha>50</alpha>
+                </textarea>
+		<textarea name="artist">
+                    <alpha>50</alpha>
+                </textarea>
+		<textarea name="album">
+                    <alpha>50</alpha>
+                </textarea>
+                <imagetype name="buttonimage">
+                    <alpha>50</alpha>
+                </imagetype>
+		                    <!-- show to the user that he can jump to the right -->
+                    <imagetype name="direction">
+                        <alpha>0</alpha>
+                    </imagetype>
+		                    <!-- show to the user that he can jump to the right -->
+                <imagetype name="directionright">
+                    <alpha>0</alpha>
+                </imagetype>
+
+                </state>
+	    <state name="selectedinactive" from="selectedactive">
+                <textarea name="buttontext">
+                    <alpha>50</alpha>
+                </textarea>
+                <imagetype name="direction">
+                    <alpha>50</alpha>
+                </imagetype>
+                <!-- show to the user that he can jump to the right -->
+                <imagetype name="directionright">
+                    <alpha>50</alpha>
+                </imagetype>
+                <textarea name="title">
+                    <alpha>50</alpha>
+                </textarea>
+		<textarea name="artist">
+                    <alpha>50</alpha>
+                </textarea>
+		<textarea name="album">
+                    <alpha>50</alpha>
+                </textarea>
+		<textarea name="year">
+                    <alpha>50</alpha>
+                </textarea>
+		<textarea name="lastplayed">
+                    <alpha>50</alpha>
+                </textarea>
+		<statetype name="ratingstate">
+                        <alpha>500</alpha>
+                    </statetype>
+		
+                <imagetype name="buttonimage">
+                    <alpha>50</alpha>
+                </imagetype>
+
+                    <!-- show to the user that he can jump to the right -->
+                    <imagetype name="direction">
+                        <alpha>0</alpha>
+                    </imagetype>
+		                    <!-- show to the user that he can jump to the right -->
+                <imagetype name="directionright">
+                    <alpha>0</alpha>
+                </imagetype>
+				<imagetype name="1400x140">
+<alpha>50</alpha>
+                </imagetype>
+                </state>
+                </statetype>
+
+                </buttonlist>
+
+	
+	
+	
+       
     </window>
     
     <window name="playlisteditorview_gallery">
@@ -522,7 +742,12 @@
 				    <filename>mm_smartplaylists.png</filename>
 				</imagetype>
 			    </state>
-						    
+			    <state name="directory">
+                        <imagetype name="directory">
+                            <area>0,0,320,245</area>
+                            <filename>mm_directory.png</filename>
+                        </imagetype>
+                    </state>	    
 			    <state name="subfolder">
 				<imagetype name="icon">
 				    <area>220,165,100,115</area>
@@ -670,11 +895,7 @@
                 <position>1190,272</position>
             </statetype>
         </buttonlist>
-        
-        <statetype name="movingtracksstate" from="basemovingtracksstate">
-            <position>1243,395</position>
-        </statetype>
-        
+
         <group name="playlistpanel" from="baseplaylistpanel">
             <position>0,390</position>
             <buttonlist name="currentplaylist">
