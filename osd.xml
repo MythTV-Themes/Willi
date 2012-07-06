@@ -31,7 +31,7 @@
             <filename>OSD/1898x210.png</filename>    
         </imagetype>
         <imagetype name="iconpath">
-            <area>15,895,130,130</area>
+            <area>15,900,130,130</area>
             <mask>OSD/logomask.png</mask>
             <preserveaspect>true</preserveaspect>    
         </imagetype>
@@ -376,7 +376,7 @@
             <filename>OSD/1898x210.png</filename>    
         </imagetype>
         <imagetype name="iconpath">
-            <area>15,895,130,130</area>
+            <area>15,900,130,130</area>
             <mask>OSD/logomask.png</mask>
             <preserveaspect>true</preserveaspect>    
         </imagetype>
@@ -517,6 +517,18 @@
     
     <window name="osd_program_editor">
         <area>-1,978,1640,58</area>
+        <imagetype name="audiograph-bg">
+            <area>0,-250,600,210</area>
+            <filename>MythSearchListDialog-background.png</filename>    
+        </imagetype>	
+	<textarea name="audiograph-text" from="basebigstatetext">
+            <area>10,-235,580,190</area>
+            <align>top, hcenter</align>
+            <value>Frame audio level +/-0.5</value>  
+        </textarea>
+        <imagetype name="audiograph">
+            <area>10,-250,580,190</area>
+        </imagetype>
         <imagetype name="1640x58">
             <area>0,0,1640,58</area>
             <filename>OSD/fillbar-empty.png</filename>    

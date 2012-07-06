@@ -320,6 +320,11 @@
                                 <delay>400</delay>
                             </imagetype>
                         </state>
+			<state name="no" from="yes">
+			  <imagetype name="animation">
+			    <alpha>0</alpha>
+			  </imagetype>
+			</state>
                     </statetype>
                     <!--A statetype for an item that is being processed	-->
                     <statetype name="inuse">
@@ -330,6 +335,11 @@
 				<filename>states/warning.png</filename>
                             </imagetype>
                         </state>
+			<state name="no" from="yes">
+			  <imagetype name="inuse">
+			    <alpha>0</alpha>
+			  </imagetype>
+			</state>
                     </statetype>
                     <!-- show to the user that he can jump to the left -->
                     <imagetype name="direction">
