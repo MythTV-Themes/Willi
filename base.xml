@@ -540,6 +540,12 @@
                     <font>basebuttontitlesubtitle</font>
                     <align>vcenter</align>
                 </textarea>
+		
+		<textarea name="station" from="buttontext">
+		  <template>%STATION% - %CHANNEL%</template>
+                </textarea>		
+
+		
                 <statetype name="buttoncheck">
                     <area>450,10,36,36</area>
                     <state type="off" />
@@ -666,10 +672,13 @@
                 </imagetype>
                 <textarea name="buttontext">
                     <font>basebuttontitle</font>
-                    <area>5,0,480,140</area>
+                    <area>5,0,400,140</area>
                     <cutdown>yes</cutdown>
                     <multiline>yes</multiline>
                     <align>vcenter</align>
+                </textarea>
+		<textarea name="station" from="buttontext">
+		  <template>%STATION% - %CHANNEL%</template>
                 </textarea>
                 <!-- show to the user that he can jump to the right -->
                 <imagetype name="direction">
@@ -711,6 +720,9 @@
                 <textarea name="buttontext">
                     <alpha>30</alpha>
                 </textarea>
+		<textarea name="station">
+                    <alpha>30</alpha>
+                </textarea>
                 
                 <!-- show to the user that he can jump to the right -->
                 <imagetype name="direction">
@@ -745,6 +757,9 @@
                 <textarea name="buttontext">
                     <alpha>30</alpha>
                 </textarea>
+                <textarea name="station">
+                    <alpha>30</alpha>
+                </textarea>		
                 <imagetype name="direction">
                     <alpha>0</alpha>
                 </imagetype>

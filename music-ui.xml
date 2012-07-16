@@ -134,7 +134,7 @@
         </imagetype>
         
         <textarea name="notracks" from="basetextarea">
-            <area>35,20,1210,340</area>
+            <area>503,210,1400,660</area>
             <multiline>yes</multiline>
             <align>allcenter</align>
             <value>You haven't selected any tracks to play</value>
