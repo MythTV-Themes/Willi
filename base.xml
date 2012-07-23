@@ -15,7 +15,7 @@
     </fontdef>
     
     <!-- Base Number/Mono Definitions -->
-    <fontdef name="progressnumberfont" face="Droid Sans Mono">
+    <fontdef name="progressnumberfont" face="CPMono_v07">
         <pixelsize>45</pixelsize>
         <color>#FFFFFF</color>
         <outlinecolor>#000000</outlinecolor>
@@ -23,7 +23,7 @@
         <outlinealpha>100</outlinealpha>
     </fontdef>
     
-    <fontdef name="progressnumberfont2" face="Droid Sans Mono">
+    <fontdef name="progressnumberfont2" face="CPMono_v07">
         <pixelsize>30</pixelsize>
         <color>#FFFFFF</color>
         <outlinecolor>#000000</outlinecolor>
@@ -100,7 +100,7 @@
         <outlinealpha>100</outlinealpha>
     </fontdef>
     
-    <fontdef name="basestate" face="Droid Sans Mono">
+    <fontdef name="basestate" face="CPMono_v07">
         <pixelsize>20</pixelsize>
         <color>#FFFFFF</color>
         <outlinecolor>#000000</outlinecolor>
@@ -116,7 +116,7 @@
         <outlinealpha>100</outlinealpha>
     </fontdef>
     
-    <fontdef name="basebigstate" face="Droid Sans Mono">
+    <fontdef name="basebigstate" face="CPMono_v07">
         <pixelsize>25</pixelsize>
         <color>#FFFFFF</color>
         <outlinecolor>#000000</outlinecolor>
@@ -124,7 +124,7 @@
         <outlinealpha>100</outlinealpha>
     </fontdef>
     
-    <fontdef name="basebigstateoutline" face="Droid Sans Mono">
+    <fontdef name="basebigstateoutline" face="CPMono_v07">
         <pixelsize>25</pixelsize>
         <color>#FFFFFF</color>
         <outlinecolor>#000000</outlinecolor>
@@ -132,7 +132,7 @@
         <outlinealpha>100</outlinealpha>
     </fontdef>
     
-    <fontdef name="baseverybigstate" face="Droid Sans Mono">
+    <fontdef name="baseverybigstate" face="CPMono_v07">
         <pixelsize>30</pixelsize>
         <color>#FFFFFF</color>
         <outlinecolor>#000000</outlinecolor>
