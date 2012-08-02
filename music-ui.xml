@@ -289,13 +289,13 @@
         </progressbar>     
         
         <textarea name="time" from="baseprogresstext1400">
-            <position>503,912</position>
+            <position>503,904</position>
         </textarea>
         
         
         
         <progressbar name="playlistprogress" from="baseprogressbar1400">
-            <position>503,112</position>
+            <position>503,106</position>
         </progressbar>
         <textarea name="playlisttime" from="baseprogresstext1400">
             <font>progressnumberfont2</font>
@@ -1208,7 +1208,7 @@
             </progressbar>
             
             <textarea name="overallpct" from="basetextarea">
-                <area>82,160,536,30</area>
+                <area>82,160,530,30</area>
                 <align>hcenter</align>
             </textarea>
             
@@ -1217,7 +1217,7 @@
             </progressbar>
             
             <textarea name="trackpct" from="basetextarea">
-                <area>82,370,536,30</area>
+                <area>82,370,530,30</area>
                 <align>hcenter</align>
             </textarea>
             
