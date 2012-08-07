@@ -31,7 +31,7 @@
         </imagetype>
         
         
-        
+        <imagetype name="reflection" from="basereflection"/>
         
         
         <imagetype name="band">

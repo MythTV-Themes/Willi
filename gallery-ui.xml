@@ -230,9 +230,7 @@
             <font>basebuttontitle</font>
             
         </textarea>
-        
-        
-        
+<imagetype name="reflection" from="basereflection"/>
     </window>
     
     

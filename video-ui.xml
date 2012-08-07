@@ -363,9 +363,7 @@
             <area>760,700,300,40</area>
             
         </textarea>
-        
-        
-        
+<imagetype name="reflection" from="basereflection"/>
     </window>
     
     <window name="tree">
@@ -507,9 +505,7 @@
             <align>right</align>
             
         </textarea>
-        
-        
-        
+<imagetype name="reflection" from="basereflection"/>
     </window>
     
     <window name="gallery">
@@ -722,13 +718,7 @@
             
         </buttonlist>
         
-        <!-- The banner of the current show 
-      <imagetype name="banner">
-	<area>910,905,758,140</area>
-	<filename />
-	<mask>wr-bannermask.png</mask>
-      </imagetype>-->
-        
+<imagetype name="reflection" from="basereflection"/>
     </window>
     
     

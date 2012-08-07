@@ -14,6 +14,7 @@
         <imagetype name="fanart">
             <area>0,0,1920,1080</area>
             <filename />
+	    <alpha>150</alpha>
         </imagetype>
         <imagetype name="recbackground">
             <position>0,0</position>
@@ -35,8 +36,7 @@
             <area>1145,935,758,140</area>
             <filename>wr-bannerframe.png</filename>
         </imagetype>
-	
-       
+
         
         <!--draws the recording groups on top of the tabs	 -->
         <buttonlist name="recgroups">
@@ -351,7 +351,7 @@
                     <imagetype name="directionright">
                         <alpha>0</alpha>
                     </imagetype>
-                </state>
+                    </state>
                 <state name="selectedinactive" from="selectedactive">
                     <textarea name="startdate">
                         <alpha>30</alpha>
@@ -667,16 +667,18 @@
         <progressbar name="usedbar" from="baseprogressbar">
             <position>5,1017</position>
         </progressbar>
-        <textarea name="freereport" from="basetextarea">
-            <font>basebuttonsubtitle</font>
-            <area>5,1017,890,58</area>
-	    <align>allcenter</align>
-        </textarea>
-	        	    <textarea name="rec_count">
-                        <font>menuselectfont</font>
-                        <area>503,220,1400,660</area>
-			<align>allcenter</align>
-                    </textarea>
+	<textarea name="freereport" from="baseprogresstext">
+	  <font>progressnumberfont2</font>
+	  <area>5,1017,890,56</area>
+	  <align>allcenter</align>
+	</textarea>
+	<textarea name="rec_count">
+	  <font>menuselectfont</font>
+	  <area>503,220,1400,660</area>
+	  <align>allcenter</align>
+	</textarea>
+	
+	<imagetype name="reflection" from="basereflection"/>
     </window>
     
     <!-- This is the popup where you can select which Group to filter -->
@@ -696,6 +698,12 @@
     </window>
     
     <window name="changeview">
+        <animation trigger="AboutToShow">
+            <section duration="300" centre="middle">
+                <zoom start="0" end="100" easingcurve="InOutElastic" />
+                <alpha start="0" end="255" easingcurve="InOutElastic"/>
+            </section>
+        </animation>  
         <area>-1,-1,600,1030</area>
         <imagetype name="backimg" from="basepopupboxback" />
         <textarea name="title">

@@ -25,7 +25,22 @@
     <window name="program_info">
         <area>0,0,1920,1080</area>
         <imagetype name="statusbar" from="basestatusbar" />
-        <clock name="clock" from="baseclock" />
+	<clock name="clock" from="baseclock" />
+	<statetype name="ratingstate" from="baserating">
+	  <position>150,100</position>
+	  <alpha>180</alpha>
+	</statetype>
+	<shape name="black_background">
+	  <type>box</type>
+	  <area>0,700,1920,380</area>
+	  <fill style="gradient">
+	    <gradient direction="vertical">
+	      <stop position="0" color="#000000" alpha="0"/>
+	      <stop position="40" color="#000000" alpha="100"/>
+	      <stop position="100" color="#000000" alpha="200"/>
+	    </gradient>
+	  </fill>
+	</shape>
         <imagetype name="1898x210">
             <area>11,860,1898,210</area>
             <filename>OSD/1898x210.png</filename>    
@@ -47,7 +62,7 @@
         <textarea name="title" from="basepagetitle" />
         <textarea name="subtitle" from="basetextarea">
             <font>basebuttontitlewhite</font>
-            <area>15,870,1110,40</area>
+            <area>20,870,1110,40</area>
             <cutdown>yes</cutdown>
             <template>%00x00| %%SUBTITLE%</template>    
         </textarea>

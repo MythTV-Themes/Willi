@@ -4,7 +4,11 @@
 <mythuitheme>
     
     <window name="albumart_browser">
-        
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <alpha start="0" end="255" easingcurve="InOutQuad"/>
+            </section>
+        </animation>  
         <textarea name="heading" from="basetextarea">
             <area>0,0,800,50</area>
             <value>Album Art</value>
@@ -89,7 +93,11 @@
     </window>
     
     <window name="imagefinder">
-        
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <alpha start="0" end="255" easingcurve="InOutQuad"/>
+            </section>
+        </animation>    
         <webbrowser name="webbrowser">
             <area>20,20,1240,600</area>
             <zoom>1.0</zoom>
@@ -101,6 +109,7 @@
             <value>Done</value>
         </button>
         
+    <imagetype name="reflection" from="basereflection"/>
     </window>
     
     <window name="playlistview">
@@ -289,7 +298,7 @@
         </progressbar>     
         
         <textarea name="time" from="baseprogresstext1400">
-            <position>503,904</position>
+            <position>503,910</position>
         </textarea>
         
         
@@ -298,9 +307,7 @@
             <position>503,106</position>
         </progressbar>
         <textarea name="playlisttime" from="baseprogresstext1400">
-            <font>progressnumberfont2</font>
-            <area>513,114,870,58</area>
-            <align>right,vcenter</align>
+            <position>513,106</position>
         </textarea>
         
         <statetype name="trackstate">
@@ -376,9 +383,15 @@
             <align>right,vcenter</align>
         </textarea>
         
+    <imagetype name="reflection" from="basereflection"/>
     </window>
     
     <window name="playlisteditorview_tree">
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <alpha start="0" end="255" easingcurve="InOutQuad"/>
+            </section>
+        </animation>
         <imagetype name="recbackground">
             <position>0,0</position>
             <filename>wr-recordings.png</filename>
@@ -393,10 +406,7 @@
             <spacing>10</spacing>
             <buttonlist name="listtemplate" from="basegroups" />
         </buttontree>
-	
-	
-	
-        
+
         <textarea name="breadcrumbs" from="basetextarea">
             <area>15,123,1658,40</area>
             <font>basesmall</font>
@@ -624,10 +634,7 @@
 
                 </buttonlist>
 
-	
-	
-	
-       
+<imagetype name="reflection" from="basereflection"/>
     </window>
     
     <window name="playlisteditorview_gallery">
@@ -805,10 +812,7 @@
                 </statetype>
             </buttonlist>
         </buttontree>
-        
-        
-        
-        
+<imagetype name="reflection" from="basereflection"/>
     </window>
     
     <window name="searchview">
