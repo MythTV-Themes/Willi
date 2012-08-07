@@ -212,6 +212,20 @@
                     <preserveaspect>true</preserveaspect>                    
                 </imagetype>
             </state>
+	    <state name="webm">
+                <imagetype name="image">
+                    <area>1760,380,130,60</area>
+                    <filename>icons/videotypes/webm.png</filename>                        
+                    <preserveaspect>true</preserveaspect>                    
+                </imagetype>
+            </state>
+	    <state name="VP8">
+                <imagetype name="image">
+                    <area>1760,380,130,60</area>
+                    <filename>icons/videotypes/webm.png</filename>                        
+                    <preserveaspect>true</preserveaspect>                    
+                </imagetype>
+            </state>
             <state name="H.264">
                 <imagetype name="image">
                     <area>1760,380,130,60</area>

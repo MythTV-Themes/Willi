@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+
+ <mythuitheme>
+   
+   <window name="streamview">
+     <animation trigger="AboutToShow">
+       <section duration="500" centre="middle">
+	 <alpha start="0" end="255" easingcurve="InOutQuad"/>
+       </section>
+     </animation>
+     <imagetype name="recbackground">
+       <position>0,0</position>
+       <filename>schedules-viewschedules-background.png</filename>
+     </imagetype>
+     <clock name="clock" from="baseclock" />
+     <!--Title on top of the page	-->
+     <textarea name="pagetitle" from="basepagetitle">
+       <value>Play Internet Radio</value>
+     </textarea>
+     
+     <buttonlist name="streamlist" from="basegroups">
+       
+       <statetype name="buttonitem">
+	 <state name="active">
+	   <statetype name="playstate">
+	     <position>0,2</position>
+	     <state name="default">
+	     </state>
+	     <state name="playing">
+	       <imagetype name="playstatus">
+		 <area>440,0,44,51</area>
+		 <filename>music/media-playback-start.png</filename>
+	       </imagetype>
+	     </state>
+	     <state name="paused">
+	       <imagetype name="playstatus">
+		 <area>440,0,50,51</area>
+		 <filename>music/media-playback-pause.png</filename>
+	       </imagetype>
+	     </state>
+	     <state name="stopped">
+	       <imagetype name="playstatus">
+		 <area>440,0,49,51</area>
+		 <filename>music/media-playback-stop.png</filename>
+	       </imagetype>
+	     </state>
+	   </statetype>
+	 </state>
+	 <state name="selectedactive">
+	   <statetype name="playstate">
+	     <position>0,2</position>
+	     <state name="default">
+	     </state>
+	     <state name="playing">
+	       <imagetype name="playstatus">
+		 <area>440,0,44,51</area>
+		 <filename>music/media-playback-start.png</filename>
+	       </imagetype>
+	     </state>
+	     <state name="paused">
+	       <imagetype name="playstatus">
+		 <area>440,0,50,51</area>
+		 <filename>music/media-playback-pause.png</filename>
+	       </imagetype>
+	     </state>
+	     <state name="stopped">
+	       <imagetype name="playstatus">
+		 <area>440,0,49,51</area>
+		 <filename>music/media-playback-stop.png</filename>
+	       </imagetype>
+	     </state>
+	   </statetype>
+	 </state>
+	 <state name="selectedinactive">
+	   <statetype name="playstate">
+	     <state name="default">
+	     </state>
+	     <state name="playing">
+	       <imagetype name="playstatus">
+		 <alpha>50</alpha>
+	       </imagetype>
+	     </state>
+	     <state name="paused">
+	       <imagetype name="playstatus">
+		 <alpha>50</alpha>
+	       </imagetype>
+	     </state>
+	     <state name="stopped">
+	       <imagetype name="playstatus">
+		 <alpha>50</alpha>
+	       </imagetype>
+	     </state>
+	   </statetype>
+	 </state>
+	 <state name="inactive">
+	   <statetype name="playstate">
+	     <state name="default">
+	     </state>
+	     <state name="playing">
+	       <imagetype name="playstatus">
+		 <alpha>50</alpha>
+	       </imagetype>
+	     </state>
+	     <state name="paused">
+	       <imagetype name="playstatus">
+		 <alpha>50</alpha>
+	       </imagetype>
+	     </state>
+	     <state name="stopped">
+	       <imagetype name="playstatus">
+		 <alpha>50</alpha>
+	       </imagetype>
+	     </state>
+	   </statetype>
+	 </state>
+       </statetype>
+     </buttonlist>
+     
+     <textarea name="nostreams" from="basetextarea">
+       <area>503,210,1400,660</area>
+       <multiline>yes</multiline>
+       <align>allcenter</align>
+       <value>Press MENU to add some radio streams to play.</value>
+     </textarea>
+     
+     <buttonlist name="playedtrackslist" from="basebuttonlist2">
+       <area>503,210,1400,660</area>
+       <statetype name="buttonitem">
+	 
+	 <state name="active">
+	   
+	   <textarea name="title">
+	     <font>basebuttontitlesubtitle</font>
+	     <area>5,0,1030,55</area>
+	     <cutdown>yes</cutdown>
+	     <multiline>yes</multiline>
+	     <align>vcenter</align>
+	   </textarea>
+	   <textarea name="artist">
+	     <font>basebuttontitlesubtitle</font>
+	     <area>700,0,400,55</area>
+	     <cutdown>yes</cutdown>
+	     <multiline>yes</multiline>
+	     <align>vcenter</align>
+	   </textarea>
+	   
+	   <textarea name="album">
+	     <font>basebuttontitlesubtitle</font>
+	     <area>890,0,445,55</area>
+	     <cutdown>yes</cutdown>
+	     <multiline>yes</multiline>
+	     <align>vcenter,right</align>
+	   </textarea>
+	   
+	   <imagetype name="buttonimage">
+	     <area>1342,0,55,55</area>
+	     <preserveaspect>true</preserveaspect>
+	   </imagetype>
+	   
+	   
+	 </state>
+	 <state name="selectedactive">
+	   <area>0,0,1400,140</area>
+	   
+	   <textarea name="title" from="buttontext">
+	     <font>basebuttontitle</font>
+	     <area>5,5,695,90</area>
+	     <cutdown>yes</cutdown>
+	     <align>top</align>
+	     <multiline>true</multiline>
+	   </textarea>
+	   
+	   <textarea name="artist" from="buttontext">
+	     <font>basebuttonsubtitle</font>
+	     <area>700,0,400,45</area>
+	     <cutdown>yes</cutdown>
+	   </textarea>
+	   
+	   
+	   <textarea name="album" from="buttontext">
+	     <font>basebuttonsubtitle</font>
+	     <area>700,36,915,42</area>
+	     <cutdown>yes</cutdown>
+	   </textarea>
+	   <textarea name="year" from="buttontext">
+	     <font>basebuttondescription</font>
+	     <area>700,72,915,40</area>
+	     <cutdown>yes</cutdown>
+	     <template>%CD Track #: |TRACKNUM%%, |YEAR%%, |GENRE%</template>
+	   </textarea>
+	   
+	   <textarea name="lastplayed" from="buttontext">
+	     <font>basebuttondescription</font>
+	     <area>700,103,915,40</area>
+	     <cutdown>yes</cutdown>
+	   </textarea>
+	   <imagetype name="buttonimage">
+	     <area>1258,0,140,140</area>
+	     <preserveaspect>true</preserveaspect>
+	   </imagetype>
+	   <statetype name="ratingstate" from="baserating">
+	     <position>1230,43</position>
+	     <alpha>180</alpha>
+	   </statetype>
+	   
+	   <statetype name="playstate">
+	     <position>1350,85</position>
+	     <state name="default">
+	     </state>
+	     <state name="playing">
+	       
+	       <imagetype name="playstatus">
+		 <area>0,0,44,51</area>
+		 <filename>music/media-playback-start.png</filename>
+	       </imagetype>
+	     </state>
+	     <state name="paused">
+	       <imagetype name="playstatus">
+		 <area>0,0,50,51</area>
+		 <filename>music/media-playback-pause.png</filename>
+	       </imagetype>
+	     </state>
+	     <state name="stopped">
+	       <imagetype name="playstatus">
+		 <area>0,0,49,51</area>
+		 <filename>music/media-playback-stop.png</filename>
+	       </imagetype>
+	     </state>
+	     
+	   </statetype>
+	   
+	   <imagetype name="directionright">
+	     <alpha>0</alpha>
+	   </imagetype>
+	   <imagetype name="direction">
+	     <alpha>0</alpha>
+	   </imagetype>
+	 </state>
+	 <state name="inactive" from="active">
+	   <textarea name="buttontext">
+	     <alpha>50</alpha>
+	   </textarea>
+	   
+	   <textarea name="title">
+	     <alpha>50</alpha>
+	   </textarea>
+	   <textarea name="artist">
+	     <alpha>50</alpha>
+	   </textarea>
+	   <textarea name="album">
+	     <alpha>50</alpha>
+	   </textarea>
+	   <imagetype name="buttonimage">
+	     <alpha>50</alpha>
+	   </imagetype>
+	   <!-- show to the user that he can jump to the right -->
+	   <imagetype name="direction">
+	     <alpha>0</alpha>
+	   </imagetype>
+	   <!-- show to the user that he can jump to the right -->
+	   <imagetype name="directionright">
+	     <alpha>0</alpha>
+	   </imagetype>
+	   
+	 </state>
+	 <state name="selectedinactive" from="selectedactive">
+	   <textarea name="buttontext">
+	     <alpha>50</alpha>
+	   </textarea>
+	   <imagetype name="direction">
+	     <alpha>50</alpha>
+	   </imagetype>
+	   <!-- show to the user that he can jump to the right -->
+	   <imagetype name="directionright">
+	     <alpha>50</alpha>
+	   </imagetype>
+	   <textarea name="title">
+	     <alpha>50</alpha>
+	   </textarea>
+	   <textarea name="artist">
+	     <alpha>50</alpha>
+	   </textarea>
+	   <textarea name="album">
+	     <alpha>50</alpha>
+	   </textarea>
+	   <textarea name="year">
+	     <alpha>50</alpha>
+	   </textarea>
+	   <textarea name="lastplayed">
+	     <alpha>50</alpha>
+	   </textarea>
+	   <statetype name="ratingstate">
+	     <alpha>500</alpha>
+	   </statetype>
+	   
+	   <imagetype name="buttonimage">
+	     <alpha>50</alpha>
+	   </imagetype>
+	   
+	   <!-- show to the user that he can jump to the right -->
+	   <imagetype name="direction">
+	     <alpha>0</alpha>
+	   </imagetype>
+	   <!-- show to the user that he can jump to the right -->
+	   <imagetype name="directionright">
+	     <alpha>0</alpha>
+	   </imagetype>
+	   <imagetype name="1400x140">
+	     <alpha>50</alpha>
+	   </imagetype>
+	 </state>
+       </statetype>
+       
+     </buttonlist>
+     
+     
+     
+     <progressbar name="bufferprogress" from="baseprogressbar1400">
+       <position>503,112</position>
+     </progressbar>
+     <textarea name="bufferstatus" from="baseprogresstext1400">
+       <position>503,112</position>
+     </textarea>
+     
+     <progressbar name="progress" from="baseprogressbar1400">
+       <position>503,910</position>
+     </progressbar>     
+     
+     <textarea name="time" from="baseprogresstext1400">
+       <position>503,910</position>
+     </textarea>
+     
+     
+     <statetype name="trackstate">
+       <position>520,913</position>
+       <state name="default">
+       </state>
+       <state name="playing">
+	 
+	 <imagetype name="playstatus">
+	   <area>0,0,44,51</area>
+	   <filename>music/media-playback-start.png</filename>
+	 </imagetype>
+       </state>
+       <state name="paused">
+	 <imagetype name="playstatus">
+	   <area>0,0,50,51</area>
+	   <filename>music/media-playback-pause.png</filename>
+	 </imagetype>
+       </state>
+       <state name="stopped">
+	 <imagetype name="playstatus">
+	   <area>0,0,49,51</area>
+	   <filename>music/media-playback-stop.png</filename>
+	 </imagetype>
+       </state>
+     </statetype>
+     
+     <imagetype name="speaker">
+       <area>1720,1000,80,65</area>
+       <filename>music/speaker.png</filename>
+     </imagetype>	 
+     <textarea name="volume"  from="basepagetitle">
+       <area>1690,1000,215,80</area>
+       <align>right,vcenter</align>
+     </textarea>
+     
+     
+     <!--        <imagetype name="coverart">
+     <area>5,120,490,490</area>
+     <preserveaspect>true</preserveaspect>
+     <reflection axis="vertical" shear="20" scale="55" length="70" />
+   </imagetype>-->
+   
+   
+     <statetype name="shufflestate">
+       <position>1840,913</position>
+       <state name="off">
+	 <imagetype name="shuffle">
+	   <area>0,0,44,51</area>
+	   <filename>music/normal.png</filename>
+	 </imagetype>
+       </state>
+       <state name="random">
+	 <imagetype name="shuffle">
+	   <area>0,0,49,51</area>
+	   <filename>music/random.png</filename>
+	 </imagetype>
+       </state>
+       <state name="intelligent">
+	 <imagetype name="shuffle">
+	   <area>0,0,33,51</area>
+	   <filename>music/inteligent.png</filename>
+	 </imagetype>
+       </state>
+       <state name="album">
+	 <imagetype name="shuffle">
+	   <area>0,0,51,51</area>
+	   <filename>music/album.png</filename>
+	 </imagetype>
+       </state>
+       <state name="artist">
+	 <imagetype name="shuffle">
+	   <area>0,0,49,51</area>
+	   <filename>music/artist.png</filename>
+	 </imagetype>
+       </state>
+     </statetype>
+     
+   </window>
+   
+   <window name="editstreammetadata">
+     <animation trigger="AboutToShow">
+       <section duration="500" centre="middle">
+	 <alpha start="0" end="255" easingcurve="InOutQuad"/>
+       </section>
+     </animation>
+     <imagetype name="recbackground">
+       <position>0,0</position>
+       <filename>schedule/managerecrulesbackground.png</filename>
+     </imagetype>
+     <!--Clock and Date on the right	-->
+     <clock name="clock" from="baseclock" />
+     <!--Title on top of the page	-->
+     <textarea name="pagetitle" from="basepagetitle">
+       <value>Add/Edit Music Stream</value>
+     </textarea>
+     
+     <button name="searchbutton" from="basepopupbutton">
+       <position>300,200</position>
+       <value>Search for Stream</value>
+     </button>
+     
+     
+     <textarea name="stationlabel"  from="basetextarea">
+       <area>300,340,500,50</area>
+       <align>right,vcenter</align>
+       <value>Station:</value>
+     </textarea>
+     <textedit name="stationedit" from="basetexteditwide">
+       <position>810,340</position>
+     </textedit>
+     
+     
+     
+     <textarea name="channellabel"  from="basetextarea">
+       <area>300,400,500,50</area>
+       <align>right,vcenter</align>
+       <value>Channel:</value>
+     </textarea>
+     <textedit name="channeledit"  from="basetexteditwide">
+       <position>810,400</position>
+     </textedit>
+     
+     <textarea name="urllabel"  from="basetextarea">
+       <area>300,460,500,50</area>
+       <align>right,vcenter</align>
+       <value>URL:</value>
+     </textarea>
+     <textedit name="urledit" from="basetexteditwide">
+       <position>810,460</position>
+     </textedit>
+     
+     <textarea name="logourllabel" from="basetextarea">
+       <area>300,520,500,40</area>
+       <align>right,vcenter</align>
+       <value>Logo URL:</value>
+     </textarea>
+     <textedit name="logourledit" from="basetexteditwide">
+       <position>810,520</position>
+     </textedit>
+     
+     <textarea name="genrelabel" from="basetextarea">
+       <area>300,580,500,40</area>
+       <align>right,vcenter</align>
+       <value>Genres:</value>
+     </textarea>
+     <textedit name="genreedit" from="basetexteditwide">
+       <position>810,580</position>
+     </textedit>
+     
+     <textarea name="formatlabel" from="basetextarea">
+       <area>300,640,500,40</area>
+       <align>right,vcenter</align>
+       <value>Metadata Format:</value>
+     </textarea>
+     <textedit name="formatedit" from="basetexteditwide">
+       <position>810,640</position>
+     </textedit>
+     
+     <button name="cancelbutton" from="basepopupbuttoncancel">
+       <position>300,800</position>
+       <value>Cancel</value>
+     </button>
+     
+     <button name="savebutton" from="basepopupbuttonsave">
+       <position>1020,800</position>
+       <value>Save</value>
+     </button>
+     
+   </window>
+   
+   <window name="searchstream">
+     
+     <animation trigger="AboutToShow">
+       <section duration="500" centre="middle">
+	 <alpha start="0" end="255" easingcurve="InOutQuad"/>
+       </section>
+     </animation>
+     <imagetype name="recbackground">
+       <position>0,0</position>
+       <filename>schedule/managerecrulesbackground.png</filename>
+     </imagetype>
+     <!--Clock and Date on the right	-->
+     <clock name="clock" from="baseclock" />
+     <!--Title on top of the page	-->
+     <textarea name="pagetitle" from="basepagetitle">
+       <value>Search for Music Stream</value>
+     </textarea>
+     
+     
+     
+     <buttonlist name="streamlist" from="basebuttonlist2">
+       <position>254,210</position>
+       <statetype name="buttonitem">
+	 <state name="active">
+	   <textarea name="station"  from="basesmallstatetext">
+	     <position>100,0</position>
+	   </textarea>
+	   <textarea name="genre" from="basesmallstatetext">
+	     <position>100,29</position>
+	     <cutdown>yes</cutdown>
+	   </textarea>
+	   <textarea name="channel">
+	     <font>basebuttontitlesubtitle</font>
+	     <area>5,0,800,55</area>
+	     <align>vcenter</align>
+	     <cutdown>yes</cutdown>
+	     <multiline>yes</multiline>
+	   </textarea>
+	 </state>
+	 
+	 <state name="selectedactive">
+	   <textarea name="channel" from="buttontext">
+	     <font>basebuttontitle</font>
+	     <area>5,0,800,40</area>
+	     <cutdown>yes</cutdown>
+	   </textarea>
+	   
+	   <textarea name="station" from="buttontext">
+	     <font>basebuttonsubtitle</font>
+	     <area>5,40,915,40</area>
+	     <cutdown>yes</cutdown>
+	   </textarea>
+	   
+	   <textarea name="genre" from="buttontext">
+	     <font>basebuttondescription</font>
+	     <area>5,80,920,60</area>	
+	     <multiline>yes</multiline>
+	     <align>bottom</align>
+	     <cutdown>yes</cutdown>
+	   </textarea>
+	   <imagetype name="direction">
+	     <alpha>0</alpha>
+	   </imagetype>
+	   <imagetype name="directionright">
+	     <alpha>0</alpha>
+	   </imagetype>
+	 </state>
+	 <state name="selectedinactive" from="selectedactive">
+	   <textarea name="channel"  from="basesmallstatetext">
+	     <alpha>30</alpha>
+	   </textarea>
+	   <textarea name="genre" from="basesmallstatetext">
+	     <alpha>30</alpha>
+	   </textarea>
+	   <textarea name="station">
+	     <alpha>30</alpha>
+	   </textarea>
+	 </state>
+	 <state name="inactive" from="active">
+	   <textarea name="channel"  from="basesmallstatetext">
+	     <alpha>30</alpha>
+	   </textarea>
+	   <textarea name="genre" from="basesmallstatetext">
+	     <alpha>30</alpha>
+	   </textarea>
+	   <textarea name="station">
+	     <alpha>30</alpha>
+	   </textarea>
+	 </state>
+       </statetype>
+       
+       
+     </buttonlist>
+     
+     
+     <textarea name="stationlabel"  from="basetextarea">
+       <area>0,950,350,50</area>
+       <align>right,vcenter</align>
+       <value>Station:</value>
+     </textarea>
+     <buttonlist name="stationlist" from="baseselector">
+       <position>410,950</position>
+     </buttonlist>
+     
+     <textarea name="genrelabel" from="stationlabel">
+       <position>0,1010</position>
+       <value>Genre:</value>
+     </textarea>
+     <buttonlist name="genrelist" from="baseselector">
+       <position>410,1010</position>
+     </buttonlist>
+     
+     <textarea name="channellabel" from="basetextarea">
+       <area>1080,960,350,50</area>
+       <align>left,vcenter</align>
+       <value>Channel:</value>
+     </textarea>
+     <textedit name="channeledit" from="basetexteditwide">
+       <position>1080,1010</position>
+     </textedit>
+     
+     <textarea name="matchestext">
+       <font>menuselectfont</font>
+       <area>0,220,1600,660</area>
+       <align>right, vcenter</align>
+     </textarea>
+     
+   </window>
+   
+ </mythuitheme>
+ 
