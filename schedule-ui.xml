@@ -2187,24 +2187,13 @@
             </section>
             
         </animation>
-        
-        <imagetype name="fanart">
-            
-            <area>0,0,1920,1080</area>
-            
-            <filename />
-            
-        </imagetype>
-        
-        <!--  we use one large background image to draw all widgets on top	  -->
-        
-        
+
         
         <imagetype name="recbackground">
             
             <position>0,0</position>
             
-            <filename>schedule/managerecrulesbackground.png</filename>
+            <filename>schedule/conflictlistbackground.png</filename>
             
         </imagetype>
         
@@ -2220,13 +2209,11 @@
         
         <webbrowser name="browser">
             
-            <area>254,180,1170,660</area>
-            
-            
-            
+            <area>254,205,1400,790</area>
+
             <zoom>1.0</zoom>
             
-            <background color="#000000" alpha="1"/>
+            <background color="#FFFFFF" alpha="0"/>
             
         </webbrowser>
         

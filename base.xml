@@ -1962,7 +1962,13 @@
                 <zoom start="0" end="100" easingcurve="InOutElastic" />
                 <alpha start="0" end="255" easingcurve="InOutElastic"/>
             </section>
-        </animation>      
+        </animation>
+	<animation trigger="AboutToHide">
+            <section duration="300" centre="middle">
+                <zoom start="0" end="100" easingcurve="OutInElastic" />
+                <alpha start="0" end="255" easingcurve="OutInElastic"/>
+            </section>
+        </animation>
         <area>-1,-1,600,800</area>
         <imagetype name="backimg" from="basepopupboxback" />
         <textarea name="messagearea" from="basemessagearea" />

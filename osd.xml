@@ -64,7 +64,8 @@
             <font>basebuttontitlewhite</font>
             <area>20,870,1110,40</area>
             <cutdown>yes</cutdown>
-            <template>%00x00| %%SUBTITLE%</template>    
+            <template>%00x00| %%SUBTITLE%</template> 
+	    <scroll direction="left" />
         </textarea>
         <textarea name="description" from="basetextarea">
             <area>150,915,980,150</area>
