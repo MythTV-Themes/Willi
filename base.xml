@@ -56,7 +56,7 @@
     </fontdef>
     
     <fontdef name="basetitle" face="Orbitron">
-        <pixelsize>55</pixelsize>
+        <pixelsize>50</pixelsize>
         <gradient direction="horizontal" alpha="255">
             <stop position="0" color="#FFFFFF" />
             <stop position="45" color="#FFFFFF" alpha="200" />
