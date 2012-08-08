@@ -90,6 +90,9 @@
             <position>630,540</position>
             <value>Done</value>
         </button>
+	
+        <imagetype name="reflection" from="basereflection"/>
+     
     </window>
     
     <window name="imagefinder">

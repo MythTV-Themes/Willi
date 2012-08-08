@@ -7,13 +7,9 @@
     <window name="programguide">
         
         <animation trigger="AboutToShow">
-            
             <section duration="500" centre="middle">
-                
                 <alpha start="0" end="255" easingcurve="InOutQuad"/>
-                
             </section>
-            
         </animation>
         
         <!-- Fanart behind everyhting  -->
@@ -416,7 +412,7 @@
         
         
         
-    </window>
+    <imagetype name="reflection" from="basereflection"/></window>
     
     <window name="programguide-video">
         
@@ -831,7 +827,7 @@
         </imagetype>
 
         
-    </window>
+    <imagetype name="reflection" from="basereflection"/></window>
     
     
     
@@ -839,6 +835,11 @@
     
     
     <window name="viewscheduled">
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <alpha start="0" end="255" easingcurve="InOutQuad"/>
+            </section>
+        </animation>
         
         
         
@@ -1003,13 +1004,6 @@
                     </imagetype>
                     
                 </state>
-                
-                
-                
-                
-                
-                
-                
             </statetype>
             
         </buttonlist>
@@ -1054,10 +1048,6 @@
             
         </textarea>
         
-        
-        
-        
-        
         <textarea name="norecordings_info">
             
             <area>500,180,680,70</area>
@@ -1080,11 +1070,16 @@
         
         
         
-    </window>
+    <imagetype name="reflection" from="basereflection"/></window>
     
     
     
     <window name="channelrecpriority">
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <alpha start="0" end="255" easingcurve="InOutQuad"/>
+            </section>
+        </animation>
         
         
         
@@ -1274,11 +1269,16 @@
         
         
         
-    </window>
+    <imagetype name="reflection" from="basereflection"/></window>
     
     
     
     <window name="programrecpriority">
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <alpha start="0" end="255" easingcurve="InOutQuad"/>
+            </section>
+        </animation>
         
         
         
@@ -1466,13 +1466,18 @@
         
         
         
-    </window>
+    <imagetype name="reflection" from="basereflection"/></window>
     
     
     
     <!-- TODO Theme this screen -->
     
     <window name="custompriority"> 
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <alpha start="0" end="255" easingcurve="InOutQuad"/>
+            </section>
+        </animation>
         
         
         
@@ -1620,7 +1625,7 @@
         
         
         
-    </window>
+    <imagetype name="reflection" from="basereflection"/></window>
     
     
     
@@ -2172,7 +2177,7 @@
         
         
         
-    </window>
+    <imagetype name="reflection" from="basereflection"/></window>
     
     
     
@@ -2219,7 +2224,7 @@
         
         
         
-    </window>
+    <imagetype name="reflection" from="basereflection"/></window>
     
     
     
@@ -2264,6 +2269,11 @@
     
     
     <window name="programfind">
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <alpha start="0" end="255" easingcurve="InOutQuad"/>
+            </section>
+        </animation>
         
         
         
@@ -2571,7 +2581,7 @@
         
         
         
-    </window>
+    <imagetype name="reflection" from="basereflection"/></window>
     
     
     
@@ -2867,7 +2877,7 @@
         
         
         
-    </window>
+    <imagetype name="reflection" from="basereflection"/></window>
     
     
     
@@ -3047,7 +3057,7 @@
         
         
         
-    </window>
+    <imagetype name="reflection" from="basereflection"/></window>
     
     
     
@@ -3235,7 +3245,7 @@
             
         </button>
         
-    </window>
+    <imagetype name="reflection" from="basereflection"/></window>
     
     
     
@@ -3477,7 +3487,7 @@
             
         </button>
         
-    </window>
+    <imagetype name="reflection" from="basereflection"/></window>
     
     
     
@@ -3697,7 +3707,7 @@
             
         </button>
         
-    </window>
+    <imagetype name="reflection" from="basereflection"/></window>
     
     
     
@@ -3901,7 +3911,7 @@
             
         </button>
         
-    </window>
+    <imagetype name="reflection" from="basereflection"/></window>
     
     
     
@@ -4149,7 +4159,7 @@
             
         </button>
         
-    </window>
+    <imagetype name="reflection" from="basereflection"/></window>
     
     
     
@@ -4368,7 +4378,7 @@
         
         
         
-    </window>
+    <imagetype name="reflection" from="basereflection"/></window>
     
     
     

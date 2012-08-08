@@ -164,6 +164,8 @@
         <button name="action_3" from="basepopupbutton">
             <position>1080,960</position>
         </button>
+	
+	<imagetype name="reflection" from="basereflection"/>
         
     </window>
     

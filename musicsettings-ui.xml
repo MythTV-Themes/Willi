@@ -114,6 +114,7 @@
             <position>1020,700</position>
             <value>Save</value>
         </button>
+	<imagetype name="reflection" from="basereflection"/>
     </window>
     
     <window name="playersettings">
@@ -189,6 +190,7 @@
             <position>1020,700</position>
             <value>Save</value>
         </button>
+	<imagetype name="reflection" from="basereflection"/>
     </window>
     
     <window name="ratingsettings">
@@ -263,6 +265,7 @@
             <position>1020,700</position>
             <value>Save</value>
         </button>
+	<imagetype name="reflection" from="basereflection"/>
     </window>
     
     <window name="importsettings">
@@ -381,6 +384,7 @@
             <position>1020,700</position>
             <value>Save</value>
         </button>
+	<imagetype name="reflection" from="basereflection"/>
     </window>
     
     <window name="visualizationsettings">
@@ -455,6 +459,7 @@
             <position>1020,700</position>
             <value>Save</value>
         </button>
+	<imagetype name="reflection" from="basereflection"/>
     </window>
     
 </mythuitheme>

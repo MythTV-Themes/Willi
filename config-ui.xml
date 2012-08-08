@@ -86,6 +86,8 @@
             <position>1027,630</position>
             <value>Skip</value>
         </button>
+	
+	<imagetype name="reflection" from="basereflection"/>
         
     </window>
     
@@ -226,6 +228,8 @@
             <position>1080,960</position>
             <value>Delete All</value>
         </button>
+	
+	<imagetype name="reflection" from="basereflection"/>
         
     </window>
     
@@ -376,6 +380,8 @@
             <position>1080,960</position>
             <value>Save</value>
         </button>
+	
+	<imagetype name="reflection" from="basereflection"/>
         
     </window>
     
@@ -455,6 +461,8 @@
             <value>ok</value>
         </button>
         
+	<imagetype name="reflection" from="basereflection"/>
+	
     </window>
     
     <window name="generalwizard">
@@ -505,6 +513,8 @@
             <position>1020,820</position>
             <value>Next</value>
         </button>
+	
+	<imagetype name="reflection" from="basereflection"/>
         
     </window>
     
@@ -614,6 +624,8 @@
             <position>1020,820</position>
             <value>Next</value>
         </button>
+	
+	<imagetype name="reflection" from="basereflection"/>
         
     </window>
     
@@ -672,6 +684,8 @@
             <position>1020,820</position>
             <value>Finish</value>
         </button>
+	
+	<imagetype name="reflection" from="basereflection"/>
         
     </window>
     
