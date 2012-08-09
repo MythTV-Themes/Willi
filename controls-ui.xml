@@ -1,203 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
-    <!--  This XML file defines the Window that can be used to change the keybindings-->
-    <window name="controls">
-        <!--  we use one large background image to draw all widgets on top	  -->
-        <imagetype name="background" from="basebackground" />
-        <imagetype name="recbackground">
-            <position>0,0</position>
-            <filename>controls/controlsbackground.png</filename>
-        </imagetype>
-        
-        <!--  Clock and Date on the right	  -->
-        <clock name="clock" from="baseclock" />
-        
-        <!--  Title on top of the page	  -->
-        <textarea name="pagetitle" from="basepagetitle">
-            <value>Edit Key Bindings</value>
-        </textarea>
-        
-        <!--  This is the left side of the selections.   -->
-        <buttonlist name="leftlist" from="basegroups">
-            <area>5,180,490,660</area>
-            <buttonarea>0,0,100%,100%</buttonarea>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,490,55</area>
-                    <textarea name="buttontext">
-                        <area>5,0,480,55</area>
-                        <align>vcenter</align>
-                        <cutdown>yes</cutdown>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,490,140</area>
-                    <textarea name="buttontext">
-                        <font>basebuttontitle</font>
-                        <area>5,0,480,140</area>
-                        <cutdown>yes</cutdown>
-                        <multiline>yes</multiline>
-                    </textarea>
-                    <!-- show to the user that he can jump to the right -->
-                    <imagetype name="direction">
-                        <position>455,59</position>
-                        <filename>icons/draw-triangle2.png</filename>
-                        <alpha>200</alpha>
-                    </imagetype>
-                </state>
-                <state name="selectedinactive" from="selectedactive">
-                    <textarea name="buttontext">
-                        <alpha>30</alpha>
-                    </textarea>
-                    <!-- show to the user that he can jump to the right -->
-                    <imagetype name="direction">
-                        <alpha>0</alpha>
-                    </imagetype>
-                </state>
-                <state name="inactive" from="active">
-                    <textarea name="buttontext">
-                        <alpha>30</alpha>
-                    </textarea>
-                </state>
-            </statetype>
-        </buttonlist>
-        
-        
-        
-        <!--  This is the right side of the selections. It shows the recordings that are available to the user.	  -->
-        <buttonlist name="rightlist" from="basebuttonlist2">
-            <area>503,180,1170,660</area>
-            <buttonarea>0,0,100%,100%</buttonarea>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,1170,55</area>
-                    
-                    <textarea name="buttontext">
-                        <font>basebuttontitlesubtitle</font>
-                        <area>5,0,800,55</area>
-                        <align>vcenter</align>
-                        <cutdown>yes</cutdown>
-                        <multiline>yes</multiline>
-                    </textarea>
-                    
-                </state>
-                
-                <!--  The item that is selected when the list is active  -->                
-                <state name="selectedactive">
-                    
-                    <area>0,0,1170,140</area>
-                    
-                    <textarea name="buttontext">
-                        <font>basebuttontitle</font>
-                        <area>5,0,800,40</area>
-                        <cutdown>yes</cutdown>
-                    </textarea>
-                    
-                    
-                    
-                    <!-- show to the user that he can jump to the left -->
-                    <imagetype name="direction">
-                        <position>-40,59</position>
-                        <filename>icons/draw-triangle1.png</filename>
-                        <alpha>200</alpha>
-                    </imagetype>
-                    <!-- dont't show to the user that he can jump to the right -->
-                    <imagetype name="directionright">
-                        <alpha>0</alpha>
-                    </imagetype>
-                </state>
-                
-                
-                <state name="selectedinactive" from="selectedactive">
-                    <textarea name="buttontext">
-                        <alpha>30</alpha>
-                    </textarea>
-                    
-                    <textarea name="rightdesc">
-                        <alpha>30</alpha>
-                    </textarea>
-                    <!-- show to the user that he can jump to the right -->
-                    <imagetype name="direction">
-                        <alpha>0</alpha>
-                    </imagetype>
-                </state>
-                
-                <state name="inactive" from="active">
-                    
-                </state>
-            </statetype>
-        </buttonlist>
-        
-        <textarea name="description">
-            <font>basebuttonsubtitle</font>
-            <area>510,480,915,100</area>
-            <multiline>yes</multiline>
+  <!--  This XML file defines the Window that can be used to change the keybindings-->
+  <window name="controls">
+    <!--  we use one large background image to draw all widgets on top	  -->
+    <imagetype name="background" from="basebackground" />
+    <imagetype name="recbackground">
+      <position>0,0</position>
+      <filename>controls/controlsbackground.png</filename>
+    </imagetype>
+    
+    <!--  Clock and Date on the right	  -->
+    <clock name="clock" from="baseclock" />
+    
+    <!--  Title on top of the page	  -->
+    <textarea name="pagetitle" from="basepagetitle">
+      <value>Edit Key Bindings</value>
+    </textarea>
+    
+    <!--  This is the left side of the selections.   -->
+    <buttonlist name="leftlist" from="basegroups">
+      <area>5,180,490,660</area>
+      <buttonarea>0,0,100%,100%</buttonarea>
+      <statetype name="buttonitem">
+        <state name="active">
+          <area>0,0,490,55</area>
+          <textarea name="buttontext">
+            <area>5,0,480,55</area>
+            <align>vcenter</align>
             <cutdown>yes</cutdown>
-        </textarea>
-        
-        <textarea name="rightdesc">
-            <area>656,46,560,30</area>
-            <value>Context</value>
+          </textarea>
+        </state>
+        <state name="selectedactive">
+          <area>0,0,490,140</area>
+          <textarea name="buttontext">
+            <font>basebuttontitle</font>
+            <area>5,0,480,140</area>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+          </textarea>
+          <!-- show to the user that he can jump to the right -->
+          <imagetype name="direction">
+            <position>455,59</position>
+            <filename>icons/draw-triangle2.png</filename>
+            <alpha>200</alpha>
+          </imagetype>
+        </state>
+        <state name="selectedinactive" from="selectedactive">
+          <textarea name="buttontext">
+            <alpha>30</alpha>
+          </textarea>
+          <!-- show to the user that he can jump to the right -->
+          <imagetype name="direction">
             <alpha>0</alpha>
-        </textarea>
+          </imagetype>
+        </state>
+        <state name="inactive" from="active">
+          <textarea name="buttontext">
+            <alpha>30</alpha>
+          </textarea>
+        </state>
+      </statetype>
+    </buttonlist>
+    
+    <!--  This is the right side of the selections. It shows the recordings that are available to the user.	  -->
+    <buttonlist name="rightlist" from="basebuttonlist2">
+      <area>503,180,1170,660</area>
+      <buttonarea>0,0,100%,100%</buttonarea>
+      <statetype name="buttonitem">
+        <state name="active">
+          <area>0,0,1170,55</area>
+          
+          <textarea name="buttontext">
+            <font>basebuttontitlesubtitle</font>
+            <area>5,0,800,55</area>
+            <align>vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+          </textarea>
+          
+        </state>
         
-        <textarea name="leftdesc">
-            <area>656,46,560,30</area>
-            <value>Actions</value>
+        <!--  The item that is selected when the list is active  -->                
+        <state name="selectedactive">
+          
+          <area>0,0,1170,140</area>
+          
+          <textarea name="buttontext">
+            <font>basebuttontitle</font>
+            <area>5,0,800,40</area>
+            <cutdown>yes</cutdown>
+          </textarea>
+          
+          <!-- show to the user that he can jump to the left -->
+          <imagetype name="direction">
+            <position>-40,59</position>
+            <filename>icons/draw-triangle1.png</filename>
+            <alpha>200</alpha>
+          </imagetype>
+          <!-- dont't show to the user that he can jump to the right -->
+          <imagetype name="directionright">
             <alpha>0</alpha>
-        </textarea>
-        
-        <button name="action_0" from="basepopupbutton">
-            <position>20,900</position>
-        </button>
+          </imagetype>
+        </state>
         
         
-        <button name="action_1" from="basepopupbutton">
-            <position>1080,900</position>
-        </button>
+        <state name="selectedinactive" from="selectedactive">
+          <textarea name="buttontext">
+            <alpha>30</alpha>
+          </textarea>
+          
+          <textarea name="rightdesc">
+            <alpha>30</alpha>
+          </textarea>
+          <!-- show to the user that he can jump to the right -->
+          <imagetype name="direction">
+            <alpha>0</alpha>
+          </imagetype>
+        </state>
         
-        <button name="action_2" from="basepopupbutton">
-            <position>20,960</position>
-        </button>
-        
-        <button name="action_3" from="basepopupbutton">
-            <position>1080,960</position>
-        </button>
-	
-	<imagetype name="reflection" from="basereflection"/>
-        
-    </window>
+        <state name="inactive" from="active">
+          
+        </state>
+      </statetype>
+    </buttonlist>
     
-    <window name="keygrabpopup">
-        <!-- Popup Dialogue Box -->
-        <area>-1,-1,600,800</area>
-        <imagetype name="backimg">
-            <filename>MythPopupBox-background.png</filename>
-        </imagetype>
-        <textarea name="message" from="basemessagearea" />
-        
-        <imagetype name="keyboard">
-            <position>50,180</position>
-            <filename>icons/input-keyboard.png</filename>
-            <alpha>100</alpha>
-        </imagetype>   
-        
-        <button name="cancel" from="basepopupbuttoncancel">
-            <position>5,675</position>
-            <value>Cancel</value>
-        </button>
-        <button name="ok" from="basepopupbuttonok">
-            <position>5,735</position>
-            <value>OK</value>
-        </button>
-        
-    </window>
+    <textarea name="description">
+      <font>basebuttonsubtitle</font>
+      <area>510,480,915,100</area>
+      <multiline>yes</multiline>
+      <cutdown>yes</cutdown>
+    </textarea>
     
+    <textarea name="rightdesc">
+      <area>656,46,560,30</area>
+      <value>Context</value>
+      <alpha>0</alpha>
+    </textarea>
     
+    <textarea name="leftdesc">
+      <area>656,46,560,30</area>
+      <value>Actions</value>
+      <alpha>0</alpha>
+    </textarea>
     
+    <button name="action_0" from="basepopupbutton">
+      <position>20,900</position>
+    </button>
+    <button name="action_1" from="basepopupbutton">
+      <position>1080,900</position>
+    </button>
     
+    <button name="action_2" from="basepopupbutton">
+      <position>20,960</position>
+    </button>
     
+    <button name="action_3" from="basepopupbutton">
+      <position>1080,960</position>
+    </button>
     
+    <imagetype name="reflection" from="basereflection"/>
     
+  </window>
+  
+  <window name="keygrabpopup">
+    <!-- Popup Dialogue Box -->
+    <area>-1,-1,600,800</area>
+    <imagetype name="backimg">
+      <filename>MythPopupBox-background.png</filename>
+    </imagetype>
+    <textarea name="message" from="basemessagearea" />
+    
+    <imagetype name="keyboard">
+      <position>50,180</position>
+      <filename>icons/input-keyboard.png</filename>
+      <alpha>100</alpha>
+    </imagetype>   
+    
+    <button name="cancel" from="basepopupbuttoncancel">
+      <position>5,675</position>
+      <value>Cancel</value>
+    </button>
+    <button name="ok" from="basepopupbuttonok">
+      <position>5,735</position>
+      <value>OK</value>
+    </button>
+    
+  </window>
+  
+
 </mythuitheme>

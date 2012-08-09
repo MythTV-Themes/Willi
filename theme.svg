@@ -14,7 +14,7 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:export-ydpi="90"
    inkscape:export-xdpi="90"
-   inkscape:export-filename="/usr/share/mythtv/themes/Willi/reflection.png"
+   inkscape:export-filename="/usr/share/mythtv/themes/Willi/video/tree/layout.png"
    style="display:inline"
    sodipodi:docname="theme.svg"
    inkscape:version="0.48.3.1 r9886"
@@ -29,9 +29,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.93333333"
-     inkscape:cx="4527.1832"
-     inkscape:cy="136.04748"
+     inkscape:zoom="0.73611111"
+     inkscape:cx="997.44479"
+     inkscape:cy="648.73026"
      inkscape:document-units="px"
      showgrid="false"
      inkscape:window-width="1920"
@@ -44,7 +44,7 @@
      inkscape:snap-page="true"
      inkscape:snap-grids="true"
      inkscape:guide-bbox="true"
-     inkscape:current-layer="layer18">
+     inkscape:current-layer="layer19">
     <inkscape:grid
        snapvisiblegridlinesonly="true"
        enabled="true"
@@ -32985,7 +32985,7 @@
        xlink:href="#linearGradient5440-77-3-6-7"
        id="linearGradient5222-10-3-1"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.38203125,0,0,0.99861106,-147.3125,-16.629701)"
+       gradientTransform="matrix(0.38203125,0,0,0.99861106,-147.31249,-46.629699)"
        x1="400"
        y1="527.36218"
        x2="4772.1216"
@@ -33163,7 +33163,7 @@
        gradientTransform="matrix(0.38203125,0,0,0.99861106,-147.3125,-16.629701)"
        x1="400"
        y1="527.36218"
-       x2="4772.1216"
+       x2="5415.7632"
        y2="527.36218" />
     <linearGradient
        id="linearGradient5440-77-3-9-4-8">
@@ -34073,7 +34073,7 @@
        gradientTransform="matrix(0.38203125,0,0,0.99861106,-147.3125,-16.629701)"
        x1="400"
        y1="527.36218"
-       x2="4772.1216"
+       x2="5405.0952"
        y2="527.36218" />
     <linearGradient
        inkscape:collect="always"
@@ -34083,8 +34083,8 @@
        gradientTransform="matrix(0.38203125,0,0,0.99861106,-147.3125,-16.629701)"
        x1="400"
        y1="527.36218"
-       x2="4772.1216"
-       y2="527.36218" />
+       x2="5419.3076"
+       y2="528.72253" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient5440-77-3-9-4-8"
@@ -34093,7 +34093,7 @@
        gradientTransform="matrix(0.38203125,0,0,0.99861106,-147.3125,-16.629701)"
        x1="400"
        y1="527.36218"
-       x2="4772.1216"
+       x2="5415.7832"
        y2="527.36218" />
     <linearGradient
        inkscape:collect="always"
@@ -45565,6 +45565,66 @@
        id="linearGradient12122"
        xlink:href="#linearGradient5440-77-3-6-9-1-7"
        inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient5440-77-3-9-4-8-06">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.16149068;"
+         offset="0"
+         id="stop5442-9-04-49-3-3-0" />
+      <stop
+         id="stop5444-3-4-9-7-2-10"
+         offset="0.29402301"
+         style="stop-color:#b3b3b3;stop-opacity:0.7019608;" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.09006211;"
+         offset="1"
+         id="stop5446-19-44-1-2-9-7" />
+    </linearGradient>
+    <linearGradient
+       y2="527.36218"
+       x2="4772.1216"
+       y1="527.36218"
+       x1="400"
+       gradientTransform="matrix(0.38203125,0,0,0.99861106,-1159.3125,-166.62973)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient11277"
+       xlink:href="#linearGradient5440-77-3-9-4-8-06"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5440-77-3-9-4-8-4"
+       id="linearGradient5222-10-37-1-93-78"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.38203125,0,0,0.99861106,-153.94458,-14.200075)"
+       x1="400"
+       y1="527.36218"
+       x2="5415.7515"
+       y2="520.5603" />
+    <linearGradient
+       id="linearGradient5440-77-3-9-4-8-4">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.16149068;"
+         offset="0"
+         id="stop5442-9-04-49-3-3-5" />
+      <stop
+         id="stop5444-3-4-9-7-2-91"
+         offset="0.29402301"
+         style="stop-color:#b3b3b3;stop-opacity:0.7019608;" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.09006211;"
+         offset="1"
+         id="stop5446-19-44-1-2-9-9" />
+    </linearGradient>
+    <linearGradient
+       y2="527.36218"
+       x2="4772.1216"
+       y1="527.36218"
+       x1="400"
+       gradientTransform="matrix(0.38203125,0,0,0.99861106,-1159.3125,-166.62973)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient11331"
+       xlink:href="#linearGradient5440-77-3-9-4-8-4"
+       inkscape:collect="always" />
   </defs>
   <metadata
      id="metadata7">
@@ -45579,11 +45639,12 @@
     </rdf:RDF>
   </metadata>
   <g
-     style="display:inline"
+     style="display:none"
      inkscape:label="background"
      id="layer9"
      inkscape:groupmode="layer"
-     transform="translate(0,30)">
+     transform="translate(0,30)"
+     sodipodi:insensitive="true">
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -45663,11 +45724,11 @@
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="Header"
-     style="display:none">
+     style="display:inline">
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
-       inkscape:export-filename="/usr/share/mythtv/themes/Willi/schedule/programguidebackground.png"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/video/tree/layout.png"
        y="0"
        x="0"
        height="105"
@@ -45677,7 +45738,7 @@
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
-       inkscape:export-filename="/usr/share/mythtv/themes/Willi/schedule/programguidebackground.png"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/video/tree/layout.png"
        y="103.3"
        x="0"
        height="1.7"
@@ -46029,7 +46090,7 @@
        inkscape:export-ydpi="90">
       <path
          transform="matrix(-1.489736,0,0,-1.001252,60.60436,75.3126)"
-         d="m 40.481863,36.421127 c 0,4.637477 -7.004387,8.396894 -15.644737,8.396894 -8.64035,0 -15.6447375,-3.759417 -15.6447375,-8.396894 0,-4.637476 7.0043875,-8.396893 15.6447375,-8.396893 8.64035,0 15.644737,3.759417 15.644737,8.396893 z"
+         d="m 40.481863,36.421127 a 15.644737,8.3968935 0 1 1 -31.2894745,0 15.644737,8.3968935 0 1 1 31.2894745,0 z"
          sodipodi:ry="8.3968935"
          sodipodi:rx="15.644737"
          sodipodi:cy="36.421127"
@@ -46069,7 +46130,7 @@
        width="757"
        height="749"
        x="910.5"
-       y="140.5"
+       y="110.5"
        ry="20"
        rx="20.000002"
        inkscape:export-filename="/usr/share/mythtv/themes/Willi/video/itemdetaillayout.png"
@@ -46130,26 +46191,6 @@
        width="758"
        id="rect2818-1-9-81"
        style="opacity:0.8;fill:url(#linearGradient13801);fill-opacity:1;stroke:none;display:inline" />
-    <rect
-       inkscape:export-ydpi="90"
-       inkscape:export-xdpi="90"
-       inkscape:export-filename="/usr/share/mythtv/themes/Willi/video/itemdetaillayout.png"
-       y="9.9475983e-14"
-       x="0"
-       height="105"
-       width="1680"
-       id="rect2818-20-66"
-       style="opacity:0.8;fill:#2b0000;fill-opacity:1;stroke:none;display:inline" />
-    <rect
-       inkscape:export-ydpi="90"
-       inkscape:export-xdpi="90"
-       inkscape:export-filename="/usr/share/mythtv/themes/Willi/video/itemdetaillayout.png"
-       y="105"
-       x="0"
-       height="2"
-       width="1680"
-       id="rect2818-0-65-7"
-       style="opacity:0.8;fill:#ffffff;fill-opacity:1;stroke:none;display:inline" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -46396,7 +46437,7 @@
      inkscape:groupmode="layer"
      id="layer19"
      inkscape:label="video - tree"
-     style="display:none"
+     style="display:inline"
      transform="translate(0,30)">
     <rect
        inkscape:export-ydpi="90"
@@ -46409,7 +46450,7 @@
        height="139"
        width="889"
        id="rect2818-1-7-4-86"
-       style="opacity:0.8;color:#000000;fill:url(#linearGradient28225);fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="opacity:0.80000000000000004;color:#000000;fill:url(#linearGradient28225);fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -46421,7 +46462,7 @@
        height="719"
        width="489"
        id="rect2818-1-7-1-59"
-       style="opacity:0.8;color:#000000;fill:url(#linearGradient28227);fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="opacity:0.80000000000000004;color:#000000;fill:url(#linearGradient28227);fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -46433,7 +46474,7 @@
        height="719"
        width="489"
        id="rect2818-1-7-1-5-8"
-       style="opacity:0.8;color:#000000;fill:url(#linearGradient28229);fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="opacity:0.80000000000000004;color:#000000;fill:url(#linearGradient28229);fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -46445,27 +46486,43 @@
        height="719"
        width="489"
        id="rect2818-1-7-1-5-6-4"
-       style="opacity:0.8;color:#000000;fill:url(#linearGradient5222-10-37-1-93);fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="opacity:0.80000000000000004;color:#000000;fill:url(#linearGradient5222-10-37-1-93);fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Dokumente\Privat\themes\Willi\wr-covermask.png"
+       rx="20.000002"
+       ry="20"
+       y="306.87793"
+       x="1963.9056"
+       height="558.36737"
+       width="380"
+       id="rect2818-1-7-1-9-2"
+       style="fill:#000000;fill-opacity:1;stroke:none;display:inline" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/usr/share/mythtv/themes/Willi/video/tree/coverframe.png"
+       rx="20.000002"
+       ry="20"
+       y="422.19815"
+       x="1991.8962"
+       height="558.36737"
+       width="380"
+       id="rect2818-1-7-1-9-2-8"
+       style="opacity:0.8;color:#000000;fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
        inkscape:export-filename="/usr/share/mythtv/themes/Willi/video/tree/layout.png"
-       y="9.9475983e-14"
-       x="0"
-       height="105"
-       width="1680"
-       id="rect2818-20-6-3-3"
-       style="opacity:0.8;fill:#2b0000;fill-opacity:1;stroke:none;display:inline" />
-    <rect
-       inkscape:export-ydpi="90"
-       inkscape:export-xdpi="90"
-       inkscape:export-filename="/usr/share/mythtv/themes/Willi/video/tree/layout.png"
-       y="105"
-       x="0"
-       height="2"
-       width="1680"
-       id="rect2818-0-65-1-3-9"
-       style="opacity:0.8;fill:#ffffff;fill-opacity:1;stroke:none;display:inline" />
+       rx="20.000002"
+       ry="19.999998"
+       y="729.85004"
+       x="1520.5"
+       height="139.64999"
+       width="380"
+       id="rect2818-1-7-1-9-2-8-7"
+       style="opacity:0.8;color:#000000;fill:url(#linearGradient5222-10-37-1-93-78);fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -47087,7 +47144,7 @@
            style="color:#000000;fill:url(#radialGradient105197);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.09104455;marker:none;visibility:visible;display:inline;overflow:visible" />
         <path
            transform="matrix(0.846982,0,0,0.911415,16.71027,15.44956)"
-           d="m 18.75,9.375 a 9.375,9.375 0 1 1 -18.75,0 9.375,9.375 0 1 1 18.75,0 z"
+           d="m 18.75,9.375 c 0,5.17767 -4.19733,9.375 -9.375,9.375 C 4.1973305,18.75 0,14.55267 0,9.375 0,4.1973305 4.1973305,0 9.375,0 14.55267,0 18.75,4.1973305 18.75,9.375 z"
            sodipodi:ry="9.375"
            sodipodi:rx="9.375"
            sodipodi:cy="9.375"
@@ -47097,7 +47154,7 @@
            sodipodi:type="arc" />
         <path
            transform="matrix(0.367272,0,0,0.32,18.56254,21.125)"
-           d="m 18.75,9.375 a 9.375,9.375 0 1 1 -18.75,0 9.375,9.375 0 1 1 18.75,0 z"
+           d="m 18.75,9.375 c 0,5.17767 -4.19733,9.375 -9.375,9.375 C 4.1973305,18.75 0,14.55267 0,9.375 0,4.1973305 4.1973305,0 9.375,0 14.55267,0 18.75,4.1973305 18.75,9.375 z"
            sodipodi:ry="9.375"
            sodipodi:rx="9.375"
            sodipodi:cy="9.375"
@@ -47106,7 +47163,7 @@
            style="color:#000000;fill:url(#radialGradient105203);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:6.57905483;marker:none;visibility:visible;display:inline;overflow:visible"
            sodipodi:type="arc" />
         <path
-           d="m 17,16.5 a 0.5,0.5 0 1 1 -1,0 0.5,0.5 0 1 1 1,0 z"
+           d="M 17,16.5 C 17,16.776142 16.776142,17 16.5,17 16.223858,17 16,16.776142 16,16.5 16,16.223858 16.223858,16 16.5,16 c 0.276142,0 0.5,0.223858 0.5,0.5 z"
            sodipodi:ry="0.5"
            sodipodi:rx="0.5"
            sodipodi:cy="16.5"
@@ -47117,7 +47174,7 @@
            transform="matrix(1.3125,0,0,1.3125,-4.657679,-5.09375)" />
         <path
            transform="translate(15.22159,0.25)"
-           d="m 17,16.5 a 0.5,0.5 0 1 1 -1,0 0.5,0.5 0 1 1 1,0 z"
+           d="M 17,16.5 C 17,16.776142 16.776142,17 16.5,17 16.223858,17 16,16.776142 16,16.5 16,16.223858 16.223858,16 16.5,16 c 0.276142,0 0.5,0.223858 0.5,0.5 z"
            sodipodi:ry="0.5"
            sodipodi:rx="0.5"
            sodipodi:cy="16.5"
@@ -47127,7 +47184,7 @@
            sodipodi:type="arc" />
         <path
            transform="translate(15.22159,14.96875)"
-           d="m 17,16.5 a 0.5,0.5 0 1 1 -1,0 0.5,0.5 0 1 1 1,0 z"
+           d="M 17,16.5 C 17,16.776142 16.776142,17 16.5,17 16.223858,17 16,16.776142 16,16.5 16,16.223858 16.223858,16 16.5,16 c 0.276142,0 0.5,0.223858 0.5,0.5 z"
            sodipodi:ry="0.5"
            sodipodi:rx="0.5"
            sodipodi:cy="16.5"
@@ -47137,7 +47194,7 @@
            sodipodi:type="arc" />
         <path
            transform="matrix(1.375,0,0,1.375,-5.688929,8.8125)"
-           d="m 17,16.5 a 0.5,0.5 0 1 1 -1,0 0.5,0.5 0 1 1 1,0 z"
+           d="M 17,16.5 C 17,16.776142 16.776142,17 16.5,17 16.223858,17 16,16.776142 16,16.5 16,16.223858 16.223858,16 16.5,16 c 0.276142,0 0.5,0.223858 0.5,0.5 z"
            sodipodi:ry="0.5"
            sodipodi:rx="0.5"
            sodipodi:cy="16.5"
@@ -47384,13 +47441,13 @@
              sodipodi:cy="27.228739"
              sodipodi:rx="10.341436"
              sodipodi:ry="3.2703688"
-             d="m -3.5355339,27.228739 a 10.341436,3.2703688 0 1 1 -20.6828731,0 10.341436,3.2703688 0 1 1 20.6828731,0 z"
+             d="m -3.5355339,27.228739 c 0,1.806175 -4.6300188,3.270369 -10.3414361,3.270369 -5.711418,0 -10.341437,-1.464194 -10.341437,-3.270369 0,-1.806175 4.630019,-3.270369 10.341437,-3.270369 5.7114173,0 10.3414361,1.464194 10.3414361,3.270369 z"
              transform="matrix(0.60274,-0.128625,0.06428372,0.760788,31.12021,14.49141)" />
           <path
              inkscape:r_cy="true"
              inkscape:r_cx="true"
              transform="matrix(0.60274,-0.128625,0.06428372,0.760788,31.12021,11.39591)"
-             d="m -3.5355339,27.228739 a 10.341436,3.2703688 0 1 1 -20.6828731,0 10.341436,3.2703688 0 1 1 20.6828731,0 z"
+             d="m -3.5355339,27.228739 c 0,1.806175 -4.6300188,3.270369 -10.3414361,3.270369 -5.711418,0 -10.341437,-1.464194 -10.341437,-3.270369 0,-1.806175 4.630019,-3.270369 10.341437,-3.270369 5.7114173,0 10.3414361,1.464194 10.3414361,3.270369 z"
              sodipodi:ry="3.2703688"
              sodipodi:rx="10.341436"
              sodipodi:cy="27.228739"
@@ -47410,7 +47467,7 @@
              inkscape:r_cy="true"
              inkscape:r_cx="true"
              transform="matrix(0.335464,0,0,0.335464,11.74678,27.2261)"
-             d="m 31,22.375 a 3.25,3.25 0 1 1 -6.5,0 3.25,3.25 0 1 1 6.5,0 z"
+             d="m 31,22.375 c 0,1.794925 -1.455075,3.25 -3.25,3.25 -1.794925,0 -3.25,-1.455075 -3.25,-3.25 0,-1.794925 1.455075,-3.25 3.25,-3.25 1.794925,0 3.25,1.455075 3.25,3.25 z"
              sodipodi:ry="3.25"
              sodipodi:rx="3.25"
              sodipodi:cy="22.375"
@@ -47436,7 +47493,7 @@
              sodipodi:cy="22.375"
              sodipodi:rx="3.25"
              sodipodi:ry="3.25"
-             d="m 31,22.375 a 3.25,3.25 0 1 1 -6.5,0 3.25,3.25 0 1 1 6.5,0 z"
+             d="m 31,22.375 c 0,1.794925 -1.455075,3.25 -3.25,3.25 -1.794925,0 -3.25,-1.455075 -3.25,-3.25 0,-1.794925 1.455075,-3.25 3.25,-3.25 1.794925,0 3.25,1.455075 3.25,3.25 z"
              transform="matrix(0.335464,0,0,0.335464,11.74678,30.23376)" />
           <path
              inkscape:connector-curvature="0"
@@ -47589,7 +47646,7 @@
          sodipodi:cy="24.930641"
          sodipodi:rx="6.0987959"
          sodipodi:ry="6.0987959"
-         d="m 30.405591,24.930641 a 6.0987959,6.0987959 0 1 1 -12.197592,0 6.0987959,6.0987959 0 1 1 12.197592,0 z"
+         d="m 30.405591,24.930641 c 0,3.368272 -2.730524,6.098796 -6.098796,6.098796 -3.368272,0 -6.098796,-2.730524 -6.098796,-6.098796 0,-3.368272 2.730524,-6.098796 6.098796,-6.098796 3.368272,0 6.098796,2.730524 6.098796,6.098796 z"
          transform="translate(1372.9699,1179.4268)" />
       <path
          inkscape:connector-curvature="0"
@@ -48232,7 +48289,7 @@
        sodipodi:cy="344.17886"
        sodipodi:rx="182.24069"
        sodipodi:ry="187.06189"
-       d="m 1542.7784,344.17886 a 182.24069,187.06189 0 1 1 -364.4814,0 182.24069,187.06189 0 1 1 364.4814,0 z"
+       d="m 1542.7784,344.17886 c 0,103.31143 -81.5919,187.06189 -182.2407,187.06189 -100.6487,0 -182.2407,-83.75046 -182.2407,-187.06189 0,-103.31143 81.592,-187.06189 182.2407,-187.06189 100.6488,0 182.2407,83.75046 182.2407,187.06189 z"
        inkscape:export-filename="/usr/share/mythtv/themes/Willi/animations/glow-white/9.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
@@ -48552,7 +48609,7 @@
      inkscape:groupmode="layer"
      id="layer18"
      inkscape:label="OSD"
-     style="display:inline"
+     style="display:none"
      transform="translate(0,30)">
     <rect
        inkscape:export-ydpi="90"
@@ -48773,11 +48830,11 @@
          inkscape:connector-curvature="0" />
       <polygon
          id="polygon5330"
-         points="318.484,218.291 318.484,219.123 314.877,219.123 314.877,226.061 313.488,226.061 313.488,219.123 309.604,219.123 309.604,218.291 "
+         points="314.877,219.123 314.877,226.061 313.488,226.061 313.488,219.123 309.604,219.123 309.604,218.291 318.484,218.291 318.484,219.123 "
          style="fill:#ffffff" />
       <polygon
          id="polygon5332"
-         points="321.537,219.678 321.537,226.061 320.428,226.061 320.428,218.291 322.092,218.291 325.008,224.813 328.061,218.291 329.725,218.291 329.725,226.061 328.615,226.061 328.615,219.678 328.477,219.678 325.563,226.061 324.451,226.061 "
+         points="320.428,226.061 320.428,218.291 322.092,218.291 325.008,224.813 328.061,218.291 329.725,218.291 329.725,226.061 328.615,226.061 328.615,219.678 328.477,219.678 325.563,226.061 324.451,226.061 321.537,219.678 321.537,226.061 "
          style="fill:#ffffff" />
     </g>
     <rect
@@ -48974,7 +49031,7 @@
        sodipodi:cy="16.910715"
        sodipodi:rx="14.910714"
        sodipodi:ry="14.910714"
-       d="m 31.160714,16.910715 a 14.910714,14.910714 0 1 1 -29.8214281,0 14.910714,14.910714 0 1 1 29.8214281,0 z"
+       d="m 31.160714,16.910715 c 0,8.23496 -6.675754,14.910714 -14.910714,14.910714 -8.23496,0 -14.9107141,-6.675754 -14.9107141,-14.910714 0,-8.2349599 6.6757541,-14.910714 14.9107141,-14.910714 8.23496,0 14.910714,6.6757541 14.910714,14.910714 z"
        transform="matrix(7.6817213,0,0,7.6817213,2941.9987,70.65638)"
        inkscape:export-filename="D:\Dokumente\Privat\Willi\icons\videotypes\Recorded.png"
        inkscape:export-xdpi="90"
@@ -48987,7 +49044,7 @@
        sodipodi:cy="16.910715"
        sodipodi:rx="14.910714"
        sodipodi:ry="14.910714"
-       d="m 31.160714,16.910715 a 14.910714,14.910714 0 1 1 -29.8214281,0 14.910714,14.910714 0 1 1 29.8214281,0 z"
+       d="m 31.160714,16.910715 c 0,8.23496 -6.675754,14.910714 -14.910714,14.910714 -8.23496,0 -14.9107141,-6.675754 -14.9107141,-14.910714 0,-8.2349599 6.6757541,-14.910714 14.9107141,-14.910714 8.23496,0 14.910714,6.6757541 14.910714,14.910714 z"
        transform="matrix(6.2452659,0,0,6.2452659,2964.8333,94.43988)"
        inkscape:export-filename="D:\Dokumente\Privat\Willi\icons\videotypes\Recorded.png"
        inkscape:export-xdpi="90"
@@ -49011,7 +49068,7 @@
        inkscape:connector-curvature="0" />
     <path
        transform="matrix(7.285301,0,0,7.285301,2948.4404,76.88578)"
-       d="m 31.160714,16.910715 a 14.910714,14.910714 0 1 1 -29.8214281,0 14.910714,14.910714 0 1 1 29.8214281,0 z"
+       d="m 31.160714,16.910715 c 0,8.23496 -6.675754,14.910714 -14.910714,14.910714 -8.23496,0 -14.9107141,-6.675754 -14.9107141,-14.910714 0,-8.2349599 6.6757541,-14.910714 14.9107141,-14.910714 8.23496,0 14.910714,6.6757541 14.910714,14.910714 z"
        sodipodi:ry="14.910714"
        sodipodi:rx="14.910714"
        sodipodi:cy="16.910715"
@@ -49340,7 +49397,7 @@
          inkscape:connector-curvature="0" />
       <polygon
          id="polygon6443"
-         points="432.803,4.579 350.37,4.579 350.37,187.771 432.803,187.771 "
+         points="350.37,187.771 432.803,187.771 432.803,4.579 350.37,4.579 "
          style="fill:#ffffff" />
       <path
          id="path6445"
@@ -49349,11 +49406,11 @@
          inkscape:connector-curvature="0" />
       <polygon
          id="polygon6447"
-         points="941.176,4.579 857.588,4.579 857.588,187.771 941.176,187.771 "
+         points="857.588,187.771 941.176,187.771 941.176,4.579 857.588,4.579 "
          style="fill:#ffffff" />
       <polygon
          id="polygon6449"
-         points="1241.16,4.579 988.119,4.579 988.119,42.3629 1074,42.3629 1074,187.771 1155.28,187.771 1155.28,42.3629 1241.16,42.3629 "
+         points="988.119,42.3629 1074,42.3629 1074,187.771 1155.28,187.771 1155.28,42.3629 1241.16,42.3629 1241.16,4.579 988.119,4.579 "
          style="fill:#ffffff" />
       <path
          id="path6451"
@@ -49362,7 +49419,7 @@
          inkscape:connector-curvature="0" />
       <polygon
          id="polygon6453"
-         points="1677.39,4.579 1594.96,4.579 1594.96,187.771 1811.37,187.771 1811.37,149.99 1677.39,149.99 "
+         points="1594.96,187.771 1811.37,187.771 1811.37,149.99 1677.39,149.99 1677.39,4.579 1594.96,4.579 "
          style="fill:#ffffff" />
       <path
          id="path6455"
@@ -49466,7 +49523,7 @@
          style="fill:#ffffff" />
       <polygon
          id="polygon247"
-         points="95.0708,73.7363 88.0317,73.7363 88.0317,69.9141 107.2544,69.9141 107.2544,73.7363 100.2817,73.7363 100.2817,73.7363 100.2817,93.3369 95.0708,93.3369 "
+         points="88.0317,69.9141 107.2544,69.9141 107.2544,73.7363 100.2817,73.7363 100.2817,73.7363 100.2817,93.3369 95.0708,93.3369 95.0708,73.7363 88.0317,73.7363 "
          style="fill:#ffffff" />
       <path
          id="path249"
@@ -49475,7 +49532,7 @@
          inkscape:connector-curvature="0" />
       <polygon
          id="polygon251"
-         points="133.1343,93.3369 133.1343,93.3369 133.1343,69.9063 138.353,69.9063 138.353,89.3408 149.1128,89.3408 149.1128,93.3369 "
+         points="133.1343,69.9063 138.353,69.9063 138.353,89.3408 149.1128,89.3408 149.1128,93.3369 133.1343,93.3369 133.1343,93.3369 "
          style="fill:#ffffff" />
       <path
          id="path253"
@@ -49484,7 +49541,7 @@
          inkscape:connector-curvature="0" />
       <polygon
          id="polygon255"
-         points="184.436,93.3369 184.436,93.3369 184.436,69.9063 189.6509,69.9063 189.6509,89.3408 200.4175,89.3408 200.4175,93.3369 "
+         points="184.436,69.9063 189.6509,69.9063 189.6509,89.3408 200.4175,89.3408 200.4175,93.3369 184.436,93.3369 184.436,93.3369 "
          style="fill:#ffffff" />
       <path
          id="path257"
@@ -49523,7 +49580,7 @@
          inkscape:connector-curvature="0" />
       <polygon
          id="polygon271"
-         points="178.8989,5.4741 178.8989,5.4741 170.0894,5.4741 170.0894,44.4932 195.1636,44.4932 195.1636,37.9971 178.8989,37.9971 "
+         points="170.0894,5.4741 170.0894,44.4932 195.1636,44.4932 195.1636,37.9971 178.8989,37.9971 178.8989,5.4741 178.8989,5.4741 "
          style="fill:#ffffff" />
       <path
          id="path273"
@@ -49579,7 +49636,7 @@
          style="fill:#ffffff" />
       <polygon
          id="polygon247-3"
-         points="195.9131,75.2725 188.7188,75.2725 188.7188,71.3545 208.3428,71.3545 208.3428,75.2725 201.2285,75.2725 201.2285,75.2725 201.2285,95.2822 195.9131,95.2822 "
+         points="188.7188,71.3545 208.3428,71.3545 208.3428,75.2725 201.2285,75.2725 201.2285,75.2725 201.2285,95.2822 195.9131,95.2822 195.9131,75.2725 188.7188,75.2725 "
          style="fill:#ffffff" />
       <path
          id="path249-8"
@@ -49588,7 +49645,7 @@
          inkscape:connector-curvature="0" />
       <polygon
          id="polygon251-9"
-         points="235.9004,95.2822 235.9004,95.2822 235.9004,71.3623 241.2158,71.3623 241.2158,91.2119 252.2168,91.2119 252.2168,95.2822 "
+         points="235.9004,71.3623 241.2158,71.3623 241.2158,91.2119 252.2168,91.2119 252.2168,95.2822 235.9004,95.2822 235.9004,95.2822 "
          style="fill:#ffffff" />
       <path
          id="path253-3"
@@ -49617,7 +49674,7 @@
          inkscape:connector-curvature="0" />
       <polygon
          id="polygon263"
-         points="182.6328,5.584 182.6328,5.584 173.6396,5.584 173.6396,45.4268 199.2373,45.4268 199.2373,38.7949 182.6328,38.7949 "
+         points="173.6396,5.584 173.6396,45.4268 199.2373,45.4268 199.2373,38.7949 182.6328,38.7949 182.6328,5.584 182.6328,5.584 "
          style="fill:#ffffff" />
       <path
          id="path265-0"
@@ -50323,7 +50380,7 @@
        sodipodi:cy="16.910715"
        sodipodi:rx="14.910714"
        sodipodi:ry="14.910714"
-       d="m 31.160714,16.910715 a 14.910714,14.910714 0 1 1 -29.8214281,0 14.910714,14.910714 0 1 1 29.8214281,0 z"
+       d="m 31.160714,16.910715 c 0,8.23496 -6.675754,14.910714 -14.910714,14.910714 -8.23496,0 -14.9107141,-6.675754 -14.9107141,-14.910714 0,-8.2349599 6.6757541,-14.910714 14.9107141,-14.910714 8.23496,0 14.910714,6.6757541 14.910714,14.910714 z"
        transform="matrix(7.6817213,0,0,7.6817213,3168.1113,2276.4638)"
        inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/videotypes/Recording.png"
        inkscape:export-xdpi="90"
@@ -50336,14 +50393,14 @@
        sodipodi:cy="16.910715"
        sodipodi:rx="14.910714"
        sodipodi:ry="14.910714"
-       d="m 31.160714,16.910715 a 14.910714,14.910714 0 1 1 -29.8214281,0 14.910714,14.910714 0 1 1 29.8214281,0 z"
+       d="m 31.160714,16.910715 c 0,8.23496 -6.675754,14.910714 -14.910714,14.910714 -8.23496,0 -14.9107141,-6.675754 -14.9107141,-14.910714 0,-8.2349599 6.6757541,-14.910714 14.9107141,-14.910714 8.23496,0 14.910714,6.6757541 14.910714,14.910714 z"
        transform="matrix(6.2452659,0,0,6.2452659,3190.9459,2300.2473)"
        inkscape:export-filename="/usr/share/mythtv/themes/Willi/icons/videotypes/Recording.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
        transform="matrix(7.285301,0,0,7.285301,3174.553,2282.6932)"
-       d="m 31.160714,16.910715 a 14.910714,14.910714 0 1 1 -29.8214281,0 14.910714,14.910714 0 1 1 29.8214281,0 z"
+       d="m 31.160714,16.910715 c 0,8.23496 -6.675754,14.910714 -14.910714,14.910714 -8.23496,0 -14.9107141,-6.675754 -14.9107141,-14.910714 0,-8.2349599 6.6757541,-14.910714 14.9107141,-14.910714 8.23496,0 14.910714,6.6757541 14.910714,14.910714 z"
        sodipodi:ry="14.910714"
        sodipodi:rx="14.910714"
        sodipodi:cy="16.910715"
@@ -51100,19 +51157,19 @@
       <polygon
          style="fill:#ffffff"
          id="polygon4099"
-         points="84.487,12.29 97.683,18.958 97.683,18.958 98.875,18.958 83.917,11.458 " />
+         points="97.683,18.958 98.875,18.958 83.917,11.458 84.487,12.29 97.683,18.958 " />
       <polygon
          style="fill:#ffffff"
          id="polygon4101"
-         points="84.481,25.13 83.917,25.958 98.875,18.958 97.683,18.958 97.683,18.958 97.688,18.958 " />
+         points="98.875,18.958 97.683,18.958 97.683,18.958 97.688,18.958 84.481,25.13 83.917,25.958 " />
       <polygon
          style="fill:#ffffff"
          id="polygon4103"
-         points="84.479,12.286 84.487,12.29 83.917,11.458 83.917,25.958 84.481,25.13 84.479,25.131 84.479,25.131 " />
+         points="83.917,11.458 83.917,25.958 84.481,25.13 84.479,25.131 84.479,25.131 84.479,12.286 84.487,12.29 " />
       <polygon
          style="fill:#ffffff"
          id="polygon4105"
-         points="84.479,25.131 84.481,25.13 97.688,18.958 97.683,18.958 84.487,12.29 84.479,12.286 84.479,12.286 " />
+         points="97.688,18.958 97.683,18.958 84.487,12.29 84.479,12.286 84.479,12.286 84.479,25.131 84.481,25.13 " />
       <path
          style="fill:#ffffff"
          id="path4109"
@@ -51263,7 +51320,7 @@
        transform="matrix(0.93633373,0,0,0.93633373,-440.60447,-95.908172)"
        sodipodi:end="2.3561945"
        sodipodi:start="0"
-       d="M 1320.8755,638.46387 A 386.08029,386.08029 0 0 1 661.79517,911.46386 l 273,-272.99999 z"
+       d="m 1320.8755,638.46387 c 0,213.22625 -172.8541,386.08033 -386.08033,386.08033 -102.39487,0 -200.5959,-40.67624 -273,-113.08034 l 273,-272.99999 z"
        sodipodi:ry="386.08029"
        sodipodi:rx="386.08029"
        sodipodi:cy="638.46387"
