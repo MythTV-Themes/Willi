@@ -48,6 +48,8 @@
              <filename>video/unknown.png</filename>
              <preserveaspect>true</preserveaspect>
            </imagetype>
+           <imagetype name="screenshot" from="buttonimage">
+           </imagetype>
            <statetype name="nodetype">
              <state name="subfolder">
                <imagetype name="icon">
@@ -85,6 +87,8 @@
              <filename>video/unknowncover.png</filename>
              <preserveaspect>true</preserveaspect>
              <mask>video/browser/covermask.png</mask>
+           </imagetype>
+           <imagetype name="screenshot" from="buttonimage">
            </imagetype>
            <statetype name="watchedstate">
              <state name="yes">
@@ -349,22 +353,29 @@
        <spacing>10</spacing>
        <wrapstyle>flowing</wrapstyle>
        <buttonarea>0,0,100%,100%</buttonarea>
+       
        <statetype name="buttonitem">
          <state name="active">
-           <area>0,0,320,280</area>
+           <area>0,0,300,280</area>
            <imagetype name="buttonbackground">
-             <filename>gallery-320x280-bar.png</filename>
+             <filename>gallery-300x260-bar.png</filename>
+           </imagetype>
+           <imagetype name="screenshot">
+             <area>0,0,300,225</area>
+             <preserveaspect>true</preserveaspect>
+             <filename>video/gallery-unknown.png</filename>
            </imagetype>
            <imagetype name="buttonimage">
-             <area>0,0,320,245</area>
-             <filename>video/gallery-unknown.png</filename>
+             <area>0,0,300,225</area>
+
              <preserveaspect>true</preserveaspect>
            </imagetype>
+
            <textarea name="buttontext" from="basetextarea">
-             <area>5,245,315,35</area>
+             <area>5,225,300,35</area>
            </textarea>
            <statetype name="nodetype">
-             <position>220,165</position>
+             <position>210,165</position>
              <state name="subfolder">
                <imagetype name="icon">
                  <area>0,0,100,115</area>
@@ -385,47 +396,38 @@
              <showempty>yes</showempty>
              <state type="full">
                <imagetype name="marked">
-                 <filename>gallery-320x280-selected.png</filename>
+                 <filename>gallery-300x260-selected.png</filename>
                </imagetype>
              </state>
            </statetype>
            <textarea name="childcount" from="basetextarea">
-             <area>5,0,305,275</area>
+             <area>5,0,300,265</area>
              <font>basebigstate</font>
              <align>bottom,right</align>
            </textarea>
-           <statetype name="watchedstate">
-             <state name="yes">
-               <imagetype name="watched">
-                 <area>5,5,45,45</area>
-                 <filename>icons/watched.png</filename>
-                 <alpha>180</alpha>
-               </imagetype>
-             </state>
-             <state name="no">
-             </state>
-           </statetype>
          </state>
          <state name="selectedactive" from="active">
            <imagetype name="buttonbackground">
-             <filename>gallery-320x280.png</filename>
+             <filename>gallery-300x260.png</filename>
            </imagetype>
            <textarea name="buttontext">
              <font>basebuttontitle</font>
-           </textarea>
-           <statetype name="userratingstate" from="baserating">
-             <position>80,5</position>
-             <alpha>200</alpha>
-           </statetype>
+           </textarea>       
          </state>
        </statetype>
+       
        <statetype name="upscrollarrow" from="baseupscrollarrow">
          <position>10,-35</position>
        </statetype>
+       
        <statetype name="downscrollarrow" from="basedownscrollarrow">
-         <position>10,820</position>
+         <position>10,840</position>
        </statetype>
+       
      </buttonlist>
+     
+     
+
      
      <imagetype name="reflection" from="basereflection"/>
    </window>

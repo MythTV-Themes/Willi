@@ -1,10 +1,10 @@
 # Color of the background
 str BackgroundColor=#aa0000
 # Color of lines, text, etc
-#str ForegroundColor=1a1a1a
+str ForegroundColor=#FFFFFF
 # Pixmap to use for the background
 str BackgroundPixmap=background.png
-str Font=DejaVu Sans
+str Font=League Gothic
 
 # Forground for dialogs
 str ActiveForeground=#FFFFFF
