@@ -48,7 +48,9 @@
              <filename>video/unknown.png</filename>
              <preserveaspect>true</preserveaspect>
            </imagetype>
-           <imagetype name="screenshot" from="buttonimage">
+           <imagetype name="screenshot">
+             <area>5,5,230,310</area>
+             <preserveaspect>true</preserveaspect>
            </imagetype>
            <statetype name="nodetype">
              <state name="subfolder">
@@ -88,7 +90,10 @@
              <preserveaspect>true</preserveaspect>
              <mask>video/browser/covermask.png</mask>
            </imagetype>
-           <imagetype name="screenshot" from="buttonimage">
+           <imagetype name="screenshot">
+             <area>5,5,408,600</area>
+             <preserveaspect>true</preserveaspect>
+             <mask>video/browser/covermask.png</mask>
            </imagetype>
            <statetype name="watchedstate">
              <state name="yes">
@@ -224,6 +229,13 @@
      
      <clock name="clock" from="baseclock" />
      
+     
+     <imagetype name="screenshot">
+       <area>1520,180,380,558</area>
+       <preserveaspect>true</preserveaspect>
+     </imagetype>
+     
+     
      <textarea name="pagetitle" from="basepagetitle">
        <value>Videos</value>
      </textarea>
@@ -249,11 +261,11 @@
      
      <!-- The banner of the current show -->
      
-    <imagetype name="banner">
-      <area>1145,935,758,140</area>
-      <filename />
-      <mask>wr-bannermask.png</mask>
-    </imagetype>
+     <imagetype name="banner">
+       <area>1145,935,758,140</area>
+       <filename />
+       <mask>wr-bannermask.png</mask>
+     </imagetype>
      
      <statetype name="parentallevel" from="baseparentallevel">
        <position>900,935</position>
@@ -290,26 +302,27 @@
        <filename>video/tree/coverframe.png</filename>
      </imagetype>
      
-           <statetype name="userratingstate" from="baserating">
-             <position>1530,770</position>
-             <alpha>200</alpha>
-           </statetype>
-           <statetype name="watchedstate">
-             <state name="yes">
-               <imagetype name="watched">
-                 <area>1848,770,45,45</area>
-                 <filename>icons/watched.png</filename>
-                 <alpha>180</alpha>
-               </imagetype>
-             </state>
-             <state name="no">
-             </state>
-           </statetype>
-                <textarea name="s##e##" from="basetextarea">
+     <statetype name="userratingstate" from="baserating">
+       <position>1530,770</position>
+       <alpha>200</alpha>
+     </statetype>
+     <statetype name="watchedstate">
+       <state name="yes">
+         <imagetype name="watched">
+           <area>1848,770,45,45</area>
+           <filename>icons/watched.png</filename>
+           <alpha>180</alpha>
+         </imagetype>
+       </state>
+       <state name="no">
+       </state>
+     </statetype>
+     <textarea name="s##e##" from="basetextarea">
        <area>1530,800,370,36</area>
      </textarea>
      
-
+     
+     
      
      <imagetype name="reflection" from="basereflection"/>
    </window>
@@ -367,10 +380,10 @@
            </imagetype>
            <imagetype name="buttonimage">
              <area>0,0,300,225</area>
-
+             
              <preserveaspect>true</preserveaspect>
            </imagetype>
-
+           
            <textarea name="buttontext" from="basetextarea">
              <area>5,225,300,35</area>
            </textarea>
@@ -427,7 +440,7 @@
      </buttonlist>
      
      
-
+     
      
      <imagetype name="reflection" from="basereflection"/>
    </window>
@@ -509,7 +522,7 @@
      <textarea name="countries" from="director">
        <area>915,265,500,40</area>
      </textarea>
-   
+     
      <imagetype name="descriptionbackground">
        <area>910,320,758,300</area>
        <filename>video/758x300.png</filename>
@@ -1172,7 +1185,7 @@
      
    </window>
    
-
+   
    <window name="filter">
      
      <!--  we use one large background image to draw all widgets on top       -->
