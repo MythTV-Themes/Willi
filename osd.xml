@@ -46,7 +46,7 @@
             <filename>OSD/1898x210.png</filename>    
         </imagetype>
         <imagetype name="iconpath">
-            <area>15,900,130,130</area>
+            <area>15,910,130,130</area>
             <mask>OSD/logomask.png</mask>
             <preserveaspect>true</preserveaspect>    
         </imagetype>
@@ -55,7 +55,7 @@
             <preserveaspect>true</preserveaspect>
             <mask>wr-bannermask.png</mask>    
         </imagetype>
-        <imagetype name="bannerframe">
+        <imagetype name="bannerframe" depends="banner">
             <area>1151,860,758,140</area>
             <filename>wr-bannerframe.png</filename>    
         </imagetype>
@@ -414,7 +414,7 @@
             <preserveaspect>true</preserveaspect>
             <mask>wr-bannermask.png</mask>    
         </imagetype>
-        <imagetype name="bannerframe">
+        <imagetype name="bannerframe" depends="banner">
             <area>1151,860,758,140</area>
             <filename>wr-bannerframe.png</filename>    
         </imagetype>
@@ -616,6 +616,7 @@
         <area>-1,-1,600,800</area>
         <imagetype name="backimg" from="basepopupboxback" />
         <textarea name="messagearea" from="basemessagearea" />
+        <textarea name="title" from="basemessagearea" />
         <buttonlist name="list" from="basepopupboxlist" />
     </window>
     
