@@ -3,9 +3,16 @@
 <mythuitheme>
   <!--  TODO needs to be themed!	  -->
   <window name="rawsettingseditor">
-    <area>0,0,1680,1050</area>
-    <!--  we use one large background image to draw all widgets on top	  -->
-    <imagetype name="background" from="basebackground" />
+     <animation trigger="AboutToShow">
+       <section duration="500" centre="middle">
+         <alpha start="0" end="255" easingcurve="InOutQuad"/>
+       </section>
+     </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
     
     <imagetype name="recbackground">
       <position>0,0</position>
@@ -72,11 +79,16 @@
   </window>
   
   <window name="themechooser">
-    <area>0,0,1680,1050</area>
-    <!--  we use one large background image to draw all widgets on top	  -->
-    <imagetype name="background" from="basebackground" />
-    <!--  Clock and Date on the right	  -->
-    
+     <animation trigger="AboutToShow">
+       <section duration="500" centre="middle">
+         <alpha start="0" end="255" easingcurve="InOutQuad"/>
+       </section>
+     </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
     
     <imagetype name="recbackground">
       <position>0,0</position>

@@ -11,6 +11,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
      
      <!-- Fanart behind everyhting  -->
      
@@ -222,6 +227,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
      
      <!-- Fanart behind everyhting  -->
      
@@ -437,6 +447,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
      
      <!-- Fanart behind everyhting  -->
      
@@ -555,6 +570,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
      
      <textarea name="pagetitle" from="basepagetitle">
        <value>Channel Recording Priorities</value>
@@ -660,6 +680,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
      
      <textarea name="pagetitle" from="basepagetitle">
        <value>Schedule Priorities</value>
@@ -765,6 +790,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
      
      <textarea name="pagetitle" from="basepagetitle">
        <value>Custom Priority Rules</value>
@@ -1039,6 +1069,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
      
      <imagetype name="recbackground">
        <position>0,0</position>
@@ -1137,6 +1172,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
      
      
      <imagetype name="recbackground">
@@ -1191,6 +1231,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
      
      <!--  we use one large background image to draw all widgets on top        -->
      
@@ -1359,6 +1404,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
      
      <imagetype name="recbackground">
        <position>0,0</position>
@@ -1503,6 +1553,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
      
      <imagetype name="recbackground">
        <position>0,0</position>
@@ -1595,6 +1650,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
      
      <imagetype name="recbackground">
        <position>0,0</position>
@@ -1623,7 +1683,7 @@
      </textarea>
      
      <spinbox name="channel" from="basewidespinbox">
-       <position>480,320</position>
+       <position>700,320</position>
      </spinbox>
      
      <textarea name="datelabel" from="titlelabel">
@@ -1632,7 +1692,7 @@
      </textarea>	   
      
      <spinbox name="startdate" from="basewidespinbox">
-       <position>480,400</position>
+       <position>700,400</position>
      </spinbox>
      
      <textarea name="timelabel" from="titlelabel">
@@ -1652,11 +1712,11 @@
      </textarea>
      
      <spinbox name="starthour" from="basespinbox">
-       <position>480,480</position>
+       <position>700,480</position>
      </spinbox>
      
      <spinbox name="startminute" from="basespinbox">
-       <position>480,530</position>
+       <position>700,530</position>
      </spinbox>
      
      <textarea name="durationlabel" from="titlelabel">
@@ -1665,7 +1725,7 @@
      </textarea>
      
      <spinbox name="duration" from="basespinbox">
-       <position>480,600</position>
+       <position>700,600</position>
      </spinbox>
      
      <button name="cancel" from="basepopupbuttoncancel">
@@ -1692,6 +1752,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
      
      <imagetype name="recbackground">
        <position>0,0</position>
@@ -1709,37 +1774,41 @@
      </buttonlist>
      
      <textarea name="timedate" from="basebigstatetext">
-       <position>720,210</position>
+       <position>960,210</position>
      </textarea>
      
      <textarea name="channel" from="basebigstatetext">
-       <position>720,250</position>
+       <position>960,250</position>
      </textarea>
      
      <textarea name="category" from="basebigstatetext">
-       <position>720,290</position>
+       <position>960,290</position>
      </textarea>
      
      <textarea name="recgroup" from="basebigstatetext">
-       <position>720,330</position>
+       <position>960,330</position>
      </textarea>
      
      <textarea name="playgroup" from="basebigstatetext">
-       <position>720,370</position>
+       <position>960,370</position>
        <template>%PLAYGROUP% play group</template>
      </textarea>
      
      <textarea name="storagegroup" from="basebigstatetext">
-       <position>720,410</position>
+       <position>960,410</position>
        <template>%STORAGEGROUP% storage group</template>
      </textarea>
      
      <textarea name="year" from="basebigstatetext">
-       <position>720,450</position>
+       <position>960,450</position>
      </textarea>
      
      <textarea name="card" from="basebigstatetext">
-       <position>720,490</position>
+       <position>960,490</position>
+     </textarea>
+
+     <textarea name="filters" from="basebigstatetext">
+       <position>960,530</position>
      </textarea>
      
      <textarea name="description" from="basetextarea">
@@ -1814,6 +1883,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
      
      <imagetype name="recbackground">
        <position>0,0</position>
@@ -1827,33 +1901,33 @@
      </textarea>
      
      <textarea name="timedate" from="basebigstatetext">
-       <position>480,610</position>
+       <position>700,610</position>
      </textarea>
      
      <textarea name="channel" from="basebigstatetext">
-       <position>480,650</position>
+       <position>700,650</position>
      </textarea>
      
      <textarea name="category" from="basebigstatetext">
-       <position>480,690</position>
+       <position>700,690</position>
      </textarea>
      
      <textarea name="recgroup" from="basebigstatetext">
-       <position>480,730</position>
+       <position>700,730</position>
      </textarea>
      
      <textarea name="playgroup" from="basebigstatetext">
-       <position>480,770</position>
+       <position>700,770</position>
        <template>%PLAYGROUP% play group</template>
      </textarea>
      
      <textarea name="storagegroup" from="basebigstatetext">
-       <position>480,810</position>
+       <position>700,810</position>
        <template>%STORAGEGROUP% storage group</template>
      </textarea>
      
      <textarea name="year" from="basebigstatetext">
-       <position>480,850</position>
+       <position>700,850</position>
      </textarea>
      
      <spinbox name="priority" from="basewidespinbox">
@@ -1927,6 +2001,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
      
      <imagetype name="recbackground">
        <position>0,0</position>
@@ -1940,33 +2019,33 @@
      </textarea>
      
      <textarea name="timedate" from="basebigstatetext">
-       <position>480,580</position>
+       <position>700,580</position>
      </textarea>
      
      <textarea name="channel" from="basebigstatetext">
-       <position>480,620</position>
+       <position>700,620</position>
      </textarea>
      
      <textarea name="category" from="basebigstatetext">
-       <position>480,660</position>
+       <position>700,660</position>
      </textarea>
      
      <textarea name="recgroup" from="basebigstatetext">
-       <position>480,700</position>
+       <position>700,700</position>
      </textarea>
      
      <textarea name="playgroup" from="basebigstatetext">
-       <position>480,740</position>
+       <position>700,740</position>
        <template>%PLAYGROUP% play group</template>
      </textarea>
      
      <textarea name="storagegroup" from="basebigstatetext">
-       <position>480,780</position>
+       <position>700,780</position>
        <template>%STORAGEGROUP% storage group</template>
      </textarea>
      
      <textarea name="year" from="basebigstatetext">
-       <position>480,820</position>
+       <position>700,820</position>
      </textarea>
      
      <spinbox name="recprofile" from="basewidespinbox">
@@ -2033,6 +2112,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
      
      <imagetype name="recbackground">
        <position>0,0</position>
@@ -2046,102 +2130,102 @@
      </textarea>
      
      <textarea name="timedate" from="basebigstatetext">
-       <position>480,610</position>
+       <position>700,610</position>
      </textarea>
      
      <textarea name="channel" from="basebigstatetext">
-       <position>480,650</position>
+       <position>700,650</position>
      </textarea>
      
      <textarea name="category" from="basebigstatetext">
-       <position>480,690</position>
+       <position>700,690</position>
      </textarea>
      
      <textarea name="recgroup" from="basebigstatetext">
-       <position>480,730</position>
+       <position>700,730</position>
      </textarea>
      
      <textarea name="playgroup" from="basebigstatetext">
-       <position>480,770</position>
+       <position>700,770</position>
        <template>%PLAYGROUP% play group</template>
      </textarea>
      
      <textarea name="storagegroup" from="basebigstatetext">
-       <position>480,810</position>
+       <position>700,810</position>
        <template>%STORAGEGROUP% storage group</template>
      </textarea>
      
      <textarea name="year" from="basebigstatetext">
-       <position>480,850</position>
+       <position>700,850</position>
      </textarea>
      
      <checkbox name="metadatalookup" from="basecheckbox">
-       <position>460,180</position>
+       <position>460,200</position>
      </checkbox>
      
      <textarea name="metadatalookuplabel" from="basetextarea">
-       <area>510,180,880,30</area>
+       <area>510,200,880,30</area>
        <value>Automatically Look Up Metadata</value>
      </textarea>
      
      <checkbox name="autocommflag" from="basecheckbox">
-       <position>460,230</position>
+       <position>460,250</position>
      </checkbox>
      
      <textarea name="autocommflaglabel" from="basetextarea">
-       <area>510,230,880,30</area>
+       <area>510,250,880,30</area>
        <value>Commercial Flag new recordings</value>
      </textarea>
      
      <checkbox name="autotranscode" from="basecheckbox">
-       <position>460,280</position>
+       <position>460,300</position>
      </checkbox>
      
      <textarea name="autotranscodelabel" from="autocommflaglabel">
-       <position>510,280</position>
+       <position>510,300</position>
        <value>Transcode new recordings</value>
      </textarea>
      
      <spinbox name="transcodeprofile" from="basewidespinbox">
-       <position>440,330</position>
+       <position>440,350</position>
        <helptext>
        </helptext>
      </spinbox>
      
      <checkbox name="userjob1" from="basecheckbox">
-       <position>460,380</position>
+       <position>460,400</position>
      </checkbox>
      
-     <textarea name="userjob1label" from="autocommflaglabel">
-       <position>510,380</position>
-       <value>Run User Job #1</value>
+     <textarea name="userjob1text" from="autocommflaglabel">
+       <position>510,400</position>
+
      </textarea>
      
      <checkbox name="userjob2" from="basecheckbox">
-       <position>460,430</position>
+       <position>460,450</position>
      </checkbox>
      
-     <textarea name="userjob2label" from="autocommflaglabel">
-       <position>510,430</position>
-       <value>Run User job #2</value>
+     <textarea name="userjob2text" from="autocommflaglabel">
+       <position>510,450</position>
+
      </textarea>
      
      <checkbox name="userjob3" from="basecheckbox">
-       <position>460,480</position>
+       <position>460,500</position>
      </checkbox>
      
-     <textarea name="userjob3label" from="autocommflaglabel">
-       <position>510,480</position>
-       <value>Run User Job #3</value>
+     <textarea name="userjob3text" from="autocommflaglabel">
+       <position>510,500</position>
+
      </textarea>
      
      <checkbox name="userjob4" from="basecheckbox">
-       <position>460,530</position>
+       <position>460,550</position>
      </checkbox>
      
-     <textarea name="userjob4label" from="autocommflaglabel">
-       <position>510,530</position>
-       <value>Run User Job #4</value>
+     <textarea name="userjob4text" from="autocommflaglabel">
+       <position>510,550</position>
+
      </textarea>
      
      <button name="back" from="basepopupbuttonback">
@@ -2160,6 +2244,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
      
      <imagetype name="recbackground">
        <position>0,0</position>
@@ -2250,6 +2339,11 @@
          <alpha start="0" end="255" easingcurve="InOutElastic"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
      
      <area>-1,-1,600,800</area>
      

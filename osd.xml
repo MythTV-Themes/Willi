@@ -92,6 +92,7 @@
         </textarea>
         <!-- Shows the quality of the item  -->
         <statetype name="videodescrip">
+          
             <area>1750,150,150,520</area>
             <imagetype name="backdrop">
                 <position>0,0</position>
@@ -190,6 +191,7 @@
         </statetype>
         <!--shows what video codec is used in the item-->
         <statetype name="videocodec">
+          <loadondemand>true</loadondemand>
             <loadondemand>true</loadondemand>
             <state name="MPEG2">
                 <imagetype name="image">
@@ -563,6 +565,7 @@
             <filename>OSD/fillbar-empty.png</filename>    
         </imagetype>
         <editbar name="editbar">
+          <loadondemand>true</loadondemand>
             <area>0,0,1640,58</area>
             <imagetype name="cut">
                 <position>0,0</position>
@@ -625,8 +628,9 @@
     <window name="osd_debug">
         <area>0,0,1920,1080</area><imagetype name="statusbar" from="basestatusbar" />
         <clock name="clock" from="baseclock" />
-        <fontdef name="medium" face="DejaVu Sans">
-            <pixelsize>16</pixelsize>        <color>#FFFFFF</color>    
+        <fontdef name="medium" face="League Gothic">
+            <pixelsize>24</pixelsize>
+            <color>#FFFFFF</color>    
         </fontdef>
         <fontdef name="file" from="medium">
             <color>#CCCCFF</color>    

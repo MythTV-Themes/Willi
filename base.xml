@@ -29,7 +29,7 @@
    
    <!-- Base Font Definitions -->   
    <fontdef name="base" face="League Gothic">
-     <pixelsize>40</pixelsize>
+     <pixelsize>35</pixelsize>
      <color>#FFFFFF</color>
      <outlinecolor>#000000</outlinecolor>
      <outlinesize>3</outlinesize>
@@ -75,13 +75,10 @@
    <fontdef name="basebuttontitle" face="Orbitron">
      <pixelsize>40</pixelsize>
      <color>#800000</color>
-     <outlinecolor>#FFFFFF</outlinecolor>
-     <outlinesize>2</outlinesize>    
-     <outlinealpha>100</outlinealpha>
    </fontdef>
    
    <fontdef name="basebuttontitlewhite" face="Orbitron">
-     <pixelsize>35</pixelsize>
+     <pixelsize>33</pixelsize>
      <color>#FFFFFF</color>
      <outlinecolor>#000000</outlinecolor>
      <outlinesize>2</outlinesize>
@@ -89,7 +86,7 @@
    </fontdef>
    
    <fontdef name="basebuttontitleblack" face="Orbitron">
-     <pixelsize>35</pixelsize>
+     <pixelsize>33</pixelsize>
      <color>#000000</color>
      <outlinecolor>#FFFFFF</outlinecolor>
      <outlinesize>2</outlinesize>    
@@ -99,7 +96,6 @@
    <fontdef name="basestate" face="CPMono_v07">
      <pixelsize>20</pixelsize>
      <color>#FFFFFF</color>
-     
    </fontdef>
    
    <fontdef name="basemenustate" from="basestate">
@@ -154,6 +150,9 @@
    <fontdef name="baseclock" from="basetitle">
      <size>70</size>
    </fontdef>
+   <fontdef name="basedate" from="basetitle">
+     <size>25</size>
+   </fontdef>
    <!-- end font defenitions -->
    
    
@@ -164,6 +163,15 @@
      <format>%TIME%</format>
      <align>right,bottom</align>
      <alpha>255</alpha>
+   </clock>
+
+      <!-- Base clock, used everywhere -->
+   <clock name="basedate">
+     <area>1150,25,760,100</area>
+     <font>basedate</font>
+     <format>%SHORTDATE%</format>
+     <align>right,bottom</align>
+     <alpha>200</alpha>
    </clock>
    
    <!-- Base Background -->
@@ -179,9 +187,23 @@
    <!-- Base definition of a Coverart image   -->
    
    <imagetype name="basecoverart">
-     <area>5,180,490,720</area>
+     <area>6,180,490,720</area>
      <mask>wr-covermask.png</mask>
    </imagetype>
+   
+   <imagetype name="basecoverframe">
+     <area>6,180,490,720</area>
+     <filename>wr-coverframe.png</filename>
+   </imagetype>
+
+      <!-- Base definition of a textarea -->
+   
+   <textarea name="basetextarea">
+     <area>0,0,30,100</area>
+     <font>basesmall</font>
+     <multiline>no</multiline>
+     <align>left</align>
+   </textarea>
    
    <!-- Title on all pages   -->
    <textarea name="basepagetitle">
@@ -217,7 +239,7 @@
    
    <!-- A generic big textarea for states   -->
    <textarea name="basebigstatetext" from="basesmallstatetext">
-     <area>0,0,920,27</area>
+     <area>0,0,920,32</area>
      <font>basebigstate</font>
      <align>right,vcenter</align>
    </textarea>
@@ -405,6 +427,9 @@
          <textarea name="buttontext">
            <alpha>30</alpha>
          </textarea>
+         <textarea name="basesmallstatetext">
+           <alpha>30</alpha>
+         </textarea>
          <!-- show to the user that he can jump to the right -->
          <imagetype name="direction">
            <alpha>0</alpha>
@@ -416,6 +441,9 @@
        </state>
        <state name="inactive" from="active">
          <textarea name="buttontext">
+           <alpha>30</alpha>
+         </textarea>
+         <textarea name="basesmallstatetext">
            <alpha>30</alpha>
          </textarea>
          <imagetype name="direction">
@@ -830,8 +858,6 @@
              </imagetype>
            </state>
          </statetype>
-         
-         
        </state>
        
        <state name="inactive" from="active">
@@ -1117,11 +1143,6 @@
      </statetype>
    
    
-   
-   
-   
-   
-   
    <!-- Base definition of a search button -->
    
    <button name="basesearchbutton">
@@ -1187,7 +1208,9 @@
            <font>basesmall</font>
            <align>allcenter</align>
            <cutdown>yes</cutdown>
+           <alpha>150</alpha>
          </textarea>
+
        </state>
        <state name="selected" from="active">
          <imagetype name="buttonbackground">
@@ -1195,7 +1218,7 @@
          </imagetype>
          <textarea name="text">
            <area>0,0,100%,55</area>
-           <font>basebuttontitle</font>
+           <font>basebuttontitlewhite</font>
          </textarea>
        </state>
        <state name="pushed" from="selected">
@@ -1212,6 +1235,14 @@
          </imagetype>
          <textarea name="text">
            <alpha>100</alpha>
+         </textarea>
+       </state>
+       <state name="disabled" from="active">
+         <imagetype name="buttonbackground">
+           <alpha>50</alpha>
+         </imagetype>
+         <textarea name="text">
+           <alpha>50</alpha>
          </textarea>
        </state>
      </statetype>
@@ -1474,7 +1505,7 @@
            <alpha>150</alpha>
          </imagetype>
          <textarea name="buttontext">
-           <area>30,0,520,48</area>
+           <area>30,0,520,46</area>
            <align>allcenter</align>
            <font>basesmall</font>
            <cutdown>yes</cutdown>
@@ -1485,7 +1516,7 @@
            <alpha>200</alpha>
          </imagetype>
          <textarea name="buttontext">
-           <font>basebuttontitle</font>
+           <font>basebuttontitlewhite</font>
          </textarea>
        </state>
        <state name="selectedinactive" from="active">
@@ -1528,8 +1559,8 @@
            <alpha>150</alpha>
          </imagetype>
          <textarea name="buttontext">
-           <area>30,0,980,48</area>
-           <align>hcenter</align>
+           <area>30,0,980,46</area>
+           <align>allcenter</align>
            <font>basesmall</font>
            <cutdown>yes</cutdown>
          </textarea>
@@ -1539,7 +1570,7 @@
            <alpha>200</alpha>
          </imagetype>
          <textarea name="buttontext">
-           <font>basebuttontitle</font>
+           <font>basebuttontitlewhite</font>
          </textarea>
        </state>
        <state name="selectedinactive" from="active">
@@ -1765,14 +1796,7 @@
      </state>
    </statetype>
    
-   <!-- Base definition of a textarea -->
-   
-   <textarea name="basetextarea">
-     <area>0,0,10,10</area>
-     <font>basesmall</font>
-     <multiline>no</multiline>
-     <align>left</align>
-   </textarea>
+
    <textarea name="basesettingshelptext" from="basetextarea">
      <area>300,950,1300,200</area>
      <cutdown>yes</cutdown>
@@ -2001,12 +2025,8 @@
      <filepattern low="1" high="38">animations/wait/wait-%1.png</filepattern>
      <delay>30</delay>
    </imagetype>
-   
-   
-   <!--    <statetype name="basestateiconslarge" from="basestateicons">
-   <size>0,0,140,140</size>
- </statetype>-->
- 
+
+   <!-- list of buttons in the black popup box used everywhere-->
    <buttonlist name="basepopupboxlist">
      <area>0,0,600,800</area>
      <layout>vertical</layout>

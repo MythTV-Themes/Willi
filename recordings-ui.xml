@@ -9,6 +9,11 @@
         <alpha start="0" end="255" easingcurve="InOutQuad"/>
       </section>
     </animation>
+    <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
     
     <!-- Fanart behind the recordings(remove it if you don't want it!)--> 
     <imagetype name="fanart" from="basefanart" />
@@ -119,6 +124,8 @@
     
     <!--show the coverart over the groups, only if browsing the recordings -->
     <imagetype name="coverart" from="basecoverart"/>
+    <!--show the coverart over the groups, only if browsing the recordings -->
+    <imagetype name="coverframe" from="basecoverframe" depends="coverart" />
     
     <!--This is the right side of the selections. It shows the recordings that are available to the user.	-->
     <buttonlist name="recordings" from="basebuttonlist2">
@@ -137,13 +144,18 @@
             <template>%SHORTTIMEDATE%</template>
             <position>0,+27</position>
           </textarea>
+          
           <textarea name="subtitle">
             <font>basebuttontitlesubtitle</font>
             <area>5,0,1030,55</area>
             <cutdown>yes</cutdown>
             <multiline>yes</multiline>
-            <template>%00x00| %%TITLE| - %%SUBTITLE| %%|(LENMINS|)%</template>
-            <align>vcenter</align>
+            <template>%TITLE%% - |SUBTITLE%</template>
+          </textarea>
+          <textarea name="lenmins" from="basesmallstatetext">
+            <template>%00x00%</template>
+            <position>5,30</position>
+            <align>left</align>
           </textarea>
           
           <!--The little screenshot/preview of the recording -->
@@ -238,15 +250,25 @@
             <align>top</align>
             <template>%00x00| %%subtitle%</template>
           </textarea>
-          <!--The description field, that in this case fuses subtitle + rating + description into one -->
-          <textarea name="description" from="buttontext">
+
+          <textarea name="description">
             <font>basebuttondescription</font>
-            <area>5,50,1150,90</area>	
+            <area>5,50,940,90</area>   
             <multiline>yes</multiline>
             <align>bottom</align>
             <cutdown>yes</cutdown>
-            <template>%DESCRIPTION| %(%YEAR|, %%LENMINS%)</template>
           </textarea>
+
+          <textarea name="year" from="basesmallstatetext">
+            <position>-150,+60</position>
+          </textarea>
+          <textarea name="startdate" from="basesmallstatetext">
+            <position>-150,+85</position>
+          </textarea>
+          <textarea name="lenmins" from="basesmallstatetext">
+            <position>-150,+110</position>
+          </textarea>
+       
           <!--The little screenshot/preview of the recording -->
           <imagetype name="preview">
             <area>1150,0,250,140</area>
@@ -262,8 +284,7 @@
             </state>
           </statetype>
           <statetype name="ratingstate" from="baserating">
-            <position>1190,5</position>
-            <alpha>180</alpha>
+            <position>1155,5</position>
           </statetype>
           <!--icon if recording was watched	-->
           <statetype name="watched">
@@ -364,10 +385,22 @@
           <textarea name="description">
             <alpha>30</alpha>
           </textarea>
+          <textarea name="startdate">
+            <alpha>30</alpha>
+          </textarea>
+          <textarea name="lenmins">
+            <alpha>30</alpha>
+          </textarea>
+          <textarea name="year">
+            <alpha>30</alpha>
+          </textarea>
           <!--The little screenshot/preview of the recording -->
           <imagetype name="preview">
             <alpha>30</alpha>
           </imagetype>
+          <statetype name="ratingstate">
+            <alpha>30</alpha>
+          </statetype>
           <!--icon if recording was watched	-->
           <statetype name="watched">
             <state name="yes">
@@ -407,9 +440,6 @@
               </imagetype>
             </state>
           </statetype>
-          <statetype name="ratingstate" from="baserating">
-            <alpha>30</alpha>
-          </statetype>
           <!-- show to the user that he can jump to the right -->
           <imagetype name="direction">
             <alpha>0</alpha>
@@ -431,6 +461,15 @@
           <imagetype name="preview">
             <alpha>30</alpha>
           </imagetype>
+          <textarea name="startdate">
+            <alpha>30</alpha>
+          </textarea>
+          <textarea name="lenmins">
+            <alpha>30</alpha>
+          </textarea>
+          <statetype name="ratingstate">
+            <alpha>30</alpha>
+          </statetype>
           <!--icon if recording was watched	-->
           <statetype name="watched">
             <state name="yes">
@@ -464,9 +503,6 @@
                 <alpha>30</alpha>
               </imagetype>
             </state>
-          </statetype>
-          <statetype name="ratingstate" from="baserating">
-            <alpha>30</alpha>
           </statetype>
           <!--icon if a recording is in a playlist	-->
           <textarea name="shortdate">
@@ -631,14 +667,15 @@
         </imagetype>
       </state>
     </statetype>
-    <!-- Date and Time of recording --> 
-    <textarea name="startdate" from="basetextarea">
-      <area>15,935,890,36</area>
-    </textarea>
-    <!-- Date of recording --> 
+    <!-- start and endtime of recording --> 
     <textarea name="starttime" from="basetextarea">
-      <area>15,1190,890,36</area>
+      <area>15,935,890,36</area>
       <template>%STARTTIME%-%ENDTIME%</template>
+    </textarea>
+    <!-- total disk space --> 
+    <textarea name="diskspacetotal" from="basetextarea">
+      <area>15,960,890,36</area>
+      <template>%1 total</template>
     </textarea>
     <!-- Filesize --> 
     <textarea name="filesize_str" from="basetextarea">
@@ -651,11 +688,11 @@
     </textarea>
     <!-- what playgroup is this recording part of --> 
     <textarea name="playgroup" from="basetextarea">
-      <area>600,1190,287,36</area>	
+      <area>600,960,287,36</area>	
       <align>right</align>
     </textarea>
     <!-- what category was this recording recorded in --> 
-    <textarea name="category" from="basetextarea">
+    <textarea name="catType" from="basetextarea">
       <area>500,985,387,36</area>	
       <align>right</align>
       <cutdown>yes</cutdown>
@@ -699,7 +736,7 @@
         <zoom start="0" end="100" easingcurve="InOutElastic" />
         <alpha start="0" end="255" easingcurve="InOutElastic"/>
       </section>
-    </animation>  
+    </animation>
     <area>-1,-1,600,1030</area>
     <imagetype name="backimg" from="basepopupboxback" />
     <textarea name="title">

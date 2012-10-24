@@ -8,6 +8,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+     </animation>
      
      <!--  we use one large background image to draw all widgets on top	  -->
      
@@ -26,14 +31,12 @@
      </textarea>
      
      <textarea name="breadcrumbs" from="basetextarea">
-       <area>10,100,1890,40</area>
+       <area>10,120,1900,40</area>
        <font>basesmall</font>
        <align>vcenter</align>
      </textarea>
      
-     <textarea name="position" from="basetextarea">
-       <area>10,100,1890,40</area>
-       <font>basemedium</font>
+     <textarea name="position" from="breadcrumbs">
        <align>vcenter,right</align>
      </textarea>
      

@@ -10,6 +10,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
      
      <imagetype name="background" from="basebackground"/>
      
@@ -66,7 +71,7 @@
        </statetype>
      </buttonlist>
      <clock name="clock" from="baseclock" />
-     
+     <clock name="date" from="basedate" />     
    </window>
    
  </mythuitheme>

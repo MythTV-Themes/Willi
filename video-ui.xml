@@ -11,6 +11,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+     </animation>
      
      <!--we use one large background image to draw all widgets on top	-->
      
@@ -43,13 +48,13 @@
        <buttonarea>0,0,100%,100%</buttonarea>
        <statetype name="buttonitem">
          <state name="active">
-           <imagetype name="buttonimage">
-             <area>5,5,230,310</area>
-             <filename>video/unknown.png</filename>
-             <preserveaspect>true</preserveaspect>
-           </imagetype>
            <imagetype name="screenshot">
              <area>5,5,230,310</area>
+             <preserveaspect>true</preserveaspect>
+           </imagetype>
+           <imagetype name="buttonimage" depends="!screenshot">
+             <area>5,5,230,310</area>
+             <filename>video/unknown.png</filename>
              <preserveaspect>true</preserveaspect>
            </imagetype>
            <statetype name="nodetype">
@@ -84,14 +89,14 @@
            </statetype>
          </state>
          <state name="selectedactive">
-           <imagetype name="buttonimage">
+           <imagetype name="screenshot">
              <area>5,5,408,600</area>
-             <filename>video/unknowncover.png</filename>
              <preserveaspect>true</preserveaspect>
              <mask>video/browser/covermask.png</mask>
            </imagetype>
-           <imagetype name="screenshot">
+           <imagetype name="buttonimage" depends="!screenshot">
              <area>5,5,408,600</area>
+             <filename>video/unknowncover.png</filename>
              <preserveaspect>true</preserveaspect>
              <mask>video/browser/covermask.png</mask>
            </imagetype>
@@ -212,6 +217,16 @@
    
    <window name="tree">
      
+     <animation trigger="AboutToShow">
+       <section duration="500" centre="middle">
+         <alpha start="0" end="255" easingcurve="InOutQuad"/>
+       </section>
+     </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+     </animation>
      <!--  we use one large background image to draw all widgets on top       -->
      
      <imagetype name="background" from="basebackground" />
@@ -241,14 +256,12 @@
      </textarea>
      
      <textarea name="breadcrumbs" from="basetextarea">
-       <area>10,100,1658,40</area>
+       <area>10,120,1880,40</area>
        <font>basesmall</font>
        <align>vcenter</align>
      </textarea>
      
-     <textarea name="position" from="basetextarea">
-       <area>10,100,1658,40</area>
-       <font>basemedium</font>
+     <textarea name="position" from="breadcrumbs">
        <align>vcenter,right</align>
      </textarea>
      
@@ -265,6 +278,10 @@
        <area>1145,935,758,140</area>
        <filename />
        <mask>wr-bannermask.png</mask>
+     </imagetype>
+     <imagetype name="bannerframe" depends="banner">
+      <area>1145,935,758,140</area>
+      <filename>wr-bannerframe.png</filename>
      </imagetype>
      
      <statetype name="parentallevel" from="baseparentallevel">
@@ -329,6 +346,16 @@
    
    <window name="gallery">
      
+     <animation trigger="AboutToShow">
+       <section duration="500" centre="middle">
+         <alpha start="0" end="255" easingcurve="InOutQuad"/>
+       </section>
+     </animation>
+     <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+     </animation>
      <!--  we use one large background image to draw all widgets on top       -->
      <imagetype name="background" from="basebackground" />
      
@@ -349,14 +376,12 @@
      </textarea>
      
      <textarea name="breadcrumbs" from="basetextarea">
-       <area>10,100,1658,40</area>
+       <area>10,120,1900,40</area>
        <font>basesmall</font>
        <align>vcenter</align>
      </textarea>
      
-     <textarea name="position" from="basetextarea">
-       <area>10,100,1658,40</area>
-       <font>basemedium</font>
+     <textarea name="position" from="breadcrumbs">
        <align>vcenter,right</align>
      </textarea>
      
@@ -376,12 +401,11 @@
            <imagetype name="screenshot">
              <area>0,0,300,225</area>
              <preserveaspect>true</preserveaspect>
-             <filename>video/gallery-unknown.png</filename>
            </imagetype>
-           <imagetype name="buttonimage">
+           <imagetype name="buttonimage" depends="!screenshot">
              <area>0,0,300,225</area>
-             
              <preserveaspect>true</preserveaspect>
+             <filename>video/gallery-unknown.png</filename>
            </imagetype>
            
            <textarea name="buttontext" from="basetextarea">
@@ -478,6 +502,10 @@
        <area>910,905,758,140</area>
        <filename />
        <mask>wr-bannermask.png</mask>
+     </imagetype>
+     <imagetype name="bannerframe" depends="banner">
+      <area>1145,935,758,140</area>
+      <filename>wr-bannerframe.png</filename>
      </imagetype>
      
      <imagetype name="titlebackground">
@@ -745,6 +773,11 @@
          <alpha start="0" end="255" easingcurve="InOutQuad"/>
        </section>
      </animation>
+         <animation trigger="AboutToHide">
+      <section duration="500" centre="middle">
+        <alpha start="255" end="0" easingcurve="OutInQuad"/>
+      </section>
+    </animation>
      <!-- Fanart behind the recordings(remove it if you don't want it!)--> 
      <imagetype name="fanart" from="basefanart" />
      
@@ -758,7 +791,7 @@
        <filename />
        <mask>wr-bannermask.png</mask>
      </imagetype>
-     <imagetype name="bannerframe">
+     <imagetype name="bannerframe" depends="banner">
        <area>897,935,758,140</area>
        <filename>wr-bannerframe.png</filename>
      </imagetype>	
