@@ -2032,6 +2032,7 @@
      <layout>vertical</layout>
      <spacing>5</spacing>
      <arrange>stack</arrange>
+     <wrapstyle>items</wrapstyle>
      <align>bottom,hcenter</align>
      <buttonarea>0,205,600,580</buttonarea>
      <statetype name="buttonitem">

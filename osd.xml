@@ -565,7 +565,6 @@
             <filename>OSD/fillbar-empty.png</filename>    
         </imagetype>
         <editbar name="editbar">
-          <loadondemand>true</loadondemand>
             <area>0,0,1640,58</area>
             <imagetype name="cut">
                 <position>0,0</position>
