@@ -199,7 +199,7 @@
               </imagetype>
             </state>
           </statetype>
-          <!--A statetype for an item that is being processed	-->
+          <!--A statetype for an item that is being inuse	
           <statetype name="inuse">
             <state name="yes">
               <imagetype name="inuse">
@@ -208,7 +208,7 @@
                 <filename>states/warning.png</filename>
               </imagetype>
             </state>
-          </statetype>
+          </statetype>-->
           <!--icon displaying the state of running jobs	-->
           <statetype name="jobstate">
             <position>1270,2</position>
@@ -343,7 +343,7 @@
               </imagetype>
             </state>
           </statetype>
-          <!--A statetype for an item that is being processed	-->
+          <!--A statetype for an item that is being inuse	
           <statetype name="inuse">
             <state name="yes">
               <imagetype name="inuse">
@@ -357,7 +357,7 @@
                 <alpha>0</alpha>
               </imagetype>
             </state>
-          </statetype>
+          </statetype>-->
           <!-- show to the user that he can jump to the left -->
           <imagetype name="direction">
             <position>-40,59</position>
@@ -504,6 +504,14 @@
               </imagetype>
             </state>
           </statetype>
+          <!--icon if a recording is marked inuse   
+          <statetype name="inuse">
+            <state name="yes">
+              <imagetype name="inuse">
+                <alpha>30</alpha>
+              </imagetype>
+            </state>
+          </statetype>-->
           <!--icon if a recording is in a playlist	-->
           <textarea name="shortdate">
             <alpha>30</alpha>
@@ -663,6 +671,14 @@
           <area>0,0,75,75</area>
           <position>595,938</position>
           <filename>icons/hd1080.png</filename>
+          <alpha>200</alpha>
+        </imagetype>
+      </state>
+      <state name="damaged">
+        <imagetype name="damaged">
+          <area>0,0,75,75</area>
+          <position>595,938</position>
+          <filename>shattered.png</filename>
           <alpha>200</alpha>
         </imagetype>
       </state>

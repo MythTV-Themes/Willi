@@ -84,15 +84,6 @@
             <position>810,510</position>
         </checkbox>
         
-        <textarea name="tagencoding_label" from="basetextarea">
-            <area>300,560,500,40</area>
-            <align>right,vcenter</align>
-            <value>Tag Encoding:</value>
-        </textarea>
-        <buttonlist name="tagencoding" from="basewideselector">
-            <position>810,550</position>
-        </buttonlist>
-        
         <textarea name="allowtagwriting_label" from="basetextarea">
             <area>300,610,500,40</area>
             <align>right,vcenter</align>
