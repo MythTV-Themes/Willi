@@ -6,7 +6,7 @@
     <baseres>1920x1080</baseres>
 
     <window name="notification">
-        <area>100% -10,935,890,140</area>
+        <area>100% -900,935,890,140</area>
         
         <animation trigger="AboutToShow">
          <section duration="300" centre="middle">
