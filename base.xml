@@ -1948,7 +1948,7 @@
    
    <!-- textfield for all progressbars -->
    <textarea name="baseprogresstext">
-     <area>0,0,1640,58</area>
+     <area>0,0,890,58</area>
      <font>progressnumberfont</font>
      <align>allcenter</align>
    </textarea>

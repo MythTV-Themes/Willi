@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
+
+<mythuitheme>
+
+    <baseres>1920x1080</baseres>
+
+    <window name="notification">
+        <area>100% -10,935,890,140</area>
+        
+        <animation trigger="AboutToShow">
+         <section duration="300" centre="middle">
+           <zoom start="0" end="100" easingcurve="InOutElastic" />
+           <alpha start="0" end="255" easingcurve="InOutElastic"/>
+         </section>
+       </animation>
+       <animation trigger="AboutToHide">
+         <section duration="300" centre="middle">
+           <zoom start="0" end="100" easingcurve="OutInElastic" />
+           <alpha start="0" end="255" easingcurve="OutInElastic"/>
+         </section>
+       </animation>
+
+    <imagetype name="notificationbackground">
+      <area>0,0,890,140</area>
+      <filename>notification.png</filename>
+    </imagetype>
+        
+    <textarea name="title" from="basetextarea">
+      <area>15,0,890,36</area>
+    </textarea>
+
+    <textarea name="origin" from="basetextarea">
+      <area>15,25,890,36</area>
+    </textarea>
+
+    <textarea name="description" from="basetextarea">
+      <area>15,50,890,36</area>
+    </textarea>
+    
+    <textarea name="extra" from="basetextarea">
+      <area>500,0,360,36</area>       
+      <align>right</align>
+    </textarea>
+
+    <textarea name="progress_text" from="basetextarea">
+            <area>370,105,-10,30</area>
+            <font>basesmall</font>
+            <align>right</align>
+    </textarea>
+
+    <progressbar name="progress" from="baseprogressbar">
+            <area>18,140,100%-28,10</area>
+    </progressbar>
+    
+    </window>
+
+    <window name="notification-image" from="notification">
+        
+        
+        <imagetype name="image">
+            <filename>damaged.png</filename>
+            <area>18,18,144,144</area>
+        </imagetype>
+        
+        <textarea name="title" from="basetextarea">
+            <area>170,10,-10,35</area>
+            <font>baselarge</font>
+        </textarea>
+        
+        <textarea name="origin" from="basetextarea">
+            <area>170,45,-10,30</area>
+            <font>basesmall</font>
+        </textarea>
+        
+        <textarea name="description" from="basetextarea">
+            <area>170,75,-10,30</area>
+            <font>basesmall</font>
+        </textarea>
+        
+        <textarea name="extra" from="basetextarea">
+            <area>170,105,300,30</area>
+            <font>basesmall</font>
+        </textarea>
+        
+        <textarea name="progress_text" from="basetextarea">
+            <area>370,105,-10,30</area>
+            <font>basesmall</font>
+            <align>right</align>
+        </textarea>
+        
+        <progressbar name="progress" from="baseprogressbar">
+            <area>170,140,100%-180,10</area>
+        </progressbar>
+    </window>
+
+    <window name="notification-full">
+        <area>0,0,100%,100%</area>
+
+        <shape name="background">
+            <area>0,0,100%,100%</area>
+            <fill color="#000000"/>
+        </shape>
+
+        <imagetype name="image">
+            <filename>damaged.png</filename>
+            <area>-1,-1,100%,100%</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>170,100%-245,-10,35</area>
+            <font>baseextralarge</font>
+        </textarea>
+
+        <textarea name="origin" from="basetextarea">
+            <area>170,100%-195,-10,30</area>
+            <font>baselarge</font>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>170,100%-165,-10,30</area>
+            <font>basemedium</font>
+        </textarea>
+
+        <textarea name="extra" from="basetextarea">
+            <area>170,100%-135,300,30</area>
+            <font>basemedium</font>
+        </textarea>
+
+        <textarea name="progress_text" from="baseprogresstext">
+        </textarea>
+
+        <progressbar name="progress" from="baseprogressbar">
+           <position>0,72</position>
+        </progressbar>
+    </window>
+
+</mythuitheme>
