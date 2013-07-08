@@ -44,13 +44,6 @@
           <position>0,82</position>
         </textarea>
 
-       
-    <textarea name="description_without_progress" from="basetextarea" depends="!progress_text">
-      <area>15,30,890,120</area>
-      <template>%DESCRIPTION%</template>
-    </textarea>
-
-        
     <textarea name="description_with_progress" from="basetextarea" depends="progress_text">
       <area>15,30,890,36</area>
       <template>%DESCRIPTION%</template>
