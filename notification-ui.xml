@@ -6,89 +6,122 @@
     <baseres>1920x1080</baseres>
 
     <window name="notification">
-        <area>100% -900,935,890,280</area>
+      <area>-1,10,890,140</area>
         
-        <animation trigger="AboutToShow">
-         <section duration="300" centre="middle">
-           <zoom start="0" end="100" easingcurve="InOutElastic" />
-           <alpha start="0" end="255" easingcurve="InOutElastic"/>
-         </section>
-       </animation>
-       <animation trigger="AboutToHide">
-         <section duration="300" centre="middle">
-           <zoom start="0" end="100" easingcurve="OutInElastic" />
-           <alpha start="0" end="255" easingcurve="OutInElastic"/>
-         </section>
-       </animation>
+      <animation trigger="AboutToShow">
+        <section duration="300" centre="bottom">
+          <verticalzoom start="0" end="100" easingcurve="OutQuad" />
+        </section>
+      </animation>
+      <animation trigger="AboutToHide">
+        <section duration="300" centre="bottom">
+          <verticalzoom start="100" end="0" easingcurve="InQuad" />
+        </section>
+      </animation>
 
-    <imagetype name="notificationbackground">
-      <area>0,0,890,140</area>
-      <filename>notification.png</filename>
-    </imagetype>
+      <imagetype name="notificationbackground">
+        <area>0,0,890,140</area>
+        <filename>notification.png</filename>
+      </imagetype>
         
-    <textarea name="title" from="basetextarea">
-      <area>15,5,890,36</area>
-      <font>basebuttontitleblack</font>
-    </textarea>
+      <textarea name="title" from="basetextarea">
+        <area>15,5,890,36</area>
+        <font>basebuttontitleblack</font>
+      </textarea>
 
-    <textarea name="extra" from="basetextarea">
-      <area>500,0,360,36</area>       
-      <align>right</align>
-    </textarea>
+      <textarea name="extra" from="basetextarea">
+        <area>500,0,360,36</area>       
+        <align>right</align>
+      </textarea>
 
-        <progressbar name="progress" from="baseprogressbar">
-           <position>0,82</position>
-        </progressbar>
+      <progressbar name="progress" from="baseprogressbar">
+        <position>0,82</position>
+      </progressbar>
 
-        <textarea name="progress_text" from="baseprogresstext">
-          <position>0,82</position>
-        </textarea>
+      <textarea name="progress_text" from="baseprogresstext">
+        <position>0,82</position>
+        <template>%PROGRESS_TEXT% %PROGRESS%</template>
+      </textarea>
 
-    <textarea name="description_with_progress" from="basetextarea" depends="progress_text">
-      <area>15,30,890,36</area>
-      <template>%DESCRIPTION%</template>
-    </textarea>        
+      <textarea name="description" from="basetextarea" depends="progress">
+        <area>15,30,890,36</area>
+        <template>%DESCRIPTION%</template>
+      </textarea>
+      
+      <textarea name="description" from="basetextarea" depends="!progress">
+        <area>15,35,890,74</area>
+        <template>%DESCRIPTION%</template>
+      </textarea> 
         
-        </window>
+    </window>
 
     <window name="notification-image" from="notification">
+       <area>-1,10,890,140</area>
         
-        
-        <imagetype name="image">
-            <filename>damaged.png</filename>
-            <area>18,18,144,144</area>
-        </imagetype>
-        
-        <textarea name="title" from="basetextarea">
-            <area>170,10,-10,35</area>
-            <font>baselarge</font>
-        </textarea>
-        
-        <textarea name="origin" from="basetextarea">
-            <area>170,45,-10,30</area>
-            <font>basesmall</font>
-        </textarea>
-        
-        <textarea name="description" from="basetextarea">
-            <area>170,75,-10,30</area>
-            <font>basesmall</font>
-        </textarea>
-        
-        <textarea name="extra" from="basetextarea">
-            <area>170,105,300,30</area>
-            <font>basesmall</font>
-        </textarea>
-        
-        <textarea name="progress_text" from="baseprogresstext">
-        </textarea>
+      <animation trigger="AboutToShow">
+        <section duration="300" centre="bottom">
+          <verticalzoom start="0" end="100" easingcurve="OutQuad" />
+        </section>
+      </animation>
+      <animation trigger="AboutToHide">
+        <section duration="300" centre="bottom">
+          <verticalzoom start="100" end="0" easingcurve="InQuad" />
+        </section>
+      </animation>
 
-        <progressbar name="progress" from="baseprogressbar">
-           <position>0,72</position>
-        </progressbar>
+      <imagetype name="notificationbackground">
+        <area>0,0,890,140</area>
+        <filename>notification.png</filename>
+      </imagetype>
+        
+      <textarea name="title" from="basetextarea">
+        <area>15,5,890,36</area>
+        <font>basebuttontitleblack</font>
+      </textarea>
+
+      <textarea name="extra" from="basetextarea">
+        <area>500,0,360,36</area>       
+        <align>right</align>
+      </textarea>
+
+      <progressbar name="progress" from="baseprogressbar">
+        <position>0,82</position>
+      </progressbar>
+
+      <textarea name="progress_text" from="baseprogresstext">
+        <position>0,82</position>
+        <template>%PROGRESS_TEXT% %PROGRESS%</template>
+      </textarea>
+
+      <textarea name="description" from="basetextarea" depends="progress">
+        <area>15,30,890,36</area>
+        <template>%DESCRIPTION%</template>
+      </textarea>
+      
+      <textarea name="description" from="basetextarea" depends="!progress">
+        <area>15,35,890,74</area>
+        <template>%DESCRIPTION%</template>
+      </textarea>
+      
+        <imagetype name="image">
+            <filename>shattered.png</filename>
+            <area>100% -98,0,80,80</area>
+        </imagetype>
     </window>
 
     <window name="notification-full">
         <area>0,0,100%,100%</area>
+
+      <animation trigger="AboutToShow">
+        <section duration="300" centre="bottom">
+          <verticalzoom start="0" end="100" easingcurve="OutQuad" />
+        </section>
+      </animation>
+      <animation trigger="AboutToHide">
+        <section duration="300" centre="bottom">
+          <verticalzoom start="100" end="0" easingcurve="InQuad" />
+        </section>
+      </animation>
 
         <shape name="background">
             <area>0,0,100%,100%</area>
@@ -96,7 +129,7 @@
         </shape>
 
         <imagetype name="image">
-            <filename>damaged.png</filename>
+            <filename>shattered.png</filename>
             <area>-1,-1,100%,100%</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
@@ -111,22 +144,29 @@
             <font>baselarge</font>
         </textarea>
 
-        <textarea name="description" from="basetextarea">
-            <area>170,100%-165,-10,30</area>
-            <font>basemedium</font>
-        </textarea>
-
         <textarea name="extra" from="basetextarea">
             <area>170,100%-135,300,30</area>
             <font>basemedium</font>
         </textarea>
 
-        <textarea name="progress_text" from="baseprogresstext">
-        </textarea>
+      <progressbar name="progress" from="baseprogressbar">
+        <position>0,82</position>
+      </progressbar>
 
-        <progressbar name="progress" from="baseprogressbar">
-           <position>0,72</position>
-        </progressbar>
+      <textarea name="progress_text" from="baseprogresstext">
+        <position>0,82</position>
+        <template>%PROGRESS_TEXT% %PROGRESS%</template>
+      </textarea>
+
+      <textarea name="description" from="basetextarea" depends="progress">
+        <area>15,30,890,36</area>
+        <template>%DESCRIPTION%</template>
+      </textarea>
+      
+      <textarea name="description" from="basetextarea" depends="!progress">
+        <area>15,35,890,74</area>
+        <template>%DESCRIPTION%</template>
+      </textarea> 
     </window>
 
 </mythuitheme>
