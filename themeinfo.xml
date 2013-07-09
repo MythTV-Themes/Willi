@@ -34,7 +34,7 @@
         
         <major>2</major>
         
-        <minor>26</minor>
+        <minor>27</minor>
         
     </version>
     
@@ -46,7 +46,7 @@
         
         <!-- What is not available -->
         
-	<errata>Supported: Recording/ Scheduling/ Video/ Gallery/ Music/ Stream/ Information. Not yet suported: everything else.</errata>
+	<errata>Supported: Recording/ Scheduling/ Video/ Gallery/ Music/ Stream/ Information/ Notification. Not yet suported: everything else.</errata>
         
     </detail>
     
