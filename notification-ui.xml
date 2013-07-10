@@ -43,13 +43,14 @@
        <template>%PROGRESS_TEXT% %PROGRESS%</template>
      </textarea>
      
-     <textarea name="description" from="basetextarea" depends="progress">
-       <area>15,30,875,36</area>
+     <textarea name="description-progress" from="basetextarea" depends="progress_text">
+       <area>15,35,875,36</area>
        <template>%DESCRIPTION%</template>
      </textarea>
      
-     <textarea name="description" from="basetextarea" depends="!progress">
-       <area>15,35,875,74</area>
+     <textarea name="description-noprogress" from="basetextarea" depends="!progress_text">
+       <area>15,35,875,90</area>
+       <multiline>yes</multiline>
        <template>%DESCRIPTION%</template>
      </textarea> 
      
