@@ -66,8 +66,15 @@
             <cutdown>yes</cutdown>
             <template>%00x00| %%SUBTITLE%</template> 
         </textarea>
-        <textarea name="description" from="basetextarea">
+        <textarea name="description" from="basetextarea" depends="iconpath">
             <area>150,915,980,150</area>
+            <multiline>yes</multiline>
+            <align>bottom</align>
+            <cutdown>yes</cutdown>
+            <template>%YEAR|, %%STARS|, %%CATEGORY|. %%DESCRIPTION%% (|LENMINS|)%% |PLAYGROUP%</template>    
+        </textarea>
+        <textarea name="description_noicon" from="basetextarea" depends="!iconpath">
+            <area>15,915,1140,150</area>
             <multiline>yes</multiline>
             <align>bottom</align>
             <cutdown>yes</cutdown>
@@ -461,16 +468,16 @@
     <window name="osd_status">
         <area>-1,978,1640,58</area>
         <progressbar name="position" from="basewideprogressbar"/>
+        <textarea name="remainingtime">
+            <area>10,-2,1620,63</area>
+            <align>allcenter</align>
+            <template>%PLAYEDTIME| of% %TOTALTIME% %(|REMAININGTIME| remaining)%%(|BEHINDTIME| behind)%</template>
+            <font>progressnumberfont</font>    
+        </textarea>
         <textarea name="value">
             <area>10,-2,1620,63</area>
             <align>allcenter</align>
             <template>%VALUE% %UNITS%</template>
-            <font>progressnumberfont</font>    
-        </textarea>
-        <textarea name="remainingtime">
-            <area>10,-2,1620,63</area>
-            <align>allcenter</align>
-            <template>%PLAYEDTIME% of %TOTALTIME% %(|REMAININGTIME| remaining)%%(|BEHINDTIME| behind)%</template>
             <font>progressnumberfont</font>    
         </textarea>
     </window>
