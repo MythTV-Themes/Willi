@@ -74,7 +74,7 @@
             <template>%YEAR|, %%STARS|, %%CATEGORY|. %%DESCRIPTION%% (|LENMINS|)%% |PLAYGROUP%</template>    
         </textarea>
         <textarea name="description_noicon" from="basetextarea" depends="!iconpath">
-            <area>15,915,1140,150</area>
+            <area>25,915,1120,150</area>
             <multiline>yes</multiline>
             <align>bottom</align>
             <cutdown>yes</cutdown>

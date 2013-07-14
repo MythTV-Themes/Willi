@@ -28,10 +28,11 @@
        <area>15,5,875,36</area>
        <font>basebuttontitlewhite</font>
      </textarea>
-     
+
      <textarea name="extra" from="basetextarea">
        <area>500,0,360,36</area>       
        <align>right</align>
+       <template>%EXTRA| %%ORIGIN%</template>
      </textarea>
      
      <progressbar name="progress" from="baseprogressbar">
@@ -49,7 +50,7 @@
      </textarea>
      
      <textarea name="description-noprogress" from="basetextarea" depends="!progress_text">
-       <area>15,35,875,90</area>
+       <area>15,35,875,108</area>
        <multiline>yes</multiline>
        <template>%DESCRIPTION%</template>
      </textarea> 
@@ -58,7 +59,7 @@
    
    <window name="notification-image" from="notification">
      <area>-1,10,890,140</area>
-     
+
      <animation trigger="AboutToShow">
        <section duration="300" centre="bottom">
          <verticalzoom start="0" end="100" easingcurve="OutQuad" />
@@ -79,10 +80,11 @@
        <area>15,5,875,36</area>
        <font>basebuttontitlewhite</font>
      </textarea>
-     
+
      <textarea name="extra" from="basetextarea">
        <area>500,0,360,36</area>       
        <align>right</align>
+       <template>%EXTRA| %%ORIGIN%</template>
      </textarea>
      
      <progressbar name="progress" from="baseprogressbar">
@@ -94,15 +96,16 @@
        <template>%PROGRESS_TEXT% %PROGRESS%</template>
      </textarea>
      
-     <textarea name="description" from="basetextarea" depends="progress">
-       <area>15,30,875,36</area>
+     <textarea name="description-progress" from="basetextarea" depends="progress_text">
+       <area>15,35,875,36</area>
        <template>%DESCRIPTION%</template>
      </textarea>
      
-     <textarea name="description" from="basetextarea" depends="!progress">
-       <area>15,35,875,74</area>
+     <textarea name="description-noprogress" from="basetextarea" depends="!progress_text">
+       <area>15,35,875,108</area>
+       <multiline>yes</multiline>
        <template>%DESCRIPTION%</template>
-     </textarea>
+     </textarea> 
      
      <imagetype name="image">
        <filename>shattered.png</filename>

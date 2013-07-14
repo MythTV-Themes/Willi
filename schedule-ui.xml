@@ -491,7 +491,7 @@
          <state name="selectedactive">
            <textarea name="title" from="buttontext">
              <font>basebuttontitle</font>
-             <area>5,0,800,40</area>
+             <area>5,5,800,40</area>
              <cutdown>yes</cutdown>
              <template>%CARD% - %TITLE%</template>
            </textarea>
@@ -1114,7 +1114,7 @@
          <state name="selectedactive">
            <textarea name="title" from="buttontext">
              <font>basebuttontitle</font>
-             <area>5,0,800,40</area>
+             <area>5,5,800,40</area>
              <cutdown>yes</cutdown>
              <template>%TITLE%</template>
            </textarea>
@@ -2284,7 +2284,7 @@
          <state name="selectedactive">
            <textarea name="title" from="buttontext">
              <font>basebuttontitle</font>
-             <area>5,0,800,40</area>
+             <area>5,5,800,40</area>
              <cutdown>yes</cutdown>
              <template>%CARD% - %TITLE%</template>
            </textarea>

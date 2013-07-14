@@ -28,16 +28,16 @@
    </fontdef>
    
    <!-- Base Font Definitions -->   
-   <fontdef name="base" face="League Gothic">
-     <pixelsize>35</pixelsize>
+   <fontdef name="base" face="Junktion">
+     <pixelsize>30</pixelsize>
      <color>#FFFFFF</color>
      <outlinecolor>#000000</outlinecolor>
-     <outlinesize>3</outlinesize>
+     <outlinesize>1</outlinesize>
      <outlinealpha>120</outlinealpha>
    </fontdef>
    
    <fontdef name="basesmall" from="base">
-     <pixelsize>30</pixelsize>
+     <pixelsize>28</pixelsize>
    </fontdef>
    
    <fontdef name="videocodec" face="Arial">
@@ -50,8 +50,8 @@
      <color>#000000</color>
    </fontdef>
    
-   <fontdef name="basebutton" face="League Gothic">
-     <pixelsize>30</pixelsize>
+   <fontdef name="basebutton" face="Junktion">
+     <pixelsize>28</pixelsize>
      <color>#aa0000</color>
    </fontdef>
    
@@ -68,7 +68,7 @@
    <fontdef name="basetitleblack" from="basetitle">
      <color>#000000</color>
      <outlinecolor>#FFFFFF</outlinecolor>
-     <outlinesize>3</outlinesize>
+     <outlinesize>1</outlinesize>
      <outlinealpha>100</outlinealpha>
    </fontdef>
    
@@ -81,7 +81,7 @@
      <pixelsize>33</pixelsize>
      <color>#FFFFFF</color>
      <outlinecolor>#000000</outlinecolor>
-     <outlinesize>2</outlinesize>
+     <outlinesize>1</outlinesize>
      <outlinealpha>100</outlinealpha>
    </fontdef>
    
@@ -89,7 +89,7 @@
      <pixelsize>33</pixelsize>
      <color>#000000</color>
      <outlinecolor>#FFFFFF</outlinecolor>
-     <outlinesize>2</outlinesize>    
+     <outlinesize>1</outlinesize>    
      <outlinealpha>100</outlinealpha>
    </fontdef>
    
@@ -123,7 +123,7 @@
    </fontdef>
    
    <fontdef name="basebuttonsubtitle" from="basebutton">
-     <pixelsize>35</pixelsize>
+     <pixelsize>28</pixelsize>
      <color>#000000</color>
    </fontdef>
    
@@ -142,9 +142,8 @@
    </fontdef>
    
    <fontdef name="basebuttondescription" from="basebutton">
-     <pixelsize>30</pixelsize>
+     <pixelsize>22</pixelsize>
      <color>#000000</color>
-     
    </fontdef>
    
    <fontdef name="baseclock" from="basetitle">
@@ -225,7 +224,6 @@
    <imagetype name="basefanart">
      <area>0,0,1920,1080</area>
      <filename />
-     <alpha>150</alpha>
    </imagetype>
    
    <!-- A generic small textarea for states   -->

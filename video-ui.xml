@@ -233,7 +233,9 @@
      
      <!-- Fanart behind everyhting  -->
      
-     <imagetype name="fanart" from="basefanart" />
+     <imagetype name="fanart" from="basefanart">
+        <mask>video/videomask.png</mask>
+     </imagetype>  
      
      <imagetype name="recbackground">
        <position>0,0</position>
