@@ -28,7 +28,7 @@
    </fontdef>
    
    <!-- Base Font Definitions -->   
-   <fontdef name="base" face="Junktion">
+   <fontdef name="base" face="Droid Sans">
      <pixelsize>30</pixelsize>
      <color>#FFFFFF</color>
      <outlinecolor>#000000</outlinecolor>
@@ -50,7 +50,7 @@
      <color>#000000</color>
    </fontdef>
    
-   <fontdef name="basebutton" face="Junktion">
+   <fontdef name="basebutton" face="Droid Sans">
      <pixelsize>28</pixelsize>
      <color>#aa0000</color>
    </fontdef>
@@ -92,6 +92,15 @@
      <outlinesize>1</outlinesize>    
      <outlinealpha>100</outlinealpha>
    </fontdef>
+
+   <fontdef name="basebuttontitlered" face="Orbitron">
+     <pixelsize>33</pixelsize>
+     <color>#800000</color>
+     <outlinecolor>#FFFFFF</outlinecolor>
+     <outlinesize>1</outlinesize>    
+     <outlinealpha>100</outlinealpha>
+   </fontdef>
+   
    
    <fontdef name="basestate" face="CPMono_v07">
      <pixelsize>20</pixelsize>

@@ -44,7 +44,7 @@
      inkscape:snap-page="true"
      inkscape:snap-grids="true"
      inkscape:guide-bbox="true"
-     inkscape:current-layer="layer2">
+     inkscape:current-layer="layer1">
     <inkscape:grid
        snapvisiblegridlinesonly="true"
        enabled="true"
@@ -46418,7 +46418,7 @@
        style="opacity:0.8;fill:#ffffff;fill-opacity:1;stroke:none;display:inline" />
   </g>
   <g
-     style="display:none"
+     style="display:inline"
      inkscape:label="Groups"
      id="layer8"
      inkscape:groupmode="layer"
@@ -46461,7 +46461,7 @@
        style="opacity:0.8;color:#000000;fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
   </g>
   <g
-     style="display:none"
+     style="display:inline"
      transform="translate(0,27.637817)"
      id="layer1"
      inkscape:groupmode="layer"
@@ -46478,16 +46478,6 @@
        width="1399"
        id="rect2818-1-7"
        style="opacity:0.8;color:#000000;fill:url(#linearGradient5222-10);fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    <rect
-       inkscape:export-ydpi="90"
-       inkscape:export-xdpi="90"
-       inkscape:export-filename="/usr/share/mythtv/themes/Willi/statusbackground.png"
-       y="-27.637817"
-       x="0"
-       height="105"
-       width="1920"
-       id="rect2818"
-       style="opacity:0.8;fill:#2b0000;fill-opacity:1;stroke:none" />
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -47768,7 +47758,7 @@
        style="opacity:0.8;color:#000000;fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
   </g>
   <g
-     style="display:inline"
+     style="display:none"
      inkscape:label="bars"
      id="layer2"
      inkscape:groupmode="layer"
@@ -47782,7 +47772,7 @@
        height="140"
        width="1400"
        id="rect2818-1-9"
-       style="opacity:1;fill:url(#linearGradient4430);fill-opacity:1;stroke:none" />
+       style="fill:url(#linearGradient4430);fill-opacity:1;stroke:none" />
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -47875,7 +47865,7 @@
        height="140"
        width="490"
        id="rect2818-1-9-5"
-       style="opacity:1;fill:url(#linearGradient5287);fill-opacity:1;stroke:none;display:inline" />
+       style="fill:url(#linearGradient5287);fill-opacity:1;stroke:none;display:inline" />
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"

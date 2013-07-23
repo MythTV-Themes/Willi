@@ -26,7 +26,7 @@
      
      <textarea name="title" from="basetextarea">
        <area>15,5,875,36</area>
-       <font>basebuttontitlewhite</font>
+       <font>basebuttontitlered</font>
      </textarea>
 
      <textarea name="extra" from="basetextarea">
