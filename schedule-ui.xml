@@ -1901,33 +1901,33 @@
      </textarea>
      
      <textarea name="timedate" from="basebigstatetext">
-       <position>700,610</position>
+       <position>700,660</position>
      </textarea>
      
      <textarea name="channel" from="basebigstatetext">
-       <position>700,650</position>
+       <position>700,700</position>
      </textarea>
      
      <textarea name="category" from="basebigstatetext">
-       <position>700,690</position>
+       <position>700,740</position>
      </textarea>
      
      <textarea name="recgroup" from="basebigstatetext">
-       <position>700,730</position>
+       <position>700,780</position>
      </textarea>
      
      <textarea name="playgroup" from="basebigstatetext">
-       <position>700,770</position>
+       <position>700,820</position>
        <template>%PLAYGROUP% play group</template>
      </textarea>
      
      <textarea name="storagegroup" from="basebigstatetext">
-       <position>700,810</position>
+       <position>700,860</position>
        <template>%STORAGEGROUP% storage group</template>
      </textarea>
      
      <textarea name="year" from="basebigstatetext">
-       <position>700,850</position>
+       <position>700,900</position>
      </textarea>
      
      <spinbox name="priority" from="basewidespinbox">
@@ -1974,13 +1974,19 @@
        <helptext>
        </helptext>
      </spinbox>
+
+     <spinbox name="autoextend" from="basewidespinbox">
+       <position>440,530</position>
+       <helptext>
+       </helptext>
+     </spinbox>
      
      <checkbox name="ruleactive" from="basecheckbox">
-       <position>460,540</position>
+       <position>460,590</position>
      </checkbox>
      
      <textarea name="ruleactivelabel" from="basetextarea">
-       <area>510,540,400,30</area>
+       <area>510,590,400,30</area>
        <value>Recording Rule Active</value>
      </textarea>
      
